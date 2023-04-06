@@ -1,0 +1,1 @@
+# PIM Catalog Templates
