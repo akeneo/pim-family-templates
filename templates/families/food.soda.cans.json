@@ -1,0 +1,29 @@
+{
+    "templateId": "food.soda.cans",
+    "displayName": "Soda Cans",
+    "publisher": "akeneo",
+    "version": "0.1",
+    "description": "Template for capturing the best practices for soda can products.",
+    "categories": [
+        "food"
+    ],
+    "engines": {
+        "akeneo.pim.core": "^1.0.0"
+    },
+    "preview": "true",
+    "icon": "https://cdn-icons-png.flaticon.com/512/659/659385.png",
+    "attributes": [
+        {
+            "attributeId": "product.name",
+            "type": "pim_catalog_text",
+            "scopable": false,
+            "localizable": true
+        },
+        {
+            "attributeId": "product.description",
+            "type": "pim_catalog_textarea",
+            "scopable": true,
+            "localizable": true
+        }
+    ]
+}
