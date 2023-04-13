@@ -17,7 +17,7 @@
             "attributeId": "product.name",
             "type": "pim_catalog_text",
             "scopable": false,
-            "localizable": true
+            "localizable": false
         },
         {
             "attributeId": "product.description",
