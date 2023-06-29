@@ -1,1 +1,1 @@
-# PIM Catalog Templates
+# PIM Families Templates
