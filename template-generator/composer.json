@@ -1,0 +1,20 @@
+{
+    "name": "akeneo/template-generator",
+    "type": "project",
+    "require": {
+        "php": "8.1.*",
+        "openspout/openspout": "^4.15",
+        "symfony/console": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Akeneo\\TemplateGenerator\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true,
+            "symfony/runtime": true
+        }
+    }
+}

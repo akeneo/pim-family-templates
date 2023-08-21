@@ -1,0 +1,308 @@
+{
+  "industries": [
+    {
+      "code": "industry_sporting_goods_and_apparel",
+      "labels": {
+        "en_US": "Sporting goods & apparel"
+      },
+      "family_templates": [
+        "fitness_training",
+        "jerseys",
+        "biking"
+      ]
+    }
+  ],
+  "family_templates": [
+    {
+      "code": "jerseys",
+      "labels": {
+        "en_US": "Cheer on your favorite teams with our 'Jerseys' family template - a winning assortment of pre-built attributes to easily manage your sports apparel, showing your team spirit in style."
+      },
+      "attributes": [
+        {
+          "code": "EAN",
+          "labels": {
+            "en_US": "Main Identifier"
+          },
+          "type": "pim_catalog_identifier",
+          "scopable": false,
+          "localizable": false,
+          "group": "template",
+          "unique": true
+        },
+        {
+          "code": "price",
+          "labels": {
+            "en_US": "Price"
+          },
+          "type": "pim_catalog_price_collection",
+          "scopable": 0,
+          "localizable": 0,
+          "group": "template",
+          "unique": 0
+        },
+        {
+          "code": "product_title",
+          "labels": {
+            "en_US": "Product title"
+          },
+          "type": "pim_catalog_text",
+          "scopable": 0,
+          "localizable": 1,
+          "group": "template",
+          "unique": 0
+        },
+        {
+          "code": "short_description",
+          "labels": {
+            "en_US": "Short description"
+          },
+          "type": "pim_catalog_textarea",
+          "scopable": 0,
+          "localizable": 1,
+          "group": "template",
+          "unique": 0
+        },
+        {
+          "code": "long_description",
+          "labels": {
+            "en_US": "Long description"
+          },
+          "type": "pim_catalog_textarea",
+          "scopable": 0,
+          "localizable": 1,
+          "group": "template",
+          "unique": 0
+        },
+        {
+          "code": "brand",
+          "labels": {
+            "en_US": "Brand"
+          },
+          "type": "pim_catalog_simpleselect",
+          "scopable": 0,
+          "localizable": 0,
+          "group": "template",
+          "unique": 0
+        },
+        {
+          "code": "main_image",
+          "labels": {
+            "en_US": "Main image"
+          },
+          "type": "pim_catalog_image",
+          "scopable": 0,
+          "localizable": 0,
+          "group": "template",
+          "unique": 0
+        },
+        {
+          "code": "detailed_image",
+          "labels": {
+            "en_US": "Detailed image"
+          },
+          "type": "pim_catalog_image",
+          "scopable": 0,
+          "localizable": 0,
+          "group": "template",
+          "unique": 0
+        },
+        {
+          "code": "atmosphere_image",
+          "labels": {
+            "en_US": "Atmosphere image"
+          },
+          "type": "pim_catalog_image",
+          "scopable": 0,
+          "localizable": 0,
+          "group": "template",
+          "unique": 0
+        },
+        {
+          "code": "team",
+          "labels": {
+            "en_US": "Team"
+          },
+          "type": "pim_catalog_simpleselect",
+          "scopable": 0,
+          "localizable": 0,
+          "group": "template",
+          "unique": 0
+        },
+        {
+          "code": "player",
+          "labels": {
+            "en_US": "Player"
+          },
+          "type": "pim_catalog_text",
+          "scopable": 0,
+          "localizable": 1,
+          "group": "template",
+          "unique": 0
+        },
+        {
+          "code": "size",
+          "labels": {
+            "en_US": "Size"
+          },
+          "type": "pim_catalog_simpleselect",
+          "scopable": 0,
+          "localizable": 0,
+          "group": "template",
+          "unique": 0
+        },
+        {
+          "code": "sport_type",
+          "labels": {
+            "en_US": "Sport type"
+          },
+          "type": "pim_catalog_simpleselect",
+          "scopable": 0,
+          "localizable": 0,
+          "group": "template",
+          "unique": 0
+        },
+        {
+          "code": "color",
+          "labels": {
+            "en_US": "Color"
+          },
+          "type": "pim_catalog_simpleselect",
+          "scopable": 0,
+          "localizable": 0,
+          "group": "template",
+          "unique": 0
+        },
+        {
+          "code": "fabric",
+          "labels": {
+            "en_US": "Fabric"
+          },
+          "type": "pim_catalog_multiselect",
+          "scopable": 0,
+          "localizable": 0,
+          "group": "template",
+          "unique": 0
+        },
+        {
+          "code": "cut",
+          "labels": {
+            "en_US": "Cut"
+          },
+          "type": "pim_catalog_simpleselect",
+          "scopable": 0,
+          "localizable": 0,
+          "group": "template",
+          "unique": 0
+        }
+      ]
+    }
+  ],
+  "attribute_options": [
+    {
+      "code": "brand1",
+      "label": {
+        "en_US": "Zaro"
+      },
+      "attribute": "brand"
+    },
+    {
+      "code": "brand2",
+      "label": {
+        "en_US": "Zigolf"
+      },
+      "attribute": "brand"
+    },
+    {
+      "code": "brand3",
+      "label": {
+        "en_US": "Zaro Premium"
+      },
+      "attribute": "brand"
+    },
+    {
+      "code": "brand4",
+      "label": {
+        "en_US": "Zaro Kids"
+      },
+      "attribute": "brand"
+    },
+    {
+      "code": "brand5",
+      "label": {
+        "en_US": "Zaro Sport"
+      },
+      "attribute": "brand"
+    },
+    {
+      "code": "brand6",
+      "label": {
+        "en_US": "Zarauto"
+      },
+      "attribute": "brand"
+    },
+    {
+      "code": "brand7",
+      "label": {
+        "en_US": "Zaro Green"
+      },
+      "attribute": "brand"
+    },
+    {
+      "code": "color1",
+      "label": {
+        "en_US": "Blue"
+      },
+      "attribute": "color"
+    },
+    {
+      "code": "color2",
+      "label": {
+        "en_US": "Black"
+      },
+      "attribute": "color"
+    },
+    {
+      "code": "color3",
+      "label": {
+        "en_US": "Pink"
+      },
+      "attribute": "color"
+    },
+    {
+      "code": "color4",
+      "label": {
+        "en_US": "Grey"
+      },
+      "attribute": "color"
+    },
+    {
+      "code": "color5",
+      "label": {
+        "en_US": "Yellow"
+      },
+      "attribute": "color"
+    },
+    {
+      "code": "color6",
+      "label": {
+        "en_US": "White"
+      },
+      "attribute": "color"
+    },
+    {
+      "code": "size1",
+      "label": {
+        "en_US": "S"
+      },
+      "attribute": "size"
+    },
+    {
+      "code": "size2",
+      "label": {
+        "en_US": "M"
+      },
+      "attribute": "size"
+    }
+  ]
+}
