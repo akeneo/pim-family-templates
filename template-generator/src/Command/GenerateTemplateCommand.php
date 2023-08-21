@@ -6,7 +6,6 @@ namespace Akeneo\TemplateGenerator\Command;
 
 use OpenSpout\Reader\ReaderInterface;
 use OpenSpout\Reader\SheetInterface;
-use OpenSpout\Reader\XLSX\Options as XlsxOptions;
 use OpenSpout\Reader\XLSX\Reader as XlsxReader;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -15,6 +14,8 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class GenerateTemplateCommand extends Command
 {
+    private const OUTPUT_TEMPLATE_NAME = 'output.json';
+
     protected static $defaultName = 'pim-family-template:create';
 
     /**
@@ -23,25 +24,25 @@ class GenerateTemplateCommand extends Command
     protected function configure(): void
     {
         $this
-            ->setDescription('Generate json template files from the xlsx template file')
-            ->addArgument('file', InputArgument::REQUIRED, 'Path to the xlsx file');
+            ->setDescription('Generate JSON template file from XLSX template file')
+            ->addArgument('file', InputArgument::REQUIRED, 'XLSX File path');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $reader = $this->getReader();
+        $reader = $this->createReader();
         $reader->open($input->getArgument('file'));
-        $industries = $this->getIndustries($reader);
-        $familyTemplates = $this->getFamilyTemplates($reader, $industries);
-        $attributeOptions = $this->getAttributeOptions($reader);
+        $industries = $this->readIndustries($reader);
+        $familyTemplates = $this->readFamilyTemplates($reader, $industries);
+        $attributeOptions = $this->readAttributeOptions($reader);
 
-        file_put_contents('output.json', json_encode([
+        file_put_contents(self::OUTPUT_TEMPLATE_NAME, json_encode([
             'industries' => $industries,
             'family_templates' => $familyTemplates,
             'attribute_options' => $attributeOptions
         ]));
 
-        return 1;
+        return Command::SUCCESS;
     }
 
     private function getSheetContent(ReaderInterface $reader, string $sheetName): array
@@ -74,16 +75,12 @@ class GenerateTemplateCommand extends Command
         throw new \Exception(sprintf('Cannot find the sheet name %s', $sheetName));
     }
 
-    private function getReader(): ReaderInterface
+    private function createReader(): ReaderInterface
     {
-        $options = new XlsxOptions();
-        $options->SHOULD_FORMAT_DATES = $normalizedOptions['shouldFormatDates'] ?? $options->SHOULD_FORMAT_DATES;
-        $options->SHOULD_PRESERVE_EMPTY_ROWS = $normalizedOptions['shouldPreserveEmptyRows'] ?? $options->SHOULD_PRESERVE_EMPTY_ROWS;
-
-        return new XlsxReader($options);
+        return new XlsxReader();
     }
 
-    private function getIndustries(ReaderInterface $reader): array
+    private function readIndustries(ReaderInterface $reader): array
     {
         $rawIndustries = $this->getSheetContent($reader, 'Industries');
 
@@ -98,7 +95,7 @@ class GenerateTemplateCommand extends Command
         return array_combine(array_column($industries, 'code'), $industries);
     }
 
-    private function getFamilyTemplates(ReaderInterface $reader, array $industries): array
+    private function readFamilyTemplates(ReaderInterface $reader, array $industries): array
     {
         $familyTemplates = [];
         foreach ($industries as $industry) {
@@ -155,7 +152,7 @@ class GenerateTemplateCommand extends Command
         ];
     }
 
-    private function getAttributeOptions(ReaderInterface $reader): array
+    private function readAttributeOptions(ReaderInterface $reader): array
     {
         $rawAttributeOptions = $this->getSheetContent($reader, 'attribute_options');
 
