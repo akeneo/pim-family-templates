@@ -36,10 +36,10 @@
             "en_US": "Price"
           },
           "type": "pim_catalog_price_collection",
-          "scopable": 0,
-          "localizable": 0,
+          "scopable": false,
+          "localizable": false,
           "group": "template",
-          "unique": 0
+          "unique": false
         },
         {
           "code": "product_title",
@@ -47,10 +47,10 @@
             "en_US": "Product title"
           },
           "type": "pim_catalog_text",
-          "scopable": 0,
-          "localizable": 1,
+          "scopable": false,
+          "localizable": true,
           "group": "template",
-          "unique": 0
+          "unique": false
         },
         {
           "code": "short_description",
@@ -58,10 +58,10 @@
             "en_US": "Short description"
           },
           "type": "pim_catalog_textarea",
-          "scopable": 0,
-          "localizable": 1,
+          "scopable": false,
+          "localizable": true,
           "group": "template",
-          "unique": 0
+          "unique": false
         },
         {
           "code": "long_description",
@@ -69,10 +69,10 @@
             "en_US": "Long description"
           },
           "type": "pim_catalog_textarea",
-          "scopable": 0,
-          "localizable": 1,
+          "scopable": false,
+          "localizable": true,
           "group": "template",
-          "unique": 0
+          "unique": false
         },
         {
           "code": "brand",
@@ -80,10 +80,10 @@
             "en_US": "Brand"
           },
           "type": "pim_catalog_simpleselect",
-          "scopable": 0,
-          "localizable": 0,
+          "scopable": false,
+          "localizable": false,
           "group": "template",
-          "unique": 0
+          "unique": false
         },
         {
           "code": "main_image",
@@ -91,10 +91,10 @@
             "en_US": "Main image"
           },
           "type": "pim_catalog_image",
-          "scopable": 0,
-          "localizable": 0,
+          "scopable": false,
+          "localizable": false,
           "group": "template",
-          "unique": 0
+          "unique": false
         },
         {
           "code": "detailed_image",
@@ -102,10 +102,10 @@
             "en_US": "Detailed image"
           },
           "type": "pim_catalog_image",
-          "scopable": 0,
-          "localizable": 0,
+          "scopable": false,
+          "localizable": false,
           "group": "template",
-          "unique": 0
+          "unique": false
         },
         {
           "code": "atmosphere_image",
@@ -113,10 +113,10 @@
             "en_US": "Atmosphere image"
           },
           "type": "pim_catalog_image",
-          "scopable": 0,
-          "localizable": 0,
+          "scopable": false,
+          "localizable": false,
           "group": "template",
-          "unique": 0
+          "unique": false
         },
         {
           "code": "team",
@@ -124,10 +124,10 @@
             "en_US": "Team"
           },
           "type": "pim_catalog_simpleselect",
-          "scopable": 0,
-          "localizable": 0,
+          "scopable": false,
+          "localizable": false,
           "group": "template",
-          "unique": 0
+          "unique": false
         },
         {
           "code": "player",
@@ -135,10 +135,10 @@
             "en_US": "Player"
           },
           "type": "pim_catalog_text",
-          "scopable": 0,
-          "localizable": 1,
+          "scopable": false,
+          "localizable": true,
           "group": "template",
-          "unique": 0
+          "unique": false
         },
         {
           "code": "size",
@@ -146,10 +146,10 @@
             "en_US": "Size"
           },
           "type": "pim_catalog_simpleselect",
-          "scopable": 0,
-          "localizable": 0,
+          "scopable": false,
+          "localizable": false,
           "group": "template",
-          "unique": 0
+          "unique": false
         },
         {
           "code": "sport_type",
@@ -157,10 +157,10 @@
             "en_US": "Sport type"
           },
           "type": "pim_catalog_simpleselect",
-          "scopable": 0,
-          "localizable": 0,
+          "scopable": false,
+          "localizable": false,
           "group": "template",
-          "unique": 0
+          "unique": false
         },
         {
           "code": "color",
@@ -168,10 +168,10 @@
             "en_US": "Color"
           },
           "type": "pim_catalog_simpleselect",
-          "scopable": 0,
-          "localizable": 0,
+          "scopable": false,
+          "localizable": false,
           "group": "template",
-          "unique": 0
+          "unique": false
         },
         {
           "code": "fabric",
@@ -179,10 +179,10 @@
             "en_US": "Fabric"
           },
           "type": "pim_catalog_multiselect",
-          "scopable": 0,
-          "localizable": 0,
+          "scopable": false,
+          "localizable": false,
           "group": "template",
-          "unique": 0
+          "unique": false
         },
         {
           "code": "cut",
@@ -190,10 +190,10 @@
             "en_US": "Cut"
           },
           "type": "pim_catalog_simpleselect",
-          "scopable": 0,
-          "localizable": 0,
+          "scopable": false,
+          "localizable": false,
           "group": "template",
-          "unique": 0
+          "unique": false
         }
       ]
     }

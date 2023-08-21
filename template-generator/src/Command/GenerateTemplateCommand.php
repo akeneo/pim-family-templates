@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Akeneo\TemplateGenerator\Infrastructure\Command;
+namespace Akeneo\TemplateGenerator\Command;
 
 use OpenSpout\Reader\ReaderInterface;
 use OpenSpout\Reader\SheetInterface;
@@ -85,23 +85,25 @@ class GenerateTemplateCommand extends Command
 
     private function getIndustries(ReaderInterface $reader): array
     {
-        $industries = $this->getSheetContent($reader, 'Industries');
+        $rawIndustries = $this->getSheetContent($reader, 'Industries');
 
-        return array_map(fn(array $industry) => [
+        $industries = array_map(static fn(array $industry) => [
             'code' => $industry['code'],
-            'label' => [
+            'labels' => [
                 'en_US' => $industry['label-en_US'],
             ],
             'family_templates' => explode(',', $industry['Families per industry'])
-        ], $industries);
+        ], $rawIndustries);
+
+        return array_combine(array_column($industries, 'code'), $industries);
     }
 
     private function getFamilyTemplates(ReaderInterface $reader, array $industries): array
     {
         $familyTemplates = [];
         foreach ($industries as $industry) {
-            foreach ($industry['family_templates'] as $familyTemplate) {
-                $familyTemplates[] = $this->getFamilyTemplate($reader, $familyTemplate);
+            foreach ($industry['family_templates'] as $familyTemplateCode) {
+                $familyTemplates[$familyTemplateCode] = $this->getFamilyTemplate($reader, $familyTemplateCode);
             }
         }
 
@@ -112,35 +114,59 @@ class GenerateTemplateCommand extends Command
     {
         $familyTemplate = $this->getSheetContent($reader, $familyTemplateCode);
 
-        $attributes = array_map(fn (array $attribute) => [
-            'code' => $attribute['code'],
-            'label' => [
-                'en_US' => $attribute['label-en_US'],
-            ],
-            'type' => $attribute['type'],
-            'scopable' => $attribute['scopable'] === 1,
-            'localizable' => $attribute['localizable'] === 1,
-            'group' => $attribute['group'],
-            'metric_family' => $attribute['metric_family'],
-            'unique' => $attribute['unique'] === 1,
-        ], $familyTemplate);
+        $attributes = array_map(function (array $rawAttribute) {
+            $attribute = [
+                'code' => $rawAttribute['code'],
+                'labels' => [
+                    'en_US' => $rawAttribute['label-en_US'],
+                ],
+                'type' => $rawAttribute['type'],
+                'scopable' => $rawAttribute['scopable'] === 1,
+                'localizable' => $rawAttribute['localizable'] === 1,
+                'group' => $rawAttribute['group'],
+                'unique' => $rawAttribute['unique'] === 1,
+            ];
+
+            if ('' !== $rawAttribute['metric_family']) {
+                $attribute['metric_family'] = $rawAttribute['metric_family'];
+            }
+
+            return $attribute;
+        }, $familyTemplate);
 
         return [
             'code' => $familyTemplateCode,
+            'description' => $this->getFamilyTemplateDescription($reader, $familyTemplateCode),
             'attributes' => $attributes,
+        ];
+    }
+
+    private function getFamilyTemplateDescription(ReaderInterface $reader, string $familyTemplateCode): array
+    {
+        $rawDescriptions = $this->getSheetContent($reader, 'families_descriptions');
+
+        $rawDescriptions = array_filter(
+            $rawDescriptions,
+            static fn (array $description) => $description['family'] === $familyTemplateCode,
+        );
+
+        return [
+            'en_US' => current($rawDescriptions)['description-en_US']
         ];
     }
 
     private function getAttributeOptions(ReaderInterface $reader): array
     {
-        $attributeOptions = $this->getSheetContent($reader, 'attribute_options');
+        $rawAttributeOptions = $this->getSheetContent($reader, 'attribute_options');
 
-        return array_map(fn (array $attributeOption) => [
+        $attributeOptions = array_map(static fn (array $attributeOption) => [
             'code' => $attributeOption['code'],
-            'label' => [
+            'labels' => [
                 'en_US' => $attributeOption['label-en_US'],
             ],
             'attribute' => $attributeOption['attribute']
-        ], $attributeOptions);
+        ], $rawAttributeOptions);
+
+        return array_combine(array_column($attributeOptions, 'code'), $attributeOptions);
     }
 }
