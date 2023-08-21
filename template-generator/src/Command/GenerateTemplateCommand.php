@@ -18,9 +18,6 @@ class GenerateTemplateCommand extends Command
 
     protected static $defaultName = 'pim-family-template:create';
 
-    /**
-     * {@inheritdoc}
-     */
     protected function configure(): void
     {
         $this
@@ -39,7 +36,7 @@ class GenerateTemplateCommand extends Command
         file_put_contents(self::OUTPUT_TEMPLATE_NAME, json_encode([
             'industries' => $industries,
             'family_templates' => $familyTemplates,
-            'attribute_options' => $attributeOptions
+            'attribute_options' => $attributeOptions,
         ]));
 
         return Command::SUCCESS;
@@ -54,7 +51,7 @@ class GenerateTemplateCommand extends Command
         $rows->rewind();
         $headers = $rows->current()->toArray();
         $rows->next();
-        while ($rows->valid() ){
+        while ($rows->valid()) {
             $content[] = array_combine($headers, $rows->current()->toArray());
 
             $rows->next();
@@ -84,12 +81,12 @@ class GenerateTemplateCommand extends Command
     {
         $rawIndustries = $this->getSheetContent($reader, 'Industries');
 
-        $industries = array_map(static fn(array $industry) => [
+        $industries = array_map(static fn (array $industry) => [
             'code' => $industry['code'],
             'labels' => [
                 'en_US' => $industry['label-en_US'],
             ],
-            'family_templates' => explode(',', $industry['Families per industry'])
+            'family_templates' => explode(',', $industry['Families per industry']),
         ], $rawIndustries);
 
         return array_combine(array_column($industries, 'code'), $industries);
@@ -118,10 +115,10 @@ class GenerateTemplateCommand extends Command
                     'en_US' => $rawAttribute['label-en_US'],
                 ],
                 'type' => $rawAttribute['type'],
-                'scopable' => $rawAttribute['scopable'] === 1,
-                'localizable' => $rawAttribute['localizable'] === 1,
+                'scopable' => 1 === $rawAttribute['scopable'],
+                'localizable' => 1 === $rawAttribute['localizable'],
                 'group' => $rawAttribute['group'],
-                'unique' => $rawAttribute['unique'] === 1,
+                'unique' => 1 === $rawAttribute['unique'],
             ];
 
             if ('' !== $rawAttribute['metric_family']) {
@@ -148,7 +145,7 @@ class GenerateTemplateCommand extends Command
         );
 
         return [
-            'en_US' => current($rawDescriptions)['description-en_US']
+            'en_US' => current($rawDescriptions)['description-en_US'],
         ];
     }
 
@@ -161,7 +158,7 @@ class GenerateTemplateCommand extends Command
             'labels' => [
                 'en_US' => $attributeOption['label-en_US'],
             ],
-            'attribute' => $attributeOption['attribute']
+            'attribute' => $attributeOption['attribute'],
         ], $rawAttributeOptions);
 
         return array_combine(array_column($attributeOptions, 'code'), $attributeOptions);
