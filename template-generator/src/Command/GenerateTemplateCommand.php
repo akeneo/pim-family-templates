@@ -147,6 +147,10 @@ class GenerateTemplateCommand extends Command
             static fn (array $description) => $description['family'] === $familyTemplateCode,
         );
 
+        if (0 === count($rawDescriptions)) {
+            return [];
+        }
+
         return [
             'en_US' => current($rawDescriptions)['description-en_US'],
         ];
