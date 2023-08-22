@@ -1,0 +1,134 @@
+{
+    "industry_apparel_and_fashion": {
+        "code": "industry_apparel_and_fashion",
+        "labels": {
+            "en_US": "Apparel & fashion"
+        },
+        "family_templates": [
+            "women_tops",
+            "men_tshirts",
+            "accessories",
+            "sneakers",
+            "high_heels"
+        ]
+    },
+    "industry_food_and_beverages": {
+        "code": "industry_food_and_beverages",
+        "labels": {
+            "en_US": "Food & beverage"
+        },
+        "family_templates": [
+            "snacks",
+            "bread",
+            "wine",
+            "dairy",
+            "pasta_and_grains",
+            "soft_drinks"
+        ]
+    },
+    "industry_consumer_electronics": {
+        "code": "industry_consumer_electronics",
+        "labels": {
+            "en_US": "Consumer electronics"
+        },
+        "family_templates": [
+            "smartphones",
+            "videogames",
+            "consoles",
+            "televisions",
+            "headphones"
+        ]
+    },
+    "industry_health_and_beauty": {
+        "code": "industry_health_and_beauty",
+        "labels": {
+            "en_US": "Health & beauty"
+        },
+        "family_templates": [
+            "skin_care",
+            "hair_care",
+            "fragrances",
+            "vitamins_and_supplements",
+            "teas_and_herbal_teas"
+        ]
+    },
+    "industry_home_and_garden": {
+        "code": "industry_home_and_garden",
+        "labels": {
+            "en_US": "Home & garden"
+        },
+        "family_templates": [
+            "sofa",
+            "bedding_and_towels",
+            "candles",
+            "flowers_and_plants",
+            "grilling"
+        ]
+    },
+    "industry_home_appliances": {
+        "code": "industry_home_appliances",
+        "labels": {
+            "en_US": "Home appliances"
+        },
+        "family_templates": [
+            "blenders_and_mixers",
+            "coffee_and_espresso",
+            "toasters",
+            "multi_cookers"
+        ]
+    },
+    "industry_kids_and_baby_supplies": {
+        "code": "industry_kids_and_baby_supplies",
+        "labels": {
+            "en_US": "Kids & baby supplies"
+        },
+        "family_templates": [
+            "baby_furniture",
+            "baby_stroller",
+            "baby_feeding",
+            "baby_diapers"
+        ]
+    },
+    "industry_luxury_goods_and_jewellery": {
+        "code": "industry_luxury_goods_and_jewellery",
+        "labels": {
+            "en_US": "Luxury goods & jewellery"
+        },
+        "family_templates": [
+            "watches",
+            "rings",
+            "bracelets"
+        ]
+    },
+    "industry_sporting_goods_and_apparel": {
+        "code": "industry_sporting_goods_and_apparel",
+        "labels": {
+            "en_US": "Sporting goods & apparel"
+        },
+        "family_templates": [
+            "fitness_training",
+            "jerseys",
+            "biking"
+        ]
+    },
+    "industry_automotive": {
+        "code": "industry_automotive",
+        "labels": {
+            "en_US": "Automotive"
+        },
+        "family_templates": [
+            "tires",
+            "oils_and_fluids"
+        ]
+    },
+    "industry_culture_and_education": {
+        "code": "industry_culture_and_education",
+        "labels": {
+            "en_US": "Culture & education"
+        },
+        "family_templates": [
+            "books",
+            "ebooks"
+        ]
+    }
+}
