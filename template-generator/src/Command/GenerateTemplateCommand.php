@@ -14,26 +14,29 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class GenerateTemplateCommand extends Command
 {
-    private const OUTPUT_TEMPLATE_NAME = 'output.json';
-
-    protected static $defaultName = 'pim-family-template:create';
+    protected static $defaultName = 'template-generator:template:generate';
 
     protected function configure(): void
     {
         $this
             ->setDescription('Generate JSON template file from XLSX template file')
-            ->addArgument('file', InputArgument::REQUIRED, 'XLSX File path');
+            ->addArgument('source_file', InputArgument::REQUIRED, 'Source file path')
+            ->addArgument('output_file', InputArgument::REQUIRED, 'Output file path')
+        ;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
+        $sourceFile = $input->getArgument('source_file');
+        $outputFile = $input->getArgument('output_file');
+
         $reader = $this->createReader();
-        $reader->open($input->getArgument('file'));
+        $reader->open($sourceFile);
         $industries = $this->readIndustries($reader);
         $familyTemplates = $this->readFamilyTemplates($reader, $industries);
         $attributeOptions = $this->readAttributeOptions($reader);
 
-        file_put_contents(self::OUTPUT_TEMPLATE_NAME, json_encode([
+        file_put_contents($outputFile, json_encode([
             'industries' => $industries,
             'family_templates' => $familyTemplates,
             'attribute_options' => $attributeOptions,

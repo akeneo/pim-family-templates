@@ -4,7 +4,7 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
-use Akeneo\TemplateGenerator\Infrastructure\Command\GenerateTemplateCommand;
+use Akeneo\TemplateGenerator\Command\GenerateTemplateCommand;
 use Symfony\Component\Console\Application;
 
 $application = new Application();
