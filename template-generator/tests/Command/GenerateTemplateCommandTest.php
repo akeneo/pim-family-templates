@@ -11,35 +11,73 @@ use Symfony\Component\Console\Tester\CommandTester;
 class GenerateTemplateCommandTest extends TestCase
 {
     private const SOURCE_FILE_PATH = __DIR__ . '/source_file.xlsx';
-    private const OUTPUT_FILE_PATH = 'actual_output.json';
-    private const EXPECTED_OUTPUT_PATH = __DIR__ . '/expected_output.json';
+    private const OUTPUT_DIRECTORY = __DIR__ . '/actual_output';
+    private const EXPECTED_OUTPUT_DIRECTORY = __DIR__ . '/expected_output';
 
     protected function setUp(): void
     {
-        $this->removeOutputTemplate();
+        $this->cleanDirectory(self::OUTPUT_DIRECTORY);
         parent::setUp();
     }
 
     protected function tearDown(): void
     {
-        $this->removeOutputTemplate();
+        $this->cleanDirectory(self::OUTPUT_DIRECTORY);
         parent::tearDown();
     }
 
-    public function test_it_generates_template(): void
+    public function test_it_generates_template_files(): void
     {
         $sut = new CommandTester(new GenerateTemplateCommand());
 
-        $sut->execute(['source_file' => self::SOURCE_FILE_PATH, 'output_file' => self::OUTPUT_FILE_PATH]);
+        $sut->execute(['source_file' => self::SOURCE_FILE_PATH, 'output_directory' => self::OUTPUT_DIRECTORY]);
 
-        $this->assertFileExists(self::OUTPUT_FILE_PATH);
-        $this->assertJsonFileEqualsJsonFile(self::EXPECTED_OUTPUT_PATH, self::OUTPUT_FILE_PATH);
+        $this->assertDirectoryEquals(self::OUTPUT_DIRECTORY, self::EXPECTED_OUTPUT_DIRECTORY);
     }
 
-    private function removeOutputTemplate(): void
+    private function assertDirectoryEquals(string $actualDirectoryPath, string $expectedDirectoryPath): void
     {
-        if (is_file(self::OUTPUT_FILE_PATH)) {
-            unlink(self::OUTPUT_FILE_PATH);
+        $this->assertDirectoryExists($actualDirectoryPath);
+
+        $expectedFiles = array_filter(
+            scandir($expectedDirectoryPath),
+            static fn (string $expectedFile) => !in_array($expectedFile, ['.', '..'])
+        );
+
+        foreach ($expectedFiles as $expectedFile) {
+            $actualFilePath = sprintf('%s/%s', $actualDirectoryPath, $expectedFile);
+            $expectedFilePath = sprintf('%s/%s', $expectedDirectoryPath, $expectedFile);
+
+            if (is_dir($expectedFilePath)) {
+                $this->assertDirectoryEquals($actualFilePath, $expectedFilePath);
+                continue;
+            }
+
+            $this->assertFileExists($actualFilePath);
+            $this->assertJsonFileEqualsJsonFile($expectedFilePath, $actualFilePath);
         }
+    }
+
+    private function cleanDirectory(string $directoryPath): void
+    {
+        if (!is_dir($directoryPath)) {
+            return;
+        }
+
+        $subFiles = array_filter(
+            scandir($directoryPath),
+            static fn (string $expectedFile) => !in_array($expectedFile, ['.', '..'])
+        );
+
+        foreach ($subFiles as $subFile) {
+            $subFilePath = sprintf('%s/%s', $directoryPath, $subFile);
+            if (is_dir($subFilePath)) {
+                $this->cleanDirectory($subFilePath);
+                continue;
+            }
+            unlink($subFilePath);
+        }
+
+        rmdir($directoryPath);
     }
 }

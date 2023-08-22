@@ -21,26 +21,26 @@ class GenerateTemplateCommand extends Command
         $this
             ->setDescription('Generate JSON template file from XLSX template file')
             ->addArgument('source_file', InputArgument::REQUIRED, 'Source file path')
-            ->addArgument('output_file', InputArgument::REQUIRED, 'Output file path')
+            ->addArgument('output_directory', InputArgument::REQUIRED, 'Output file path')
         ;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $sourceFile = $input->getArgument('source_file');
-        $outputFile = $input->getArgument('output_file');
 
-        $reader = $this->createReader();
-        $reader->open($sourceFile);
+        $reader = $this->openFile($sourceFile);
+
         $industries = $this->readIndustries($reader);
         $familyTemplates = $this->readFamilyTemplates($reader, $industries);
         $attributeOptions = $this->readAttributeOptions($reader);
 
-        file_put_contents($outputFile, json_encode([
-            'industries' => $industries,
-            'family_templates' => $familyTemplates,
-            'attribute_options' => $attributeOptions,
-        ]));
+        $outputDirectory = $input->getArgument('output_directory');
+
+        $this->ensureDirectoryExists($outputDirectory);
+        $this->writeIndustriesJson($outputDirectory, $industries);
+        $this->writeFamilyTemplatesJson($outputDirectory, $familyTemplates);
+        $this->writeAttributeOptionsJson($outputDirectory, $attributeOptions);
 
         return Command::SUCCESS;
     }
@@ -75,9 +75,12 @@ class GenerateTemplateCommand extends Command
         throw new \Exception(sprintf('Cannot find the sheet name %s', $sheetName));
     }
 
-    private function createReader(): ReaderInterface
+    private function openFile(string $filePath): ReaderInterface
     {
-        return new XlsxReader();
+        $reader = new XlsxReader();
+        $reader->open($filePath);
+
+        return $reader;
     }
 
     private function readIndustries(ReaderInterface $reader): array
@@ -100,14 +103,14 @@ class GenerateTemplateCommand extends Command
         $familyTemplates = [];
         foreach ($industries as $industry) {
             foreach ($industry['family_templates'] as $familyTemplateCode) {
-                $familyTemplates[$familyTemplateCode] = $this->getFamilyTemplate($reader, $familyTemplateCode);
+                $familyTemplates[$familyTemplateCode] = $this->readFamilyTemplate($reader, $familyTemplateCode);
             }
         }
 
         return $familyTemplates;
     }
 
-    private function getFamilyTemplate(ReaderInterface $reader, string $familyTemplateCode): array
+    private function readFamilyTemplate(ReaderInterface $reader, string $familyTemplateCode): array
     {
         $familyTemplate = $this->getSheetContent($reader, $familyTemplateCode);
 
@@ -133,12 +136,12 @@ class GenerateTemplateCommand extends Command
 
         return [
             'code' => $familyTemplateCode,
-            'description' => $this->getFamilyTemplateDescription($reader, $familyTemplateCode),
+            'description' => $this->readFamilyTemplateDescription($reader, $familyTemplateCode),
             'attributes' => $attributes,
         ];
     }
 
-    private function getFamilyTemplateDescription(ReaderInterface $reader, string $familyTemplateCode): array
+    private function readFamilyTemplateDescription(ReaderInterface $reader, string $familyTemplateCode): array
     {
         $rawDescriptions = $this->getSheetContent($reader, 'families_descriptions');
 
@@ -169,5 +172,45 @@ class GenerateTemplateCommand extends Command
         ], $rawAttributeOptions);
 
         return array_combine(array_column($attributeOptions, 'code'), $attributeOptions);
+    }
+
+    private function writeIndustriesJson(string $outputDirectory, array $industries): void
+    {
+        $industriesJsonFilePath = $this->getFilePath($outputDirectory, 'industries');
+        $this->writeJsonFile($industriesJsonFilePath, $industries);
+    }
+
+    private function writeFamilyTemplatesJson(string $outputDirectory, array $familyTemplates): void
+    {
+        $familiesOutputDirectory = sprintf('%s/%s', $outputDirectory, 'families');
+        $this->ensureDirectoryExists($familiesOutputDirectory);
+        foreach ($familyTemplates as $code => $familyTemplate) {
+            $familyJsonFilePath = $this->getFilePath($familiesOutputDirectory, $code);
+            $this->writeJsonFile($familyJsonFilePath, $familyTemplate);
+        }
+    }
+
+    private function writeAttributeOptionsJson(string $outputDirectory, array $attributeOptions): void
+    {
+        $industriesJsonFilePath = $this->getFilePath($outputDirectory, 'attribute_options');
+        $this->writeJsonFile($industriesJsonFilePath, $attributeOptions);
+    }
+
+    private function getFilePath(string $outputDirectory, string $fileNameWithoutExtension): string
+    {
+        return sprintf('%s/%s.json', $outputDirectory, $fileNameWithoutExtension);
+    }
+
+    private function writeJsonFile(string $filePath, array $data): void
+    {
+        $json = json_encode($data, JSON_PRETTY_PRINT);
+        file_put_contents($filePath, $json);
+    }
+
+    private function ensureDirectoryExists(string $outputDirectory): void
+    {
+        if (!is_dir($outputDirectory)) {
+            mkdir($outputDirectory);
+        }
     }
 }
