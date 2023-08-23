@@ -12,14 +12,14 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class GenerateTemplateCommand extends Command
+class GenerateTemplatesCommand extends Command
 {
-    protected static $defaultName = 'template-generator:template:generate';
+    protected static $defaultName = 'templates:generate';
 
     protected function configure(): void
     {
         $this
-            ->setDescription('Generate JSON template file from XLSX template file')
+            ->setDescription('Generate JSON template files from XLSX template file')
             ->addArgument('source_file', InputArgument::REQUIRED, 'Source file path')
             ->addArgument('output_directory', InputArgument::REQUIRED, 'Output directory')
         ;
@@ -120,6 +120,7 @@ class GenerateTemplateCommand extends Command
             $rawDescriptions,
             function (array $descriptions, array $rawDescription) {
                 $descriptions[$rawDescription['family']]['en_US'] = $rawDescription['description-en_US'];
+
                 return $descriptions;
             },
             [],

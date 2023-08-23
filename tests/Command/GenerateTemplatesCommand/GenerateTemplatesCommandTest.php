@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Akeneo\Test\TemplateGenerator\Command\GenerateTemplateCommand;
+namespace Akeneo\Test\TemplateGenerator\Command\GenerateTemplatesCommand;
 
-use Akeneo\TemplateGenerator\Command\GenerateTemplateCommand;
+use Akeneo\TemplateGenerator\Command\GenerateTemplatesCommand;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Tester\CommandTester;
 
-class GenerateTemplateCommandTest extends TestCase
+class GenerateTemplatesCommandTest extends TestCase
 {
     private const SOURCE_FILE_PATH = __DIR__ . '/source_file.xlsx';
     private const OUTPUT_DIRECTORY = __DIR__ . '/actual_output';
@@ -28,7 +28,7 @@ class GenerateTemplateCommandTest extends TestCase
 
     public function test_it_generates_template_files(): void
     {
-        $sut = new CommandTester(new GenerateTemplateCommand());
+        $sut = new CommandTester(new GenerateTemplatesCommand());
 
         $sut->execute(['source_file' => self::SOURCE_FILE_PATH, 'output_directory' => self::OUTPUT_DIRECTORY]);
 
