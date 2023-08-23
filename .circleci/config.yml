@@ -1,0 +1,116 @@
+version: 2.1
+
+jobs:
+  install:
+    machine:
+      image: ubuntu-2204:2023.07.2
+    steps:
+      - checkout
+      - run:
+          name: Set up file permissions
+          command: mkdir ~/.composer && sudo chown -R 1000:1000 ../project ~/.cache ~/.composer
+      - run:
+          name: Install dependencies
+          command: make install
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project
+
+  test_generator:
+    machine:
+      image: ubuntu-2204:2023.07.2
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          name: Run static analysis
+          command: make static
+      - run:
+          name: Set up file permissions
+          command: sudo chown -R 1000:1000 ../project
+      - run:
+          name: Run cs analysis
+          command: make cs
+      - run:
+          name: Run tests
+          command: make tests
+
+  minify_templates:
+    machine:
+      image: ubuntu-2204:2023.07.2
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          name: Set up file permissions
+          command: sudo chown -R 1000:1000 ../project
+      - run:
+          name: Minify templates
+          command: make dist
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project
+
+  commit_and_push:
+    machine:
+      image: ubuntu-2204:2023.07.2
+    steps:
+      - attach_workspace:
+          at: ~/
+      - add_ssh_keys:
+          fingerprints:
+            - 97:a4:35:1c:49:e9:55:8f:ec:77:e2:e0:1c:2d:75:a7
+      - run:
+          name: Set up git
+          command: |
+            ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+            export GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_97a4351c49e9558fec77e2e01c2d75a7 -o UserKnownHostsFile=~/.ssh/known_hosts -o IdentitiesOnly=Yes'
+            git config --global user.email "family-templates@akeneo.com"
+            git config --global --add safe.directory $PWD
+      - run:
+          name: Commit and push changes
+          command: |
+            git diff --quiet && git diff --staged --quiet || git commit -am "Update minified templates"
+            git push --set-upstream origin HEAD
+
+  go_to_merguez:
+    docker:
+      - image: alpine
+    steps:
+      - run:
+          name: Go to merguez
+          command: echo "CI is green! Let's merguez!"
+
+workflows:
+  pull_request:
+    jobs:
+      - ready_to_test?:
+          type: approval
+      - install:
+          filters:
+            branches:
+              ignore:
+                - master
+          requires:
+            - ready_to_test?
+      - test_generator:
+          requires:
+            - install
+      - go_to_merguez:
+          requires:
+            - test_generator
+
+  minify_templates:
+    jobs:
+      - install:
+          filters:
+            branches:
+              only: master
+      - minify_templates:
+          requires:
+            - install
+      - commit_and_push:
+          requires:
+            - minify_templates
