@@ -32,10 +32,10 @@ class GenerateTemplateCommandTest extends TestCase
 
         $sut->execute(['source_file' => self::SOURCE_FILE_PATH, 'output_directory' => self::OUTPUT_DIRECTORY]);
 
-        $this->assertDirectoryEquals(self::OUTPUT_DIRECTORY, self::EXPECTED_OUTPUT_DIRECTORY);
+        $this->assertDirectoryEquals(self::EXPECTED_OUTPUT_DIRECTORY, self::OUTPUT_DIRECTORY);
     }
 
-    private function assertDirectoryEquals(string $actualDirectoryPath, string $expectedDirectoryPath): void
+    private function assertDirectoryEquals(string $expectedDirectoryPath, string $actualDirectoryPath): void
     {
         $this->assertDirectoryExists($actualDirectoryPath);
 

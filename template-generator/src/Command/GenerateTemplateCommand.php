@@ -100,17 +100,33 @@ class GenerateTemplateCommand extends Command
 
     private function readFamilyTemplates(ReaderInterface $reader, array $industries): array
     {
+        $familyTemplateDescriptions = $this->readFamilyTemplateDescriptions($reader);
+
         $familyTemplates = [];
         foreach ($industries as $industry) {
             foreach ($industry['family_templates'] as $familyTemplateCode) {
-                $familyTemplates[$familyTemplateCode] = $this->readFamilyTemplate($reader, $familyTemplateCode);
+                $familyTemplates[$familyTemplateCode] = $this->readFamilyTemplate($reader, $familyTemplateCode, $familyTemplateDescriptions);
             }
         }
 
         return $familyTemplates;
     }
 
-    private function readFamilyTemplate(ReaderInterface $reader, string $familyTemplateCode): array
+    private function readFamilyTemplateDescriptions(ReaderInterface $reader): array
+    {
+        $rawDescriptions = $this->getSheetContent($reader, 'families_descriptions');
+
+        return array_reduce(
+            $rawDescriptions,
+            function (array $descriptions, array $rawDescription) {
+                $descriptions[$rawDescription['family']]['en_US'] = $rawDescription['description-en_US'];
+                return $descriptions;
+            },
+            [],
+        );
+    }
+
+    private function readFamilyTemplate(ReaderInterface $reader, string $familyTemplateCode, array $descriptions): array
     {
         $familyTemplate = $this->getSheetContent($reader, $familyTemplateCode);
 
@@ -136,26 +152,8 @@ class GenerateTemplateCommand extends Command
 
         return [
             'code' => $familyTemplateCode,
-            'description' => $this->readFamilyTemplateDescription($reader, $familyTemplateCode),
+            'description' => $descriptions[$familyTemplateCode] ?? [],
             'attributes' => $attributes,
-        ];
-    }
-
-    private function readFamilyTemplateDescription(ReaderInterface $reader, string $familyTemplateCode): array
-    {
-        $rawDescriptions = $this->getSheetContent($reader, 'families_descriptions');
-
-        $rawDescriptions = array_filter(
-            $rawDescriptions,
-            static fn (array $description) => $description['family'] === $familyTemplateCode,
-        );
-
-        if (0 === count($rawDescriptions)) {
-            return [];
-        }
-
-        return [
-            'en_US' => current($rawDescriptions)['description-en_US'],
         ];
     }
 
@@ -176,7 +174,7 @@ class GenerateTemplateCommand extends Command
 
     private function writeIndustriesJson(string $outputDirectory, array $industries): void
     {
-        $industriesJsonFilePath = $this->getFilePath($outputDirectory, 'industries');
+        $industriesJsonFilePath = sprintf('%s/%s.json', $outputDirectory, 'industries');
         $this->writeJsonFile($industriesJsonFilePath, $industries);
     }
 
@@ -185,20 +183,15 @@ class GenerateTemplateCommand extends Command
         $familiesOutputDirectory = sprintf('%s/%s', $outputDirectory, 'families');
         $this->ensureDirectoryExists($familiesOutputDirectory);
         foreach ($familyTemplates as $code => $familyTemplate) {
-            $familyJsonFilePath = $this->getFilePath($familiesOutputDirectory, $code);
+            $familyJsonFilePath = sprintf('%s/%s.json', $familiesOutputDirectory, $code);
             $this->writeJsonFile($familyJsonFilePath, $familyTemplate);
         }
     }
 
     private function writeAttributeOptionsJson(string $outputDirectory, array $attributeOptions): void
     {
-        $industriesJsonFilePath = $this->getFilePath($outputDirectory, 'attribute_options');
+        $industriesJsonFilePath = sprintf('%s/%s.json', $outputDirectory, 'attribute_options');
         $this->writeJsonFile($industriesJsonFilePath, $attributeOptions);
-    }
-
-    private function getFilePath(string $outputDirectory, string $fileNameWithoutExtension): string
-    {
-        return sprintf('%s/%s.json', $outputDirectory, $fileNameWithoutExtension);
     }
 
     private function writeJsonFile(string $filePath, array $data): void
