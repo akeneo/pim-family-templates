@@ -1,0 +1,130 @@
+{
+  "code": "videogames",
+  "description": {
+    "en_US": "Embark on epic adventures with our 'Videogames' family template - an immersive collection of pre-built attributes to seamlessly manage your gaming essentials, unlocking a world of entertainment and excitement."
+  },
+  "attributes": [
+    {
+      "code": "EAN",
+      "labels": {
+        "en_US": "Main Identifier"
+      },
+      "type": "pim_catalog_identifier",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": true
+    },
+    {
+      "code": "product_title",
+      "labels": {
+        "en_US": "Product title"
+      },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "brand",
+      "labels": {
+        "en_US": "Brand"
+      },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "main_image",
+      "labels": {
+        "en_US": "Main image"
+      },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "memory_card_slot",
+      "labels": {
+        "en_US": "Memory card slot"
+      },
+      "type": "pim_catalog_boolean",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "storage_capacity",
+      "labels": {
+        "en_US": "Storage capacity"
+      },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "metric_family": "binary",
+      "unique": false
+    },
+    {
+      "code": "language",
+      "labels": {
+        "en_US": "Language"
+      },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "display_type",
+      "labels": {
+        "en_US": "Display type"
+      },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "platform",
+      "labels": {
+        "en_US": "Platform"
+      },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "video_game_genre",
+      "labels": {
+        "en_US": "Video game genre"
+      },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "PEGI_rating",
+      "labels": {
+        "en_US": "PEGI rating"
+      },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    }
+  ]
+}
