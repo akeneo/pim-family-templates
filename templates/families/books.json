@@ -1,0 +1,220 @@
+{
+    "code": "books",
+    "description": {
+        "en_US": "Dive into a world of endless knowledge with our 'Books' family template - effortlessly manage your collection of treasured hardcovers and paperbacks, fostering a journey of inspiration and discovery."
+    },
+    "attributes": [
+        {
+            "code": "EAN",
+            "labels": {
+                "en_US": "Main Identifier"
+            },
+            "type": "pim_catalog_identifier",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": true
+        },
+        {
+            "code": "price",
+            "labels": {
+                "en_US": "Price"
+            },
+            "type": "pim_catalog_price_collection",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "product_title",
+            "labels": {
+                "en_US": "Product title"
+            },
+            "type": "pim_catalog_text",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "short_description",
+            "labels": {
+                "en_US": "Short description"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "long_description",
+            "labels": {
+                "en_US": "Long description"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "brand",
+            "labels": {
+                "en_US": "Brand"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "main_image",
+            "labels": {
+                "en_US": "Main image"
+            },
+            "type": "pim_catalog_image",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "detailed_image",
+            "labels": {
+                "en_US": "Detailed image"
+            },
+            "type": "pim_catalog_image",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "atmosphere_image",
+            "labels": {
+                "en_US": "Atmosphere image"
+            },
+            "type": "pim_catalog_image",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "isbn",
+            "labels": {
+                "en_US": "ISBN"
+            },
+            "type": "pim_catalog_number",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": true
+        },
+        {
+            "code": "min_age",
+            "labels": {
+                "en_US": "Min Age"
+            },
+            "type": "pim_catalog_number",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "litterature_genre",
+            "labels": {
+                "en_US": "Litterature Genre"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "number_of_pages",
+            "labels": {
+                "en_US": "Number of pages"
+            },
+            "type": "pim_catalog_number",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "author",
+            "labels": {
+                "en_US": "Author"
+            },
+            "type": "pim_catalog_text",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "publisher",
+            "labels": {
+                "en_US": "Publisher"
+            },
+            "type": "pim_catalog_text",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "licence",
+            "labels": {
+                "en_US": "Licence"
+            },
+            "type": "pim_catalog_text",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "weight",
+            "labels": {
+                "en_US": "Weight"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "Weight"
+        },
+        {
+            "code": "height",
+            "labels": {
+                "en_US": "Height"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "Length"
+        },
+        {
+            "code": "length",
+            "labels": {
+                "en_US": "Length"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "Length"
+        }
+    ]
+}

@@ -1,0 +1,207 @@
+{
+    "code": "soft_drinks",
+    "description": {
+        "en_US": "Quench your thirst with our 'Soft Drinks' family template - a refreshing selection of pre-built attributes to effortlessly manage your favorite beverages, cooling you off with every sip."
+    },
+    "attributes": [
+        {
+            "code": "EAN",
+            "labels": {
+                "en_US": "Main Identifier"
+            },
+            "type": "pim_catalog_identifier",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": true
+        },
+        {
+            "code": "price",
+            "labels": {
+                "en_US": "Price"
+            },
+            "type": "pim_catalog_price_collection",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "product_title",
+            "labels": {
+                "en_US": "Product title"
+            },
+            "type": "pim_catalog_text",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "short_description",
+            "labels": {
+                "en_US": "Short description"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "long_description",
+            "labels": {
+                "en_US": "Long description"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "brand",
+            "labels": {
+                "en_US": "Brand"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "main_image",
+            "labels": {
+                "en_US": "Main image"
+            },
+            "type": "pim_catalog_image",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "detailed_image",
+            "labels": {
+                "en_US": "Detailed image"
+            },
+            "type": "pim_catalog_image",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "atmosphere_image",
+            "labels": {
+                "en_US": "Atmosphere image"
+            },
+            "type": "pim_catalog_image",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "allergens",
+            "labels": {
+                "en_US": "Allergens"
+            },
+            "type": "pim_catalog_multiselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "organic",
+            "labels": {
+                "en_US": "Organic"
+            },
+            "type": "pim_catalog_boolean",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "non_GMO",
+            "labels": {
+                "en_US": "Non-GMO"
+            },
+            "type": "pim_catalog_boolean",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "sugar_free",
+            "labels": {
+                "en_US": "Sugar free"
+            },
+            "type": "pim_catalog_boolean",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "tasting_notes",
+            "labels": {
+                "en_US": "Tasting Notes"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "capacity",
+            "labels": {
+                "en_US": "Capacity"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "Volume"
+        },
+        {
+            "code": "ingredients",
+            "labels": {
+                "en_US": "Ingredients"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "conservation_instructions",
+            "labels": {
+                "en_US": "Conservation instructions"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "nutritional_values",
+            "labels": {
+                "en_US": "Nutritional values"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        }
+    ]
+}

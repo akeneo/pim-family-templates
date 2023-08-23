@@ -1,0 +1,244 @@
+{
+    "code": "videogames",
+    "description": {
+        "en_US": "Embark on epic adventures with our 'Videogames' family template - an immersive collection of pre-built attributes to seamlessly manage your gaming essentials, unlocking a world of entertainment and excitement."
+    },
+    "attributes": [
+        {
+            "code": "EAN",
+            "labels": {
+                "en_US": "Main Identifier"
+            },
+            "type": "pim_catalog_identifier",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": true
+        },
+        {
+            "code": "price",
+            "labels": {
+                "en_US": "Price"
+            },
+            "type": "pim_catalog_price_collection",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "product_title",
+            "labels": {
+                "en_US": "Product title"
+            },
+            "type": "pim_catalog_text",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "short_description",
+            "labels": {
+                "en_US": "Short description"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "long_description",
+            "labels": {
+                "en_US": "Long description"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "brand",
+            "labels": {
+                "en_US": "Brand"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "main_image",
+            "labels": {
+                "en_US": "Main image"
+            },
+            "type": "pim_catalog_image",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "detailed_image",
+            "labels": {
+                "en_US": "Detailed image"
+            },
+            "type": "pim_catalog_image",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "atmosphere_image",
+            "labels": {
+                "en_US": "Atmosphere image"
+            },
+            "type": "pim_catalog_image",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "depth",
+            "labels": {
+                "en_US": "Depth"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "length"
+        },
+        {
+            "code": "height",
+            "labels": {
+                "en_US": "Height"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "length"
+        },
+        {
+            "code": "width",
+            "labels": {
+                "en_US": "Width"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "length"
+        },
+        {
+            "code": "weight",
+            "labels": {
+                "en_US": "Weight"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "weight"
+        },
+        {
+            "code": "memory_card_slot",
+            "labels": {
+                "en_US": "Memory card slot"
+            },
+            "type": "pim_catalog_boolean",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "storage_capacity",
+            "labels": {
+                "en_US": "Storage capacity"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "binary"
+        },
+        {
+            "code": "language",
+            "labels": {
+                "en_US": "Language"
+            },
+            "type": "pim_catalog_multiselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "display_type",
+            "labels": {
+                "en_US": "Display type"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "platform",
+            "labels": {
+                "en_US": "Platform"
+            },
+            "type": "pim_catalog_multiselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "video_game_genre",
+            "labels": {
+                "en_US": "Video game genre"
+            },
+            "type": "pim_catalog_multiselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "video_game_players",
+            "labels": {
+                "en_US": "Video game players"
+            },
+            "type": "pim_catalog_multiselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "PEGI_rating",
+            "labels": {
+                "en_US": "PEGI rating"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        }
+    ]
+}

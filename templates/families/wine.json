@@ -1,0 +1,230 @@
+{
+    "code": "wine",
+    "description": {
+        "en_US": "Uncork the magic with our 'Wine' family template - a curated selection of pre-built attributes to manage your favorite vintages, transforming any moment into a celebration."
+    },
+    "attributes": [
+        {
+            "code": "EAN",
+            "labels": {
+                "en_US": "Main Identifier"
+            },
+            "type": "pim_catalog_identifier",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "price",
+            "labels": {
+                "en_US": "Price"
+            },
+            "type": "pim_catalog_price_collection",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "product_title",
+            "labels": {
+                "en_US": "Product title"
+            },
+            "type": "pim_catalog_text",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "short_description",
+            "labels": {
+                "en_US": "Short description"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "long_description",
+            "labels": {
+                "en_US": "Long description"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "brand",
+            "labels": {
+                "en_US": "Brand"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "main_image",
+            "labels": {
+                "en_US": "Main image"
+            },
+            "type": "pim_catalog_image",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "detailed_image",
+            "labels": {
+                "en_US": "Detailed image"
+            },
+            "type": "pim_catalog_image",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "atmosphere_image",
+            "labels": {
+                "en_US": "Atmosphere image"
+            },
+            "type": "pim_catalog_image",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "allergens",
+            "labels": {
+                "en_US": "Allergens"
+            },
+            "type": "pim_catalog_multiselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "organic",
+            "labels": {
+                "en_US": "Organic"
+            },
+            "type": "pim_catalog_boolean",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "non_gmo",
+            "labels": {
+                "en_US": "Non-GMO"
+            },
+            "type": "pim_catalog_boolean",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "alcohol_percentage",
+            "labels": {
+                "en_US": "Alcohol percentage"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "Volume"
+        },
+        {
+            "code": "wine_type",
+            "labels": {
+                "en_US": "Type of Wine"
+            },
+            "type": "pim_catalog_multiselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "tasting_note",
+            "labels": {
+                "en_US": "Tasting Note"
+            },
+            "type": "pim_catalog_multiselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "wine",
+            "labels": {
+                "en_US": "Grape variety"
+            },
+            "type": "pim_catalog_multiselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "capacity",
+            "labels": {
+                "en_US": "Volume"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "Volume"
+        },
+        {
+            "code": "ingredients",
+            "labels": {
+                "en_US": "Ingredients"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "conservation_instructions",
+            "labels": {
+                "en_US": "Conservation instructions"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "nutritional_values",
+            "labels": {
+                "en_US": "Nutritional values"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        }
+    ]
+}

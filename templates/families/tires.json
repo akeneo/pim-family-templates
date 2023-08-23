@@ -1,0 +1,200 @@
+{
+    "code": "tires",
+    "description": {
+        "en_US": "Hit the road with confidence using our 'Tires' family template - a rugged assortment of pre-built attributes to manage your automotive essentials, ensuring smooth and safe travels."
+    },
+    "attributes": [
+        {
+            "code": "EAN",
+            "labels": {
+                "en_US": "Main Identifier"
+            },
+            "type": "pim_catalog_identifier",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": true
+        },
+        {
+            "code": "price",
+            "labels": {
+                "en_US": "Price"
+            },
+            "type": "pim_catalog_price_collection",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "product_title",
+            "labels": {
+                "en_US": "Product title"
+            },
+            "type": "pim_catalog_text",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "short_description",
+            "labels": {
+                "en_US": "Short description"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "long_description",
+            "labels": {
+                "en_US": "Long description"
+            },
+            "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "brand",
+            "labels": {
+                "en_US": "Brand"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "main_image",
+            "labels": {
+                "en_US": "Main image"
+            },
+            "type": "pim_catalog_image",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "detailed_image",
+            "labels": {
+                "en_US": "Detailed image"
+            },
+            "type": "pim_catalog_image",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "atmosphere_image",
+            "labels": {
+                "en_US": "Atmosphere image"
+            },
+            "type": "pim_catalog_image",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "width",
+            "labels": {
+                "en_US": "Width"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "Length"
+        },
+        {
+            "code": "height",
+            "labels": {
+                "en_US": "Height"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "Length"
+        },
+        {
+            "code": "tire_load",
+            "labels": {
+                "en_US": "Tire load"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "Weight"
+        },
+        {
+            "code": "speed",
+            "labels": {
+                "en_US": "Speed"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "Speed"
+        },
+        {
+            "code": "vehicle_type",
+            "labels": {
+                "en_US": "Vehicle type"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "season",
+            "labels": {
+                "en_US": "Season"
+            },
+            "type": "pim_catalog_multiselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "noise",
+            "labels": {
+                "en_US": "Noise"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "Decibel"
+        },
+        {
+            "code": "fuel_efficiency",
+            "labels": {
+                "en_US": "Fuel efficiency"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        }
+    ]
+}
