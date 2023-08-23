@@ -1,0 +1,21 @@
+{
+  "industry_consumer_electronics": {
+    "code": "industry_consumer_electronics",
+    "labels": {
+      "en_US": "Consumer electronics"
+    },
+    "family_templates": [
+      "videogames",
+      "headphones"
+    ]
+  },
+  "industry_sporting_goods_and_apparel": {
+    "code": "industry_sporting_goods_and_apparel",
+    "labels": {
+      "en_US": "Sporting goods & apparel"
+    },
+    "family_templates": [
+      "jerseys"
+    ]
+  }
+}
