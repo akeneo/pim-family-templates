@@ -1,0 +1,359 @@
+{
+  "brand1": {
+    "code": "brand1",
+    "labels": {
+      "en_US": "Zaro"
+    },
+    "attribute": "brand"
+  },
+  "brand2": {
+    "code": "brand2",
+    "labels": {
+      "en_US": "Zigolf"
+    },
+    "attribute": "brand"
+  },
+  "brand3": {
+    "code": "brand3",
+    "labels": {
+      "en_US": "Zaro Premium"
+    },
+    "attribute": "brand"
+  },
+  "brand4": {
+    "code": "brand4",
+    "labels": {
+      "en_US": "Zaro Kids"
+    },
+    "attribute": "brand"
+  },
+  "brand5": {
+    "code": "brand5",
+    "labels": {
+      "en_US": "Zaro Sport"
+    },
+    "attribute": "brand"
+  },
+  "color1": {
+    "code": "color1",
+    "labels": {
+      "en_US": "Blue"
+    },
+    "attribute": "color"
+  },
+  "color2": {
+    "code": "color2",
+    "labels": {
+      "en_US": "Black"
+    },
+    "attribute": "color"
+  },
+  "color3": {
+    "code": "color3",
+    "labels": {
+      "en_US": "Pink"
+    },
+    "attribute": "color"
+  },
+  "color4": {
+    "code": "color4",
+    "labels": {
+      "en_US": "Grey"
+    },
+    "attribute": "color"
+  },
+  "color5": {
+    "code": "color5",
+    "labels": {
+      "en_US": "Yellow"
+    },
+    "attribute": "color"
+  },
+  "fabric1": {
+    "code": "fabric1",
+    "labels": {
+      "en_US": "Cotton"
+    },
+    "attribute": "fabric"
+  },
+  "fabric2": {
+    "code": "fabric2",
+    "labels": {
+      "en_US": "Velvet"
+    },
+    "attribute": "fabric"
+  },
+  "fabric3": {
+    "code": "fabric3",
+    "labels": {
+      "en_US": "Silk"
+    },
+    "attribute": "fabric"
+  },
+  "fabric4": {
+    "code": "fabric4",
+    "labels": {
+      "en_US": "Leather"
+    },
+    "attribute": "fabric"
+  },
+  "fabric5": {
+    "code": "fabric5",
+    "labels": {
+      "en_US": "Vegan leather"
+    },
+    "attribute": "fabric"
+  },
+  "language1": {
+    "code": "language1",
+    "labels": {
+      "en_US": "English"
+    },
+    "attribute": "language"
+  },
+  "language2": {
+    "code": "language2",
+    "labels": {
+      "en_US": "Spanish"
+    },
+    "attribute": "language"
+  },
+  "language3": {
+    "code": "language3",
+    "labels": {
+      "en_US": "French"
+    },
+    "attribute": "language"
+  },
+  "language4": {
+    "code": "language4",
+    "labels": {
+      "en_US": "German"
+    },
+    "attribute": "language"
+  },
+  "language5": {
+    "code": "language5",
+    "labels": {
+      "en_US": "Japanese"
+    },
+    "attribute": "language"
+  },
+  "display_type1": {
+    "code": "display_type1",
+    "labels": {
+      "en_US": "Retina"
+    },
+    "attribute": "display_type"
+  },
+  "display_type2": {
+    "code": "display_type2",
+    "labels": {
+      "en_US": "LCD"
+    },
+    "attribute": "display_type"
+  },
+  "display_type3": {
+    "code": "display_type3",
+    "labels": {
+      "en_US": "HD"
+    },
+    "attribute": "display_type"
+  },
+  "display_type4": {
+    "code": "display_type4",
+    "labels": {
+      "en_US": "LED"
+    },
+    "attribute": "display_type"
+  },
+  "display_type5": {
+    "code": "display_type5",
+    "labels": {
+      "en_US": "AMOLED"
+    },
+    "attribute": "display_type"
+  },
+  "platform1": {
+    "code": "platform1",
+    "labels": {
+      "en_US": "Nintendo Switch"
+    },
+    "attribute": "platform"
+  },
+  "platform2": {
+    "code": "platform2",
+    "labels": {
+      "en_US": "Nintendo Wii"
+    },
+    "attribute": "platform"
+  },
+  "platform3": {
+    "code": "platform3",
+    "labels": {
+      "en_US": "PC"
+    },
+    "attribute": "platform"
+  },
+  "platform4": {
+    "code": "platform4",
+    "labels": {
+      "en_US": "Mac"
+    },
+    "attribute": "platform"
+  },
+  "platform5": {
+    "code": "platform5",
+    "labels": {
+      "en_US": "Playstation 5"
+    },
+    "attribute": "platform"
+  },
+  "video_game_genre1": {
+    "code": "video_game_genre1",
+    "labels": {
+      "en_US": "MMO"
+    },
+    "attribute": "video_game_genre"
+  },
+  "video_game_genre2": {
+    "code": "video_game_genre2",
+    "labels": {
+      "en_US": "MMORPG"
+    },
+    "attribute": "video_game_genre"
+  },
+  "video_game_genre3": {
+    "code": "video_game_genre3",
+    "labels": {
+      "en_US": "RPG"
+    },
+    "attribute": "video_game_genre"
+  },
+  "video_game_genre4": {
+    "code": "video_game_genre4",
+    "labels": {
+      "en_US": "Sports"
+    },
+    "attribute": "video_game_genre"
+  },
+  "video_game_genre5": {
+    "code": "video_game_genre5",
+    "labels": {
+      "en_US": "Action"
+    },
+    "attribute": "video_game_genre"
+  },
+  "headphone_type1": {
+    "code": "headphone_type1",
+    "labels": {
+      "en_US": "Over-Ear"
+    },
+    "attribute": "headphone_type"
+  },
+  "headphone_type2": {
+    "code": "headphone_type2",
+    "labels": {
+      "en_US": "In-Ear"
+    },
+    "attribute": "headphone_type"
+  },
+  "headphone_type3": {
+    "code": "headphone_type3",
+    "labels": {
+      "en_US": "Earbuds"
+    },
+    "attribute": "headphone_type"
+  },
+  "headphone_type4": {
+    "code": "headphone_type4",
+    "labels": {
+      "en_US": "Closed-Back"
+    },
+    "attribute": "headphone_type"
+  },
+  "headphone_type5": {
+    "code": "headphone_type5",
+    "labels": {
+      "en_US": "Open-Back"
+    },
+    "attribute": "headphone_type"
+  },
+  "PEGI_rating1": {
+    "code": "PEGI_rating1",
+    "labels": {
+      "en_US": "PEGI 3"
+    },
+    "attribute": "PEGI_rating"
+  },
+  "PEGI_rating2": {
+    "code": "PEGI_rating2",
+    "labels": {
+      "en_US": "PEGI 12"
+    },
+    "attribute": "PEGI_rating"
+  },
+  "PEGI_rating3": {
+    "code": "PEGI_rating3",
+    "labels": {
+      "en_US": "PEGI 16"
+    },
+    "attribute": "PEGI_rating"
+  },
+  "PEGI_rating4": {
+    "code": "PEGI_rating4",
+    "labels": {
+      "en_US": "PEGI 18"
+    },
+    "attribute": "PEGI_rating"
+  },
+  "sport_type1": {
+    "code": "sport_type1",
+    "labels": {
+      "en_US": "Basketball"
+    },
+    "attribute": "sport_type"
+  },
+  "sport_type2": {
+    "code": "sport_type2",
+    "labels": {
+      "en_US": "Football"
+    },
+    "attribute": "sport_type"
+  },
+  "sport_type3": {
+    "code": "sport_type3",
+    "labels": {
+      "en_US": "Handball"
+    },
+    "attribute": "sport_type"
+  },
+  "cut1": {
+    "code": "cut1",
+    "labels": {
+      "en_US": "Slim"
+    },
+    "attribute": "cut"
+  },
+  "cut2": {
+    "code": "cut2",
+    "labels": {
+      "en_US": "Regular"
+    },
+    "attribute": "cut"
+  },
+  "cut3": {
+    "code": "cut3",
+    "labels": {
+      "en_US": "Skinny"
+    },
+    "attribute": "cut"
+  },
+  "cut4": {
+    "code": "cut4",
+    "labels": {
+      "en_US": "Oversized"
+    },
+    "attribute": "cut"
+  }
+}

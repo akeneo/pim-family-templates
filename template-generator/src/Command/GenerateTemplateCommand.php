@@ -21,7 +21,7 @@ class GenerateTemplateCommand extends Command
         $this
             ->setDescription('Generate JSON template file from XLSX template file')
             ->addArgument('source_file', InputArgument::REQUIRED, 'Source file path')
-            ->addArgument('output_directory', InputArgument::REQUIRED, 'Output file path')
+            ->addArgument('output_directory', InputArgument::REQUIRED, 'Output directory')
         ;
     }
 

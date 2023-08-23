@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Akeneo\Test\TemplateGenerator\Command;
+namespace Akeneo\Test\TemplateGenerator\Command\GenerateTemplateCommand;
 
 use Akeneo\TemplateGenerator\Command\GenerateTemplateCommand;
 use PHPUnit\Framework\TestCase;

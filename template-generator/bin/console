@@ -5,10 +5,12 @@
 require __DIR__.'/../vendor/autoload.php';
 
 use Akeneo\TemplateGenerator\Command\GenerateTemplateCommand;
+use Akeneo\TemplateGenerator\Command\MinifyTemplateCommand;
 use Symfony\Component\Console\Application;
 
 $application = new Application();
 
 $application->add(new GenerateTemplateCommand());
+$application->add(new MinifyTemplateCommand());
 
 $application->run();
