@@ -1,0 +1,87 @@
+version: 2.1
+
+jobs:
+  install:
+    machine:
+      image: ubuntu-2204:2023.07.2
+    steps:
+      - checkout
+      - run:
+          name: Set up file permissions
+          command: mkdir ~/.composer && sudo chown -R 1000:1000 ../project ~/.cache ~/.composer
+      - run:
+          name: Install dependencies
+          command: make install
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project
+
+  test_generator:
+    machine:
+      image: ubuntu-2204:2023.07.2
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          name: Run static analysis
+          command: make static
+      - run:
+          name: Set up file permissions
+          command: sudo chown -R 1000:1000 ../project
+      - run:
+          name: Run cs analysis
+          command: make cs
+      - run:
+          name: Run tests
+          command: make tests
+
+  minify_templates:
+    machine:
+      image: ubuntu-2204:2023.07.2
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          name: Minify templates
+          command: make dist
+      - run:
+          name: Commit and push changes
+          command: git commit -am "Update minified templates" && git push
+
+  go_to_merguez:
+    docker:
+      - image: alpine
+    steps:
+      - run:
+          name: Go to merguez
+          command: echo "CI is green! Let's merguez!"
+
+workflows:
+  pull_request:
+    jobs:
+      - ready_to_test?:
+          type: approval
+      - install:
+          filters:
+            branches:
+              ignore:
+                - master
+          requires:
+            - ready_to_test?
+      - test_generator:
+          requires:
+            - install
+      - go_to_merguez:
+          requires:
+            - test_generator
+
+  minify_templates:
+    jobs:
+      - install:
+          filters:
+            branches:
+              only: master
+      - minify_templates:
+          requires:
+            - install
