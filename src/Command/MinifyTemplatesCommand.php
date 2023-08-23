@@ -9,21 +9,21 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class MinifyTemplateCommand extends Command
+class MinifyTemplatesCommand extends Command
 {
-    protected static $defaultName = 'template-generator:template:minify';
+    protected static $defaultName = 'templates:minify';
 
     protected function configure(): void
     {
         $this
             ->setDescription('Minify JSON template files')
-            ->addArgument('template_directory', InputArgument::REQUIRED, 'Templates directory to minify')
+            ->addArgument('templates_directory', InputArgument::REQUIRED, 'Template files directory to minify')
             ->addArgument('output_file', InputArgument::REQUIRED, 'Output file path');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $templatesDirectory = $input->getArgument('template_directory');
+        $templatesDirectory = $input->getArgument('templates_directory');
 
         $industries = $this->readIndustries($templatesDirectory);
         $familyTemplates = $this->readFamilyTemplates($templatesDirectory);
