@@ -4,8 +4,8 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
-use Akeneo\TemplateGenerator\Command\GenerateTemplatesCommand;
-use Akeneo\TemplateGenerator\Command\MinifyTemplatesCommand;
+use Akeneo\PimFamilyTemplates\Command\GenerateTemplatesCommand;
+use Akeneo\PimFamilyTemplates\Command\MinifyTemplatesCommand;
 use Symfony\Component\Console\Application;
 
 $application = new Application();

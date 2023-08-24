@@ -1,5 +1,5 @@
 {
-    "name": "akeneo/template-generator",
+    "name": "akeneo/pim-family-templates",
     "type": "project",
     "require": {
         "php": "8.1.*",
@@ -8,12 +8,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Akeneo\\TemplateGenerator\\": "src/"
+            "Akeneo\\PimFamilyTemplates\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Akeneo\\Test\\TemplateGenerator\\": "tests/"
+            "Akeneo\\Test\\PimFamilyTemplates\\": "tests/"
         }
     },
     "config": {

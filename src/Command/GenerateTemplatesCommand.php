@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Akeneo\TemplateGenerator\Command;
+namespace Akeneo\PimFamilyTemplates\Command;
 
 use OpenSpout\Reader\ReaderInterface;
 use OpenSpout\Reader\SheetInterface;

@@ -3,13 +3,13 @@ services:
     image: akeneo/pim-php-dev:8.1
     environment:
       COMPOSER_HOME: /var/www/.composer
-      PHP_IDE_CONFIG: serverName=template-generator
+      PHP_IDE_CONFIG: serverName=pim-family-templates
       XDEBUG_CONFIG: client_host=172.17.0.1
       XDEBUG_MODE: ${XDEBUG_MODE:-off}
     volumes:
-      - ./:/srv/template-generator
+      - ./:/srv/pim-family-templates
       - ${HOST_COMPOSER_HOME:-~/.composer}:/var/www/.composer
-    working_dir: /srv/template-generator
+    working_dir: /srv/pim-family-templates
     command: php
     user: www-data
 
