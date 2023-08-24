@@ -2,7 +2,7 @@
     "industry_apparel_and_fashion": {
         "code": "industry_apparel_and_fashion",
         "labels": {
-            "en_US": "Apparel & fashion"
+            "en_US": "Apparel & fashion TEST"
         },
         "family_templates": [
             "women_tops",

@@ -43,11 +43,37 @@ jobs:
       - attach_workspace:
           at: ~/
       - run:
+          name: Set up file permissions
+          command: sudo chown -R 1000:1000 ../project
+      - run:
           name: Minify templates
           command: make dist
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project
+
+  commit_and_push:
+    machine:
+      image: ubuntu-2204:2023.07.2
+    steps:
+      - attach_workspace:
+          at: ~/
+      - add_ssh_keys:
+          fingerprints:
+            - 97:a4:35:1c:49:e9:55:8f:ec:77:e2:e0:1c:2d:75:a7
+      - run:
+          name: Set up git
+          command: |
+            ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+            export GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_97a4351c49e9558fec77e2e01c2d75a7 -o UserKnownHostsFile=~/.ssh/known_hosts -o IdentitiesOnly=Yes'
+            git config --global user.email "family-templates@akeneo.com"
+            git config --global --add safe.directory $PWD
       - run:
           name: Commit and push changes
-          command: git commit -am "Update minified templates" && git push
+          command: |
+            git diff --quiet && git diff --staged --quiet || git commit -am "Update minified templates"
+            git push --set-upstream origin HEAD
 
   go_to_merguez:
     docker:
@@ -81,7 +107,10 @@ workflows:
       - install:
           filters:
             branches:
-              only: master
+              only: RAB-1494-commit-push
       - minify_templates:
           requires:
             - install
+      - commit_and_push:
+          requires:
+            - minify_templates

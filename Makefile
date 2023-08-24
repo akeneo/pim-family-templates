@@ -26,4 +26,6 @@ templates:
 
 .PHONY: dist
 dist:
-	$(DOCKER) rm -rf dist && mkdir dist && bin/console templates:minify templates dist/minified.json
+	$(DOCKER) rm -rf dist
+	$(DOCKER) mkdir dist
+	$(DOCKER) bin/console templates:minify templates dist/minified.json
