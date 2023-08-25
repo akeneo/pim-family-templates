@@ -4,7 +4,7 @@
       "en_US": "An industry"
     },
     "family_templates": [
-      "an_industry"
+      "a_family"
     ]
   },
   "empty_code_industry": {
@@ -13,7 +13,7 @@
       "en_US": "An industry"
     },
     "family_templates": [
-      "oils_and_fluids"
+      "a_family"
     ]
   },
   "mismatching_code_industry": {
@@ -22,20 +22,20 @@
       "en_US": "An industry"
     },
     "family_templates": [
-      "oils_and_fluids"
+      "a_family"
     ]
   },
   "missing_labels_industry": {
     "code": "missing_labels_industry",
     "family_templates": [
-      "oils_and_fluids"
+      "a_family"
     ]
   },
   "missing_en_US_label_industry": {
     "code": "missing_en_US_label_industry",
     "labels": {},
     "family_templates": [
-      "oils_and_fluids"
+      "a_family"
     ]
   },
   "empty_en_US_label_industry": {
@@ -44,7 +44,7 @@
       "en_US": ""
     },
     "family_templates": [
-      "oils_and_fluids"
+      "a_family"
     ]
   },
   "missing_family_templates_industry": {
@@ -88,5 +88,25 @@
       "another_family",
       "a_family"
     ]
+  },
+  "unknown_family_template_industry": {
+    "code": "unknown_family_template_industry",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "a_family",
+      "unknown_family_template"
+    ]
+  },
+  "extra_fields_industry": {
+    "code": "extra_fields_industry",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "a_family"
+    ],
+    "cc": "steven"
   }
 }

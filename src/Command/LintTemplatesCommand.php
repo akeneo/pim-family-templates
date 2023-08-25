@@ -7,17 +7,25 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Validator\Constraints\All;
+use Symfony\Component\Validator\Constraints\Choice;
 use Symfony\Component\Validator\Constraints\Collection;
 use Symfony\Component\Validator\Constraints\Count;
 use Symfony\Component\Validator\Constraints\NotBlank;
-use Symfony\Component\Validator\Constraints\Required;
 use Symfony\Component\Validator\Constraints\Unique;
 use Symfony\Component\Validator\ConstraintViolation;
 use Symfony\Component\Validator\Validation;
+use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 class LintTemplatesCommand extends Command
 {
     protected static $defaultName = 'templates:lint';
+    private ValidatorInterface $validator;
+
+    public function __construct()
+    {
+        $this->validator = Validation::createValidator();
+        parent::__construct();
+    }
 
     protected function configure(): void
     {
@@ -29,13 +37,18 @@ class LintTemplatesCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $templateDirectories = $input->getArgument('templates_directory');
-        $industries = $this->readIndustries($templateDirectories);
+        $templateDirectory = $input->getArgument('templates_directory');
+        $industries = $this->readIndustries($templateDirectory);
+        $families = $this->readFamilies($templateDirectory);
+        $familyCodesInIndustries = $this->getFamilyCodesInIndustries($industries);
+        $familyTemplateFileNames = array_keys($families);
 
-        $industriesViolations = $this->lintIndustries($industries);
+        $industriesViolations = $this->lintIndustries($industries, $familyTemplateFileNames);
+        $familiesViolations = $this->lintFamilies($families, $familyCodesInIndustries);
 
         $flattenViolations = [
             ...$this->flatViolations('industries', $industriesViolations),
+            ...$this->flatViolations('families', $familiesViolations),
         ];
 
         $this->displayViolations($output, $flattenViolations);
@@ -50,29 +63,57 @@ class LintTemplatesCommand extends Command
         return $this->readJsonFile($industriesFilePath);
     }
 
-    private function lintIndustries(array $industries): array
+    private function readFamilies(string $templateDirectory): array
     {
-        $validator = Validation::createValidator();
+        $families = [];
+
+        $familiesDirectory = sprintf('%s/%s', $templateDirectory, 'families');
+        $familyFileNames = array_filter(
+            scandir($familiesDirectory),
+            static fn (string $file) => !in_array($file, ['.', '..']),
+        );
+
+        foreach ($familyFileNames as $familyFileName) {
+            $familyFilePath = sprintf('%s/%s', $familiesDirectory, $familyFileName);
+            $familyCode = str_replace('.json', '', $familyFileName);
+            $families[$familyCode] = $this->readJsonFile($familyFilePath);
+        }
+
+        return $families;
+    }
+
+    private function getFamilyCodesInIndustries(array $industries): array
+    {
+        return array_reduce(
+            $industries,
+            static fn (array $familyCodes, array $industry) => [...$familyCodes, ...($industry['family_templates'] ?? [])],
+            [],
+        );
+    }
+
+    private function lintIndustries(array $industries, array $familyTemplateFileNames): array
+    {
         $violations = [];
 
         $lintedIndustryCodes = [];
 
-        foreach ($industries as $code => $industry) {
-            $violations[$code] = $validator->validate($industry, new Collection([
-                'code' => [
-                    new NotBlank(),
-                ],
-                'labels' => [
-                    new Collection([
-                        'en_US' => [
-                            new Required(),
-                            new NotBlank(),
-                        ],
-                    ]),
-                ],
+        foreach ($industries as $key => $industry) {
+            $violations[$key] = $this->validator->validate($industry, new Collection([
+                'code' => new NotBlank(),
+                'labels' => new Collection([
+                    'en_US' => [
+                        new NotBlank(),
+                    ],
+                ]),
                 'family_templates' => [
                     new Count(min: 1),
-                    new All(new NotBlank()),
+                    new All([
+                        new NotBlank(),
+                        new Choice(
+                            choices: $familyTemplateFileNames,
+                            message: 'This value should match with a family template file name.',
+                        ),
+                    ]),
                     new Unique(),
                 ],
             ]));
@@ -81,8 +122,8 @@ class LintTemplatesCommand extends Command
                 continue;
             }
 
-            if ($code !== $industry['code']) {
-                $violations[$code]->add(new ConstraintViolation(
+            if ($key !== $industry['code']) {
+                $violations[$key]->add(new ConstraintViolation(
                     'This value should match with key.',
                     null,
                     [],
@@ -93,7 +134,7 @@ class LintTemplatesCommand extends Command
             }
 
             if (in_array($industry['code'], $lintedIndustryCodes)) {
-                $violations[$code]->add(new ConstraintViolation(
+                $violations[$key]->add(new ConstraintViolation(
                     'This value should be unique.',
                     null,
                     [],
@@ -104,6 +145,47 @@ class LintTemplatesCommand extends Command
             }
 
             $lintedIndustryCodes[] = $industry['code'];
+        }
+
+        return $violations;
+    }
+
+    private function lintFamilies(array $families, array $familyCodesInIndustries): array
+    {
+        $violations = [];
+
+        foreach ($families as $fileName => $family) {
+            $violations[$fileName] = $this->validator->validate($family, new Collection([
+                'code' => new NotBlank(),
+                'description' => new Collection([
+                    'en_US' => new NotBlank(),
+                ]),
+                'attributes' => [
+                    new Count(min: 1),
+                ],
+            ]));
+
+            if (array_key_exists('code', $family) && '' !== $family['code'] && $fileName !== $family['code']) {
+                $violations[$fileName]->add(new ConstraintViolation(
+                    'This value should match with file name.',
+                    null,
+                    [],
+                    null,
+                    '[code]',
+                    null,
+                ));
+            }
+
+            if (!in_array($fileName, $familyCodesInIndustries)) {
+                $violations[$fileName]->add(new ConstraintViolation(
+                    'This value should be referenced in an industry.',
+                    null,
+                    [],
+                    null,
+                    '',
+                    null,
+                ));
+            }
         }
 
         return $violations;
