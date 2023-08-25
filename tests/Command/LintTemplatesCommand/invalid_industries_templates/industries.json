@@ -1,0 +1,92 @@
+{
+  "missing_code_industry": {
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "an_industry"
+    ]
+  },
+  "empty_code_industry": {
+    "code": "",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "oils_and_fluids"
+    ]
+  },
+  "mismatching_code_industry": {
+    "code": "wrong",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "oils_and_fluids"
+    ]
+  },
+  "missing_labels_industry": {
+    "code": "missing_labels_industry",
+    "family_templates": [
+      "oils_and_fluids"
+    ]
+  },
+  "missing_en_US_label_industry": {
+    "code": "missing_en_US_label_industry",
+    "labels": {},
+    "family_templates": [
+      "oils_and_fluids"
+    ]
+  },
+  "empty_en_US_label_industry": {
+    "code": "empty_en_US_label_industry",
+    "labels": {
+      "en_US": ""
+    },
+    "family_templates": [
+      "oils_and_fluids"
+    ]
+  },
+  "missing_family_templates_industry": {
+    "code": "missing_family_templates_industry",
+    "labels": {
+      "en_US": "An industry"
+    }
+  },
+  "empty_family_templates_industry": {
+    "code": "empty_family_templates_industry",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": []
+  },
+  "an_industry": {
+    "code": "an_industry",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "a_family"
+    ]
+  },
+  "duplicated_code_industry": {
+    "code": "an_industry",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "a_family"
+    ]
+  },
+  "duplicated_family_templates_industry": {
+    "code": "duplicated_family_templates_industry",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "a_family",
+      "another_family",
+      "a_family"
+    ]
+  }
+}
