@@ -24,11 +24,11 @@ jobs:
       - attach_workspace:
           at: ~/
       - run:
-          name: Run static analysis
-          command: make static
-      - run:
           name: Set up file permissions
           command: sudo chown -R 1000:1000 ../project
+      - run:
+          name: Run static analysis
+          command: make static
       - run:
           name: Run cs analysis
           command: make cs
