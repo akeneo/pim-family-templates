@@ -1,7 +1,10 @@
 {
     "code": "sofa",
+    "labels": {
+        "en_US": "Sofas"
+    },
     "description": {
-        "en_US": "Relax in style with our 'Sofa' family template - a cozy selection of pre-built attributes to manage your living room sanctuary, ensuring comfort and style for memorable moments."
+        "en_US": "Relax in style with our 'Sofas' family template - a cozy selection of pre-built attributes to manage your living room sanctuary, ensuring comfort and style for memorable moments."
     },
     "attributes": [
         {
@@ -108,7 +111,7 @@
             "labels": {
                 "en_US": "Material"
             },
-            "type": "pim_catalog_metric",
+            "type": "pim_catalog_multiselect",
             "scopable": false,
             "localizable": false,
             "group": "template",
@@ -146,7 +149,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "height",
@@ -158,7 +161,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "width",
@@ -170,7 +173,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "depth",
@@ -182,7 +185,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "seat_height",
@@ -194,7 +197,51 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
+        },
+        {
+            "code": "seating_capacity",
+            "labels": {
+                "en_US": "Seating capacity"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "leg_type",
+            "labels": {
+                "en_US": "Leg type"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "configuration",
+            "labels": {
+                "en_US": "Configuration"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "removable_cushion_covers",
+            "labels": {
+                "en_US": "Removable cushion covers"
+            },
+            "type": "pim_catalog_boolean",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
         }
     ]
 }

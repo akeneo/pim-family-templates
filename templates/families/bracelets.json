@@ -1,5 +1,8 @@
 {
     "code": "bracelets",
+    "labels": {
+        "en_US": "Bracelets"
+    },
     "description": {
         "en_US": "Elevate your style with our 'Bracelets' family template - seamlessly manage your wrist adornments, expressing your unique personality through stunning accessories that capture attention."
     },
@@ -195,6 +198,17 @@
             "code": "engravings",
             "labels": {
                 "en_US": "Engravings"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "gender",
+            "labels": {
+                "en_US": "Gender"
             },
             "type": "pim_catalog_simpleselect",
             "scopable": false,

@@ -1,5 +1,8 @@
 {
     "code": "coffee_and_espresso",
+    "labels": {
+        "en_US": "Coffee & espresso"
+    },
     "description": {
         "en_US": "Savor the richness of life with our 'Coffee and Espresso' family template - a flavorful assortment of pre-built attributes to effortlessly manage your favorite brews, invigorating your senses with each sip."
     },
@@ -179,7 +182,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "power"
+            "metric_family": "Power"
         },
         {
             "code": "voltage",
@@ -191,7 +194,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "power"
+            "metric_family": "Power"
         },
         {
             "code": "aesthetics",
@@ -225,7 +228,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "height",
@@ -237,7 +240,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "weight",
@@ -249,7 +252,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "automatic_programming",
@@ -283,7 +286,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "volume"
+            "metric_family": "Volume"
         }
     ]
 }

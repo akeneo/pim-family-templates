@@ -1,5 +1,8 @@
 {
     "code": "televisions",
+    "labels": {
+        "en_US": "Televisions"
+    },
     "description": {
         "en_US": "Enhance your viewing experience with our 'Televisions' family template - a stunning set of pre-built attributes to easily manage your entertainment centerpiece, bringing cinematic magic to your living room."
     },
@@ -124,7 +127,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "height",
@@ -136,7 +139,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "width",
@@ -148,7 +151,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "weight",
@@ -160,7 +163,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "storage_capacity",
@@ -184,7 +187,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "language",
@@ -218,7 +221,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "power"
+            "metric_family": "Power"
         },
         {
             "code": "display_type",
@@ -296,7 +299,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "power"
+            "metric_family": "Power"
         },
         {
             "code": "built_in_speakers",
@@ -341,7 +344,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "frequency"
+            "metric_family": "Frequency"
         },
         {
             "code": "curved_screen",

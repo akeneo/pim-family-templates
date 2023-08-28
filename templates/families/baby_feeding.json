@@ -1,5 +1,8 @@
 {
     "code": "baby_feeding",
+    "labels": {
+        "en_US": "Baby feeding"
+    },
     "description": {
         "en_US": "Nourish your little one with our 'Babyfeeding' family template - a caring set of pre-built attributes to effortlessly manage your feeding essentials, ensuring your baby's growth and happiness."
     },
@@ -143,10 +146,10 @@
             },
             "type": "pim_catalog_metric",
             "scopable": false,
-            "localizable": true,
+            "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "dimensions",

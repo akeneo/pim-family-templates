@@ -1,5 +1,8 @@
 {
     "code": "fragrances",
+    "labels": {
+        "en_US": "Fragrances"
+    },
     "description": {
         "en_US": "Embrace alluring scents with our 'Fragrances' family template - a captivating selection of pre-built attributes to easily manage your signature scents, adding an enchanting touch to your presence."
     },
@@ -113,7 +116,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "content_type",
@@ -136,7 +139,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "volume"
+            "metric_family": "Volume"
         },
         {
             "code": "benefits",

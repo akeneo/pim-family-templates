@@ -1,5 +1,8 @@
 {
     "code": "candles",
+    "labels": {
+        "en_US": "Candles"
+    },
     "description": {
         "en_US": "Illuminate your space with our 'Candles' family template - a warm collection of pre-built attributes to effortlessly manage your ambiance essentials, creating a cozy and inviting atmosphere."
     },
@@ -104,11 +107,11 @@
             "unique": false
         },
         {
-            "code": "material",
+            "code": "wax_type",
             "labels": {
-                "en_US": "Material"
+                "en_US": "Wax type"
             },
-            "type": "pim_catalog_metric",
+            "type": "pim_catalog_simpleselect",
             "scopable": false,
             "localizable": false,
             "group": "template",
@@ -135,7 +138,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Length"
         },
         {
             "code": "height",
@@ -147,7 +150,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "fragrance_family",
@@ -159,6 +162,18 @@
             "localizable": false,
             "group": "template",
             "unique": false
+        },
+        {
+            "code": "capacity",
+            "labels": {
+                "en_US": "Capacity"
+            },
+            "type": "pim_catalog_metric",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false,
+            "metric_family": "Capacity"
         }
     ]
 }

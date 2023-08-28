@@ -1,5 +1,8 @@
 {
     "code": "ebooks",
+    "labels": {
+        "en_US": "Ebooks"
+    },
     "description": {
         "en_US": "Embark on a digital reading adventure with our 'E-books' family template - a modern selection to easily manage your electronic reads, immersing you in a world of knowledge and imagination."
     },

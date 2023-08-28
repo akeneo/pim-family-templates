@@ -1,5 +1,8 @@
 {
     "code": "teas_and_herbal_teas",
+    "labels": {
+        "en_US": "Teas & herbal teas"
+    },
     "description": {
         "en_US": "Unwind with our 'Teas and Herbal Teas' family template - a soothing collection of pre-built attributes to effortlessly manage your beverage essentials, enveloping your senses in serene relaxation."
     },
@@ -113,7 +116,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "content_type",
@@ -136,7 +139,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "volume"
+            "metric_family": "Volume"
         },
         {
             "code": "benefits",

@@ -1,5 +1,8 @@
 {
     "code": "videogames",
+    "labels": {
+        "en_US": "Videogames"
+    },
     "description": {
         "en_US": "Embark on epic adventures with our 'Videogames' family template - an immersive collection of pre-built attributes to seamlessly manage your gaming essentials, unlocking a world of entertainment and excitement."
     },
@@ -113,7 +116,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "height",
@@ -125,7 +128,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "width",
@@ -137,7 +140,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "weight",
@@ -149,7 +152,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "memory_card_slot",
@@ -172,7 +175,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "binary"
+            "metric_family": "Binary"
         },
         {
             "code": "language",
