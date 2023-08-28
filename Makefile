@@ -22,6 +22,8 @@ fix-cs:
 
 .PHONY: templates
 templates:
+	$(DOCKER) rm -rf templates
+	$(DOCKER) mkdir templates
 	$(DOCKER) bin/console templates:generate ${SOURCE_FILE} templates
 
 .PHONY: dist

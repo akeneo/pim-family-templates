@@ -100,26 +100,33 @@ class GenerateTemplatesCommand extends Command
 
     private function readFamilyTemplates(ReaderInterface $reader, array $industries): array
     {
-        $familyTemplateDescriptions = $this->readFamilyTemplateDescriptions($reader);
+        $familyTemplateLabelsAndDescription = $this->readFamilyTemplateLabelsAndDescription($reader);
 
         $familyTemplates = [];
         foreach ($industries as $industry) {
             foreach ($industry['family_templates'] as $familyTemplateCode) {
-                $familyTemplates[$familyTemplateCode] = $this->readFamilyTemplate($reader, $familyTemplateCode, $familyTemplateDescriptions);
+                $familyTemplates[$familyTemplateCode] = $this->readFamilyTemplate($reader, $familyTemplateCode, $familyTemplateLabelsAndDescription);
             }
         }
 
         return $familyTemplates;
     }
 
-    private function readFamilyTemplateDescriptions(ReaderInterface $reader): array
+    private function readFamilyTemplateLabelsAndDescription(ReaderInterface $reader): array
     {
         $rawDescriptions = $this->getSheetContent($reader, 'families_descriptions');
 
         return array_reduce(
             $rawDescriptions,
             function (array $descriptions, array $rawDescription) {
-                $descriptions[$rawDescription['family']]['en_US'] = $rawDescription['description-en_US'];
+                $descriptions[$rawDescription['code']] = [
+                    'labels' => [
+                        'en_US' => $rawDescription['label-en_US'],
+                    ],
+                    'description' => [
+                        'en_US' => $rawDescription['description-en_US'],
+                    ],
+                ];
 
                 return $descriptions;
             },
@@ -127,7 +134,7 @@ class GenerateTemplatesCommand extends Command
         );
     }
 
-    private function readFamilyTemplate(ReaderInterface $reader, string $familyTemplateCode, array $descriptions): array
+    private function readFamilyTemplate(ReaderInterface $reader, string $familyTemplateCode, array $familyTemplateLabelsAndDescription): array
     {
         $familyTemplate = $this->getSheetContent($reader, $familyTemplateCode);
 
@@ -153,7 +160,7 @@ class GenerateTemplatesCommand extends Command
 
         return [
             'code' => $familyTemplateCode,
-            'description' => $descriptions[$familyTemplateCode] ?? [],
+            ...$familyTemplateLabelsAndDescription[$familyTemplateCode],
             'attributes' => $attributes,
         ];
     }
