@@ -88,11 +88,11 @@ workflows:
     jobs:
       - ready_to_test?:
           type: approval
-      - install:
           filters:
             branches:
               ignore:
-                - master
+                - main
+      - install:
           requires:
             - ready_to_test?
       - test_generator:
@@ -107,7 +107,7 @@ workflows:
       - install:
           filters:
             branches:
-              only: master
+              only: main
       - minify_templates:
           requires:
             - install
