@@ -1,7 +1,10 @@
 {
-    "code": "women_tops",
+    "code": "tops_t_shirts",
+    "labels": {
+        "en_US": "Tops & t-shirts"
+    },
     "description": {
-        "en_US": "Step into style with our 'Women Tops' family template - a curated selection of pre-built attributes, making it effortless to manage your wardrobe and stay fashion-forward, no matter the occasion."
+        "en_US": "Step into style with our 'Tops & t-shirts' family template - a curated selection of pre-built attributes, making it effortless to manage your wardrobe and stay fashion-forward, no matter the occasion."
     },
     "attributes": [
         {

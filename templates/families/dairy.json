@@ -1,5 +1,8 @@
 {
     "code": "dairy",
+    "labels": {
+        "en_US": "Dairy"
+    },
     "description": {
         "en_US": "Indulge in wholesome goodness with our 'Dairy' family template - a creamy assortment of pre-built attributes to effortlessly manage your dairy delights, nourishing your body with delicious nutrients."
     },
@@ -166,7 +169,7 @@
             },
             "type": "pim_catalog_number",
             "scopable": false,
-            "localizable": true,
+            "localizable": false,
             "group": "template",
             "unique": false
         },

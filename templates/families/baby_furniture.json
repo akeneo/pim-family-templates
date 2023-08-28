@@ -1,5 +1,8 @@
 {
     "code": "baby_furniture",
+    "labels": {
+        "en_US": "Baby furniture"
+    },
     "description": {
         "en_US": "Welcome your bundle of joy with our 'Baby Furniture' family template - a lovingly designed set of pre-built attributes to effortlessly manage your nursery, creating a safe and cozy environment for your little one."
     },
@@ -121,10 +124,10 @@
             },
             "type": "pim_catalog_metric",
             "scopable": false,
-            "localizable": true,
+            "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "height",
@@ -133,10 +136,10 @@
             },
             "type": "pim_catalog_metric",
             "scopable": false,
-            "localizable": true,
+            "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "width",
@@ -148,7 +151,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "depth",
@@ -160,7 +163,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "maintenance_instructions",

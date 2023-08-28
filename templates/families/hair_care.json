@@ -1,5 +1,8 @@
 {
     "code": "hair_care",
+    "labels": {
+        "en_US": "Hair care"
+    },
     "description": {
         "en_US": "Unleash your inner glow with our 'Hair Care' family template - a carefully curated set of pre-built attributes to effortlessly manage your hair products, revealing your best hair day, every day."
     },
@@ -113,7 +116,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "content_type",
@@ -136,7 +139,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "volume"
+            "metric_family": "Volume"
         },
         {
             "code": "benefits",
@@ -232,6 +235,28 @@
                 "en_US": "Hair type"
             },
             "type": "pim_catalog_multiselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "standards",
+            "labels": {
+                "en_US": "Standards"
+            },
+            "type": "pim_catalog_multiselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "organic",
+            "labels": {
+                "en_US": "Organic"
+            },
+            "type": "pim_catalog_boolean",
             "scopable": false,
             "localizable": false,
             "group": "template",

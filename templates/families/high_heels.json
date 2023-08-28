@@ -1,5 +1,8 @@
 {
     "code": "high_heels",
+    "labels": {
+        "en_US": "High heels"
+    },
     "description": {
         "en_US": "Step up your style with our 'High Heels' family template - an elegant collection of pre-built attributes to effortlessly manage your stylish heels, adding a touch of sophistication to your every step."
     },

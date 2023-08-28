@@ -1,5 +1,8 @@
 {
     "code": "rings",
+    "labels": {
+        "en_US": "Rings"
+    },
     "description": {
         "en_US": "Adorn yourself with elegance using our 'Rings' family template - effortlessly manage your collection of exquisite bands, adding a touch of timeless beauty to your every gesture."
     },
@@ -232,6 +235,17 @@
                 "en_US": "Clarity"
             },
             "type": "pim_catalog_multiselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "gender",
+            "labels": {
+                "en_US": "Gender"
+            },
+            "type": "pim_catalog_simpleselect",
             "scopable": false,
             "localizable": false,
             "group": "template",

@@ -1,5 +1,8 @@
 {
     "code": "books",
+    "labels": {
+        "en_US": "Books"
+    },
     "description": {
         "en_US": "Dive into a world of endless knowledge with our 'Books' family template - effortlessly manage your collection of treasured hardcovers and paperbacks, fostering a journey of inspiration and discovery."
     },

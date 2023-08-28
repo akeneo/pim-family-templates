@@ -1,5 +1,8 @@
 {
     "code": "smartphones",
+    "labels": {
+        "en_US": "Smartphones"
+    },
     "description": {
         "en_US": "Stay connected with the latest tech trends using our 'Smartphones' family template - a cutting-edge collection of pre-built attributes to seamlessly manage your digital companions, keeping you ahead in the fast-paced world."
     },
@@ -124,7 +127,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "width",
@@ -136,7 +139,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "weight",
@@ -148,7 +151,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "memory_card_slot",
@@ -171,7 +174,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "binary"
+            "metric_family": "Binary"
         },
         {
             "code": "screen_size",
@@ -183,7 +186,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "language",
@@ -217,7 +220,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "power"
+            "metric_family": "Power"
         },
         {
             "code": "resolution",
@@ -295,7 +298,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "binary"
+            "metric_family": "Binary"
         },
         {
             "code": "battery_life",
@@ -318,7 +321,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "power"
+            "metric_family": "Power"
         },
         {
             "code": "wireless",
@@ -352,7 +355,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "frequency"
+            "metric_family": "Frequency"
         },
         {
             "code": "processor",

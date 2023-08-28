@@ -3680,6 +3680,13 @@
         },
         "attribute": "gender"
     },
+    "gender4": {
+        "code": "gender4",
+        "labels": {
+            "en_US": "Gender-neutral"
+        },
+        "attribute": "gender"
+    },
     "strap_type1": {
         "code": "strap_type1",
         "labels": {
@@ -3777,5 +3784,264 @@
             "en_US": "Smartwatch"
         },
         "attribute": "watch_type"
+    },
+    "seating_capacity1": {
+        "code": "seating_capacity1",
+        "labels": {
+            "en_US": "2-Seater"
+        },
+        "attribute": "seating_capacity"
+    },
+    "seating_capacity2": {
+        "code": "seating_capacity2",
+        "labels": {
+            "en_US": "3-Seater"
+        },
+        "attribute": "seating_capacity"
+    },
+    "seating_capacity3": {
+        "code": "seating_capacity3",
+        "labels": {
+            "en_US": "Sectional"
+        },
+        "attribute": "seating_capacity"
+    },
+    "seating_capacity4": {
+        "code": "seating_capacity4",
+        "labels": {
+            "en_US": "Recliner"
+        },
+        "attribute": "seating_capacity"
+    },
+    "leg_type1": {
+        "code": "leg_type1",
+        "labels": {
+            "en_US": "Wooden Tapered Legs"
+        },
+        "attribute": "leg_type"
+    },
+    "leg_type2": {
+        "code": "leg_type2",
+        "labels": {
+            "en_US": "Metal Legs"
+        },
+        "attribute": "leg_type"
+    },
+    "leg_type3": {
+        "code": "leg_type3",
+        "labels": {
+            "en_US": "Block Feet"
+        },
+        "attribute": "leg_type"
+    },
+    "configuration1": {
+        "code": "configuration1",
+        "labels": {
+            "en_US": "L-Shaped"
+        },
+        "attribute": "configuration"
+    },
+    "configuration2": {
+        "code": "configuration2",
+        "labels": {
+            "en_US": "U-Shaped"
+        },
+        "attribute": "configuration"
+    },
+    "configuration3": {
+        "code": "configuration3",
+        "labels": {
+            "en_US": "Chaise on Left"
+        },
+        "attribute": "configuration"
+    },
+    "configuration4": {
+        "code": "configuration4",
+        "labels": {
+            "en_US": "Chaise on Right"
+        },
+        "attribute": "configuration"
+    },
+    "plant_type1": {
+        "code": "plant_type1",
+        "labels": {
+            "en_US": "Tree"
+        },
+        "attribute": "plant_type"
+    },
+    "plant_type2": {
+        "code": "plant_type2",
+        "labels": {
+            "en_US": "Succulent"
+        },
+        "attribute": "plant_type"
+    },
+    "plant_type3": {
+        "code": "plant_type3",
+        "labels": {
+            "en_US": "Vine"
+        },
+        "attribute": "plant_type"
+    },
+    "plant_type4": {
+        "code": "plant_type4",
+        "labels": {
+            "en_US": "Fern"
+        },
+        "attribute": "plant_type"
+    },
+    "plant_type5": {
+        "code": "plant_type5",
+        "labels": {
+            "en_US": "Flowering Plant"
+        },
+        "attribute": "plant_type"
+    },
+    "watering_needs1": {
+        "code": "watering_needs1",
+        "labels": {
+            "en_US": "Low"
+        },
+        "attribute": "watering_needs"
+    },
+    "watering_needs2": {
+        "code": "watering_needs2",
+        "labels": {
+            "en_US": "Moderate"
+        },
+        "attribute": "watering_needs"
+    },
+    "watering_needs3": {
+        "code": "watering_needs3",
+        "labels": {
+            "en_US": "High"
+        },
+        "attribute": "watering_needs"
+    },
+    "light_requirements1": {
+        "code": "light_requirements1",
+        "labels": {
+            "en_US": "Low Light"
+        },
+        "attribute": "light_requirements"
+    },
+    "light_requirements2": {
+        "code": "light_requirements2",
+        "labels": {
+            "en_US": "Indirect Light"
+        },
+        "attribute": "light_requirements"
+    },
+    "light_requirements3": {
+        "code": "light_requirements3",
+        "labels": {
+            "en_US": "Bright Light"
+        },
+        "attribute": "light_requirements"
+    },
+    "light_requirements4": {
+        "code": "light_requirements4",
+        "labels": {
+            "en_US": "Full Sun"
+        },
+        "attribute": "light_requirements"
+    },
+    "toxicity1": {
+        "code": "toxicity1",
+        "labels": {
+            "en_US": "Non-Toxic"
+        },
+        "attribute": "toxicity"
+    },
+    "toxicity2": {
+        "code": "toxicity2",
+        "labels": {
+            "en_US": "Toxic to Pets"
+        },
+        "attribute": "toxicity"
+    },
+    "toxicity3": {
+        "code": "toxicity3",
+        "labels": {
+            "en_US": "Toxic to Humans"
+        },
+        "attribute": "toxicity"
+    },
+    "wax_type1": {
+        "code": "wax_type1",
+        "labels": {
+            "en_US": "Paraffin wax"
+        },
+        "attribute": "wax_type"
+    },
+    "wax_type2": {
+        "code": "wax_type2",
+        "labels": {
+            "en_US": "Soy wax"
+        },
+        "attribute": "wax_type"
+    },
+    "wax_type3": {
+        "code": "wax_type3",
+        "labels": {
+            "en_US": "Palm wax"
+        },
+        "attribute": "wax_type"
+    },
+    "wax_type4": {
+        "code": "wax_type4",
+        "labels": {
+            "en_US": "Beeswax"
+        },
+        "attribute": "wax_type"
+    },
+    "wax_type5": {
+        "code": "wax_type5",
+        "labels": {
+            "en_US": "Gel wax"
+        },
+        "attribute": "wax_type"
+    },
+    "wax_type6": {
+        "code": "wax_type6",
+        "labels": {
+            "en_US": "Rapeseed wax"
+        },
+        "attribute": "wax_type"
+    },
+    "wax_type7": {
+        "code": "wax_type7",
+        "labels": {
+            "en_US": "Coconut wax"
+        },
+        "attribute": "wax_type"
+    },
+    "fuel_type1": {
+        "code": "fuel_type1",
+        "labels": {
+            "en_US": "Gas"
+        },
+        "attribute": "fuel_type"
+    },
+    "fuel_type2": {
+        "code": "fuel_type2",
+        "labels": {
+            "en_US": "Charcoal"
+        },
+        "attribute": "fuel_type"
+    },
+    "fuel_type3": {
+        "code": "fuel_type3",
+        "labels": {
+            "en_US": "Wood Pellets"
+        },
+        "attribute": "fuel_type"
+    },
+    "fuel_type4": {
+        "code": "fuel_type4",
+        "labels": {
+            "en_US": "Electric"
+        },
+        "attribute": "fuel_type"
     }
 }

@@ -1,5 +1,8 @@
 {
     "code": "bedding_and_towels",
+    "labels": {
+        "en_US": "Bedding & Towel"
+    },
     "description": {
         "en_US": "Transform your bedroom into a sanctuary of comfort with our 'Bedding and Towels' family template - a cozy selection of pre-built attributes to manage your linen essentials, ensuring restful nights and luxurious self-care moments."
     },
@@ -104,17 +107,6 @@
             "unique": false
         },
         {
-            "code": "material",
-            "labels": {
-                "en_US": "Material"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
             "code": "color",
             "labels": {
                 "en_US": "Color"
@@ -157,7 +149,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "height",
@@ -169,7 +161,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "width",
@@ -181,7 +173,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "use_instructions",
@@ -191,6 +183,28 @@
             "type": "pim_catalog_textarea",
             "scopable": false,
             "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "plain",
+            "labels": {
+                "en_US": "Plain"
+            },
+            "type": "pim_catalog_boolean",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "pattern",
+            "labels": {
+                "en_US": "Pattern"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
             "group": "template",
             "unique": false
         }

@@ -1,5 +1,8 @@
 {
     "code": "consoles",
+    "labels": {
+        "en_US": "Consoles"
+    },
     "description": {
         "en_US": "Level up your entertainment with our 'Consoles' family template - an exciting array of pre-built attributes to effortlessly manage your gaming systems, unlocking endless fun and immersive gameplay."
     },
@@ -124,7 +127,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "height",
@@ -136,7 +139,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "width",
@@ -148,7 +151,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "weight",
@@ -160,7 +163,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "storage_capacity",
@@ -172,7 +175,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "binary"
+            "metric_family": "Binary"
         },
         {
             "code": "screen_size",
@@ -184,7 +187,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "language",
@@ -218,7 +221,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "power"
+            "metric_family": "Power"
         },
         {
             "code": "display_type",
@@ -318,7 +321,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "power"
+            "metric_family": "Power"
         },
         {
             "code": "wireless",
@@ -352,7 +355,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "frequency"
+            "metric_family": "Frequency"
         },
         {
             "code": "curved_screen",

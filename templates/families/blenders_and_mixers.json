@@ -1,5 +1,8 @@
 {
     "code": "blenders_and_mixers",
+    "labels": {
+        "en_US": "Blenders & mixers"
+    },
     "description": {
         "en_US": "Blend perfection into your kitchen with our 'Blenders and Mixers' family template - a powerful assortment of pre-built attributes to easily manage your culinary essentials, taking your cooking to new heights."
     },
@@ -168,7 +171,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "power"
+            "metric_family": "Power"
         },
         {
             "code": "voltage",
@@ -180,7 +183,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "power"
+            "metric_family": "Power"
         },
         {
             "code": "aesthetics",
@@ -214,7 +217,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "height",
@@ -226,7 +229,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "weight",
@@ -238,7 +241,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "capacity",
@@ -250,7 +253,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "volume"
+            "metric_family": "Volume"
         }
     ]
 }

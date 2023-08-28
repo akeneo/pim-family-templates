@@ -1,5 +1,8 @@
 {
     "code": "oils_and_fluids",
+    "labels": {
+        "en_US": "Oils & fluids"
+    },
     "description": {
         "en_US": "Lubricate your vehicle with our 'Oils and Fluids' family template - a well-oiled set of pre-built attributes to effortlessly manage your automotive care, keeping your engine running at peak performance."
     },

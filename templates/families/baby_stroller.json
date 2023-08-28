@@ -1,5 +1,8 @@
 {
     "code": "baby_stroller",
+    "labels": {
+        "en_US": "Baby stroller"
+    },
     "description": {
         "en_US": "Explore the world with your little one using our 'Baby Stroller' family template - a thoughtful collection of pre-built attributes to effortlessly manage your strolling companion, creating unforgettable memories with ease."
     },
@@ -132,10 +135,10 @@
             },
             "type": "pim_catalog_metric",
             "scopable": false,
-            "localizable": true,
+            "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "height",
@@ -144,10 +147,10 @@
             },
             "type": "pim_catalog_metric",
             "scopable": false,
-            "localizable": true,
+            "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "width",
@@ -159,7 +162,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "depth",
@@ -171,7 +174,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "age_suitability",
@@ -205,7 +208,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "care_instructions",

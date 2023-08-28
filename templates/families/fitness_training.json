@@ -1,5 +1,8 @@
 {
     "code": "fitness_training",
+    "labels": {
+        "en_US": "Fitness training"
+    },
     "description": {
         "en_US": "Achieve your fitness goals with our 'Fitness Training' family template - a dynamic collection of pre-built attributes to seamlessly manage your workouts, empowering you to lead a healthier and more active lifestyle."
     },
@@ -167,7 +170,7 @@
             "labels": {
                 "en_US": "Number of programs"
             },
-            "type": "Number",
+            "type": "pim_catalog_number",
             "scopable": false,
             "localizable": false,
             "group": "template",
@@ -201,12 +204,11 @@
             "labels": {
                 "en_US": "Bluetooth"
             },
-            "type": "Yes\/No",
+            "type": "pim_catalog_boolean",
             "scopable": false,
             "localizable": false,
             "group": "template",
-            "unique": false,
-            "metric_family": "Power"
+            "unique": false
         },
         {
             "code": "motor_hp",
@@ -236,7 +238,7 @@
             "labels": {
                 "en_US": "Screen"
             },
-            "type": "Yes\/No",
+            "type": "pim_catalog_boolean",
             "scopable": false,
             "localizable": false,
             "group": "template",

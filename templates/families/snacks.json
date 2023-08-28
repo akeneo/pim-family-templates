@@ -1,5 +1,8 @@
 {
     "code": "snacks",
+    "labels": {
+        "en_US": "Snacks"
+    },
     "description": {
         "en_US": "Satisfy your cravings with our 'Snacks' family template - a delicious assortment of pre-built attributes to effortlessly manage your favorite treats, making snack time a delightful experience."
     },

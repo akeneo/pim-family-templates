@@ -5,8 +5,7 @@
             "en_US": "Apparel & fashion"
         },
         "family_templates": [
-            "women_tops",
-            "men_tshirts",
+            "tops_t_shirts",
             "accessories",
             "sneakers",
             "high_heels"

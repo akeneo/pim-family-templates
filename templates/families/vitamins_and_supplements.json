@@ -1,5 +1,8 @@
 {
     "code": "vitamins_and_supplements",
+    "labels": {
+        "en_US": "Vitamins & supplements"
+    },
     "description": {
         "en_US": "Boost your well-being with our 'Vitamins and Supplements' family template - a healthful collection of pre-built attributes to effortlessly manage your essential nutrients, empowering you to embrace a healthier lifestyle."
     },
@@ -113,7 +116,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "cure_days",
@@ -147,7 +150,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "volume"
+            "metric_family": "Volume"
         },
         {
             "code": "benefits",

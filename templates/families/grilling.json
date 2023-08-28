@@ -1,5 +1,8 @@
 {
     "code": "grilling",
+    "labels": {
+        "en_US": "Grilling"
+    },
     "description": {
         "en_US": "Fire up your grilling experience with our 'Grilling' family template - a sizzling array of pre-built attributes to easily manage your barbecue essentials, turning any gathering into a mouthwatering feast."
     },
@@ -135,7 +138,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "height",
@@ -147,7 +150,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "width",
@@ -159,7 +162,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "power",
@@ -171,7 +174,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "power"
+            "metric_family": "Power"
         },
         {
             "code": "cooking_surface",
@@ -183,7 +186,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "area"
+            "metric_family": "Area"
         },
         {
             "code": "care_instructions",
@@ -202,6 +205,17 @@
                 "en_US": "Use instructions"
             },
             "type": "pim_catalog_textarea",
+            "scopable": false,
+            "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "fuel_type",
+            "labels": {
+                "en_US": "Fuel Type"
+            },
+            "type": "pim_catalog_multiselect",
             "scopable": false,
             "localizable": true,
             "group": "template",

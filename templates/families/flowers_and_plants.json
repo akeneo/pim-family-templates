@@ -1,5 +1,8 @@
 {
     "code": "flowers_and_plants",
+    "labels": {
+        "en_US": "Flowers & plants"
+    },
     "description": {
         "en_US": "Breathe life into your space with our 'Flowers and Plants' family template - a blooming selection of pre-built attributes to easily manage your green companions, infusing your surroundings with natural beauty."
     },
@@ -104,17 +107,6 @@
             "unique": false
         },
         {
-            "code": "material",
-            "labels": {
-                "en_US": "Material"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
             "code": "color",
             "labels": {
                 "en_US": "Color"
@@ -135,7 +127,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "height",
@@ -147,7 +139,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "width",
@@ -159,7 +151,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "care_instructions",
@@ -169,6 +161,50 @@
             "type": "pim_catalog_textarea",
             "scopable": false,
             "localizable": true,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "plant_type",
+            "labels": {
+                "en_US": "Plant type"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "watering_needs",
+            "labels": {
+                "en_US": "Watering Needs"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "light_requirements",
+            "labels": {
+                "en_US": "Light Requirements"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
+            "group": "template",
+            "unique": false
+        },
+        {
+            "code": "toxicity",
+            "labels": {
+                "en_US": "Toxicity"
+            },
+            "type": "pim_catalog_simpleselect",
+            "scopable": false,
+            "localizable": false,
             "group": "template",
             "unique": false
         }

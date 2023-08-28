@@ -1,5 +1,8 @@
 {
     "code": "toasters",
+    "labels": {
+        "en_US": "Toasters"
+    },
     "description": {
         "en_US": "Toast to the perfect start with our 'Toasters' family template - a crispy assortment of pre-built attributes to easily manage your breakfast companions, making every morning a delightful treat."
     },
@@ -179,7 +182,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "power"
+            "metric_family": "Power"
         },
         {
             "code": "voltage",
@@ -191,7 +194,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "power"
+            "metric_family": "Power"
         },
         {
             "code": "aesthetics",
@@ -225,7 +228,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "height",
@@ -237,7 +240,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "weight",
@@ -249,7 +252,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "automatic_popup",

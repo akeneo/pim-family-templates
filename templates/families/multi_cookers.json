@@ -1,5 +1,8 @@
 {
     "code": "multi_cookers",
+    "labels": {
+        "en_US": "Multi cookers"
+    },
     "description": {
         "en_US": "Cook with ease using our 'Multi Cookers' family template - a versatile set of pre-built attributes to effortlessly manage your smart cooking appliances, turning mealtime into a culinary adventure."
     },
@@ -168,7 +171,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "power"
+            "metric_family": "Power"
         },
         {
             "code": "voltage",
@@ -180,7 +183,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "power"
+            "metric_family": "Power"
         },
         {
             "code": "length",
@@ -192,7 +195,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "height",
@@ -204,7 +207,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "length"
+            "metric_family": "Length"
         },
         {
             "code": "weight",
@@ -216,7 +219,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "weight"
+            "metric_family": "Weight"
         },
         {
             "code": "capacity",
@@ -228,7 +231,7 @@
             "localizable": false,
             "group": "template",
             "unique": false,
-            "metric_family": "volume"
+            "metric_family": "Volume"
         },
         {
             "code": "shake_reminder",

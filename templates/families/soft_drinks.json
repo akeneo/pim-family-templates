@@ -1,5 +1,8 @@
 {
     "code": "soft_drinks",
+    "labels": {
+        "en_US": "Soft drinks"
+    },
     "description": {
         "en_US": "Quench your thirst with our 'Soft Drinks' family template - a refreshing selection of pre-built attributes to effortlessly manage your favorite beverages, cooling you off with every sip."
     },
@@ -152,9 +155,9 @@
             "labels": {
                 "en_US": "Tasting Notes"
             },
-            "type": "pim_catalog_textarea",
+            "type": "pim_catalog_multiselect",
             "scopable": false,
-            "localizable": true,
+            "localizable": false,
             "group": "template",
             "unique": false
         },

@@ -1,5 +1,8 @@
 {
     "code": "bread",
+    "labels": {
+        "en_US": "Bread"
+    },
     "description": {
         "en_US": "Taste the freshness of success with our 'Bread' family template - a delectable assortment of pre-built attributes to effortlessly manage your bakery delights, turning every meal into a delightful experience."
     },

@@ -1,5 +1,8 @@
 {
     "code": "wine",
+    "labels": {
+        "en_US": "Wine"
+    },
     "description": {
         "en_US": "Uncork the magic with our 'Wine' family template - a curated selection of pre-built attributes to manage your favorite vintages, transforming any moment into a celebration."
     },
@@ -171,7 +174,7 @@
             "unique": false
         },
         {
-            "code": "wine",
+            "code": "grape_variety",
             "labels": {
                 "en_US": "Grape variety"
             },
