@@ -1,5 +1,8 @@
 {
   "code": "videogames",
+  "labels": {
+    "en_US": "Videogames"
+  },
   "description": {
     "en_US": "Embark on epic adventures with our 'Videogames' family template - an immersive collection of pre-built attributes to seamlessly manage your gaming essentials, unlocking a world of entertainment and excitement."
   },

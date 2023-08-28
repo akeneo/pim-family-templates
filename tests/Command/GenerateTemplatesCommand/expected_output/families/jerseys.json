@@ -1,5 +1,8 @@
 {
   "code": "jerseys",
+  "labels": {
+    "en_US": "Jerseys"
+  },
   "description": {
     "en_US": "Cheer on your favorite teams with our 'Jerseys' family template - a winning assortment of pre-built attributes to easily manage your sports apparel, showing your team spirit in style."
   },
