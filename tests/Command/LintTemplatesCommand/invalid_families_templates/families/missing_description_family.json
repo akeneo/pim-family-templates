@@ -1,5 +1,8 @@
 {
   "code": "missing_description_family",
+  "labels": {
+    "en_US": "A family"
+  },
   "attributes": [
     {
       "code": "EAN",

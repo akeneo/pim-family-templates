@@ -38,12 +38,16 @@ class LintTemplatesCommandTest extends TestCase
                 '[families][empty_attributes_family][attributes] This collection should contain 1 element or more.',
                 '[families][empty_code_family][code] This value should not be blank.',
                 '[families][empty_en_US_description_family][description][en_US] This value should not be blank.',
+                '[families][empty_en_US_label_family][labels][en_US] This value should not be blank.',
+                '[families][too_long_en_US_label_family][labels][en_US] This value is too long. It should have 255 characters or less.',
                 '[families][extra_fields_family][cc] This field was not expected.',
                 '[families][mismatching_code_family][code] This value should match with file name.',
                 '[families][missing_attributes_family][attributes] This field is missing.',
                 '[families][missing_code_family][code] This field is missing.',
                 '[families][missing_description_family][description] This field is missing.',
                 '[families][missing_en_US_description_family][description][en_US] This field is missing.',
+                '[families][missing_en_US_label_family][labels][en_US] This field is missing.',
+                '[families][missing_labels_family][labels] This field is missing.',
                 '[families][unknown_family] This value should be referenced in an industry.',
             ]
         ];
@@ -76,7 +80,10 @@ class LintTemplatesCommandTest extends TestCase
             preg_split('/\r\n|\n|\r/', $sut->getDisplay()),
             static fn (string $line) => '' !== $line,
         );
-        $this->assertSame($expectedErrors, $actualErrors);
 
+        $this->assertCount(count($expectedErrors), $actualErrors);
+        foreach ($expectedErrors as $expectedError) {
+            $this->assertContains($expectedError, $actualErrors);
+        }
     }
 }

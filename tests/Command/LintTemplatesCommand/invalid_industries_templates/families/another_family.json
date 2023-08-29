@@ -1,5 +1,8 @@
 {
   "code": "another_family",
+  "labels": {
+    "en_US": "Another family"
+  },
   "description": {
     "en_US": "Another family"
   },

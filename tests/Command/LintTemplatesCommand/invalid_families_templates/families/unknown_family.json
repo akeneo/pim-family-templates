@@ -1,5 +1,8 @@
 {
   "code": "unknown_family",
+  "labels": {
+    "en_US": "A family"
+  },
   "description": {
     "en_US": "A family"
   },

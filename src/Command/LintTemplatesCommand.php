@@ -10,6 +10,7 @@ use Symfony\Component\Validator\Constraints\All;
 use Symfony\Component\Validator\Constraints\Choice;
 use Symfony\Component\Validator\Constraints\Collection;
 use Symfony\Component\Validator\Constraints\Count;
+use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Constraints\Unique;
 use Symfony\Component\Validator\ConstraintViolation;
@@ -101,9 +102,7 @@ class LintTemplatesCommand extends Command
             $violations[$key] = $this->validator->validate($industry, new Collection([
                 'code' => new NotBlank(),
                 'labels' => new Collection([
-                    'en_US' => [
-                        new NotBlank(),
-                    ],
+                    'en_US' => new NotBlank(),
                 ]),
                 'family_templates' => [
                     new Count(min: 1),
@@ -157,6 +156,12 @@ class LintTemplatesCommand extends Command
         foreach ($families as $fileName => $family) {
             $violations[$fileName] = $this->validator->validate($family, new Collection([
                 'code' => new NotBlank(),
+                'labels' => new Collection([
+                    'en_US' => [
+                        new NotBlank(),
+                        new Length(max: 255),
+                    ],
+                ]),
                 'description' => new Collection([
                     'en_US' => new NotBlank(),
                 ]),

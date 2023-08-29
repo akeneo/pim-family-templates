@@ -1,5 +1,8 @@
 {
   "code": "missing_en_US_description_family",
+  "labels": {
+    "en_US": "A family"
+  },
   "description": {},
   "attributes": [
     {
