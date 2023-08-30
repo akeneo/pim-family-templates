@@ -1,0 +1,65 @@
+{
+  "brand1": {
+    "code": "brand1",
+    "labels": {
+      "en_US": "Zaro"
+    },
+    "attribute": "brand"
+  },
+  "color1": {
+    "code": "color1",
+    "labels": {
+      "en_US": "Blue"
+    },
+    "attribute": "color"
+  },
+  "color2": {
+    "code": "color1",
+    "labels": {
+      "en_US": "Blue"
+    },
+    "attribute": "color"
+  },
+  "missing_code_option": {
+    "labels": {
+      "en_US": "An option"
+    },
+    "attribute": "an_attribute"
+  },
+  "missing_labels_option": {
+    "code": "missing_labels_option",
+    "attribute": "an_attribute"
+  },
+  "missing_en_US_label_option": {
+    "code": "missing_en_US_label_option",
+    "labels": {},
+    "attribute": "an_attribute"
+  },
+  "missing_attribute_option": {
+    "code": "missing_attribute_option",
+    "labels": {
+      "en_US": "An option"
+    }
+  },
+  "empty_en_US_label_option": {
+    "code": "empty_en_US_label_option",
+    "labels": {
+      "en_US": ""
+    },
+    "attribute": "an_attribute"
+  },
+  "unknown_attribute_option": {
+    "code": "unknown_attribute_option",
+    "labels": {
+      "en_US": "An attribute"
+    },
+    "attribute": "unknown"
+  },
+  "mismatching_code_option": {
+    "code": "invalid",
+    "labels": {
+      "en_US": "An attribute"
+    },
+    "attribute": "an_attribute"
+  }
+}

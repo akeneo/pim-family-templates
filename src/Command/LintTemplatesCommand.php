@@ -10,8 +10,10 @@ use Symfony\Component\Validator\Constraints\All;
 use Symfony\Component\Validator\Constraints\Choice;
 use Symfony\Component\Validator\Constraints\Collection;
 use Symfony\Component\Validator\Constraints\Count;
+use Symfony\Component\Validator\Constraints\EqualTo;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Validator\Constraints\Optional;
 use Symfony\Component\Validator\Constraints\Required;
 use Symfony\Component\Validator\Constraints\Type;
 use Symfony\Component\Validator\Constraints\Unique;
@@ -64,15 +66,19 @@ class LintTemplatesCommand extends Command
         $templateDirectory = $input->getArgument('templates_directory');
         $industries = $this->readIndustries($templateDirectory);
         $families = $this->readFamilies($templateDirectory);
+        $attributeOptions = $this->readAttributeOptions($templateDirectory);
         $familyCodesInIndustries = $this->getFamilyCodesInIndustries($industries);
         $familyTemplateFileNames = array_keys($families);
+        $attributeCodesInFamilies = $this->getAttributeCodesInFamilies($families);
 
         $industriesViolations = $this->lintIndustries($industries, $familyTemplateFileNames);
         $familiesViolations = $this->lintFamilies($families, $familyCodesInIndustries);
+        $attributeOptionsViolations = $this->lintAttributeOptions($attributeOptions, $attributeCodesInFamilies);
 
         $flattenViolations = [
             ...$this->flatViolations('industries', $industriesViolations),
             ...$this->flatViolations('families', $familiesViolations),
+            ...$this->flatViolations('attribute_options', $attributeOptionsViolations),
         ];
 
         $this->displayViolations($output, $flattenViolations);
@@ -106,11 +112,27 @@ class LintTemplatesCommand extends Command
         return $families;
     }
 
+    private function readAttributeOptions(string $templatesDirectory): array
+    {
+        $attributeOptionsFilePath = sprintf('%s/%s', $templatesDirectory, 'attribute_options.json');
+
+        return $this->readJsonFile($attributeOptionsFilePath);
+    }
+
     private function getFamilyCodesInIndustries(array $industries): array
     {
         return array_reduce(
             $industries,
             static fn (array $familyCodes, array $industry) => [...$familyCodes, ...($industry['family_templates'] ?? [])],
+            [],
+        );
+    }
+
+    private function getAttributeCodesInFamilies(array $families): array
+    {
+        return array_reduce(
+            $families,
+            static fn (array $attributesCodes, array $family) => [...$attributesCodes, ...array_column($family['attributes'] ?? [], 'code')],
             [],
         );
     }
@@ -212,6 +234,7 @@ class LintTemplatesCommand extends Command
                             new Type('bool'),
                             new Required(),
                         ],
+                        'metric_family' => new Optional(),
                     ])),
                 ],
             ]));
@@ -286,6 +309,47 @@ class LintTemplatesCommand extends Command
                     ));
                 }
             }
+        }
+
+        return $violations;
+    }
+
+    private function lintAttributeOptions(array $attributeOptions, array $attributeCodesInFamilies): array
+    {
+        $violations = [];
+
+        $lintedAttributeOptionCodes = [];
+        foreach ($attributeOptions as $key => $attributeOption) {
+            $violations[$key] = $this->validator->validate($attributeOption, new Collection([
+                'code' => new EqualTo(
+                    value: $key,
+                    message: 'This value should match with key.',
+                ),
+                'labels' => new Collection([
+                    'en_US' => new NotBlank(),
+                ]),
+                'attribute' => new Choice(
+                    choices: $attributeCodesInFamilies,
+                    message: 'This value is not referenced in any family.',
+                ),
+            ]));
+
+            if (!array_key_exists('code', $attributeOption) || empty($attributeOption['code'])) {
+                continue;
+            }
+
+            if (in_array($attributeOption['code'], $lintedAttributeOptionCodes)) {
+                $violations[$key]->add(new ConstraintViolation(
+                    'This value should be unique.',
+                    null,
+                    [],
+                    null,
+                    '[code]',
+                    null,
+                ));
+            }
+
+            $lintedAttributeOptionCodes[] = $attributeOption['code'];
         }
 
         return $violations;

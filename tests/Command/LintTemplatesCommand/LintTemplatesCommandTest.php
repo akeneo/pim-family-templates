@@ -13,6 +13,7 @@ class LintTemplatesCommandTest extends TestCase
     private const INVALID_INDUSTRIES_TEMPLATES_DIRECTORY = __DIR__ . '/invalid_industries_templates';
     private const INVALID_FAMILIES_TEMPLATES_DIRECTORY = __DIR__ . '/invalid_families_templates';
     private const INVALID_ATTRIBUTES_TEMPLATES_DIRECTORY = __DIR__ . '/invalid_attributes_templates';
+    private const INVALID_ATTRIBUTES_OPTIONS_TEMPLATES_DIRECTORY = __DIR__ . '/invalid_attribute_options_templates';
 
     public static function provideInvalidTemplates(): iterable
     {
@@ -73,6 +74,19 @@ class LintTemplatesCommandTest extends TestCase
                 '[families][missing_attribute_metric_family_family][attributes][1][metric_family] This field is missing.',
                 '[families][empty_attribute_metric_family_family][attributes][1][metric_family] This value should not be blank.',
                 '[families][missing_identifier_attribute_family][attributes] This collection should contain 1 attribute identifier or more.',
+            ]
+        ];
+        yield 'Invalid attribute options' => [
+            self::INVALID_ATTRIBUTES_OPTIONS_TEMPLATES_DIRECTORY,
+            [
+                '[attribute_options][missing_code_option][code] This field is missing.',
+                '[attribute_options][missing_labels_option][labels] This field is missing.',
+                '[attribute_options][missing_en_US_label_option][labels][en_US] This field is missing.',
+                '[attribute_options][missing_attribute_option][attribute] This field is missing.',
+                '[attribute_options][empty_en_US_label_option][labels][en_US] This value should not be blank.',
+                '[attribute_options][unknown_attribute_option][attribute] This value is not referenced in any family.',
+                '[attribute_options][mismatching_code_option][code] This value should match with key.',
+                '[attribute_options][color2][code] This value should be unique.',
             ]
         ];
     }
