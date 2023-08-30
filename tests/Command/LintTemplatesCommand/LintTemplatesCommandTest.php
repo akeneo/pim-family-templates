@@ -12,6 +12,7 @@ class LintTemplatesCommandTest extends TestCase
     private const VALID_TEMPLATES_DIRECTORY = __DIR__ . '/valid_templates';
     private const INVALID_INDUSTRIES_TEMPLATES_DIRECTORY = __DIR__ . '/invalid_industries_templates';
     private const INVALID_FAMILIES_TEMPLATES_DIRECTORY = __DIR__ . '/invalid_families_templates';
+    private const INVALID_ATTRIBUTES_TEMPLATES_DIRECTORY = __DIR__ . '/invalid_attributes_templates';
 
     public static function provideInvalidTemplates(): iterable
     {
@@ -35,7 +36,6 @@ class LintTemplatesCommandTest extends TestCase
         yield 'Invalid families' => [
             self::INVALID_FAMILIES_TEMPLATES_DIRECTORY,
             [
-                '[families][empty_attributes_family][attributes] This collection should contain 1 element or more.',
                 '[families][empty_code_family][code] This value should not be blank.',
                 '[families][empty_en_US_description_family][description][en_US] This value should not be blank.',
                 '[families][empty_en_US_label_family][labels][en_US] This value should not be blank.',
@@ -49,6 +49,30 @@ class LintTemplatesCommandTest extends TestCase
                 '[families][missing_en_US_label_family][labels][en_US] This field is missing.',
                 '[families][missing_labels_family][labels] This field is missing.',
                 '[families][unknown_family] This value should be referenced in an industry.',
+            ]
+        ];
+        yield 'Invalid attributes' => [
+            self::INVALID_ATTRIBUTES_TEMPLATES_DIRECTORY,
+            [
+                '[families][empty_attributes_family][attributes] This collection should contain 1 element or more.',
+                '[families][missing_attribute_code_family][attributes][0][code] This field is missing.',
+                '[families][missing_attribute_labels_family][attributes][0][labels] This field is missing.',
+                '[families][missing_attribute_en_US_label_family][attributes][0][labels][en_US] This field is missing.',
+                '[families][missing_attribute_type_family][attributes][1][type] This field is missing.',
+                '[families][missing_attribute_scopable_family][attributes][0][scopable] This field is missing.',
+                '[families][missing_attribute_localizable_family][attributes][0][localizable] This field is missing.',
+                '[families][missing_attribute_group_family][attributes][0][group] This field is missing.',
+                '[families][missing_attribute_unique_family][attributes][0][unique] This field is missing.',
+                '[families][empty_attribute_code_family][attributes][0][code] This value should not be blank.',
+                '[families][empty_attribute_en_US_label_family][attributes][0][labels][en_US] This value should not be blank.',
+                '[families][empty_attribute_group_family][attributes][0][group] This value should not be blank.',
+                '[families][wrong_attribute_type_family][attributes][1][type] This value is not a valid attribute type.',
+                '[families][wrong_attribute_scopable_family][attributes][0][scopable] This value should be of type bool.',
+                '[families][wrong_attribute_localizable_family][attributes][0][localizable] This value should be of type bool.',
+                '[families][wrong_attribute_unique_family][attributes][0][unique] This value should be of type bool.',
+                '[families][missing_attribute_metric_family_family][attributes][1][metric_family] This field is missing.',
+                '[families][empty_attribute_metric_family_family][attributes][1][metric_family] This value should not be blank.',
+                '[families][missing_identifier_attribute_family][attributes] This collection should contain 1 attribute identifier or more.',
             ]
         ];
     }
@@ -81,9 +105,15 @@ class LintTemplatesCommandTest extends TestCase
             static fn (string $line) => '' !== $line,
         );
 
-        $this->assertCount(count($expectedErrors), $actualErrors);
         foreach ($expectedErrors as $expectedError) {
             $this->assertContains($expectedError, $actualErrors);
         }
+
+        $unexpectedErrors = array_diff($actualErrors, $expectedErrors);
+        $this->assertCount(
+            count($expectedErrors),
+            $actualErrors,
+            sprintf('More errors has been raised than expected : %s', join(', ', $unexpectedErrors)),
+        );
     }
 }

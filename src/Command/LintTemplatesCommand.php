@@ -12,6 +12,8 @@ use Symfony\Component\Validator\Constraints\Collection;
 use Symfony\Component\Validator\Constraints\Count;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Validator\Constraints\Required;
+use Symfony\Component\Validator\Constraints\Type;
 use Symfony\Component\Validator\Constraints\Unique;
 use Symfony\Component\Validator\ConstraintViolation;
 use Symfony\Component\Validator\Validation;
@@ -19,6 +21,27 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 class LintTemplatesCommand extends Command
 {
+    private const ATTRIBUTE_TYPES = [
+        'pim_catalog_boolean',
+        'pim_catalog_date',
+        'pim_catalog_file',
+        'pim_catalog_identifier',
+        'pim_catalog_image',
+        'pim_catalog_metric',
+        'pim_catalog_number',
+        'pim_catalog_multiselect',
+        'pim_catalog_simpleselect',
+        'pim_catalog_price_collection',
+        'pim_catalog_textarea',
+        'pim_catalog_text',
+        'pim_reference_data_multiselect',
+        'pim_reference_data_simpleselect',
+        'akeneo_reference_entity',
+        'akeneo_reference_entity_collection',
+        'pim_catalog_asset_collection',
+        'pim_assets_collection',
+        'pim_catalog_table',
+    ];
     protected static $defaultName = 'templates:lint';
     private ValidatorInterface $validator;
 
@@ -167,6 +190,29 @@ class LintTemplatesCommand extends Command
                 ]),
                 'attributes' => [
                     new Count(min: 1),
+                    new All(new Collection([
+                        'code' => new NotBlank(),
+                        'labels' => new Collection([
+                            'en_US' => new NotBlank(),
+                        ]),
+                        'type' => new Choice(
+                            choices: self::ATTRIBUTE_TYPES,
+                            message: 'This value is not a valid attribute type.',
+                        ),
+                        'scopable' => [
+                            new Type('bool'),
+                            new Required(),
+                        ],
+                        'localizable' => [
+                            new Type('bool'),
+                            new Required(),
+                        ],
+                        'group' => new NotBlank(),
+                        'unique' => [
+                            new Type('bool'),
+                            new Required(),
+                        ],
+                    ])),
                 ],
             ]));
 
@@ -190,6 +236,55 @@ class LintTemplatesCommand extends Command
                     '',
                     null,
                 ));
+            }
+
+            if (array_key_exists('attributes', $family) && !empty($family['attributes'])) {
+                $hasAttributeIdentifier = false;
+
+                foreach ($family['attributes'] as $index => $attribute) {
+                    if (!array_key_exists('type', $attribute)) {
+                        continue;
+                    }
+
+                    $hasAttributeIdentifier = $hasAttributeIdentifier || 'pim_catalog_identifier' === $attribute['type'];
+
+                    if ('pim_catalog_metric' === $attribute['type']) {
+                        $propertyPath = sprintf('[attributes][%d][metric_family]', $index);
+                        switch (true) {
+                            case !array_key_exists('metric_family', $attribute):
+                                $violations[$fileName]->add(new ConstraintViolation(
+                                    'This field is missing.',
+                                    null,
+                                    [],
+                                    null,
+                                    $propertyPath,
+                                    null,
+                                ));
+                                break;
+                            case empty($attribute['metric_family']):
+                                $violations[$fileName]->add(new ConstraintViolation(
+                                    'This value should not be blank.',
+                                    null,
+                                    [],
+                                    null,
+                                    $propertyPath,
+                                    null,
+                                ));
+                                break;
+                        }
+                    }
+                }
+
+                if (!$hasAttributeIdentifier) {
+                    $violations[$fileName]->add(new ConstraintViolation(
+                        'This collection should contain 1 attribute identifier or more.',
+                        null,
+                        [],
+                        null,
+                        '[attributes]',
+                        null,
+                    ));
+                }
             }
         }
 
