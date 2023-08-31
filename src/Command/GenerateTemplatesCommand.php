@@ -204,7 +204,7 @@ class GenerateTemplatesCommand extends Command
 
     private function writeJsonFile(string $filePath, array $data): void
     {
-        $json = json_encode($data, JSON_PRETTY_PRINT);
+        $json = json_encode($data);
         file_put_contents($filePath, $json);
     }
 
