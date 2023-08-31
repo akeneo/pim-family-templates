@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Set up file permissions
-          command: mkdir ~/.composer && sudo chown -R 1000:1000 ../project ~/.cache ~/.composer
+          command: mkdir -p ~/.composer ~/.cache/yarn && sudo chown -R 1000:1000 ../project ~/.cache ~/.composer
       - run:
           name: Install dependencies
           command: make install
@@ -44,7 +44,7 @@ jobs:
           at: ~/
       - run:
           name: Set up file permissions
-          command: sudo chown -R 1000:1000 ../project
+          command: mkdir -p ~/.cache/yarn && sudo chown -R 1000:1000 ../project ~/.cache
       - run:
           name: Run lint templates
           command: make lint-templates
