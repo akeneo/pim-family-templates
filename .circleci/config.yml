@@ -36,6 +36,19 @@ jobs:
           name: Run tests
           command: make tests
 
+  lint_templates:
+    machine:
+      image: ubuntu-2204:2023.07.2
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          name: Set up file permissions
+          command: sudo chown -R 1000:1000 ../project
+      - run:
+          name: Run lint templates
+          command: make lint-templates
+
   minify_templates:
     machine:
       image: ubuntu-2204:2023.07.2
@@ -47,7 +60,7 @@ jobs:
           command: sudo chown -R 1000:1000 ../project
       - run:
           name: Minify templates
-          command: make dist
+          command: make minify-templates
       - persist_to_workspace:
           root: ~/
           paths:
@@ -98,9 +111,13 @@ workflows:
       - test_generator:
           requires:
             - install
+      - lint_templates:
+          requires:
+            - install
       - go_to_merguez:
           requires:
             - test_generator
+            - lint_templates
 
   minify_templates:
     jobs:
@@ -108,9 +125,12 @@ workflows:
           filters:
             branches:
               only: main
-      - minify_templates:
+      - lint_templates:
           requires:
             - install
+      - minify_templates:
+          requires:
+            - lint_templates
       - commit_and_push:
           requires:
             - minify_templates

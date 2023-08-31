@@ -1,33 +1,44 @@
-DOCKER = docker compose run --rm php
+PHP = docker compose run --rm php
+NODE = docker compose run --rm node
 
 .PHONY: install
 install:
-	$(DOCKER) composer install
+	$(PHP) composer install
+	$(NODE) yarn install
 
 .PHONY: tests
 tests:
-	$(DOCKER) vendor/bin/phpunit
+	$(PHP) vendor/bin/phpunit
 
 .PHONY: static
 static:
-	$(DOCKER) vendor/bin/phpstan
+	$(PHP) vendor/bin/phpstan
 
 .PHONY: cs
 cs:
-	$(DOCKER) vendor/bin/php-cs-fixer fix --config=.php_cs.php --diff --dry-run
+	$(PHP) vendor/bin/php-cs-fixer fix --config=.php_cs.php --diff --dry-run
 
 .PHONY: fix-cs
 fix-cs:
-	$(DOCKER) vendor/bin/php-cs-fixer fix --config=.php_cs.php --diff
+	$(PHP) vendor/bin/php-cs-fixer fix --config=.php_cs.php --diff
 
-.PHONY: templates
-templates:
-	$(DOCKER) rm -rf templates
-	$(DOCKER) mkdir templates
-	$(DOCKER) bin/console templates:generate ${SOURCE_FILE} templates
+TEMPLATES_DIR = templates
+DIST_DIR = dist
 
-.PHONY: dist
-dist:
-	$(DOCKER) rm -rf dist
-	$(DOCKER) mkdir dist
-	$(DOCKER) bin/console templates:minify templates dist/minified.json
+.PHONY: generate-templates
+generate-templates:
+	$(PHP) rm -rf $(TEMPLATES_DIR)
+	$(PHP) mkdir $(TEMPLATES_DIR)
+	$(PHP) bin/console templates:generate ${SOURCE_FILE} $(TEMPLATES_DIR)
+	$(NODE) prettier $(TEMPLATES_DIR) -w
+
+.PHONY: lint-templates
+lint-templates:
+	$(PHP) bin/console templates:lint $(TEMPLATES_DIR)
+	$(NODE) prettier $(TEMPLATES_DIR) -c
+
+.PHONY: minify-templates
+minify-templates:
+	$(PHP) rm -rf $(DIST_DIR)
+	$(PHP) mkdir $(DIST_DIR)
+	$(PHP) bin/console templates:minify $(TEMPLATES_DIR) $(DIST_DIR)/minified.json
