@@ -30,12 +30,12 @@ generate-templates:
 	$(PHP) rm -rf $(TEMPLATES_DIR)
 	$(PHP) mkdir $(TEMPLATES_DIR)
 	$(PHP) bin/console templates:generate ${SOURCE_FILE} $(TEMPLATES_DIR)
-	$(NODE) prettier $(TEMPLATES_DIR) -w
+	$(NODE) yarn prettier $(TEMPLATES_DIR) -w
 
 .PHONY: lint-templates
 lint-templates:
 	$(PHP) bin/console templates:lint $(TEMPLATES_DIR)
-	$(NODE) prettier $(TEMPLATES_DIR) -c
+	$(NODE) yarn prettier $(TEMPLATES_DIR) -c
 
 .PHONY: minify-templates
 minify-templates:

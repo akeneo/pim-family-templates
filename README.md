@@ -1,16 +1,20 @@
 # PIM Families Templates
 
-## How to generate template ?
+## How to generate templates ?
 
-In order to generate template, you need to get the XLSX file enriched by Fef.
-Then, you have to use the Makefile like that:
+In order to generate templates, you need to get the XLSX file enriched by Fef.
 ```shell
-SOURCE_FILE=felix.xlsx make templates
+SOURCE_FILE=felix.xlsx make generate-templates
 ```
 
-## How to minify template ?
+## How to lint templates ?
 
-You can use the Makefile to do it:
 ```shell
-make dist
+make lint-templates
+```
+
+## How to minify templates ?
+
+```shell
+make minify-templates
 ```
