@@ -1,244 +1,200 @@
 {
-    "code": "vitamins_and_supplements",
-    "labels": {
-        "en_US": "Vitamins & supplements"
+  "code": "vitamins_and_supplements",
+  "labels": { "en_US": "Vitamins & supplements" },
+  "description": {
+    "en_US": "Boost your well-being with our 'Vitamins and Supplements' family template - a healthful collection of pre-built attributes to effortlessly manage your essential nutrients, empowering you to embrace a healthier lifestyle."
+  },
+  "attributes": [
+    {
+      "code": "EAN",
+      "labels": { "en_US": "Main Identifier" },
+      "type": "pim_catalog_identifier",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": true
     },
-    "description": {
-        "en_US": "Boost your well-being with our 'Vitamins and Supplements' family template - a healthful collection of pre-built attributes to effortlessly manage your essential nutrients, empowering you to embrace a healthier lifestyle."
+    {
+      "code": "price",
+      "labels": { "en_US": "Price" },
+      "type": "pim_catalog_price_collection",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
     },
-    "attributes": [
-        {
-            "code": "EAN",
-            "labels": {
-                "en_US": "Main Identifier"
-            },
-            "type": "pim_catalog_identifier",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": true
-        },
-        {
-            "code": "price",
-            "labels": {
-                "en_US": "Price"
-            },
-            "type": "pim_catalog_price_collection",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "product_title",
-            "labels": {
-                "en_US": "Product title"
-            },
-            "type": "pim_catalog_text",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "short_description",
-            "labels": {
-                "en_US": "Short description"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "long_description",
-            "labels": {
-                "en_US": "Long description"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "brand",
-            "labels": {
-                "en_US": "Brand"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "main_image",
-            "labels": {
-                "en_US": "Main image"
-            },
-            "type": "pim_catalog_image",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "detailed_image",
-            "labels": {
-                "en_US": "Detailed image"
-            },
-            "type": "pim_catalog_image",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "atmosphere_image",
-            "labels": {
-                "en_US": "Atmosphere image"
-            },
-            "type": "pim_catalog_image",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "weight",
-            "labels": {
-                "en_US": "Weight"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false,
-            "metric_family": "Weight"
-        },
-        {
-            "code": "cure_days",
-            "labels": {
-                "en_US": "Cure days"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "content_type",
-            "labels": {
-                "en_US": "Content type"
-            },
-            "type": "pim_catalog_multiselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "capacity",
-            "labels": {
-                "en_US": "Capacity"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false,
-            "metric_family": "Volume"
-        },
-        {
-            "code": "benefits",
-            "labels": {
-                "en_US": "Benefits"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "formula",
-            "labels": {
-                "en_US": "Formula"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "active_ingredients",
-            "labels": {
-                "en_US": "Active Ingredients"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "warnings",
-            "labels": {
-                "en_US": "Warnings"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "expiration_date",
-            "labels": {
-                "en_US": "Expiration date"
-            },
-            "type": "pim_catalog_date",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "batch_number",
-            "labels": {
-                "en_US": "Batch or Lot Numer"
-            },
-            "type": "pim_catalog_number",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "skin_type",
-            "labels": {
-                "en_US": "Skin Type"
-            },
-            "type": "pim_catalog_multiselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "field_of_action",
-            "labels": {
-                "en_US": "Field of action"
-            },
-            "type": "pim_catalog_multiselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        }
-    ]
+    {
+      "code": "product_title",
+      "labels": { "en_US": "Product title" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "short_description",
+      "labels": { "en_US": "Short description" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "long_description",
+      "labels": { "en_US": "Long description" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "brand",
+      "labels": { "en_US": "Brand" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "main_image",
+      "labels": { "en_US": "Main image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "detailed_image",
+      "labels": { "en_US": "Detailed image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "atmosphere_image",
+      "labels": { "en_US": "Atmosphere image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "weight",
+      "labels": { "en_US": "Weight" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Weight"
+    },
+    {
+      "code": "cure_days",
+      "labels": { "en_US": "Cure days" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "content_type",
+      "labels": { "en_US": "Content type" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "capacity",
+      "labels": { "en_US": "Capacity" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Volume"
+    },
+    {
+      "code": "benefits",
+      "labels": { "en_US": "Benefits" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "formula",
+      "labels": { "en_US": "Formula" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "active_ingredients",
+      "labels": { "en_US": "Active Ingredients" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "warnings",
+      "labels": { "en_US": "Warnings" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "expiration_date",
+      "labels": { "en_US": "Expiration date" },
+      "type": "pim_catalog_date",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "batch_number",
+      "labels": { "en_US": "Batch or Lot Numer" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "skin_type",
+      "labels": { "en_US": "Skin Type" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "action_field",
+      "labels": { "en_US": "Field of action" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    }
+  ]
 }

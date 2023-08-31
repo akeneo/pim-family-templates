@@ -1,266 +1,218 @@
 {
-    "code": "hair_care",
-    "labels": {
-        "en_US": "Hair care"
+  "code": "hair_care",
+  "labels": { "en_US": "Hair care" },
+  "description": {
+    "en_US": "Unleash your inner glow with our 'Hair Care' family template - a carefully curated set of pre-built attributes to effortlessly manage your hair products, revealing your best hair day, every day."
+  },
+  "attributes": [
+    {
+      "code": "EAN",
+      "labels": { "en_US": "Main Identifier" },
+      "type": "pim_catalog_identifier",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": true
     },
-    "description": {
-        "en_US": "Unleash your inner glow with our 'Hair Care' family template - a carefully curated set of pre-built attributes to effortlessly manage your hair products, revealing your best hair day, every day."
+    {
+      "code": "price",
+      "labels": { "en_US": "Price" },
+      "type": "pim_catalog_price_collection",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
     },
-    "attributes": [
-        {
-            "code": "EAN",
-            "labels": {
-                "en_US": "Main Identifier"
-            },
-            "type": "pim_catalog_identifier",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": true
-        },
-        {
-            "code": "price",
-            "labels": {
-                "en_US": "Price"
-            },
-            "type": "pim_catalog_price_collection",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "product_title",
-            "labels": {
-                "en_US": "Product title"
-            },
-            "type": "pim_catalog_text",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "short_description",
-            "labels": {
-                "en_US": "Short description"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "long_description",
-            "labels": {
-                "en_US": "Long description"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "brand",
-            "labels": {
-                "en_US": "Brand"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "main_image",
-            "labels": {
-                "en_US": "Main image"
-            },
-            "type": "pim_catalog_image",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "detailed_image",
-            "labels": {
-                "en_US": "Detailed image"
-            },
-            "type": "pim_catalog_image",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "atmosphere_image",
-            "labels": {
-                "en_US": "Atmosphere image"
-            },
-            "type": "pim_catalog_image",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "weight",
-            "labels": {
-                "en_US": "Weight"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false,
-            "metric_family": "Weight"
-        },
-        {
-            "code": "content_type",
-            "labels": {
-                "en_US": "Content type"
-            },
-            "type": "pim_catalog_multiselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "capacity",
-            "labels": {
-                "en_US": "Capacity"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false,
-            "metric_family": "Volume"
-        },
-        {
-            "code": "benefits",
-            "labels": {
-                "en_US": "Benefits"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "formula",
-            "labels": {
-                "en_US": "Formula"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "application_tips",
-            "labels": {
-                "en_US": "Application Tips"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "aromatic_components",
-            "labels": {
-                "en_US": "Aromatic components"
-            },
-            "type": "pim_catalog_multiselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "active_ingredients",
-            "labels": {
-                "en_US": "Active Ingredients"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "warnings",
-            "labels": {
-                "en_US": "Warnings"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "expiration_date",
-            "labels": {
-                "en_US": "Expiration date"
-            },
-            "type": "pim_catalog_date",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "batch_number",
-            "labels": {
-                "en_US": "Batch or Lot Numer"
-            },
-            "type": "pim_catalog_number",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "hair_type",
-            "labels": {
-                "en_US": "Hair type"
-            },
-            "type": "pim_catalog_multiselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "standards",
-            "labels": {
-                "en_US": "Standards"
-            },
-            "type": "pim_catalog_multiselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "organic",
-            "labels": {
-                "en_US": "Organic"
-            },
-            "type": "pim_catalog_boolean",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        }
-    ]
+    {
+      "code": "product_title",
+      "labels": { "en_US": "Product title" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "short_description",
+      "labels": { "en_US": "Short description" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "long_description",
+      "labels": { "en_US": "Long description" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "brand",
+      "labels": { "en_US": "Brand" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "main_image",
+      "labels": { "en_US": "Main image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "detailed_image",
+      "labels": { "en_US": "Detailed image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "atmosphere_image",
+      "labels": { "en_US": "Atmosphere image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "weight",
+      "labels": { "en_US": "Weight" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Weight"
+    },
+    {
+      "code": "content_type",
+      "labels": { "en_US": "Content type" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "capacity",
+      "labels": { "en_US": "Capacity" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Volume"
+    },
+    {
+      "code": "benefits",
+      "labels": { "en_US": "Benefits" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "formula",
+      "labels": { "en_US": "Formula" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "application_tips",
+      "labels": { "en_US": "Application Tips" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "aromatic",
+      "labels": { "en_US": "Aromatic components" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "active_ingredients",
+      "labels": { "en_US": "Active Ingredients" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "warnings",
+      "labels": { "en_US": "Warnings" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "expiration_date",
+      "labels": { "en_US": "Expiration date" },
+      "type": "pim_catalog_date",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "batch_number",
+      "labels": { "en_US": "Batch or Lot Numer" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "hair_type",
+      "labels": { "en_US": "Hair type" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "standards",
+      "labels": { "en_US": "Standards" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "organic",
+      "labels": { "en_US": "Organic" },
+      "type": "pim_catalog_boolean",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    }
+  ]
 }

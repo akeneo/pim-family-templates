@@ -1,248 +1,205 @@
 {
-    "code": "fitness_training",
-    "labels": {
-        "en_US": "Fitness training"
+  "code": "fitness_training",
+  "labels": { "en_US": "Fitness training" },
+  "description": {
+    "en_US": "Achieve your fitness goals with our 'Fitness Training' family template - a dynamic collection of pre-built attributes to seamlessly manage your workouts, empowering you to lead a healthier and more active lifestyle."
+  },
+  "attributes": [
+    {
+      "code": "EAN",
+      "labels": { "en_US": "Main Identifier" },
+      "type": "pim_catalog_identifier",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": true
     },
-    "description": {
-        "en_US": "Achieve your fitness goals with our 'Fitness Training' family template - a dynamic collection of pre-built attributes to seamlessly manage your workouts, empowering you to lead a healthier and more active lifestyle."
+    {
+      "code": "price",
+      "labels": { "en_US": "Price" },
+      "type": "pim_catalog_price_collection",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
     },
-    "attributes": [
-        {
-            "code": "EAN",
-            "labels": {
-                "en_US": "Main Identifier"
-            },
-            "type": "pim_catalog_identifier",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": true
-        },
-        {
-            "code": "price",
-            "labels": {
-                "en_US": "Price"
-            },
-            "type": "pim_catalog_price_collection",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "product_title",
-            "labels": {
-                "en_US": "Product title"
-            },
-            "type": "pim_catalog_text",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "short_description",
-            "labels": {
-                "en_US": "Short description"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "long_description",
-            "labels": {
-                "en_US": "Long description"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "brand",
-            "labels": {
-                "en_US": "Brand"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "main_image",
-            "labels": {
-                "en_US": "Main image"
-            },
-            "type": "pim_catalog_image",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "detailed_image",
-            "labels": {
-                "en_US": "Detailed image"
-            },
-            "type": "pim_catalog_image",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "atmosphere_image",
-            "labels": {
-                "en_US": "Atmosphere image"
-            },
-            "type": "pim_catalog_image",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "indoor_outdoor",
-            "labels": {
-                "en_US": "Indoor\/Outdoor"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "height",
-            "labels": {
-                "en_US": "Height"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false,
-            "metric_family": "Length"
-        },
-        {
-            "code": "length",
-            "labels": {
-                "en_US": "Length"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false,
-            "metric_family": "Length"
-        },
-        {
-            "code": "width",
-            "labels": {
-                "en_US": "Width"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false,
-            "metric_family": "Length"
-        },
-        {
-            "code": "weight",
-            "labels": {
-                "en_US": "Weight"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false,
-            "metric_family": "Weight"
-        },
-        {
-            "code": "number_of_programs",
-            "labels": {
-                "en_US": "Number of programs"
-            },
-            "type": "pim_catalog_number",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "fitness_apparel_type",
-            "labels": {
-                "en_US": "Fitness apparel type"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "max_speed",
-            "labels": {
-                "en_US": "Max speed"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false,
-            "metric_family": "Speed"
-        },
-        {
-            "code": "bluetooth",
-            "labels": {
-                "en_US": "Bluetooth"
-            },
-            "type": "pim_catalog_boolean",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "motor_hp",
-            "labels": {
-                "en_US": "Motor hp"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "max_incline",
-            "labels": {
-                "en_US": "Max incline"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false,
-            "metric_family": "Angle"
-        },
-        {
-            "code": "screen",
-            "labels": {
-                "en_US": "Screen"
-            },
-            "type": "pim_catalog_boolean",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        }
-    ]
+    {
+      "code": "product_title",
+      "labels": { "en_US": "Product title" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "short_description",
+      "labels": { "en_US": "Short description" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "long_description",
+      "labels": { "en_US": "Long description" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "brand",
+      "labels": { "en_US": "Brand" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "main_image",
+      "labels": { "en_US": "Main image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "detailed_image",
+      "labels": { "en_US": "Detailed image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "atmosphere_image",
+      "labels": { "en_US": "Atmosphere image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "indoor_outdoor",
+      "labels": { "en_US": "Indoor/Outdoor" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "height",
+      "labels": { "en_US": "Height" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Length"
+    },
+    {
+      "code": "length",
+      "labels": { "en_US": "Length" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Length"
+    },
+    {
+      "code": "width",
+      "labels": { "en_US": "Width" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Length"
+    },
+    {
+      "code": "weight",
+      "labels": { "en_US": "Weight" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Weight"
+    },
+    {
+      "code": "number_of_programs",
+      "labels": { "en_US": "Number of programs" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "fitness_apparel_type",
+      "labels": { "en_US": "Fitness apparel type" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "max_speed",
+      "labels": { "en_US": "Max speed" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Speed"
+    },
+    {
+      "code": "bluetooth",
+      "labels": { "en_US": "Bluetooth" },
+      "type": "pim_catalog_boolean",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "motor_hp",
+      "labels": { "en_US": "Motor hp" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Power"
+    },
+    {
+      "code": "max_incline",
+      "labels": { "en_US": "Max incline" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Angle"
+    },
+    {
+      "code": "screen",
+      "labels": { "en_US": "Screen" },
+      "type": "pim_catalog_boolean",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    }
+  ]
 }
