@@ -6,7 +6,6 @@
     },
     "family_templates": [
       "missing_code_family",
-      "empty_code_family",
       "missing_en_US_description_family",
       "missing_en_US_label_family",
       "empty_en_US_description_family",

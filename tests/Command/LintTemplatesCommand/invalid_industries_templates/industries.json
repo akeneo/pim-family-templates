@@ -7,15 +7,6 @@
       "a_family"
     ]
   },
-  "empty_code_industry": {
-    "code": "",
-    "labels": {
-      "en_US": "An industry"
-    },
-    "family_templates": [
-      "a_family"
-    ]
-  },
   "mismatching_code_industry": {
     "code": "wrong",
     "labels": {

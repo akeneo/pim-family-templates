@@ -21,7 +21,6 @@ class LintTemplatesCommandTest extends TestCase
             self::INVALID_INDUSTRIES_TEMPLATES_DIRECTORY,
             [
                 '[industries][missing_code_industry][code] This field is missing.',
-                '[industries][empty_code_industry][code] This value should not be blank.',
                 '[industries][mismatching_code_industry][code] This value should match with key.',
                 '[industries][missing_labels_industry][labels] This field is missing.',
                 '[industries][missing_en_US_label_industry][labels][en_US] This field is missing.',
@@ -37,7 +36,6 @@ class LintTemplatesCommandTest extends TestCase
         yield 'Invalid families' => [
             self::INVALID_FAMILIES_TEMPLATES_DIRECTORY,
             [
-                '[families][empty_code_family][code] This value should not be blank.',
                 '[families][empty_en_US_description_family][description][en_US] This value should not be blank.',
                 '[families][empty_en_US_label_family][labels][en_US] This value should not be blank.',
                 '[families][too_long_en_US_label_family][labels][en_US] This value is too long. It should have 255 characters or less.',

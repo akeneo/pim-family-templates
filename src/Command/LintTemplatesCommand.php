@@ -44,6 +44,7 @@ class LintTemplatesCommand extends Command
         'pim_assets_collection',
         'pim_catalog_table',
     ];
+
     protected static $defaultName = 'templates:lint';
     private ValidatorInterface $validator;
 
@@ -142,10 +143,12 @@ class LintTemplatesCommand extends Command
         $violations = [];
 
         $lintedIndustryCodes = [];
-
         foreach ($industries as $key => $industry) {
             $violations[$key] = $this->validator->validate($industry, new Collection([
-                'code' => new NotBlank(),
+                'code' => new EqualTo(
+                    value: $key,
+                    message: 'This value should match with key.',
+                ),
                 'labels' => new Collection([
                     'en_US' => new NotBlank(),
                 ]),
@@ -164,17 +167,6 @@ class LintTemplatesCommand extends Command
 
             if (!array_key_exists('code', $industry) || '' === $industry['code']) {
                 continue;
-            }
-
-            if ($key !== $industry['code']) {
-                $violations[$key]->add(new ConstraintViolation(
-                    'This value should match with key.',
-                    null,
-                    [],
-                    null,
-                    '[code]',
-                    null,
-                ));
             }
 
             if (in_array($industry['code'], $lintedIndustryCodes)) {
@@ -200,7 +192,10 @@ class LintTemplatesCommand extends Command
 
         foreach ($families as $fileName => $family) {
             $violations[$fileName] = $this->validator->validate($family, new Collection([
-                'code' => new NotBlank(),
+                'code' => new EqualTo(
+                    value: $fileName,
+                    message: 'This value should match with file name.',
+                ),
                 'labels' => new Collection([
                     'en_US' => [
                         new NotBlank(),
@@ -238,17 +233,6 @@ class LintTemplatesCommand extends Command
                     ])),
                 ],
             ]));
-
-            if (array_key_exists('code', $family) && '' !== $family['code'] && $fileName !== $family['code']) {
-                $violations[$fileName]->add(new ConstraintViolation(
-                    'This value should match with file name.',
-                    null,
-                    [],
-                    null,
-                    '[code]',
-                    null,
-                ));
-            }
 
             if (!in_array($fileName, $familyCodesInIndustries)) {
                 $violations[$fileName]->add(new ConstraintViolation(
