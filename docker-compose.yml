@@ -13,3 +13,11 @@ services:
     command: php
     user: www-data
 
+  node:
+    image: akeneo/node:18
+    environment:
+      YARN_CACHE_FOLDER: /home/node/.yarn
+    volumes:
+      - ./:/srv/pim-family-templates
+      - ${HOST_YARN_CACHE_FOLDER:-~/.cache/yarn}:/home/node/.yarn
+    working_dir: /srv/pim-family-templates
