@@ -77,69 +77,73 @@
     "labels": { "en_US": "XL" },
     "attribute": "size"
   },
-  "size6": { "code": "size6", "labels": { "en_US": 5 }, "attribute": "size" },
-  "size7": { "code": "size7", "labels": { "en_US": 6 }, "attribute": "size" },
-  "size8": { "code": "size8", "labels": { "en_US": 7 }, "attribute": "size" },
-  "size9": { "code": "size9", "labels": { "en_US": 8 }, "attribute": "size" },
-  "size10": { "code": "size10", "labels": { "en_US": 9 }, "attribute": "size" },
+  "size6": { "code": "size6", "labels": { "en_US": "5" }, "attribute": "size" },
+  "size7": { "code": "size7", "labels": { "en_US": "6" }, "attribute": "size" },
+  "size8": { "code": "size8", "labels": { "en_US": "7" }, "attribute": "size" },
+  "size9": { "code": "size9", "labels": { "en_US": "8" }, "attribute": "size" },
+  "size10": {
+    "code": "size10",
+    "labels": { "en_US": "9" },
+    "attribute": "size"
+  },
   "size11": {
     "code": "size11",
-    "labels": { "en_US": 35 },
+    "labels": { "en_US": "35" },
     "attribute": "size"
   },
   "size12": {
     "code": "size12",
-    "labels": { "en_US": 36 },
+    "labels": { "en_US": "36" },
     "attribute": "size"
   },
   "size13": {
     "code": "size13",
-    "labels": { "en_US": 37 },
+    "labels": { "en_US": "37" },
     "attribute": "size"
   },
   "size14": {
     "code": "size14",
-    "labels": { "en_US": 38 },
+    "labels": { "en_US": "38" },
     "attribute": "size"
   },
   "size15": {
     "code": "size15",
-    "labels": { "en_US": 39 },
+    "labels": { "en_US": "39" },
     "attribute": "size"
   },
   "size16": {
     "code": "size16",
-    "labels": { "en_US": 40 },
+    "labels": { "en_US": "40" },
     "attribute": "size"
   },
   "size17": {
     "code": "size17",
-    "labels": { "en_US": 86 },
+    "labels": { "en_US": "86" },
     "attribute": "size"
   },
   "size18": {
     "code": "size18",
-    "labels": { "en_US": 94 },
+    "labels": { "en_US": "94" },
     "attribute": "size"
   },
   "size19": {
     "code": "size19",
-    "labels": { "en_US": 102 },
+    "labels": { "en_US": "102" },
     "attribute": "size"
   },
   "size20": {
     "code": "size20",
-    "labels": { "en_US": 108 },
+    "labels": { "en_US": "108" },
     "attribute": "size"
   },
   "size21": {
     "code": "size21",
-    "labels": { "en_US": 120 },
+    "labels": { "en_US": "120" },
     "attribute": "size"
   },
   "size22": {
     "code": "size22",
-    "labels": { "en_US": 130 },
+    "labels": { "en_US": "130" },
     "attribute": "size"
   },
   "fabric1": {
@@ -1269,77 +1273,47 @@
   },
   "video_game_players1": {
     "code": "video_game_players1",
-    "labels": { "en_US": 1 },
+    "labels": { "en_US": "1" },
     "attribute": "video_game_players"
   },
   "video_game_players2": {
     "code": "video_game_players2",
-    "labels": {
-      "en_US": {
-        "date": "2023-02-01 00:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "UTC"
-      }
-    },
+    "labels": { "en_US": "1-2" },
     "attribute": "video_game_players"
   },
   "video_game_players3": {
     "code": "video_game_players3",
-    "labels": {
-      "en_US": {
-        "date": "2023-04-01 00:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "UTC"
-      }
-    },
+    "labels": { "en_US": "1-4" },
     "attribute": "video_game_players"
   },
   "video_game_players4": {
     "code": "video_game_players4",
-    "labels": {
-      "en_US": {
-        "date": "2023-06-01 00:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "UTC"
-      }
-    },
+    "labels": { "en_US": "1-6" },
     "attribute": "video_game_players"
   },
   "video_game_players5": {
     "code": "video_game_players5",
-    "labels": { "en_US": 2 },
+    "labels": { "en_US": "2" },
     "attribute": "video_game_players"
   },
   "video_game_players6": {
     "code": "video_game_players6",
-    "labels": {
-      "en_US": {
-        "date": "2023-04-02 00:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "UTC"
-      }
-    },
+    "labels": { "en_US": "2-4" },
     "attribute": "video_game_players"
   },
   "video_game_players7": {
     "code": "video_game_players7",
-    "labels": {
-      "en_US": {
-        "date": "2023-06-02 00:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "UTC"
-      }
-    },
+    "labels": { "en_US": "2-6" },
     "attribute": "video_game_players"
   },
   "video_game_players8": {
     "code": "video_game_players8",
-    "labels": { "en_US": 3 },
+    "labels": { "en_US": "3" },
     "attribute": "video_game_players"
   },
   "video_game_players9": {
     "code": "video_game_players9",
-    "labels": { "en_US": 4 },
+    "labels": { "en_US": "4" },
     "attribute": "video_game_players"
   },
   "headphone_type1": {
