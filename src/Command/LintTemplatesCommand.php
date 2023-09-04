@@ -148,13 +148,16 @@ class LintTemplatesCommand extends Command
                 ),
                 'labels' => new Collection([
                     'en_US' => [
+                        new Type('string'),
                         new NotBlank(),
+                        new Type('string'),
                         new Length(max: 255),
                     ],
                 ]),
                 'family_templates' => [
                     new Count(min: 1),
                     new All([
+                        new Type('string'),
                         new NotBlank(),
                         new Choice(
                             choices: $familyTemplateFileNames,
@@ -198,12 +201,14 @@ class LintTemplatesCommand extends Command
                 ),
                 'labels' => new Collection([
                     'en_US' => [
+                        new Type('string'),
                         new NotBlank(),
                         new Length(max: 255),
                     ],
                 ]),
                 'description' => new Collection([
                     'en_US' => [
+                        new Type('string'),
                         new NotBlank(),
                         new Length(max: 255),
                     ],
@@ -211,9 +216,13 @@ class LintTemplatesCommand extends Command
                 'attributes' => [
                     new Count(min: 1),
                     new All(new Collection([
-                        'code' => new NotBlank(),
+                        'code' => [
+                            new Type('string'),
+                            new NotBlank(),
+                        ],
                         'labels' => new Collection([
                             'en_US' => [
+                                new Type('string'),
                                 new NotBlank(),
                                 new Length(max: 255),
                             ],
@@ -235,7 +244,9 @@ class LintTemplatesCommand extends Command
                             new Type('bool'),
                             new Required(),
                         ],
-                        'metric_family' => new Optional(),
+                        'metric_family' => [
+                            new Optional(),
+                        ],
                     ])),
                 ],
             ]));
@@ -284,6 +295,16 @@ class LintTemplatesCommand extends Command
                                     null,
                                 ));
                                 break;
+                            case !is_string($attribute['metric_family']):
+                                $violations[$fileName]->add(new ConstraintViolation(
+                                    'This value should be of type string.',
+                                    null,
+                                    [],
+                                    null,
+                                    $propertyPath,
+                                    null,
+                                ));
+                                break;
                         }
                     }
                 }
@@ -317,6 +338,7 @@ class LintTemplatesCommand extends Command
                 ),
                 'labels' => new Collection([
                     'en_US' => [
+                        new Type('string'),
                         new NotBlank(),
                         new Length(max: 255),
                     ],
