@@ -1,4047 +1,2866 @@
 {
-    "brand1": {
-        "code": "brand1",
-        "labels": {
-            "en_US": "Zaro"
-        },
-        "attribute": "brand"
-    },
-    "brand2": {
-        "code": "brand2",
-        "labels": {
-            "en_US": "Zigolf"
-        },
-        "attribute": "brand"
-    },
-    "brand3": {
-        "code": "brand3",
-        "labels": {
-            "en_US": "Zaro Premium"
-        },
-        "attribute": "brand"
-    },
-    "brand4": {
-        "code": "brand4",
-        "labels": {
-            "en_US": "Zaro Kids"
-        },
-        "attribute": "brand"
-    },
-    "brand5": {
-        "code": "brand5",
-        "labels": {
-            "en_US": "Zaro Sport"
-        },
-        "attribute": "brand"
-    },
-    "brand6": {
-        "code": "brand6",
-        "labels": {
-            "en_US": "Zarauto"
-        },
-        "attribute": "brand"
-    },
-    "brand7": {
-        "code": "brand7",
-        "labels": {
-            "en_US": "Zaro Green"
-        },
-        "attribute": "brand"
-    },
-    "color1": {
-        "code": "color1",
-        "labels": {
-            "en_US": "Blue"
-        },
-        "attribute": "color"
-    },
-    "color2": {
-        "code": "color2",
-        "labels": {
-            "en_US": "Black"
-        },
-        "attribute": "color"
-    },
-    "color3": {
-        "code": "color3",
-        "labels": {
-            "en_US": "Pink"
-        },
-        "attribute": "color"
-    },
-    "color4": {
-        "code": "color4",
-        "labels": {
-            "en_US": "Grey"
-        },
-        "attribute": "color"
-    },
-    "color5": {
-        "code": "color5",
-        "labels": {
-            "en_US": "Yellow"
-        },
-        "attribute": "color"
-    },
-    "color6": {
-        "code": "color6",
-        "labels": {
-            "en_US": "White"
-        },
-        "attribute": "color"
-    },
-    "size1": {
-        "code": "size1",
-        "labels": {
-            "en_US": "S"
-        },
-        "attribute": "size"
-    },
-    "size2": {
-        "code": "size2",
-        "labels": {
-            "en_US": "M"
-        },
-        "attribute": "size"
-    },
-    "size3": {
-        "code": "size3",
-        "labels": {
-            "en_US": "L"
-        },
-        "attribute": "size"
-    },
-    "size4": {
-        "code": "size4",
-        "labels": {
-            "en_US": "XS"
-        },
-        "attribute": "size"
-    },
-    "size5": {
-        "code": "size5",
-        "labels": {
-            "en_US": "XL"
-        },
-        "attribute": "size"
-    },
-    "size6": {
-        "code": "size6",
-        "labels": {
-            "en_US": 5
-        },
-        "attribute": "size"
-    },
-    "size7": {
-        "code": "size7",
-        "labels": {
-            "en_US": 6
-        },
-        "attribute": "size"
-    },
-    "size8": {
-        "code": "size8",
-        "labels": {
-            "en_US": 7
-        },
-        "attribute": "size"
-    },
-    "size9": {
-        "code": "size9",
-        "labels": {
-            "en_US": 8
-        },
-        "attribute": "size"
-    },
-    "size10": {
-        "code": "size10",
-        "labels": {
-            "en_US": 9
-        },
-        "attribute": "size"
-    },
-    "size11": {
-        "code": "size11",
-        "labels": {
-            "en_US": 35
-        },
-        "attribute": "size"
-    },
-    "size12": {
-        "code": "size12",
-        "labels": {
-            "en_US": 36
-        },
-        "attribute": "size"
-    },
-    "size13": {
-        "code": "size13",
-        "labels": {
-            "en_US": 37
-        },
-        "attribute": "size"
-    },
-    "size14": {
-        "code": "size14",
-        "labels": {
-            "en_US": 38
-        },
-        "attribute": "size"
-    },
-    "size15": {
-        "code": "size15",
-        "labels": {
-            "en_US": 39
-        },
-        "attribute": "size"
-    },
-    "size16": {
-        "code": "size16",
-        "labels": {
-            "en_US": 40
-        },
-        "attribute": "size"
-    },
-    "size17": {
-        "code": "size17",
-        "labels": {
-            "en_US": 86
-        },
-        "attribute": "size"
-    },
-    "size18": {
-        "code": "size18",
-        "labels": {
-            "en_US": 94
-        },
-        "attribute": "size"
-    },
-    "size19": {
-        "code": "size19",
-        "labels": {
-            "en_US": 102
-        },
-        "attribute": "size"
-    },
-    "size20": {
-        "code": "size20",
-        "labels": {
-            "en_US": 108
-        },
-        "attribute": "size"
-    },
-    "size21": {
-        "code": "size21",
-        "labels": {
-            "en_US": 120
-        },
-        "attribute": "size"
-    },
-    "size22": {
-        "code": "size22",
-        "labels": {
-            "en_US": 130
-        },
-        "attribute": "size"
-    },
-    "fabric1": {
-        "code": "fabric1",
-        "labels": {
-            "en_US": "Cotton"
-        },
-        "attribute": "fabric"
-    },
-    "fabric2": {
-        "code": "fabric2",
-        "labels": {
-            "en_US": "Velvet"
-        },
-        "attribute": "fabric"
-    },
-    "fabric3": {
-        "code": "fabric3",
-        "labels": {
-            "en_US": "Silk"
-        },
-        "attribute": "fabric"
-    },
-    "fabric4": {
-        "code": "fabric4",
-        "labels": {
-            "en_US": "Leather"
-        },
-        "attribute": "fabric"
-    },
-    "fabric5": {
-        "code": "fabric5",
-        "labels": {
-            "en_US": "Vegan leather"
-        },
-        "attribute": "fabric"
-    },
-    "fabric6": {
-        "code": "fabric6",
-        "labels": {
-            "en_US": "Denim"
-        },
-        "attribute": "fabric"
-    },
-    "fabric7": {
-        "code": "fabric7",
-        "labels": {
-            "en_US": "Polyester"
-        },
-        "attribute": "fabric"
-    },
-    "fabric8": {
-        "code": "fabric8",
-        "labels": {
-            "en_US": "Wool"
-        },
-        "attribute": "fabric"
-    },
-    "material1": {
-        "code": "material1",
-        "labels": {
-            "en_US": "Metal"
-        },
-        "attribute": "material"
-    },
-    "material2": {
-        "code": "material2",
-        "labels": {
-            "en_US": "Plastic"
-        },
-        "attribute": "material"
-    },
-    "material3": {
-        "code": "material3",
-        "labels": {
-            "en_US": "Wood"
-        },
-        "attribute": "material"
-    },
-    "material4": {
-        "code": "material4",
-        "labels": {
-            "en_US": "Glass"
-        },
-        "attribute": "material"
-    },
-    "material5": {
-        "code": "material5",
-        "labels": {
-            "en_US": "Synthetic fibers"
-        },
-        "attribute": "material"
-    },
-    "material6": {
-        "code": "material6",
-        "labels": {
-            "en_US": "Bemboo"
-        },
-        "attribute": "material"
-    },
-    "material7": {
-        "code": "material7",
-        "labels": {
-            "en_US": "Ceramic"
-        },
-        "attribute": "material"
-    },
-    "material8": {
-        "code": "material8",
-        "labels": {
-            "en_US": "Titanium"
-        },
-        "attribute": "material"
-    },
-    "material9": {
-        "code": "material9",
-        "labels": {
-            "en_US": "Stainless steel"
-        },
-        "attribute": "material"
-    },
-    "material10": {
-        "code": "material10",
-        "labels": {
-            "en_US": "Steel"
-        },
-        "attribute": "material"
-    },
-    "material11": {
-        "code": "material11",
-        "labels": {
-            "en_US": "White gold"
-        },
-        "attribute": "material"
-    },
-    "material12": {
-        "code": "material12",
-        "labels": {
-            "en_US": "Yellow gold"
-        },
-        "attribute": "material"
-    },
-    "material13": {
-        "code": "material13",
-        "labels": {
-            "en_US": "Rose gold"
-        },
-        "attribute": "material"
-    },
-    "material14": {
-        "code": "material14",
-        "labels": {
-            "en_US": "Platinum"
-        },
-        "attribute": "material"
-    },
-    "material15": {
-        "code": "material15",
-        "labels": {
-            "en_US": "Sterling silver"
-        },
-        "attribute": "material"
-    },
-    "material16": {
-        "code": "material16",
-        "labels": {
-            "en_US": "Silver"
-        },
-        "attribute": "material"
-    },
-    "material17": {
-        "code": "material17",
-        "labels": {
-            "en_US": "Carbon fiber"
-        },
-        "attribute": "material"
-    },
-    "care_instructions1": {
-        "code": "care_instructions1",
-        "labels": {
-            "en_US": "Machine Wash"
-        },
-        "attribute": "care_instructions"
-    },
-    "care_instructions2": {
-        "code": "care_instructions2",
-        "labels": {
-            "en_US": "Hand Wash"
-        },
-        "attribute": "care_instructions"
-    },
-    "care_instructions3": {
-        "code": "care_instructions3",
-        "labels": {
-            "en_US": "Dry. Clean"
-        },
-        "attribute": "care_instructions"
-    },
-    "care_instructions4": {
-        "code": "care_instructions4",
-        "labels": {
-            "en_US": "Do Not Wash"
-        },
-        "attribute": "care_instructions"
-    },
-    "care_instructions5": {
-        "code": "care_instructions5",
-        "labels": {
-            "en_US": "Tumble Dry"
-        },
-        "attribute": "care_instructions"
-    },
-    "care_instructions6": {
-        "code": "care_instructions6",
-        "labels": {
-            "en_US": "Line Dry"
-        },
-        "attribute": "care_instructions"
-    },
-    "care_instructions7": {
-        "code": "care_instructions7",
-        "labels": {
-            "en_US": "Dry Flat"
-        },
-        "attribute": "care_instructions"
-    },
-    "care_instructions8": {
-        "code": "care_instructions8",
-        "labels": {
-            "en_US": "Iron"
-        },
-        "attribute": "care_instructions"
-    },
-    "care_instructions9": {
-        "code": "care_instructions9",
-        "labels": {
-            "en_US": "Do Not Irin"
-        },
-        "attribute": "care_instructions"
-    },
-    "care_instructions10": {
-        "code": "care_instructions10",
-        "labels": {
-            "en_US": "Bleach"
-        },
-        "attribute": "care_instructions"
-    },
-    "care_instructions11": {
-        "code": "care_instructions11",
-        "labels": {
-            "en_US": "Wash with similar colors"
-        },
-        "attribute": "care_instructions"
-    },
-    "pattern1": {
-        "code": "pattern1",
-        "labels": {
-            "en_US": "Floral"
-        },
-        "attribute": "pattern"
-    },
-    "pattern2": {
-        "code": "pattern2",
-        "labels": {
-            "en_US": "Stripes"
-        },
-        "attribute": "pattern"
-    },
-    "pattern3": {
-        "code": "pattern3",
-        "labels": {
-            "en_US": "Polka Dot"
-        },
-        "attribute": "pattern"
-    },
-    "pattern4": {
-        "code": "pattern4",
-        "labels": {
-            "en_US": "Plaid"
-        },
-        "attribute": "pattern"
-    },
-    "pattern5": {
-        "code": "pattern5",
-        "labels": {
-            "en_US": "Animal Print"
-        },
-        "attribute": "pattern"
-    },
-    "pattern6": {
-        "code": "pattern6",
-        "labels": {
-            "en_US": "Paisley"
-        },
-        "attribute": "pattern"
-    },
-    "pattern7": {
-        "code": "pattern7",
-        "labels": {
-            "en_US": "Houndstooth"
-        },
-        "attribute": "pattern"
-    },
-    "pattern8": {
-        "code": "pattern8",
-        "labels": {
-            "en_US": "Chevron"
-        },
-        "attribute": "pattern"
-    },
-    "pattern9": {
-        "code": "pattern9",
-        "labels": {
-            "en_US": "Geometric"
-        },
-        "attribute": "pattern"
-    },
-    "pattern10": {
-        "code": "pattern10",
-        "labels": {
-            "en_US": "Tie-Dye"
-        },
-        "attribute": "pattern"
-    },
-    "handbag_type1": {
-        "code": "handbag_type1",
-        "labels": {
-            "en_US": "Tote bag"
-        },
-        "attribute": "handbag_type"
-    },
-    "handbag_type2": {
-        "code": "handbag_type2",
-        "labels": {
-            "en_US": "Crossbody"
-        },
-        "attribute": "handbag_type"
-    },
-    "handbag_type3": {
-        "code": "handbag_type3",
-        "labels": {
-            "en_US": "Backpack"
-        },
-        "attribute": "handbag_type"
-    },
-    "handbag_type4": {
-        "code": "handbag_type4",
-        "labels": {
-            "en_US": "Shoulder"
-        },
-        "attribute": "handbag_type"
-    },
-    "handbag_type5": {
-        "code": "handbag_type5",
-        "labels": {
-            "en_US": "Briefcase"
-        },
-        "attribute": "handbag_type"
-    },
-    "top_style1": {
-        "code": "top_style1",
-        "labels": {
-            "en_US": "Basic"
-        },
-        "attribute": "top_style"
-    },
-    "top_style2": {
-        "code": "top_style2",
-        "labels": {
-            "en_US": "Fitted Cami"
-        },
-        "attribute": "top_style"
-    },
-    "top_style3": {
-        "code": "top_style3",
-        "labels": {
-            "en_US": "Sleeveless"
-        },
-        "attribute": "top_style"
-    },
-    "top_style4": {
-        "code": "top_style4",
-        "labels": {
-            "en_US": "Tunic"
-        },
-        "attribute": "top_style"
-    },
-    "sleeve_length1": {
-        "code": "sleeve_length1",
-        "labels": {
-            "en_US": "Bell sleeves"
-        },
-        "attribute": "sleeve_length"
-    },
-    "sleeve_length2": {
-        "code": "sleeve_length2",
-        "labels": {
-            "en_US": "Cap sleeves"
-        },
-        "attribute": "sleeve_length"
-    },
-    "sleeve_length3": {
-        "code": "sleeve_length3",
-        "labels": {
-            "en_US": "Kimono sleeves"
-        },
-        "attribute": "sleeve_length"
-    },
-    "sleeve_length4": {
-        "code": "sleeve_length4",
-        "labels": {
-            "en_US": "Raglan sleeves"
-        },
-        "attribute": "sleeve_length"
-    },
-    "neck_style1": {
-        "code": "neck_style1",
-        "labels": {
-            "en_US": "V-neck"
-        },
-        "attribute": "neck_style"
-    },
-    "neck_style2": {
-        "code": "neck_style2",
-        "labels": {
-            "en_US": "Off shoulders"
-        },
-        "attribute": "neck_style"
-    },
-    "neck_style3": {
-        "code": "neck_style3",
-        "labels": {
-            "en_US": "Round"
-        },
-        "attribute": "neck_style"
-    },
-    "neck_style4": {
-        "code": "neck_style4",
-        "labels": {
-            "en_US": "Turtleneck"
-        },
-        "attribute": "neck_style"
-    },
-    "neck_style5": {
-        "code": "neck_style5",
-        "labels": {
-            "en_US": "Asymetric"
-        },
-        "attribute": "neck_style"
-    },
-    "heel_type1": {
-        "code": "heel_type1",
-        "labels": {
-            "en_US": "Kitten"
-        },
-        "attribute": "heel_type"
-    },
-    "heel_type2": {
-        "code": "heel_type2",
-        "labels": {
-            "en_US": "Platform"
-        },
-        "attribute": "heel_type"
-    },
-    "heel_type3": {
-        "code": "heel_type3",
-        "labels": {
-            "en_US": "Stileto"
-        },
-        "attribute": "heel_type"
-    },
-    "heel_type4": {
-        "code": "heel_type4",
-        "labels": {
-            "en_US": "Mule"
-        },
-        "attribute": "heel_type"
-    },
-    "heel_type5": {
-        "code": "heel_type5",
-        "labels": {
-            "en_US": "High heel"
-        },
-        "attribute": "heel_type"
-    },
-    "heel_type6": {
-        "code": "heel_type6",
-        "labels": {
-            "en_US": "Sandal"
-        },
-        "attribute": "heel_type"
-    },
-    "heel_type7": {
-        "code": "heel_type7",
-        "labels": {
-            "en_US": "Flat"
-        },
-        "attribute": "heel_type"
-    },
-    "allergen1": {
-        "code": "allergen1",
-        "labels": {
-            "en_US": "Celery"
-        },
-        "attribute": "allergens"
-    },
-    "allergen2": {
-        "code": "allergen2",
-        "labels": {
-            "en_US": "Crustaceans"
-        },
-        "attribute": "allergens"
-    },
-    "allergen3": {
-        "code": "allergen3",
-        "labels": {
-            "en_US": "Eggs"
-        },
-        "attribute": "allergens"
-    },
-    "allergen4": {
-        "code": "allergen4",
-        "labels": {
-            "en_US": "Fish"
-        },
-        "attribute": "allergens"
-    },
-    "allergen5": {
-        "code": "allergen5",
-        "labels": {
-            "en_US": "Lupin"
-        },
-        "attribute": "allergens"
-    },
-    "allergen6": {
-        "code": "allergen6",
-        "labels": {
-            "en_US": "Milk"
-        },
-        "attribute": "allergens"
-    },
-    "allergen7": {
-        "code": "allergen7",
-        "labels": {
-            "en_US": "Molluscs"
-        },
-        "attribute": "allergens"
-    },
-    "allergen8": {
-        "code": "allergen8",
-        "labels": {
-            "en_US": "Mustard"
-        },
-        "attribute": "allergens"
-    },
-    "allergen9": {
-        "code": "allergen9",
-        "labels": {
-            "en_US": "Peanuts"
-        },
-        "attribute": "allergens"
-    },
-    "allergen10": {
-        "code": "allergen10",
-        "labels": {
-            "en_US": "Sesame"
-        },
-        "attribute": "allergens"
-    },
-    "allergen11": {
-        "code": "allergen11",
-        "labels": {
-            "en_US": "Soybeans"
-        },
-        "attribute": "allergens"
-    },
-    "allergen12": {
-        "code": "allergen12",
-        "labels": {
-            "en_US": "Sulphur dioxide & sulphites "
-        },
-        "attribute": "allergens"
-    },
-    "allergen13": {
-        "code": "allergen13",
-        "labels": {
-            "en_US": "Tree nuts"
-        },
-        "attribute": "allergens"
-    },
-    "bread_type1": {
-        "code": "bread_type1",
-        "labels": {
-            "en_US": "White bread"
-        },
-        "attribute": "bread_type"
-    },
-    "bread_type2": {
-        "code": "bread_type2",
-        "labels": {
-            "en_US": "Wholewheat bread"
-        },
-        "attribute": "bread_type"
-    },
-    "bread_type3": {
-        "code": "bread_type3",
-        "labels": {
-            "en_US": "Rye bread"
-        },
-        "attribute": "bread_type"
-    },
-    "bread_type4": {
-        "code": "bread_type4",
-        "labels": {
-            "en_US": "Sourdough bread"
-        },
-        "attribute": "bread_type"
-    },
-    "bread_type5": {
-        "code": "bread_type5",
-        "labels": {
-            "en_US": "Multigrain bread"
-        },
-        "attribute": "bread_type"
-    },
-    "bread_type6": {
-        "code": "bread_type6",
-        "labels": {
-            "en_US": "Baguette"
-        },
-        "attribute": "bread_type"
-    },
-    "bread_type7": {
-        "code": "bread_type7",
-        "labels": {
-            "en_US": "Ciabatta"
-        },
-        "attribute": "bread_type"
-    },
-    "bread_type8": {
-        "code": "bread_type8",
-        "labels": {
-            "en_US": "Pumpernickel"
-        },
-        "attribute": "bread_type"
-    },
-    "bread_type9": {
-        "code": "bread_type9",
-        "labels": {
-            "en_US": "Challah"
-        },
-        "attribute": "bread_type"
-    },
-    "bread_type10": {
-        "code": "bread_type10",
-        "labels": {
-            "en_US": "Brioche"
-        },
-        "attribute": "bread_type"
-    },
-    "bread_type11": {
-        "code": "bread_type11",
-        "labels": {
-            "en_US": "Flatbread"
-        },
-        "attribute": "bread_type"
-    },
-    "bread_type12": {
-        "code": "bread_type12",
-        "labels": {
-            "en_US": "Bagel"
-        },
-        "attribute": "bread_type"
-    },
-    "bread_type13": {
-        "code": "bread_type13",
-        "labels": {
-            "en_US": "Focaccia"
-        },
-        "attribute": "bread_type"
-    },
-    "bread_type14": {
-        "code": "bread_type14",
-        "labels": {
-            "en_US": "Sodabread"
-        },
-        "attribute": "bread_type"
-    },
-    "milk_type1": {
-        "code": "milk_type1",
-        "labels": {
-            "en_US": "Whole milk"
-        },
-        "attribute": "milk_type"
-    },
-    "milk_type2": {
-        "code": "milk_type2",
-        "labels": {
-            "en_US": "Reduced-fat milk"
-        },
-        "attribute": "milk_type"
-    },
-    "milk_type3": {
-        "code": "milk_type3",
-        "labels": {
-            "en_US": "Skim milk"
-        },
-        "attribute": "milk_type"
-    },
-    "milk_type4": {
-        "code": "milk_type4",
-        "labels": {
-            "en_US": "Long life milk (UHT)"
-        },
-        "attribute": "milk_type"
-    },
-    "milk_type5": {
-        "code": "milk_type5",
-        "labels": {
-            "en_US": "Soy milk"
-        },
-        "attribute": "milk_type"
-    },
-    "milk_type6": {
-        "code": "milk_type6",
-        "labels": {
-            "en_US": "Goat milk"
-        },
-        "attribute": "milk_type"
-    },
-    "pasta_shape1": {
-        "code": "pasta_shape1",
-        "labels": {
-            "en_US": "Spaghetti"
-        },
-        "attribute": "pasta_shape"
-    },
-    "pasta_shape2": {
-        "code": "pasta_shape2",
-        "labels": {
-            "en_US": "Lasagna"
-        },
-        "attribute": "pasta_shape"
-    },
-    "pasta_shape3": {
-        "code": "pasta_shape3",
-        "labels": {
-            "en_US": "Macaroni"
-        },
-        "attribute": "pasta_shape"
-    },
-    "pasta_shape4": {
-        "code": "pasta_shape4",
-        "labels": {
-            "en_US": "Rigatoni"
-        },
-        "attribute": "pasta_shape"
-    },
-    "pasta_shape5": {
-        "code": "pasta_shape5",
-        "labels": {
-            "en_US": "Pappardelle"
-        },
-        "attribute": "pasta_shape"
-    },
-    "pasta_shape6": {
-        "code": "pasta_shape6",
-        "labels": {
-            "en_US": "Orecchiette"
-        },
-        "attribute": "pasta_shape"
-    },
-    "pasta_shape7": {
-        "code": "pasta_shape7",
-        "labels": {
-            "en_US": "Penne"
-        },
-        "attribute": "pasta_shape"
-    },
-    "pasta_shape8": {
-        "code": "pasta_shape8",
-        "labels": {
-            "en_US": "Ravioli"
-        },
-        "attribute": "pasta_shape"
-    },
-    "pasta_shape9": {
-        "code": "pasta_shape9",
-        "labels": {
-            "en_US": "Tortelli"
-        },
-        "attribute": "pasta_shape"
-    },
-    "pasta_shape10": {
-        "code": "pasta_shape10",
-        "labels": {
-            "en_US": "Conchiglie"
-        },
-        "attribute": "pasta_shape"
-    },
-    "taste1": {
-        "code": "taste1",
-        "labels": {
-            "en_US": "Sweet"
-        },
-        "attribute": "taste"
-    },
-    "taste2": {
-        "code": "taste2",
-        "labels": {
-            "en_US": "Salty"
-        },
-        "attribute": "taste"
-    },
-    "taste3": {
-        "code": "taste3",
-        "labels": {
-            "en_US": "Spicy"
-        },
-        "attribute": "taste"
-    },
-    "taste4": {
-        "code": "taste4",
-        "labels": {
-            "en_US": "Bitter"
-        },
-        "attribute": "taste"
-    },
-    "taste5": {
-        "code": "taste5",
-        "labels": {
-            "en_US": "Sour"
-        },
-        "attribute": "taste"
-    },
-    "cereal_type1": {
-        "code": "cereal_type1",
-        "labels": {
-            "en_US": "Corn"
-        },
-        "attribute": "cereal_type"
-    },
-    "cereal_type2": {
-        "code": "cereal_type2",
-        "labels": {
-            "en_US": "Rice"
-        },
-        "attribute": "cereal_type"
-    },
-    "cereal_type3": {
-        "code": "cereal_type3",
-        "labels": {
-            "en_US": "Wheat"
-        },
-        "attribute": "cereal_type"
-    },
-    "cereal_type4": {
-        "code": "cereal_type4",
-        "labels": {
-            "en_US": "Barley"
-        },
-        "attribute": "cereal_type"
-    },
-    "cereal_type5": {
-        "code": "cereal_type5",
-        "labels": {
-            "en_US": "Oats"
-        },
-        "attribute": "cereal_type"
-    },
-    "wine_type1": {
-        "code": "wine_type1",
-        "labels": {
-            "en_US": "Red"
-        },
-        "attribute": "wine_type"
-    },
-    "wine_type2": {
-        "code": "wine_type2",
-        "labels": {
-            "en_US": "White"
-        },
-        "attribute": "wine_type"
-    },
-    "wine_type3": {
-        "code": "wine_type3",
-        "labels": {
-            "en_US": "Ros\u00e9"
-        },
-        "attribute": "wine_type"
-    },
-    "tasting_note1": {
-        "code": "tasting_note1",
-        "labels": {
-            "en_US": "Rich"
-        },
-        "attribute": "tasting_note"
-    },
-    "tasting_note2": {
-        "code": "tasting_note2",
-        "labels": {
-            "en_US": "Floral"
-        },
-        "attribute": "tasting_note"
-    },
-    "tasting_note3": {
-        "code": "tasting_note3",
-        "labels": {
-            "en_US": "Wood"
-        },
-        "attribute": "tasting_note"
-    },
-    "tasting_note4": {
-        "code": "tasting_note4",
-        "labels": {
-            "en_US": "Peach\/apricot"
-        },
-        "attribute": "tasting_note"
-    },
-    "tasting_note5": {
-        "code": "tasting_note5",
-        "labels": {
-            "en_US": "Cherry-like"
-        },
-        "attribute": "tasting_note"
-    },
-    "tasting_note6": {
-        "code": "tasting_note6",
-        "labels": {
-            "en_US": "Bitter almonds"
-        },
-        "attribute": "tasting_note"
-    },
-    "grape_variety1": {
-        "code": "grape_variety1",
-        "labels": {
-            "en_US": "Pinot noir"
-        },
-        "attribute": "grape_variety"
-    },
-    "grape_variety2": {
-        "code": "grape_variety2",
-        "labels": {
-            "en_US": "Champagne"
-        },
-        "attribute": "grape_variety"
-    },
-    "grape_variety3": {
-        "code": "grape_variety3",
-        "labels": {
-            "en_US": "Riesling"
-        },
-        "attribute": "grape_variety"
-    },
-    "grape_variety4": {
-        "code": "grape_variety4",
-        "labels": {
-            "en_US": "Cabernet sauvignon"
-        },
-        "attribute": "grape_variety"
-    },
-    "grape_variety5": {
-        "code": "grape_variety5",
-        "labels": {
-            "en_US": "Chardonnay"
-        },
-        "attribute": "grape_variety"
-    },
-    "cure_days1": {
-        "code": "cure_days1",
-        "labels": {
-            "en_US": "2 weeks"
-        },
-        "attribute": "cure_days"
-    },
-    "cure_days2": {
-        "code": "cure_days2",
-        "labels": {
-            "en_US": "30 days"
-        },
-        "attribute": "cure_days"
-    },
-    "cure_days3": {
-        "code": "cure_days3",
-        "labels": {
-            "en_US": "45 days"
-        },
-        "attribute": "cure_days"
-    },
-    "cure_days4": {
-        "code": "cure_days4",
-        "labels": {
-            "en_US": "60 days"
-        },
-        "attribute": "cure_days"
-    },
-    "cure_days5": {
-        "code": "cure_days5",
-        "labels": {
-            "en_US": "90 days"
-        },
-        "attribute": "cure_days"
-    },
-    "content_type1": {
-        "code": "content_type1",
-        "labels": {
-            "en_US": "Spray"
-        },
-        "attribute": "content_type"
-    },
-    "content_type2": {
-        "code": "content_type2",
-        "labels": {
-            "en_US": "Bottle"
-        },
-        "attribute": "content_type"
-    },
-    "content_type3": {
-        "code": "content_type3",
-        "labels": {
-            "en_US": "Box"
-        },
-        "attribute": "content_type"
-    },
-    "content_type4": {
-        "code": "content_type4",
-        "labels": {
-            "en_US": "Pill box"
-        },
-        "attribute": "content_type"
-    },
-    "content_type5": {
-        "code": "content_type5",
-        "labels": {
-            "en_US": "Bags"
-        },
-        "attribute": "content_type"
-    },
-    "aromatic1": {
-        "code": "aromatic1",
-        "labels": {
-            "en_US": "Rosemary"
-        },
-        "attribute": "aromatic"
-    },
-    "aromatic2": {
-        "code": "aromatic2",
-        "labels": {
-            "en_US": "Tea Tree"
-        },
-        "attribute": "aromatic"
-    },
-    "aromatic3": {
-        "code": "aromatic3",
-        "labels": {
-            "en_US": "Orange"
-        },
-        "attribute": "aromatic"
-    },
-    "aromatic4": {
-        "code": "aromatic4",
-        "labels": {
-            "en_US": "Rose"
-        },
-        "attribute": "aromatic"
-    },
-    "aromatic5": {
-        "code": "aromatic5",
-        "labels": {
-            "en_US": "Calendula"
-        },
-        "attribute": "aromatic"
-    },
-    "aromatic6": {
-        "code": "aromatic6",
-        "labels": {
-            "en_US": "Aloe"
-        },
-        "attribute": "aromatic"
-    },
-    "aromatic7": {
-        "code": "aromatic7",
-        "labels": {
-            "en_US": "Floral"
-        },
-        "attribute": "aromatic"
-    },
-    "aromatic8": {
-        "code": "aromatic8",
-        "labels": {
-            "en_US": "Woody"
-        },
-        "attribute": "aromatic"
-    },
-    "aromatic9": {
-        "code": "aromatic9",
-        "labels": {
-            "en_US": "Earthy"
-        },
-        "attribute": "aromatic"
-    },
-    "skin_type1": {
-        "code": "skin_type1",
-        "labels": {
-            "en_US": "All skin types"
-        },
-        "attribute": "skin_type"
-    },
-    "skin_type2": {
-        "code": "skin_type2",
-        "labels": {
-            "en_US": "Combination skin"
-        },
-        "attribute": "skin_type"
-    },
-    "skin_type3": {
-        "code": "skin_type3",
-        "labels": {
-            "en_US": "Oily skin"
-        },
-        "attribute": "skin_type"
-    },
-    "skin_type4": {
-        "code": "skin_type4",
-        "labels": {
-            "en_US": "Blemished skin"
-        },
-        "attribute": "skin_type"
-    },
-    "hair_type1": {
-        "code": "hair_type1",
-        "labels": {
-            "en_US": "Straight"
-        },
-        "attribute": "hair_type"
-    },
-    "hair_type2": {
-        "code": "hair_type2",
-        "labels": {
-            "en_US": "Wavy"
-        },
-        "attribute": "hair_type"
-    },
-    "hair_type3": {
-        "code": "hair_type3",
-        "labels": {
-            "en_US": "Curly"
-        },
-        "attribute": "hair_type"
-    },
-    "hair_type4": {
-        "code": "hair_type4",
-        "labels": {
-            "en_US": "Thick"
-        },
-        "attribute": "hair_type"
-    },
-    "hair_type5": {
-        "code": "hair_type5",
-        "labels": {
-            "en_US": "Frizzy"
-        },
-        "attribute": "hair_type"
-    },
-    "hair_type6": {
-        "code": "hair_type6",
-        "labels": {
-            "en_US": "Damaged"
-        },
-        "attribute": "hair_type"
-    },
-    "hair_type7": {
-        "code": "hair_type7",
-        "labels": {
-            "en_US": "Fine"
-        },
-        "attribute": "hair_type"
-    },
-    "action_field1": {
-        "code": "action_field1",
-        "labels": {
-            "en_US": "Skin, hair, nails"
-        },
-        "attribute": "action_field"
-    },
-    "action_field2": {
-        "code": "action_field2",
-        "labels": {
-            "en_US": "Musculat health"
-        },
-        "attribute": "action_field"
-    },
-    "action_field3": {
-        "code": "action_field3",
-        "labels": {
-            "en_US": "Imune support"
-        },
-        "attribute": "action_field"
-    },
-    "action_field4": {
-        "code": "action_field4",
-        "labels": {
-            "en_US": "Well being"
-        },
-        "attribute": "action_field"
-    },
-    "action_field5": {
-        "code": "action_field5",
-        "labels": {
-            "en_US": "Brain"
-        },
-        "attribute": "action_field"
-    },
-    "action_field6": {
-        "code": "action_field6",
-        "labels": {
-            "en_US": "Energy and fatigue"
-        },
-        "attribute": "action_field"
-    },
-    "action_field7": {
-        "code": "action_field7",
-        "labels": {
-            "en_US": "Digestive health"
-        },
-        "attribute": "action_field"
-    },
-    "language1": {
-        "code": "language1",
-        "labels": {
-            "en_US": "English"
-        },
-        "attribute": "language"
-    },
-    "language2": {
-        "code": "language2",
-        "labels": {
-            "en_US": "Spanish"
-        },
-        "attribute": "language"
-    },
-    "language3": {
-        "code": "language3",
-        "labels": {
-            "en_US": "French"
-        },
-        "attribute": "language"
-    },
-    "language4": {
-        "code": "language4",
-        "labels": {
-            "en_US": "German"
-        },
-        "attribute": "language"
-    },
-    "language5": {
-        "code": "language5",
-        "labels": {
-            "en_US": "Japanese"
-        },
-        "attribute": "language"
-    },
-    "language6": {
-        "code": "language6",
-        "labels": {
-            "en_US": "Chinese"
-        },
-        "attribute": "language"
-    },
-    "language7": {
-        "code": "language7",
-        "labels": {
-            "en_US": "Italian"
-        },
-        "attribute": "language"
-    },
-    "language8": {
-        "code": "language8",
-        "labels": {
-            "en_US": "Portuguese"
-        },
-        "attribute": "language"
-    },
-    "language9": {
-        "code": "language9",
-        "labels": {
-            "en_US": "Russian"
-        },
-        "attribute": "language"
-    },
-    "power_type1": {
-        "code": "power_type1",
-        "labels": {
-            "en_US": "Battery"
-        },
-        "attribute": "power_type"
-    },
-    "power_type2": {
-        "code": "power_type2",
-        "labels": {
-            "en_US": "Electric"
-        },
-        "attribute": "power_type"
-    },
-    "power_type3": {
-        "code": "power_type3",
-        "labels": {
-            "en_US": "Gas"
-        },
-        "attribute": "power_type"
-    },
-    "power_type4": {
-        "code": "power_type4",
-        "labels": {
-            "en_US": "Solar"
-        },
-        "attribute": "power_type"
-    },
-    "power_type5": {
-        "code": "power_type5",
-        "labels": {
-            "en_US": "Charcoal"
-        },
-        "attribute": "power_type"
-    },
-    "display_type1": {
-        "code": "display_type1",
-        "labels": {
-            "en_US": "Retina"
-        },
-        "attribute": "display_type"
-    },
-    "display_type2": {
-        "code": "display_type2",
-        "labels": {
-            "en_US": "LCD"
-        },
-        "attribute": "display_type"
-    },
-    "display_type3": {
-        "code": "display_type3",
-        "labels": {
-            "en_US": "HD"
-        },
-        "attribute": "display_type"
-    },
-    "display_type4": {
-        "code": "display_type4",
-        "labels": {
-            "en_US": "LED"
-        },
-        "attribute": "display_type"
-    },
-    "display_type5": {
-        "code": "display_type5",
-        "labels": {
-            "en_US": "AMOLED"
-        },
-        "attribute": "display_type"
-    },
-    "display_type6": {
-        "code": "display_type6",
-        "labels": {
-            "en_US": "OLED"
-        },
-        "attribute": "display_type"
-    },
-    "display_type7": {
-        "code": "display_type7",
-        "labels": {
-            "en_US": "TFT"
-        },
-        "attribute": "display_type"
-    },
-    "display_type8": {
-        "code": "display_type8",
-        "labels": {
-            "en_US": "Liquid Crystal"
-        },
-        "attribute": "display_type"
-    },
-    "resolution1": {
-        "code": "resolution1",
-        "labels": {
-            "en_US": "1024 x 600"
-        },
-        "attribute": "resolution"
-    },
-    "resolution2": {
-        "code": "resolution2",
-        "labels": {
-            "en_US": "1280 x 800"
-        },
-        "attribute": "resolution"
-    },
-    "resolution3": {
-        "code": "resolution3",
-        "labels": {
-            "en_US": "1366 x 768"
-        },
-        "attribute": "resolution"
-    },
-    "resolution4": {
-        "code": "resolution4",
-        "labels": {
-            "en_US": "1600 x 900"
-        },
-        "attribute": "resolution"
-    },
-    "resolution5": {
-        "code": "resolution5",
-        "labels": {
-            "en_US": "1680 x 1050"
-        },
-        "attribute": "resolution"
-    },
-    "resolution6": {
-        "code": "resolution6",
-        "labels": {
-            "en_US": "1920 x 1080"
-        },
-        "attribute": "resolution"
-    },
-    "energy_class1": {
-        "code": "energy_class1",
-        "labels": {
-            "en_US": "A"
-        },
-        "attribute": "energy_class"
-    },
-    "energy_class2": {
-        "code": "energy_class2",
-        "labels": {
-            "en_US": "B"
-        },
-        "attribute": "energy_class"
-    },
-    "energy_class3": {
-        "code": "energy_class3",
-        "labels": {
-            "en_US": "C"
-        },
-        "attribute": "energy_class"
-    },
-    "energy_class4": {
-        "code": "energy_class4",
-        "labels": {
-            "en_US": "D"
-        },
-        "attribute": "energy_class"
-    },
-    "energy_class5": {
-        "code": "energy_class5",
-        "labels": {
-            "en_US": "E"
-        },
-        "attribute": "energy_class"
-    },
-    "energy_class6": {
-        "code": "energy_class6",
-        "labels": {
-            "en_US": "F"
-        },
-        "attribute": "energy_class"
-    },
-    "energy_class7": {
-        "code": "energy_class7",
-        "labels": {
-            "en_US": "G"
-        },
-        "attribute": "energy_class"
-    },
-    "platform1": {
-        "code": "platform1",
-        "labels": {
-            "en_US": "Nintendo Switch"
-        },
-        "attribute": "platform"
-    },
-    "platform2": {
-        "code": "platform2",
-        "labels": {
-            "en_US": "Nintendo Wii"
-        },
-        "attribute": "platform"
-    },
-    "platform3": {
-        "code": "platform3",
-        "labels": {
-            "en_US": "PC"
-        },
-        "attribute": "platform"
-    },
-    "platform4": {
-        "code": "platform4",
-        "labels": {
-            "en_US": "Mac"
-        },
-        "attribute": "platform"
-    },
-    "platform5": {
-        "code": "platform5",
-        "labels": {
-            "en_US": "Playstation 5"
-        },
-        "attribute": "platform"
-    },
-    "platform6": {
-        "code": "platform6",
-        "labels": {
-            "en_US": "Xbox One"
-        },
-        "attribute": "platform"
-    },
-    "OS1": {
-        "code": "OS1",
-        "labels": {
-            "en_US": "Windows"
-        },
-        "attribute": "OS_type"
-    },
-    "OS2": {
-        "code": "OS2",
-        "labels": {
-            "en_US": "Apple"
-        },
-        "attribute": "OS_type"
-    },
-    "OS3": {
-        "code": "OS3",
-        "labels": {
-            "en_US": "Android"
-        },
-        "attribute": "OS_type"
-    },
-    "video_game_genre1": {
-        "code": "video_game_genre1",
-        "labels": {
-            "en_US": "MMO"
-        },
-        "attribute": "video_game_genre"
-    },
-    "video_game_genre2": {
-        "code": "video_game_genre2",
-        "labels": {
-            "en_US": "MMORPG"
-        },
-        "attribute": "video_game_genre"
-    },
-    "video_game_genre3": {
-        "code": "video_game_genre3",
-        "labels": {
-            "en_US": "RPG"
-        },
-        "attribute": "video_game_genre"
-    },
-    "video_game_genre4": {
-        "code": "video_game_genre4",
-        "labels": {
-            "en_US": "Sports"
-        },
-        "attribute": "video_game_genre"
-    },
-    "video_game_genre5": {
-        "code": "video_game_genre5",
-        "labels": {
-            "en_US": "Action"
-        },
-        "attribute": "video_game_genre"
-    },
-    "video_game_genre6": {
-        "code": "video_game_genre6",
-        "labels": {
-            "en_US": "Strategy"
-        },
-        "attribute": "video_game_genre"
-    },
-    "video_game_player1": {
-        "code": "video_game_player1",
-        "labels": {
-            "en_US": 1
-        },
-        "attribute": "video_game_player"
-    },
-    "video_game_player2": {
-        "code": "video_game_player2",
-        "labels": {
-            "en_US": {
-                "date": "2023-02-01 00:00:00.000000",
-                "timezone_type": 3,
-                "timezone": "UTC"
-            }
-        },
-        "attribute": "video_game_player"
-    },
-    "video_game_player3": {
-        "code": "video_game_player3",
-        "labels": {
-            "en_US": {
-                "date": "2023-04-01 00:00:00.000000",
-                "timezone_type": 3,
-                "timezone": "UTC"
-            }
-        },
-        "attribute": "video_game_player"
-    },
-    "video_game_player4": {
-        "code": "video_game_player4",
-        "labels": {
-            "en_US": {
-                "date": "2023-06-01 00:00:00.000000",
-                "timezone_type": 3,
-                "timezone": "UTC"
-            }
-        },
-        "attribute": "video_game_player"
-    },
-    "video_game_player5": {
-        "code": "video_game_player5",
-        "labels": {
-            "en_US": 2
-        },
-        "attribute": "video_game_player"
-    },
-    "video_game_player6": {
-        "code": "video_game_player6",
-        "labels": {
-            "en_US": {
-                "date": "2023-04-02 00:00:00.000000",
-                "timezone_type": 3,
-                "timezone": "UTC"
-            }
-        },
-        "attribute": "video_game_player"
-    },
-    "video_game_player7": {
-        "code": "video_game_player7",
-        "labels": {
-            "en_US": {
-                "date": "2023-06-02 00:00:00.000000",
-                "timezone_type": 3,
-                "timezone": "UTC"
-            }
-        },
-        "attribute": "video_game_player"
-    },
-    "video_game_player8": {
-        "code": "video_game_player8",
-        "labels": {
-            "en_US": 3
-        },
-        "attribute": "video_game_player"
-    },
-    "video_game_player9": {
-        "code": "video_game_player9",
-        "labels": {
-            "en_US": 4
-        },
-        "attribute": "video_game_player"
-    },
-    "headphone_type1": {
-        "code": "headphone_type1",
-        "labels": {
-            "en_US": "Over-Ear"
-        },
-        "attribute": "headphone_type"
-    },
-    "headphone_type2": {
-        "code": "headphone_type2",
-        "labels": {
-            "en_US": "In-Ear"
-        },
-        "attribute": "headphone_type"
-    },
-    "headphone_type3": {
-        "code": "headphone_type3",
-        "labels": {
-            "en_US": "Earbuds"
-        },
-        "attribute": "headphone_type"
-    },
-    "headphone_type4": {
-        "code": "headphone_type4",
-        "labels": {
-            "en_US": "Closed-Back"
-        },
-        "attribute": "headphone_type"
-    },
-    "headphone_type5": {
-        "code": "headphone_type5",
-        "labels": {
-            "en_US": "Open-Back"
-        },
-        "attribute": "headphone_type"
-    },
-    "picture_quality1": {
-        "code": "picture_quality1",
-        "labels": {
-            "en_US": "8K"
-        },
-        "attribute": "picture_quality"
-    },
-    "picture_quality2": {
-        "code": "picture_quality2",
-        "labels": {
-            "en_US": "4K"
-        },
-        "attribute": "picture_quality"
-    },
-    "picture_quality3": {
-        "code": "picture_quality3",
-        "labels": {
-            "en_US": "HD"
-        },
-        "attribute": "picture_quality"
-    },
-    "picture_quality4": {
-        "code": "picture_quality4",
-        "labels": {
-            "en_US": "SD"
-        },
-        "attribute": "picture_quality"
-    },
-    "picture_quality5": {
-        "code": "picture_quality5",
-        "labels": {
-            "en_US": "Full HD"
-        },
-        "attribute": "picture_quality"
-    },
-    "picture_quality6": {
-        "code": "picture_quality6",
-        "labels": {
-            "en_US": "Ultra HD"
-        },
-        "attribute": "picture_quality"
-    },
-    "picture_quality7": {
-        "code": "picture_quality7",
-        "labels": {
-            "en_US": "HDR"
-        },
-        "attribute": "picture_quality"
-    },
-    "processor1": {
-        "code": "processor1",
-        "labels": {
-            "en_US": "Qualcomm Snapdragon"
-        },
-        "attribute": "processor"
-    },
-    "processor2": {
-        "code": "processor2",
-        "labels": {
-            "en_US": "Apple A-series"
-        },
-        "attribute": "processor"
-    },
-    "processor3": {
-        "code": "processor3",
-        "labels": {
-            "en_US": "Samsung Exynos"
-        },
-        "attribute": "processor"
-    },
-    "processor4": {
-        "code": "processor4",
-        "labels": {
-            "en_US": "MediaTek Dimensity"
-        },
-        "attribute": "processor"
-    },
-    "processor5": {
-        "code": "processor5",
-        "labels": {
-            "en_US": "Huawei Kirin"
-        },
-        "attribute": "processor"
-    },
-    "processor6": {
-        "code": "processor6",
-        "labels": {
-            "en_US": "Intel Atom"
-        },
-        "attribute": "processor"
-    },
-    "processor7": {
-        "code": "processor7",
-        "labels": {
-            "en_US": "HiSilicon Kirin"
-        },
-        "attribute": "processor"
-    },
-    "processor8": {
-        "code": "processor8",
-        "labels": {
-            "en_US": "NVIDIA Tegra"
-        },
-        "attribute": "processor"
-    },
-    "processor9": {
-        "code": "processor9",
-        "labels": {
-            "en_US": "AMD Ryzen Mobile"
-        },
-        "attribute": "processor"
-    },
-    "processor10": {
-        "code": "processor10",
-        "labels": {
-            "en_US": "MediaTek Helio"
-        },
-        "attribute": "processor"
-    },
-    "processor11": {
-        "code": "processor11",
-        "labels": {
-            "en_US": "Dual Core"
-        },
-        "attribute": "processor"
-    },
-    "processor12": {
-        "code": "processor12",
-        "labels": {
-            "en_US": "MediaTek"
-        },
-        "attribute": "processor"
-    },
-    "PEGI_rating1": {
-        "code": "PEGI_rating1",
-        "labels": {
-            "en_US": "PEGI 3"
-        },
-        "attribute": "PEGI_rating"
-    },
-    "PEGI_rating2": {
-        "code": "PEGI_rating2",
-        "labels": {
-            "en_US": "PEGI 12"
-        },
-        "attribute": "PEGI_rating"
-    },
-    "PEGI_rating3": {
-        "code": "PEGI_rating3",
-        "labels": {
-            "en_US": "PEGI 16"
-        },
-        "attribute": "PEGI_rating"
-    },
-    "PEGI_rating4": {
-        "code": "PEGI_rating4",
-        "labels": {
-            "en_US": "PEGI 18"
-        },
-        "attribute": "PEGI_rating"
-    },
-    "bedding_size1": {
-        "code": "bedding_size1",
-        "labels": {
-            "en_US": "King 190x200"
-        },
-        "attribute": "bedding_size"
-    },
-    "bedding_size2": {
-        "code": "bedding_size2",
-        "labels": {
-            "en_US": "Queen 150x200"
-        },
-        "attribute": "bedding_size"
-    },
-    "bedding_size3": {
-        "code": "bedding_size3",
-        "labels": {
-            "en_US": "Super King 250x200"
-        },
-        "attribute": "bedding_size"
-    },
-    "bedding_size4": {
-        "code": "bedding_size4",
-        "labels": {
-            "en_US": "Standard Double 140x200"
-        },
-        "attribute": "bedding_size"
-    },
-    "fragrance_family1": {
-        "code": "fragrance_family1",
-        "labels": {
-            "en_US": "Lavender"
-        },
-        "attribute": "fragrance_family"
-    },
-    "fragrance_family2": {
-        "code": "fragrance_family2",
-        "labels": {
-            "en_US": "Eucalyptus"
-        },
-        "attribute": "fragrance_family"
-    },
-    "fragrance_family3": {
-        "code": "fragrance_family3",
-        "labels": {
-            "en_US": "Jasmine"
-        },
-        "attribute": "fragrance_family"
-    },
-    "fragrance_family4": {
-        "code": "fragrance_family4",
-        "labels": {
-            "en_US": "Peppermint"
-        },
-        "attribute": "fragrance_family"
-    },
-    "fragrance_family5": {
-        "code": "fragrance_family5",
-        "labels": {
-            "en_US": "Cherry blossom"
-        },
-        "attribute": "fragrance_family"
-    },
-    "fragrance_family6": {
-        "code": "fragrance_family6",
-        "labels": {
-            "en_US": "Vetiver"
-        },
-        "attribute": "fragrance_family"
-    },
-    "fragrance_family7": {
-        "code": "fragrance_family7",
-        "labels": {
-            "en_US": "Patchouli"
-        },
-        "attribute": "fragrance_family"
-    },
-    "caraffe_material1": {
-        "code": "caraffe_material1",
-        "labels": {
-            "en_US": "Recycled glass"
-        },
-        "attribute": "caraffe_material"
-    },
-    "caraffe_material2": {
-        "code": "caraffe_material2",
-        "labels": {
-            "en_US": "Glass"
-        },
-        "attribute": "caraffe_material"
-    },
-    "made_in1": {
-        "code": "made_in1",
-        "labels": {
-            "en_US": "Made in France"
-        },
-        "attribute": "made_in"
-    },
-    "made_in2": {
-        "code": "made_in2",
-        "labels": {
-            "en_US": "Made in Italy"
-        },
-        "attribute": "made_in"
-    },
-    "made_in3": {
-        "code": "made_in3",
-        "labels": {
-            "en_US": "Made in India"
-        },
-        "attribute": "made_in"
-    },
-    "made_in4": {
-        "code": "made_in4",
-        "labels": {
-            "en_US": "Made in China"
-        },
-        "attribute": "made_in"
-    },
-    "slices_number1": {
-        "code": "slices_number1",
-        "labels": {
-            "en_US": "2 slices"
-        },
-        "attribute": "slices_number"
-    },
-    "slices_number2": {
-        "code": "slices_number2",
-        "labels": {
-            "en_US": "4 slices"
-        },
-        "attribute": "slices_number"
-    },
-    "slices_number3": {
-        "code": "slices_number3",
-        "labels": {
-            "en_US": "6 slices"
-        },
-        "attribute": "slices_number"
-    },
-    "slices_number4": {
-        "code": "slices_number4",
-        "labels": {
-            "en_US": "8 slices"
-        },
-        "attribute": "slices_number"
-    },
-    "aesthetics1": {
-        "code": "aesthetics1",
-        "labels": {
-            "en_US": "50\u2019s Style"
-        },
-        "attribute": "aesthetics"
-    },
-    "aesthetics2": {
-        "code": "aesthetics2",
-        "labels": {
-            "en_US": "Dolce Vita"
-        },
-        "attribute": "aesthetics"
-    },
-    "aesthetics3": {
-        "code": "aesthetics3",
-        "labels": {
-            "en_US": "70\u2019s Style"
-        },
-        "attribute": "aesthetics"
-    },
-    "aesthetics4": {
-        "code": "aesthetics4",
-        "labels": {
-            "en_US": "Union Jack"
-        },
-        "attribute": "aesthetics"
-    },
-    "aesthetics5": {
-        "code": "aesthetics5",
-        "labels": {
-            "en_US": "Sicilian"
-        },
-        "attribute": "aesthetics"
-    },
-    "aesthetics6": {
-        "code": "aesthetics6",
-        "labels": {
-            "en_US": "Contemporary"
-        },
-        "attribute": "aesthetics"
-    },
-    "finishing1": {
-        "code": "finishing1",
-        "labels": {
-            "en_US": "Matt"
-        },
-        "attribute": "finishing"
-    },
-    "finishing2": {
-        "code": "finishing2",
-        "labels": {
-            "en_US": "Glossy"
-        },
-        "attribute": "finishing"
-    },
-    "finishing3": {
-        "code": "finishing3",
-        "labels": {
-            "en_US": "Stainless steel"
-        },
-        "attribute": "finishing"
-    },
-    "finishing4": {
-        "code": "finishing4",
-        "labels": {
-            "en_US": "Black Stainless steel"
-        },
-        "attribute": "finishing"
-    },
-    "diaper_size1": {
-        "code": "diaper_size1",
-        "labels": {
-            "en_US": "Size 1: 8 - 14 lbs (4-6 kg)"
-        },
-        "attribute": "diaper_size"
-    },
-    "diaper_size2": {
-        "code": "diaper_size2",
-        "labels": {
-            "en_US": "Size 2: 12 - 18 lbs (5-8 kg)"
-        },
-        "attribute": "diaper_size"
-    },
-    "diaper_size3": {
-        "code": "diaper_size3",
-        "labels": {
-            "en_US": "Size 3: 16 - 21 lbs (7-13 kg)"
-        },
-        "attribute": "diaper_size"
-    },
-    "diaper_size4": {
-        "code": "diaper_size4",
-        "labels": {
-            "en_US": "Size 4: 20 - 32 lbs  (9-17 kg)"
-        },
-        "attribute": "diaper_size"
-    },
-    "diaper_size5": {
-        "code": "diaper_size5",
-        "labels": {
-            "en_US": "Size 5: 27 - 35 lbs (>12 kg) "
-        },
-        "attribute": "diaper_size"
-    },
-    "diaper_size6": {
-        "code": "diaper_size6",
-        "labels": {
-            "en_US": "Size 6: Over 35 lbs (>16 kg)"
-        },
-        "attribute": "diaper_size"
-    },
-    "print1": {
-        "code": "print1",
-        "labels": {
-            "en_US": "Animal"
-        },
-        "attribute": "print"
-    },
-    "print2": {
-        "code": "print2",
-        "labels": {
-            "en_US": "Cake"
-        },
-        "attribute": "print"
-    },
-    "print3": {
-        "code": "print3",
-        "labels": {
-            "en_US": "Hello"
-        },
-        "attribute": "print"
-    },
-    "print4": {
-        "code": "print4",
-        "labels": {
-            "en_US": "Sea"
-        },
-        "attribute": "print"
-    },
-    "print5": {
-        "code": "print5",
-        "labels": {
-            "en_US": "Palm tree"
-        },
-        "attribute": "print"
-    },
-    "material_properties1": {
-        "code": "material_properties1",
-        "labels": {
-            "en_US": "Free from harmful chemicals like phthalates"
-        },
-        "attribute": "material_properties"
-    },
-    "material_properties2": {
-        "code": "material_properties2",
-        "labels": {
-            "en_US": "Hypoallergenic "
-        },
-        "attribute": "material_properties"
-    },
-    "material_properties3": {
-        "code": "material_properties3",
-        "labels": {
-            "en_US": "Easy to clean"
-        },
-        "attribute": "material_properties"
-    },
-    "material_properties4": {
-        "code": "material_properties4",
-        "labels": {
-            "en_US": "Safe contact with food"
-        },
-        "attribute": "material_properties"
-    },
-    "material_properties5": {
-        "code": "material_properties5",
-        "labels": {
-            "en_US": "Soft, does not break if dropped"
-        },
-        "attribute": "material_properties"
-    },
-    "age_suitability1": {
-        "code": "age_suitability1",
-        "labels": {
-            "en_US": "0 - 6 months"
-        },
-        "attribute": "age_suitability"
-    },
-    "age_suitability2": {
-        "code": "age_suitability2",
-        "labels": {
-            "en_US": "6 - 12 months"
-        },
-        "attribute": "age_suitability"
-    },
-    "age_suitability3": {
-        "code": "age_suitability3",
-        "labels": {
-            "en_US": "6 - 18 months"
-        },
-        "attribute": "age_suitability"
-    },
-    "age_suitability4": {
-        "code": "age_suitability4",
-        "labels": {
-            "en_US": "> 12 months"
-        },
-        "attribute": "age_suitability"
-    },
-    "age_suitability5": {
-        "code": "age_suitability5",
-        "labels": {
-            "en_US": "> 18 mois"
-        },
-        "attribute": "age_suitability"
-    },
-    "age_suitability6": {
-        "code": "age_suitability6",
-        "labels": {
-            "en_US": "> 24 months"
-        },
-        "attribute": "age_suitability"
-    },
-    "age_suitability7": {
-        "code": "age_suitability7",
-        "labels": {
-            "en_US": "> 36 months"
-        },
-        "attribute": "age_suitability"
-    },
-    "standards1": {
-        "code": "standards1",
-        "labels": {
-            "en_US": "Tested according to latest EU regulations"
-        },
-        "attribute": "standards"
-    },
-    "standards2": {
-        "code": "standards2",
-        "labels": {
-            "en_US": "FSC"
-        },
-        "attribute": "standards"
-    },
-    "standards3": {
-        "code": "standards3",
-        "labels": {
-            "en_US": "Made in France"
-        },
-        "attribute": "standards"
-    },
-    "standards4": {
-        "code": "standards4",
-        "labels": {
-            "en_US": "Made in USA"
-        },
-        "attribute": "standards"
-    },
-    "standards5": {
-        "code": "standards5",
-        "labels": {
-            "en_US": "Totally Chlorine Free (TCF)"
-        },
-        "attribute": "standards"
-    },
-    "standards6": {
-        "code": "standards6",
-        "labels": {
-            "en_US": "Dermatologically tested"
-        },
-        "attribute": "standards"
-    },
-    "lits_of_excluded_toxic_products1": {
-        "code": "lits_of_excluded_toxic_products1",
-        "labels": {
-            "en_US": "Chlorine bleach"
-        },
-        "attribute": "lits_of_excluded_toxic_products"
-    },
-    "lits_of_excluded_toxic_products2": {
-        "code": "lits_of_excluded_toxic_products2",
-        "labels": {
-            "en_US": "Lotion"
-        },
-        "attribute": "lits_of_excluded_toxic_products"
-    },
-    "lits_of_excluded_toxic_products3": {
-        "code": "lits_of_excluded_toxic_products3",
-        "labels": {
-            "en_US": "Perfume"
-        },
-        "attribute": "lits_of_excluded_toxic_products"
-    },
-    "lits_of_excluded_toxic_products4": {
-        "code": "lits_of_excluded_toxic_products4",
-        "labels": {
-            "en_US": "Latex"
-        },
-        "attribute": "lits_of_excluded_toxic_products"
-    },
-    "lits_of_excluded_toxic_products5": {
-        "code": "lits_of_excluded_toxic_products5",
-        "labels": {
-            "en_US": "Endocrine disruptor"
-        },
-        "attribute": "lits_of_excluded_toxic_products"
-    },
-    "warranty_period1": {
-        "code": "warranty_period1",
-        "labels": {
-            "en_US": "1 year"
-        },
-        "attribute": "warranty_period"
-    },
-    "warranty_period2": {
-        "code": "warranty_period2",
-        "labels": {
-            "en_US": "2 years"
-        },
-        "attribute": "warranty_period"
-    },
-    "warranty_period3": {
-        "code": "warranty_period3",
-        "labels": {
-            "en_US": "3 years"
-        },
-        "attribute": "warranty_period"
-    },
-    "warranty_period4": {
-        "code": "warranty_period4",
-        "labels": {
-            "en_US": "4 years"
-        },
-        "attribute": "warranty_period"
-    },
-    "warranty_period5": {
-        "code": "warranty_period5",
-        "labels": {
-            "en_US": "5 years"
-        },
-        "attribute": "warranty_period"
-    },
-    "sport_type1": {
-        "code": "sport_type1",
-        "labels": {
-            "en_US": "Basketball"
-        },
-        "attribute": "sport_type"
-    },
-    "sport_type2": {
-        "code": "sport_type2",
-        "labels": {
-            "en_US": "Football"
-        },
-        "attribute": "sport_type"
-    },
-    "sport_type3": {
-        "code": "sport_type3",
-        "labels": {
-            "en_US": "Handball"
-        },
-        "attribute": "sport_type"
-    },
-    "cut1": {
-        "code": "cut1",
-        "labels": {
-            "en_US": "Slim"
-        },
-        "attribute": "cut"
-    },
-    "cut2": {
-        "code": "cut2",
-        "labels": {
-            "en_US": "Regular"
-        },
-        "attribute": "cut"
-    },
-    "cut3": {
-        "code": "cut3",
-        "labels": {
-            "en_US": "Skinny"
-        },
-        "attribute": "cut"
-    },
-    "cut4": {
-        "code": "cut4",
-        "labels": {
-            "en_US": "Oversized"
-        },
-        "attribute": "cut"
-    },
-    "frame1": {
-        "code": "frame1",
-        "labels": {
-            "en_US": "Step-through"
-        },
-        "attribute": "frame"
-    },
-    "frame2": {
-        "code": "frame2",
-        "labels": {
-            "en_US": "High-step"
-        },
-        "attribute": "frame"
-    },
-    "frame3": {
-        "code": "frame3",
-        "labels": {
-            "en_US": "Folding"
-        },
-        "attribute": "frame"
-    },
-    "frame4": {
-        "code": "frame4",
-        "labels": {
-            "en_US": "Penny-farthing"
-        },
-        "attribute": "frame"
-    },
-    "frame5": {
-        "code": "frame5",
-        "labels": {
-            "en_US": "Recumbent"
-        },
-        "attribute": "frame"
-    },
-    "fork1": {
-        "code": "fork1",
-        "labels": {
-            "en_US": "Suspension"
-        },
-        "attribute": "fork"
-    },
-    "fork2": {
-        "code": "fork2",
-        "labels": {
-            "en_US": "Road"
-        },
-        "attribute": "fork"
-    },
-    "fork3": {
-        "code": "fork3",
-        "labels": {
-            "en_US": "Cyclo-cross"
-        },
-        "attribute": "fork"
-    },
-    "fork4": {
-        "code": "fork4",
-        "labels": {
-            "en_US": "Rigid"
-        },
-        "attribute": "fork"
-    },
-    "fork5": {
-        "code": "fork5",
-        "labels": {
-            "en_US": "BMX"
-        },
-        "attribute": "fork"
-    },
-    "brakes_type1": {
-        "code": "brakes_type1",
-        "labels": {
-            "en_US": "Hydraulic disc"
-        },
-        "attribute": "brakes_type"
-    },
-    "brakes_type2": {
-        "code": "brakes_type2",
-        "labels": {
-            "en_US": "Mechanical disc"
-        },
-        "attribute": "brakes_type"
-    },
-    "brakes_type3": {
-        "code": "brakes_type3",
-        "labels": {
-            "en_US": "V-brakes"
-        },
-        "attribute": "brakes_type"
-    },
-    "brakes_type4": {
-        "code": "brakes_type4",
-        "labels": {
-            "en_US": "Drum brakes"
-        },
-        "attribute": "brakes_type"
-    },
-    "wheels1": {
-        "code": "wheels1",
-        "labels": {
-            "en_US": "622 mm"
-        },
-        "attribute": "wheels"
-    },
-    "wheels2": {
-        "code": "wheels2",
-        "labels": {
-            "en_US": "28''"
-        },
-        "attribute": "wheels"
-    },
-    "wheels3": {
-        "code": "wheels3",
-        "labels": {
-            "en_US": "700 mm"
-        },
-        "attribute": "wheels"
-    },
-    "wheels4": {
-        "code": "wheels4",
-        "labels": {
-            "en_US": "650 mm"
-        },
-        "attribute": "wheels"
-    },
-    "rear_derailleur1": {
-        "code": "rear_derailleur1",
-        "labels": {
-            "en_US": "SRAM Rival XPLR AXS"
-        },
-        "attribute": "rear_derailleur"
-    },
-    "rear_derailleur2": {
-        "code": "rear_derailleur2",
-        "labels": {
-            "en_US": "Shimano 105 R7000"
-        },
-        "attribute": "rear_derailleur"
-    },
-    "saddle1": {
-        "code": "saddle1",
-        "labels": {
-            "en_US": "Racing"
-        },
-        "attribute": "saddle"
-    },
-    "saddle2": {
-        "code": "saddle2",
-        "labels": {
-            "en_US": "Comfort"
-        },
-        "attribute": "saddle"
-    },
-    "saddle3": {
-        "code": "saddle3",
-        "labels": {
-            "en_US": "Gender-specific"
-        },
-        "attribute": "saddle"
-    },
-    "saddle4": {
-        "code": "saddle4",
-        "labels": {
-            "en_US": "Cruiser"
-        },
-        "attribute": "saddle"
-    },
-    "bike_type1": {
-        "code": "bike_type1",
-        "labels": {
-            "en_US": "Gravel"
-        },
-        "attribute": "bike_type"
-    },
-    "bike_type2": {
-        "code": "bike_type2",
-        "labels": {
-            "en_US": "Mountain"
-        },
-        "attribute": "bike_type"
-    },
-    "bike_type3": {
-        "code": "bike_type3",
-        "labels": {
-            "en_US": "Road"
-        },
-        "attribute": "bike_type"
-    },
-    "bike_type4": {
-        "code": "bike_type4",
-        "labels": {
-            "en_US": "Hybrid"
-        },
-        "attribute": "bike_type"
-    },
-    "bike_type5": {
-        "code": "bike_type5",
-        "labels": {
-            "en_US": "City"
-        },
-        "attribute": "bike_type"
-    },
-    "bike_type6": {
-        "code": "bike_type6",
-        "labels": {
-            "en_US": "Kids"
-        },
-        "attribute": "bike_type"
-    },
-    "bike_type7": {
-        "code": "bike_type7",
-        "labels": {
-            "en_US": "Electric"
-        },
-        "attribute": "bike_type"
-    },
-    "bike_type8": {
-        "code": "bike_type8",
-        "labels": {
-            "en_US": "Fixies"
-        },
-        "attribute": "bike_type"
-    },
-    "bike_type9": {
-        "code": "bike_type9",
-        "labels": {
-            "en_US": "Cargo"
-        },
-        "attribute": "bike_type"
-    },
-    "bike_type10": {
-        "code": "bike_type10",
-        "labels": {
-            "en_US": "Folding"
-        },
-        "attribute": "bike_type"
-    },
-    "bike_type11": {
-        "code": "bike_type11",
-        "labels": {
-            "en_US": "BMX"
-        },
-        "attribute": "bike_type"
-    },
-    "usage1": {
-        "code": "usage1",
-        "labels": {
-            "en_US": "Touring"
-        },
-        "attribute": "usage"
-    },
-    "usage2": {
-        "code": "usage2",
-        "labels": {
-            "en_US": "Speed"
-        },
-        "attribute": "usage"
-    },
-    "usage3": {
-        "code": "usage3",
-        "labels": {
-            "en_US": "Utility"
-        },
-        "attribute": "usage"
-    },
-    "usage4": {
-        "code": "usage4",
-        "labels": {
-            "en_US": "Mountain"
-        },
-        "attribute": "usage"
-    },
-    "usage5": {
-        "code": "usage5",
-        "labels": {
-            "en_US": "Commuting"
-        },
-        "attribute": "usage"
-    },
-    "usage6": {
-        "code": "usage6",
-        "labels": {
-            "en_US": "Triathlon"
-        },
-        "attribute": "usage"
-    },
-    "indoor_outdoor1": {
-        "code": "indoor_outdoor1",
-        "labels": {
-            "en_US": "Indoor"
-        },
-        "attribute": "indoor_outdoor"
-    },
-    "indoor_outdoor2": {
-        "code": "indoor_outdoor2",
-        "labels": {
-            "en_US": "Outdoor"
-        },
-        "attribute": "indoor_outdoor"
-    },
-    "fitness_apparel_type1": {
-        "code": "fitness_apparel_type1",
-        "labels": {
-            "en_US": "Treadmill"
-        },
-        "attribute": "fitness_apparel_type"
-    },
-    "fitness_apparel_type2": {
-        "code": "fitness_apparel_type2",
-        "labels": {
-            "en_US": "Cross-trainer"
-        },
-        "attribute": "fitness_apparel_type"
-    },
-    "fitness_apparel_type3": {
-        "code": "fitness_apparel_type3",
-        "labels": {
-            "en_US": "Stepper"
-        },
-        "attribute": "fitness_apparel_type"
-    },
-    "fitness_apparel_type4": {
-        "code": "fitness_apparel_type4",
-        "labels": {
-            "en_US": "Rowing-machine"
-        },
-        "attribute": "fitness_apparel_type"
-    },
-    "fitness_apparel_type5": {
-        "code": "fitness_apparel_type5",
-        "labels": {
-            "en_US": "Exercise bike"
-        },
-        "attribute": "fitness_apparel_type"
-    },
-    "vehicle_type1": {
-        "code": "vehicle_type1",
-        "labels": {
-            "en_US": "4x4"
-        },
-        "attribute": "vehicle_type"
-    },
-    "vehicle_type2": {
-        "code": "vehicle_type2",
-        "labels": {
-            "en_US": "City cars"
-        },
-        "attribute": "vehicle_type"
-    },
-    "vehicle_type3": {
-        "code": "vehicle_type3",
-        "labels": {
-            "en_US": "Supermini"
-        },
-        "attribute": "vehicle_type"
-    },
-    "vehicle_type4": {
-        "code": "vehicle_type4",
-        "labels": {
-            "en_US": "Small MPV"
-        },
-        "attribute": "vehicle_type"
-    },
-    "vehicle_type5": {
-        "code": "vehicle_type5",
-        "labels": {
-            "en_US": "Large MPV"
-        },
-        "attribute": "vehicle_type"
-    },
-    "vehicle_type6": {
-        "code": "vehicle_type6",
-        "labels": {
-            "en_US": "Sport"
-        },
-        "attribute": "vehicle_type"
-    },
-    "vehicle_type7": {
-        "code": "vehicle_type7",
-        "labels": {
-            "en_US": "Roadster"
-        },
-        "attribute": "vehicle_type"
-    },
-    "season1": {
-        "code": "season1",
-        "labels": {
-            "en_US": "Winter"
-        },
-        "attribute": "season"
-    },
-    "season2": {
-        "code": "season2",
-        "labels": {
-            "en_US": "Summer"
-        },
-        "attribute": "season"
-    },
-    "season3": {
-        "code": "season3",
-        "labels": {
-            "en_US": "4 seasons"
-        },
-        "attribute": "season"
-    },
-    "fuel_efficiency1": {
-        "code": "fuel_efficiency1",
-        "labels": {
-            "en_US": "A"
-        },
-        "attribute": "fuel_efficiency"
-    },
-    "fuel_efficiency2": {
-        "code": "fuel_efficiency2",
-        "labels": {
-            "en_US": "B"
-        },
-        "attribute": "fuel_efficiency"
-    },
-    "fuel_efficiency3": {
-        "code": "fuel_efficiency3",
-        "labels": {
-            "en_US": "C"
-        },
-        "attribute": "fuel_efficiency"
-    },
-    "fuel_efficiency4": {
-        "code": "fuel_efficiency4",
-        "labels": {
-            "en_US": "D"
-        },
-        "attribute": "fuel_efficiency"
-    },
-    "fuel_efficiency5": {
-        "code": "fuel_efficiency5",
-        "labels": {
-            "en_US": "E"
-        },
-        "attribute": "fuel_efficiency"
-    },
-    "brake_fluid_specification1": {
-        "code": "brake_fluid_specification1",
-        "labels": {
-            "en_US": "DOT 3"
-        },
-        "attribute": "brake_fluid_specification"
-    },
-    "brake_fluid_specification2": {
-        "code": "brake_fluid_specification2",
-        "labels": {
-            "en_US": "DOT 4"
-        },
-        "attribute": "brake_fluid_specification"
-    },
-    "brake_fluid_specification3": {
-        "code": "brake_fluid_specification3",
-        "labels": {
-            "en_US": "DOT 4+"
-        },
-        "attribute": "brake_fluid_specification"
-    },
-    "brake_fluid_specification4": {
-        "code": "brake_fluid_specification4",
-        "labels": {
-            "en_US": "DOT 5"
-        },
-        "attribute": "brake_fluid_specification"
-    },
-    "brake_fluid_specification5": {
-        "code": "brake_fluid_specification5",
-        "labels": {
-            "en_US": "DOT 5.1"
-        },
-        "attribute": "brake_fluid_specification"
-    },
-    "oil_type1": {
-        "code": "oil_type1",
-        "labels": {
-            "en_US": "Synthetic oil"
-        },
-        "attribute": "oil_type"
-    },
-    "oil_type2": {
-        "code": "oil_type2",
-        "labels": {
-            "en_US": "Synthetic blend oil"
-        },
-        "attribute": "oil_type"
-    },
-    "oil_type3": {
-        "code": "oil_type3",
-        "labels": {
-            "en_US": "High mileage oil"
-        },
-        "attribute": "oil_type"
-    },
-    "oil_type4": {
-        "code": "oil_type4",
-        "labels": {
-            "en_US": "Conventional motor oil"
-        },
-        "attribute": "oil_type"
-    },
-    "oil_viscosity1": {
-        "code": "oil_viscosity1",
-        "labels": {
-            "en_US": "5W40"
-        },
-        "attribute": "oil_viscosity"
-    },
-    "oil_viscosity2": {
-        "code": "oil_viscosity2",
-        "labels": {
-            "en_US": "5W30"
-        },
-        "attribute": "oil_viscosity"
-    },
-    "oil_viscosity3": {
-        "code": "oil_viscosity3",
-        "labels": {
-            "en_US": "10W40"
-        },
-        "attribute": "oil_viscosity"
-    },
-    "oil_viscosity4": {
-        "code": "oil_viscosity4",
-        "labels": {
-            "en_US": "15W40"
-        },
-        "attribute": "oil_viscosity"
-    },
-    "litterature_genre1": {
-        "code": "litterature_genre1",
-        "labels": {
-            "en_US": "Children's"
-        },
-        "attribute": "litterature_genre"
-    },
-    "litterature_genre2": {
-        "code": "litterature_genre2",
-        "labels": {
-            "en_US": "Novel"
-        },
-        "attribute": "litterature_genre"
-    },
-    "litterature_genre3": {
-        "code": "litterature_genre3",
-        "labels": {
-            "en_US": "Poetry"
-        },
-        "attribute": "litterature_genre"
-    },
-    "litterature_genre4": {
-        "code": "litterature_genre4",
-        "labels": {
-            "en_US": "Drama"
-        },
-        "attribute": "litterature_genre"
-    },
-    "litterature_genre5": {
-        "code": "litterature_genre5",
-        "labels": {
-            "en_US": "Science fiction"
-        },
-        "attribute": "litterature_genre"
-    },
-    "litterature_genre6": {
-        "code": "litterature_genre6",
-        "labels": {
-            "en_US": "Biography"
-        },
-        "attribute": "litterature_genre"
-    },
-    "litterature_genre7": {
-        "code": "litterature_genre7",
-        "labels": {
-            "en_US": "Fable"
-        },
-        "attribute": "litterature_genre"
-    },
-    "style1": {
-        "code": "style1",
-        "labels": {
-            "en_US": "Solitaire"
-        },
-        "attribute": "style"
-    },
-    "style2": {
-        "code": "style2",
-        "labels": {
-            "en_US": "Halo"
-        },
-        "attribute": "style"
-    },
-    "style3": {
-        "code": "style3",
-        "labels": {
-            "en_US": "Eternity Band"
-        },
-        "attribute": "style"
-    },
-    "style4": {
-        "code": "style4",
-        "labels": {
-            "en_US": "Vintage"
-        },
-        "attribute": "style"
-    },
-    "style5": {
-        "code": "style5",
-        "labels": {
-            "en_US": "Modern"
-        },
-        "attribute": "style"
-    },
-    "style6": {
-        "code": "style6",
-        "labels": {
-            "en_US": "Casual"
-        },
-        "attribute": "style"
-    },
-    "style7": {
-        "code": "style7",
-        "labels": {
-            "en_US": "Formal"
-        },
-        "attribute": "style"
-    },
-    "style8": {
-        "code": "style8",
-        "labels": {
-            "en_US": "Minimalist"
-        },
-        "attribute": "style"
-    },
-    "style9": {
-        "code": "style9",
-        "labels": {
-            "en_US": "Classic"
-        },
-        "attribute": "style"
-    },
-    "gemstone_details1": {
-        "code": "gemstone_details1",
-        "labels": {
-            "en_US": "Diamond"
-        },
-        "attribute": "gemstone_details"
-    },
-    "gemstone_details2": {
-        "code": "gemstone_details2",
-        "labels": {
-            "en_US": "Sapphire"
-        },
-        "attribute": "gemstone_details"
-    },
-    "gemstone_details3": {
-        "code": "gemstone_details3",
-        "labels": {
-            "en_US": "Ruby"
-        },
-        "attribute": "gemstone_details"
-    },
-    "gemstone_details4": {
-        "code": "gemstone_details4",
-        "labels": {
-            "en_US": "Emerald"
-        },
-        "attribute": "gemstone_details"
-    },
-    "gemstone_details5": {
-        "code": "gemstone_details5",
-        "labels": {
-            "en_US": "Amethyst"
-        },
-        "attribute": "gemstone_details"
-    },
-    "gemstone_details6": {
-        "code": "gemstone_details6",
-        "labels": {
-            "en_US": "Aquamarine"
-        },
-        "attribute": "gemstone_details"
-    },
-    "gemstone_details7": {
-        "code": "gemstone_details7",
-        "labels": {
-            "en_US": "Topaz"
-        },
-        "attribute": "gemstone_details"
-    },
-    "gemstone_details8": {
-        "code": "gemstone_details8",
-        "labels": {
-            "en_US": "Opal"
-        },
-        "attribute": "gemstone_details"
-    },
-    "gemstone_details9": {
-        "code": "gemstone_details9",
-        "labels": {
-            "en_US": "Pearl"
-        },
-        "attribute": "gemstone_details"
-    },
-    "gemstone_details10": {
-        "code": "gemstone_details10",
-        "labels": {
-            "en_US": "Tanzanite"
-        },
-        "attribute": "gemstone_details"
-    },
-    "collection1": {
-        "code": "collection1",
-        "labels": {
-            "en_US": "Vintage Glamour"
-        },
-        "attribute": "collection"
-    },
-    "collection2": {
-        "code": "collection2",
-        "labels": {
-            "en_US": "Nature-Inspired"
-        },
-        "attribute": "collection"
-    },
-    "collection3": {
-        "code": "collection3",
-        "labels": {
-            "en_US": "Heart"
-        },
-        "attribute": "collection"
-    },
-    "collection4": {
-        "code": "collection4",
-        "labels": {
-            "en_US": "Nature"
-        },
-        "attribute": "collection"
-    },
-    "collection5": {
-        "code": "collection5",
-        "labels": {
-            "en_US": "Ocean"
-        },
-        "attribute": "collection"
-    },
-    "collection6": {
-        "code": "collection6",
-        "labels": {
-            "en_US": "Animal"
-        },
-        "attribute": "collection"
-    },
-    "collection7": {
-        "code": "collection7",
-        "labels": {
-            "en_US": "Geometric"
-        },
-        "attribute": "collection"
-    },
-    "collection8": {
-        "code": "collection8",
-        "labels": {
-            "en_US": "Floral"
-        },
-        "attribute": "collection"
-    },
-    "collection9": {
-        "code": "collection9",
-        "labels": {
-            "en_US": "Spiritual"
-        },
-        "attribute": "collection"
-    },
-    "jewelry_cut1": {
-        "code": "jewelry_cut1",
-        "labels": {
-            "en_US": "Round Brilliant"
-        },
-        "attribute": "jewelry_cut"
-    },
-    "jewelry_cut2": {
-        "code": "jewelry_cut2",
-        "labels": {
-            "en_US": "Princess Cut"
-        },
-        "attribute": "jewelry_cut"
-    },
-    "jewelry_cut3": {
-        "code": "jewelry_cut3",
-        "labels": {
-            "en_US": "Emerald Cut"
-        },
-        "attribute": "jewelry_cut"
-    },
-    "jewelry_cut4": {
-        "code": "jewelry_cut4",
-        "labels": {
-            "en_US": "Oval Cut"
-        },
-        "attribute": "jewelry_cut"
-    },
-    "jewelry_cut5": {
-        "code": "jewelry_cut5",
-        "labels": {
-            "en_US": "Cushion Cut"
-        },
-        "attribute": "jewelry_cut"
-    },
-    "jewelry_cut6": {
-        "code": "jewelry_cut6",
-        "labels": {
-            "en_US": "Pear Cut"
-        },
-        "attribute": "jewelry_cut"
-    },
-    "jewelry_cut7": {
-        "code": "jewelry_cut7",
-        "labels": {
-            "en_US": "Marquise Cut"
-        },
-        "attribute": "jewelry_cut"
-    },
-    "jewelry_cut8": {
-        "code": "jewelry_cut8",
-        "labels": {
-            "en_US": "Heart Cut"
-        },
-        "attribute": "jewelry_cut"
-    },
-    "jewelry_cut9": {
-        "code": "jewelry_cut9",
-        "labels": {
-            "en_US": "Asscher Cut"
-        },
-        "attribute": "jewelry_cut"
-    },
-    "clarity1": {
-        "code": "clarity1",
-        "labels": {
-            "en_US": "Flawless"
-        },
-        "attribute": "clarity"
-    },
-    "clarity2": {
-        "code": "clarity2",
-        "labels": {
-            "en_US": "Internally Flawless (IF)"
-        },
-        "attribute": "clarity"
-    },
-    "clarity3": {
-        "code": "clarity3",
-        "labels": {
-            "en_US": "Very Very Slightly Included (VVS1\/VVS2)"
-        },
-        "attribute": "clarity"
-    },
-    "clarity4": {
-        "code": "clarity4",
-        "labels": {
-            "en_US": "Very Slightly Included (VS1\/VS2)"
-        },
-        "attribute": "clarity"
-    },
-    "clarity5": {
-        "code": "clarity5",
-        "labels": {
-            "en_US": "Slightly Included (SI1\/SI2)"
-        },
-        "attribute": "clarity"
-    },
-    "clarity6": {
-        "code": "clarity6",
-        "labels": {
-            "en_US": "Included (I1\/I2\/I3)"
-        },
-        "attribute": "clarity"
-    },
-    "clarity7": {
-        "code": "clarity7",
-        "labels": {
-            "en_US": "Eye Clean"
-        },
-        "attribute": "clarity"
-    },
-    "clarity8": {
-        "code": "clarity8",
-        "labels": {
-            "en_US": "Slightly Included to Eye Clean"
-        },
-        "attribute": "clarity"
-    },
-    "engravings1": {
-        "code": "engravings1",
-        "labels": {
-            "en_US": "Custom Text"
-        },
-        "attribute": "engravings"
-    },
-    "engravings2": {
-        "code": "engravings2",
-        "labels": {
-            "en_US": "Date"
-        },
-        "attribute": "engravings"
-    },
-    "engravings3": {
-        "code": "engravings3",
-        "labels": {
-            "en_US": "Name"
-        },
-        "attribute": "engravings"
-    },
-    "engravings4": {
-        "code": "engravings4",
-        "labels": {
-            "en_US": "Message"
-        },
-        "attribute": "engravings"
-    },
-    "clasp_type1": {
-        "code": "clasp_type1",
-        "labels": {
-            "en_US": "Lobster Clasp"
-        },
-        "attribute": "clasp_type"
-    },
-    "clasp_type2": {
-        "code": "clasp_type2",
-        "labels": {
-            "en_US": "Toggle Clasp"
-        },
-        "attribute": "clasp_type"
-    },
-    "clasp_type3": {
-        "code": "clasp_type3",
-        "labels": {
-            "en_US": "Spring Ring Clasp"
-        },
-        "attribute": "clasp_type"
-    },
-    "clasp_type4": {
-        "code": "clasp_type4",
-        "labels": {
-            "en_US": "Magnetic Clasp"
-        },
-        "attribute": "clasp_type"
-    },
-    "clasp_type5": {
-        "code": "clasp_type5",
-        "labels": {
-            "en_US": "Box Clasp"
-        },
-        "attribute": "clasp_type"
-    },
-    "clasp_type6": {
-        "code": "clasp_type6",
-        "labels": {
-            "en_US": "Slide Clasp"
-        },
-        "attribute": "clasp_type"
-    },
-    "bracelet_type1": {
-        "code": "bracelet_type1",
-        "labels": {
-            "en_US": "Bangle"
-        },
-        "attribute": "bracelet_type"
-    },
-    "bracelet_type2": {
-        "code": "bracelet_type2",
-        "labels": {
-            "en_US": "Cuff"
-        },
-        "attribute": "bracelet_type"
-    },
-    "bracelet_type3": {
-        "code": "bracelet_type3",
-        "labels": {
-            "en_US": "Chain"
-        },
-        "attribute": "bracelet_type"
-    },
-    "bracelet_type4": {
-        "code": "bracelet_type4",
-        "labels": {
-            "en_US": "Beaded"
-        },
-        "attribute": "bracelet_type"
-    },
-    "bracelet_type5": {
-        "code": "bracelet_type5",
-        "labels": {
-            "en_US": "Leather"
-        },
-        "attribute": "bracelet_type"
-    },
-    "bracelet_type6": {
-        "code": "bracelet_type6",
-        "labels": {
-            "en_US": "Stretch"
-        },
-        "attribute": "bracelet_type"
-    },
-    "bracelet_type7": {
-        "code": "bracelet_type7",
-        "labels": {
-            "en_US": "Tennis"
-        },
-        "attribute": "bracelet_type"
-    },
-    "bracelet_type8": {
-        "code": "bracelet_type8",
-        "labels": {
-            "en_US": "Charm"
-        },
-        "attribute": "bracelet_type"
-    },
-    "gender1": {
-        "code": "gender1",
-        "labels": {
-            "en_US": "Men"
-        },
-        "attribute": "gender"
-    },
-    "gender2": {
-        "code": "gender2",
-        "labels": {
-            "en_US": "Women"
-        },
-        "attribute": "gender"
-    },
-    "gender3": {
-        "code": "gender3",
-        "labels": {
-            "en_US": "Unisex"
-        },
-        "attribute": "gender"
-    },
-    "gender4": {
-        "code": "gender4",
-        "labels": {
-            "en_US": "Gender-neutral"
-        },
-        "attribute": "gender"
-    },
-    "strap_type1": {
-        "code": "strap_type1",
-        "labels": {
-            "en_US": "Bracelet"
-        },
-        "attribute": "strap_type"
-    },
-    "strap_type2": {
-        "code": "strap_type2",
-        "labels": {
-            "en_US": "Milanese"
-        },
-        "attribute": "strap_type"
-    },
-    "strap_type3": {
-        "code": "strap_type3",
-        "labels": {
-            "en_US": "Rubber"
-        },
-        "attribute": "strap_type"
-    },
-    "strap_type4": {
-        "code": "strap_type4",
-        "labels": {
-            "en_US": "NATO"
-        },
-        "attribute": "strap_type"
-    },
-    "strap_type5": {
-        "code": "strap_type5",
-        "labels": {
-            "en_US": "Strap"
-        },
-        "attribute": "strap_type"
-    },
-    "movement_type1": {
-        "code": "movement_type1",
-        "labels": {
-            "en_US": "Quartz"
-        },
-        "attribute": "movement_type"
-    },
-    "movement_type2": {
-        "code": "movement_type2",
-        "labels": {
-            "en_US": "Mecanical"
-        },
-        "attribute": "movement_type"
-    },
-    "movement_type3": {
-        "code": "movement_type3",
-        "labels": {
-            "en_US": "Automatic"
-        },
-        "attribute": "movement_type"
-    },
-    "movement_type4": {
-        "code": "movement_type4",
-        "labels": {
-            "en_US": "Solar"
-        },
-        "attribute": "movement_type"
-    },
-    "watch_type1": {
-        "code": "watch_type1",
-        "labels": {
-            "en_US": "Analog"
-        },
-        "attribute": "watch_type"
-    },
-    "watch_type2": {
-        "code": "watch_type2",
-        "labels": {
-            "en_US": "Digital"
-        },
-        "attribute": "watch_type"
-    },
-    "watch_type3": {
-        "code": "watch_type3",
-        "labels": {
-            "en_US": "Analog-Digital"
-        },
-        "attribute": "watch_type"
-    },
-    "watch_type4": {
-        "code": "watch_type4",
-        "labels": {
-            "en_US": "Chronograph"
-        },
-        "attribute": "watch_type"
-    },
-    "watch_type5": {
-        "code": "watch_type5",
-        "labels": {
-            "en_US": "Smartwatch"
-        },
-        "attribute": "watch_type"
-    },
-    "seating_capacity1": {
-        "code": "seating_capacity1",
-        "labels": {
-            "en_US": "2-Seater"
-        },
-        "attribute": "seating_capacity"
-    },
-    "seating_capacity2": {
-        "code": "seating_capacity2",
-        "labels": {
-            "en_US": "3-Seater"
-        },
-        "attribute": "seating_capacity"
-    },
-    "seating_capacity3": {
-        "code": "seating_capacity3",
-        "labels": {
-            "en_US": "Sectional"
-        },
-        "attribute": "seating_capacity"
-    },
-    "seating_capacity4": {
-        "code": "seating_capacity4",
-        "labels": {
-            "en_US": "Recliner"
-        },
-        "attribute": "seating_capacity"
-    },
-    "leg_type1": {
-        "code": "leg_type1",
-        "labels": {
-            "en_US": "Wooden Tapered Legs"
-        },
-        "attribute": "leg_type"
-    },
-    "leg_type2": {
-        "code": "leg_type2",
-        "labels": {
-            "en_US": "Metal Legs"
-        },
-        "attribute": "leg_type"
-    },
-    "leg_type3": {
-        "code": "leg_type3",
-        "labels": {
-            "en_US": "Block Feet"
-        },
-        "attribute": "leg_type"
-    },
-    "configuration1": {
-        "code": "configuration1",
-        "labels": {
-            "en_US": "L-Shaped"
-        },
-        "attribute": "configuration"
-    },
-    "configuration2": {
-        "code": "configuration2",
-        "labels": {
-            "en_US": "U-Shaped"
-        },
-        "attribute": "configuration"
-    },
-    "configuration3": {
-        "code": "configuration3",
-        "labels": {
-            "en_US": "Chaise on Left"
-        },
-        "attribute": "configuration"
-    },
-    "configuration4": {
-        "code": "configuration4",
-        "labels": {
-            "en_US": "Chaise on Right"
-        },
-        "attribute": "configuration"
-    },
-    "plant_type1": {
-        "code": "plant_type1",
-        "labels": {
-            "en_US": "Tree"
-        },
-        "attribute": "plant_type"
-    },
-    "plant_type2": {
-        "code": "plant_type2",
-        "labels": {
-            "en_US": "Succulent"
-        },
-        "attribute": "plant_type"
-    },
-    "plant_type3": {
-        "code": "plant_type3",
-        "labels": {
-            "en_US": "Vine"
-        },
-        "attribute": "plant_type"
-    },
-    "plant_type4": {
-        "code": "plant_type4",
-        "labels": {
-            "en_US": "Fern"
-        },
-        "attribute": "plant_type"
-    },
-    "plant_type5": {
-        "code": "plant_type5",
-        "labels": {
-            "en_US": "Flowering Plant"
-        },
-        "attribute": "plant_type"
-    },
-    "watering_needs1": {
-        "code": "watering_needs1",
-        "labels": {
-            "en_US": "Low"
-        },
-        "attribute": "watering_needs"
-    },
-    "watering_needs2": {
-        "code": "watering_needs2",
-        "labels": {
-            "en_US": "Moderate"
-        },
-        "attribute": "watering_needs"
-    },
-    "watering_needs3": {
-        "code": "watering_needs3",
-        "labels": {
-            "en_US": "High"
-        },
-        "attribute": "watering_needs"
-    },
-    "light_requirements1": {
-        "code": "light_requirements1",
-        "labels": {
-            "en_US": "Low Light"
-        },
-        "attribute": "light_requirements"
-    },
-    "light_requirements2": {
-        "code": "light_requirements2",
-        "labels": {
-            "en_US": "Indirect Light"
-        },
-        "attribute": "light_requirements"
-    },
-    "light_requirements3": {
-        "code": "light_requirements3",
-        "labels": {
-            "en_US": "Bright Light"
-        },
-        "attribute": "light_requirements"
-    },
-    "light_requirements4": {
-        "code": "light_requirements4",
-        "labels": {
-            "en_US": "Full Sun"
-        },
-        "attribute": "light_requirements"
-    },
-    "toxicity1": {
-        "code": "toxicity1",
-        "labels": {
-            "en_US": "Non-Toxic"
-        },
-        "attribute": "toxicity"
-    },
-    "toxicity2": {
-        "code": "toxicity2",
-        "labels": {
-            "en_US": "Toxic to Pets"
-        },
-        "attribute": "toxicity"
-    },
-    "toxicity3": {
-        "code": "toxicity3",
-        "labels": {
-            "en_US": "Toxic to Humans"
-        },
-        "attribute": "toxicity"
-    },
-    "wax_type1": {
-        "code": "wax_type1",
-        "labels": {
-            "en_US": "Paraffin wax"
-        },
-        "attribute": "wax_type"
-    },
-    "wax_type2": {
-        "code": "wax_type2",
-        "labels": {
-            "en_US": "Soy wax"
-        },
-        "attribute": "wax_type"
-    },
-    "wax_type3": {
-        "code": "wax_type3",
-        "labels": {
-            "en_US": "Palm wax"
-        },
-        "attribute": "wax_type"
-    },
-    "wax_type4": {
-        "code": "wax_type4",
-        "labels": {
-            "en_US": "Beeswax"
-        },
-        "attribute": "wax_type"
-    },
-    "wax_type5": {
-        "code": "wax_type5",
-        "labels": {
-            "en_US": "Gel wax"
-        },
-        "attribute": "wax_type"
-    },
-    "wax_type6": {
-        "code": "wax_type6",
-        "labels": {
-            "en_US": "Rapeseed wax"
-        },
-        "attribute": "wax_type"
-    },
-    "wax_type7": {
-        "code": "wax_type7",
-        "labels": {
-            "en_US": "Coconut wax"
-        },
-        "attribute": "wax_type"
-    },
-    "fuel_type1": {
-        "code": "fuel_type1",
-        "labels": {
-            "en_US": "Gas"
-        },
-        "attribute": "fuel_type"
-    },
-    "fuel_type2": {
-        "code": "fuel_type2",
-        "labels": {
-            "en_US": "Charcoal"
-        },
-        "attribute": "fuel_type"
-    },
-    "fuel_type3": {
-        "code": "fuel_type3",
-        "labels": {
-            "en_US": "Wood Pellets"
-        },
-        "attribute": "fuel_type"
-    },
-    "fuel_type4": {
-        "code": "fuel_type4",
-        "labels": {
-            "en_US": "Electric"
-        },
-        "attribute": "fuel_type"
-    }
+  "brand1": {
+    "code": "brand1",
+    "labels": { "en_US": "Zaro" },
+    "attribute": "brand"
+  },
+  "brand2": {
+    "code": "brand2",
+    "labels": { "en_US": "Zigolf" },
+    "attribute": "brand"
+  },
+  "brand3": {
+    "code": "brand3",
+    "labels": { "en_US": "Zaro Premium" },
+    "attribute": "brand"
+  },
+  "brand4": {
+    "code": "brand4",
+    "labels": { "en_US": "Zaro Kids" },
+    "attribute": "brand"
+  },
+  "brand5": {
+    "code": "brand5",
+    "labels": { "en_US": "Zaro Sport" },
+    "attribute": "brand"
+  },
+  "brand6": {
+    "code": "brand6",
+    "labels": { "en_US": "Zarauto" },
+    "attribute": "brand"
+  },
+  "brand7": {
+    "code": "brand7",
+    "labels": { "en_US": "Zaro Green" },
+    "attribute": "brand"
+  },
+  "color1": {
+    "code": "color1",
+    "labels": { "en_US": "Blue" },
+    "attribute": "color"
+  },
+  "color2": {
+    "code": "color2",
+    "labels": { "en_US": "Black" },
+    "attribute": "color"
+  },
+  "color3": {
+    "code": "color3",
+    "labels": { "en_US": "Pink" },
+    "attribute": "color"
+  },
+  "color4": {
+    "code": "color4",
+    "labels": { "en_US": "Grey" },
+    "attribute": "color"
+  },
+  "color5": {
+    "code": "color5",
+    "labels": { "en_US": "Yellow" },
+    "attribute": "color"
+  },
+  "color6": {
+    "code": "color6",
+    "labels": { "en_US": "White" },
+    "attribute": "color"
+  },
+  "size1": { "code": "size1", "labels": { "en_US": "S" }, "attribute": "size" },
+  "size2": { "code": "size2", "labels": { "en_US": "M" }, "attribute": "size" },
+  "size3": { "code": "size3", "labels": { "en_US": "L" }, "attribute": "size" },
+  "size4": {
+    "code": "size4",
+    "labels": { "en_US": "XS" },
+    "attribute": "size"
+  },
+  "size5": {
+    "code": "size5",
+    "labels": { "en_US": "XL" },
+    "attribute": "size"
+  },
+  "size6": { "code": "size6", "labels": { "en_US": 5 }, "attribute": "size" },
+  "size7": { "code": "size7", "labels": { "en_US": 6 }, "attribute": "size" },
+  "size8": { "code": "size8", "labels": { "en_US": 7 }, "attribute": "size" },
+  "size9": { "code": "size9", "labels": { "en_US": 8 }, "attribute": "size" },
+  "size10": { "code": "size10", "labels": { "en_US": 9 }, "attribute": "size" },
+  "size11": {
+    "code": "size11",
+    "labels": { "en_US": 35 },
+    "attribute": "size"
+  },
+  "size12": {
+    "code": "size12",
+    "labels": { "en_US": 36 },
+    "attribute": "size"
+  },
+  "size13": {
+    "code": "size13",
+    "labels": { "en_US": 37 },
+    "attribute": "size"
+  },
+  "size14": {
+    "code": "size14",
+    "labels": { "en_US": 38 },
+    "attribute": "size"
+  },
+  "size15": {
+    "code": "size15",
+    "labels": { "en_US": 39 },
+    "attribute": "size"
+  },
+  "size16": {
+    "code": "size16",
+    "labels": { "en_US": 40 },
+    "attribute": "size"
+  },
+  "size17": {
+    "code": "size17",
+    "labels": { "en_US": 86 },
+    "attribute": "size"
+  },
+  "size18": {
+    "code": "size18",
+    "labels": { "en_US": 94 },
+    "attribute": "size"
+  },
+  "size19": {
+    "code": "size19",
+    "labels": { "en_US": 102 },
+    "attribute": "size"
+  },
+  "size20": {
+    "code": "size20",
+    "labels": { "en_US": 108 },
+    "attribute": "size"
+  },
+  "size21": {
+    "code": "size21",
+    "labels": { "en_US": 120 },
+    "attribute": "size"
+  },
+  "size22": {
+    "code": "size22",
+    "labels": { "en_US": 130 },
+    "attribute": "size"
+  },
+  "fabric1": {
+    "code": "fabric1",
+    "labels": { "en_US": "Cotton" },
+    "attribute": "fabric"
+  },
+  "fabric2": {
+    "code": "fabric2",
+    "labels": { "en_US": "Velvet" },
+    "attribute": "fabric"
+  },
+  "fabric3": {
+    "code": "fabric3",
+    "labels": { "en_US": "Silk" },
+    "attribute": "fabric"
+  },
+  "fabric4": {
+    "code": "fabric4",
+    "labels": { "en_US": "Leather" },
+    "attribute": "fabric"
+  },
+  "fabric5": {
+    "code": "fabric5",
+    "labels": { "en_US": "Vegan leather" },
+    "attribute": "fabric"
+  },
+  "fabric6": {
+    "code": "fabric6",
+    "labels": { "en_US": "Denim" },
+    "attribute": "fabric"
+  },
+  "fabric7": {
+    "code": "fabric7",
+    "labels": { "en_US": "Polyester" },
+    "attribute": "fabric"
+  },
+  "fabric8": {
+    "code": "fabric8",
+    "labels": { "en_US": "Wool" },
+    "attribute": "fabric"
+  },
+  "material1": {
+    "code": "material1",
+    "labels": { "en_US": "Metal" },
+    "attribute": "material"
+  },
+  "material2": {
+    "code": "material2",
+    "labels": { "en_US": "Plastic" },
+    "attribute": "material"
+  },
+  "material3": {
+    "code": "material3",
+    "labels": { "en_US": "Wood" },
+    "attribute": "material"
+  },
+  "material4": {
+    "code": "material4",
+    "labels": { "en_US": "Glass" },
+    "attribute": "material"
+  },
+  "material5": {
+    "code": "material5",
+    "labels": { "en_US": "Synthetic fibers" },
+    "attribute": "material"
+  },
+  "material6": {
+    "code": "material6",
+    "labels": { "en_US": "Bemboo" },
+    "attribute": "material"
+  },
+  "material7": {
+    "code": "material7",
+    "labels": { "en_US": "Ceramic" },
+    "attribute": "material"
+  },
+  "material8": {
+    "code": "material8",
+    "labels": { "en_US": "Titanium" },
+    "attribute": "material"
+  },
+  "material9": {
+    "code": "material9",
+    "labels": { "en_US": "Stainless steel" },
+    "attribute": "material"
+  },
+  "material10": {
+    "code": "material10",
+    "labels": { "en_US": "Steel" },
+    "attribute": "material"
+  },
+  "material11": {
+    "code": "material11",
+    "labels": { "en_US": "White gold" },
+    "attribute": "material"
+  },
+  "material12": {
+    "code": "material12",
+    "labels": { "en_US": "Yellow gold" },
+    "attribute": "material"
+  },
+  "material13": {
+    "code": "material13",
+    "labels": { "en_US": "Rose gold" },
+    "attribute": "material"
+  },
+  "material14": {
+    "code": "material14",
+    "labels": { "en_US": "Platinum" },
+    "attribute": "material"
+  },
+  "material15": {
+    "code": "material15",
+    "labels": { "en_US": "Sterling silver" },
+    "attribute": "material"
+  },
+  "material16": {
+    "code": "material16",
+    "labels": { "en_US": "Silver" },
+    "attribute": "material"
+  },
+  "material17": {
+    "code": "material17",
+    "labels": { "en_US": "Carbon fiber" },
+    "attribute": "material"
+  },
+  "care_instructions1": {
+    "code": "care_instructions1",
+    "labels": { "en_US": "Machine Wash" },
+    "attribute": "care_instructions"
+  },
+  "care_instructions2": {
+    "code": "care_instructions2",
+    "labels": { "en_US": "Hand Wash" },
+    "attribute": "care_instructions"
+  },
+  "care_instructions3": {
+    "code": "care_instructions3",
+    "labels": { "en_US": "Dry. Clean" },
+    "attribute": "care_instructions"
+  },
+  "care_instructions4": {
+    "code": "care_instructions4",
+    "labels": { "en_US": "Do Not Wash" },
+    "attribute": "care_instructions"
+  },
+  "care_instructions5": {
+    "code": "care_instructions5",
+    "labels": { "en_US": "Tumble Dry" },
+    "attribute": "care_instructions"
+  },
+  "care_instructions6": {
+    "code": "care_instructions6",
+    "labels": { "en_US": "Line Dry" },
+    "attribute": "care_instructions"
+  },
+  "care_instructions7": {
+    "code": "care_instructions7",
+    "labels": { "en_US": "Dry Flat" },
+    "attribute": "care_instructions"
+  },
+  "care_instructions8": {
+    "code": "care_instructions8",
+    "labels": { "en_US": "Iron" },
+    "attribute": "care_instructions"
+  },
+  "care_instructions9": {
+    "code": "care_instructions9",
+    "labels": { "en_US": "Do Not Irin" },
+    "attribute": "care_instructions"
+  },
+  "care_instructions10": {
+    "code": "care_instructions10",
+    "labels": { "en_US": "Bleach" },
+    "attribute": "care_instructions"
+  },
+  "care_instructions11": {
+    "code": "care_instructions11",
+    "labels": { "en_US": "Wash with similar colors" },
+    "attribute": "care_instructions"
+  },
+  "pattern1": {
+    "code": "pattern1",
+    "labels": { "en_US": "Floral" },
+    "attribute": "pattern"
+  },
+  "pattern2": {
+    "code": "pattern2",
+    "labels": { "en_US": "Stripes" },
+    "attribute": "pattern"
+  },
+  "pattern3": {
+    "code": "pattern3",
+    "labels": { "en_US": "Polka Dot" },
+    "attribute": "pattern"
+  },
+  "pattern4": {
+    "code": "pattern4",
+    "labels": { "en_US": "Plaid" },
+    "attribute": "pattern"
+  },
+  "pattern5": {
+    "code": "pattern5",
+    "labels": { "en_US": "Animal Print" },
+    "attribute": "pattern"
+  },
+  "pattern6": {
+    "code": "pattern6",
+    "labels": { "en_US": "Paisley" },
+    "attribute": "pattern"
+  },
+  "pattern7": {
+    "code": "pattern7",
+    "labels": { "en_US": "Houndstooth" },
+    "attribute": "pattern"
+  },
+  "pattern8": {
+    "code": "pattern8",
+    "labels": { "en_US": "Chevron" },
+    "attribute": "pattern"
+  },
+  "pattern9": {
+    "code": "pattern9",
+    "labels": { "en_US": "Geometric" },
+    "attribute": "pattern"
+  },
+  "pattern10": {
+    "code": "pattern10",
+    "labels": { "en_US": "Tie-Dye" },
+    "attribute": "pattern"
+  },
+  "handbag_type1": {
+    "code": "handbag_type1",
+    "labels": { "en_US": "Tote bag" },
+    "attribute": "handbag_type"
+  },
+  "handbag_type2": {
+    "code": "handbag_type2",
+    "labels": { "en_US": "Crossbody" },
+    "attribute": "handbag_type"
+  },
+  "handbag_type3": {
+    "code": "handbag_type3",
+    "labels": { "en_US": "Backpack" },
+    "attribute": "handbag_type"
+  },
+  "handbag_type4": {
+    "code": "handbag_type4",
+    "labels": { "en_US": "Shoulder" },
+    "attribute": "handbag_type"
+  },
+  "handbag_type5": {
+    "code": "handbag_type5",
+    "labels": { "en_US": "Briefcase" },
+    "attribute": "handbag_type"
+  },
+  "top_style1": {
+    "code": "top_style1",
+    "labels": { "en_US": "Basic" },
+    "attribute": "top_style"
+  },
+  "top_style2": {
+    "code": "top_style2",
+    "labels": { "en_US": "Fitted Cami" },
+    "attribute": "top_style"
+  },
+  "top_style3": {
+    "code": "top_style3",
+    "labels": { "en_US": "Sleeveless" },
+    "attribute": "top_style"
+  },
+  "top_style4": {
+    "code": "top_style4",
+    "labels": { "en_US": "Tunic" },
+    "attribute": "top_style"
+  },
+  "sleeve_length1": {
+    "code": "sleeve_length1",
+    "labels": { "en_US": "Bell sleeves" },
+    "attribute": "sleeve_length"
+  },
+  "sleeve_length2": {
+    "code": "sleeve_length2",
+    "labels": { "en_US": "Cap sleeves" },
+    "attribute": "sleeve_length"
+  },
+  "sleeve_length3": {
+    "code": "sleeve_length3",
+    "labels": { "en_US": "Kimono sleeves" },
+    "attribute": "sleeve_length"
+  },
+  "sleeve_length4": {
+    "code": "sleeve_length4",
+    "labels": { "en_US": "Raglan sleeves" },
+    "attribute": "sleeve_length"
+  },
+  "neck_style1": {
+    "code": "neck_style1",
+    "labels": { "en_US": "V-neck" },
+    "attribute": "neck_style"
+  },
+  "neck_style2": {
+    "code": "neck_style2",
+    "labels": { "en_US": "Off shoulders" },
+    "attribute": "neck_style"
+  },
+  "neck_style3": {
+    "code": "neck_style3",
+    "labels": { "en_US": "Round" },
+    "attribute": "neck_style"
+  },
+  "neck_style4": {
+    "code": "neck_style4",
+    "labels": { "en_US": "Turtleneck" },
+    "attribute": "neck_style"
+  },
+  "neck_style5": {
+    "code": "neck_style5",
+    "labels": { "en_US": "Asymetric" },
+    "attribute": "neck_style"
+  },
+  "heel_type1": {
+    "code": "heel_type1",
+    "labels": { "en_US": "Kitten" },
+    "attribute": "heel_type"
+  },
+  "heel_type2": {
+    "code": "heel_type2",
+    "labels": { "en_US": "Platform" },
+    "attribute": "heel_type"
+  },
+  "heel_type3": {
+    "code": "heel_type3",
+    "labels": { "en_US": "Stileto" },
+    "attribute": "heel_type"
+  },
+  "heel_type4": {
+    "code": "heel_type4",
+    "labels": { "en_US": "Mule" },
+    "attribute": "heel_type"
+  },
+  "heel_type5": {
+    "code": "heel_type5",
+    "labels": { "en_US": "High heel" },
+    "attribute": "heel_type"
+  },
+  "heel_type6": {
+    "code": "heel_type6",
+    "labels": { "en_US": "Sandal" },
+    "attribute": "heel_type"
+  },
+  "heel_type7": {
+    "code": "heel_type7",
+    "labels": { "en_US": "Flat" },
+    "attribute": "heel_type"
+  },
+  "allergen1": {
+    "code": "allergen1",
+    "labels": { "en_US": "Celery" },
+    "attribute": "allergens"
+  },
+  "allergen2": {
+    "code": "allergen2",
+    "labels": { "en_US": "Crustaceans" },
+    "attribute": "allergens"
+  },
+  "allergen3": {
+    "code": "allergen3",
+    "labels": { "en_US": "Eggs" },
+    "attribute": "allergens"
+  },
+  "allergen4": {
+    "code": "allergen4",
+    "labels": { "en_US": "Fish" },
+    "attribute": "allergens"
+  },
+  "allergen5": {
+    "code": "allergen5",
+    "labels": { "en_US": "Lupin" },
+    "attribute": "allergens"
+  },
+  "allergen6": {
+    "code": "allergen6",
+    "labels": { "en_US": "Milk" },
+    "attribute": "allergens"
+  },
+  "allergen7": {
+    "code": "allergen7",
+    "labels": { "en_US": "Molluscs" },
+    "attribute": "allergens"
+  },
+  "allergen8": {
+    "code": "allergen8",
+    "labels": { "en_US": "Mustard" },
+    "attribute": "allergens"
+  },
+  "allergen9": {
+    "code": "allergen9",
+    "labels": { "en_US": "Peanuts" },
+    "attribute": "allergens"
+  },
+  "allergen10": {
+    "code": "allergen10",
+    "labels": { "en_US": "Sesame" },
+    "attribute": "allergens"
+  },
+  "allergen11": {
+    "code": "allergen11",
+    "labels": { "en_US": "Soybeans" },
+    "attribute": "allergens"
+  },
+  "allergen12": {
+    "code": "allergen12",
+    "labels": { "en_US": "Sulphur dioxide & sulphites " },
+    "attribute": "allergens"
+  },
+  "allergen13": {
+    "code": "allergen13",
+    "labels": { "en_US": "Tree nuts" },
+    "attribute": "allergens"
+  },
+  "bread_type1": {
+    "code": "bread_type1",
+    "labels": { "en_US": "White bread" },
+    "attribute": "bread_type"
+  },
+  "bread_type2": {
+    "code": "bread_type2",
+    "labels": { "en_US": "Wholewheat bread" },
+    "attribute": "bread_type"
+  },
+  "bread_type3": {
+    "code": "bread_type3",
+    "labels": { "en_US": "Rye bread" },
+    "attribute": "bread_type"
+  },
+  "bread_type4": {
+    "code": "bread_type4",
+    "labels": { "en_US": "Sourdough bread" },
+    "attribute": "bread_type"
+  },
+  "bread_type5": {
+    "code": "bread_type5",
+    "labels": { "en_US": "Multigrain bread" },
+    "attribute": "bread_type"
+  },
+  "bread_type6": {
+    "code": "bread_type6",
+    "labels": { "en_US": "Baguette" },
+    "attribute": "bread_type"
+  },
+  "bread_type7": {
+    "code": "bread_type7",
+    "labels": { "en_US": "Ciabatta" },
+    "attribute": "bread_type"
+  },
+  "bread_type8": {
+    "code": "bread_type8",
+    "labels": { "en_US": "Pumpernickel" },
+    "attribute": "bread_type"
+  },
+  "bread_type9": {
+    "code": "bread_type9",
+    "labels": { "en_US": "Challah" },
+    "attribute": "bread_type"
+  },
+  "bread_type10": {
+    "code": "bread_type10",
+    "labels": { "en_US": "Brioche" },
+    "attribute": "bread_type"
+  },
+  "bread_type11": {
+    "code": "bread_type11",
+    "labels": { "en_US": "Flatbread" },
+    "attribute": "bread_type"
+  },
+  "bread_type12": {
+    "code": "bread_type12",
+    "labels": { "en_US": "Bagel" },
+    "attribute": "bread_type"
+  },
+  "bread_type13": {
+    "code": "bread_type13",
+    "labels": { "en_US": "Focaccia" },
+    "attribute": "bread_type"
+  },
+  "bread_type14": {
+    "code": "bread_type14",
+    "labels": { "en_US": "Sodabread" },
+    "attribute": "bread_type"
+  },
+  "milk_type1": {
+    "code": "milk_type1",
+    "labels": { "en_US": "Whole milk" },
+    "attribute": "milk_type"
+  },
+  "milk_type2": {
+    "code": "milk_type2",
+    "labels": { "en_US": "Reduced-fat milk" },
+    "attribute": "milk_type"
+  },
+  "milk_type3": {
+    "code": "milk_type3",
+    "labels": { "en_US": "Skim milk" },
+    "attribute": "milk_type"
+  },
+  "milk_type4": {
+    "code": "milk_type4",
+    "labels": { "en_US": "Long life milk (UHT)" },
+    "attribute": "milk_type"
+  },
+  "milk_type5": {
+    "code": "milk_type5",
+    "labels": { "en_US": "Soy milk" },
+    "attribute": "milk_type"
+  },
+  "milk_type6": {
+    "code": "milk_type6",
+    "labels": { "en_US": "Goat milk" },
+    "attribute": "milk_type"
+  },
+  "pasta_shape1": {
+    "code": "pasta_shape1",
+    "labels": { "en_US": "Spaghetti" },
+    "attribute": "pasta_shape"
+  },
+  "pasta_shape2": {
+    "code": "pasta_shape2",
+    "labels": { "en_US": "Lasagna" },
+    "attribute": "pasta_shape"
+  },
+  "pasta_shape3": {
+    "code": "pasta_shape3",
+    "labels": { "en_US": "Macaroni" },
+    "attribute": "pasta_shape"
+  },
+  "pasta_shape4": {
+    "code": "pasta_shape4",
+    "labels": { "en_US": "Rigatoni" },
+    "attribute": "pasta_shape"
+  },
+  "pasta_shape5": {
+    "code": "pasta_shape5",
+    "labels": { "en_US": "Pappardelle" },
+    "attribute": "pasta_shape"
+  },
+  "pasta_shape6": {
+    "code": "pasta_shape6",
+    "labels": { "en_US": "Orecchiette" },
+    "attribute": "pasta_shape"
+  },
+  "pasta_shape7": {
+    "code": "pasta_shape7",
+    "labels": { "en_US": "Penne" },
+    "attribute": "pasta_shape"
+  },
+  "pasta_shape8": {
+    "code": "pasta_shape8",
+    "labels": { "en_US": "Ravioli" },
+    "attribute": "pasta_shape"
+  },
+  "pasta_shape9": {
+    "code": "pasta_shape9",
+    "labels": { "en_US": "Tortelli" },
+    "attribute": "pasta_shape"
+  },
+  "pasta_shape10": {
+    "code": "pasta_shape10",
+    "labels": { "en_US": "Conchiglie" },
+    "attribute": "pasta_shape"
+  },
+  "taste1": {
+    "code": "taste1",
+    "labels": { "en_US": "Sweet" },
+    "attribute": "taste"
+  },
+  "taste2": {
+    "code": "taste2",
+    "labels": { "en_US": "Salty" },
+    "attribute": "taste"
+  },
+  "taste3": {
+    "code": "taste3",
+    "labels": { "en_US": "Spicy" },
+    "attribute": "taste"
+  },
+  "taste4": {
+    "code": "taste4",
+    "labels": { "en_US": "Bitter" },
+    "attribute": "taste"
+  },
+  "taste5": {
+    "code": "taste5",
+    "labels": { "en_US": "Sour" },
+    "attribute": "taste"
+  },
+  "cereal_type1": {
+    "code": "cereal_type1",
+    "labels": { "en_US": "Corn" },
+    "attribute": "cereal_type"
+  },
+  "cereal_type2": {
+    "code": "cereal_type2",
+    "labels": { "en_US": "Rice" },
+    "attribute": "cereal_type"
+  },
+  "cereal_type3": {
+    "code": "cereal_type3",
+    "labels": { "en_US": "Wheat" },
+    "attribute": "cereal_type"
+  },
+  "cereal_type4": {
+    "code": "cereal_type4",
+    "labels": { "en_US": "Barley" },
+    "attribute": "cereal_type"
+  },
+  "cereal_type5": {
+    "code": "cereal_type5",
+    "labels": { "en_US": "Oats" },
+    "attribute": "cereal_type"
+  },
+  "wine_type1": {
+    "code": "wine_type1",
+    "labels": { "en_US": "Red" },
+    "attribute": "wine_type"
+  },
+  "wine_type2": {
+    "code": "wine_type2",
+    "labels": { "en_US": "White" },
+    "attribute": "wine_type"
+  },
+  "wine_type3": {
+    "code": "wine_type3",
+    "labels": { "en_US": "Ros\u00e9" },
+    "attribute": "wine_type"
+  },
+  "tasting_note1": {
+    "code": "tasting_note1",
+    "labels": { "en_US": "Rich" },
+    "attribute": "tasting_note"
+  },
+  "tasting_note2": {
+    "code": "tasting_note2",
+    "labels": { "en_US": "Floral" },
+    "attribute": "tasting_note"
+  },
+  "tasting_note3": {
+    "code": "tasting_note3",
+    "labels": { "en_US": "Wood" },
+    "attribute": "tasting_note"
+  },
+  "tasting_note4": {
+    "code": "tasting_note4",
+    "labels": { "en_US": "Peach/apricot" },
+    "attribute": "tasting_note"
+  },
+  "tasting_note5": {
+    "code": "tasting_note5",
+    "labels": { "en_US": "Cherry-like" },
+    "attribute": "tasting_note"
+  },
+  "tasting_note6": {
+    "code": "tasting_note6",
+    "labels": { "en_US": "Bitter almonds" },
+    "attribute": "tasting_note"
+  },
+  "grape_variety1": {
+    "code": "grape_variety1",
+    "labels": { "en_US": "Pinot noir" },
+    "attribute": "grape_variety"
+  },
+  "grape_variety2": {
+    "code": "grape_variety2",
+    "labels": { "en_US": "Champagne" },
+    "attribute": "grape_variety"
+  },
+  "grape_variety3": {
+    "code": "grape_variety3",
+    "labels": { "en_US": "Riesling" },
+    "attribute": "grape_variety"
+  },
+  "grape_variety4": {
+    "code": "grape_variety4",
+    "labels": { "en_US": "Cabernet sauvignon" },
+    "attribute": "grape_variety"
+  },
+  "grape_variety5": {
+    "code": "grape_variety5",
+    "labels": { "en_US": "Chardonnay" },
+    "attribute": "grape_variety"
+  },
+  "cure_days1": {
+    "code": "cure_days1",
+    "labels": { "en_US": "2 weeks" },
+    "attribute": "cure_days"
+  },
+  "cure_days2": {
+    "code": "cure_days2",
+    "labels": { "en_US": "30 days" },
+    "attribute": "cure_days"
+  },
+  "cure_days3": {
+    "code": "cure_days3",
+    "labels": { "en_US": "45 days" },
+    "attribute": "cure_days"
+  },
+  "cure_days4": {
+    "code": "cure_days4",
+    "labels": { "en_US": "60 days" },
+    "attribute": "cure_days"
+  },
+  "cure_days5": {
+    "code": "cure_days5",
+    "labels": { "en_US": "90 days" },
+    "attribute": "cure_days"
+  },
+  "content_type1": {
+    "code": "content_type1",
+    "labels": { "en_US": "Spray" },
+    "attribute": "content_type"
+  },
+  "content_type2": {
+    "code": "content_type2",
+    "labels": { "en_US": "Bottle" },
+    "attribute": "content_type"
+  },
+  "content_type3": {
+    "code": "content_type3",
+    "labels": { "en_US": "Box" },
+    "attribute": "content_type"
+  },
+  "content_type4": {
+    "code": "content_type4",
+    "labels": { "en_US": "Pill box" },
+    "attribute": "content_type"
+  },
+  "content_type5": {
+    "code": "content_type5",
+    "labels": { "en_US": "Bags" },
+    "attribute": "content_type"
+  },
+  "aromatic1": {
+    "code": "aromatic1",
+    "labels": { "en_US": "Rosemary" },
+    "attribute": "aromatic"
+  },
+  "aromatic2": {
+    "code": "aromatic2",
+    "labels": { "en_US": "Tea Tree" },
+    "attribute": "aromatic"
+  },
+  "aromatic3": {
+    "code": "aromatic3",
+    "labels": { "en_US": "Orange" },
+    "attribute": "aromatic"
+  },
+  "aromatic4": {
+    "code": "aromatic4",
+    "labels": { "en_US": "Rose" },
+    "attribute": "aromatic"
+  },
+  "aromatic5": {
+    "code": "aromatic5",
+    "labels": { "en_US": "Calendula" },
+    "attribute": "aromatic"
+  },
+  "aromatic6": {
+    "code": "aromatic6",
+    "labels": { "en_US": "Aloe" },
+    "attribute": "aromatic"
+  },
+  "aromatic7": {
+    "code": "aromatic7",
+    "labels": { "en_US": "Floral" },
+    "attribute": "aromatic"
+  },
+  "aromatic8": {
+    "code": "aromatic8",
+    "labels": { "en_US": "Woody" },
+    "attribute": "aromatic"
+  },
+  "aromatic9": {
+    "code": "aromatic9",
+    "labels": { "en_US": "Earthy" },
+    "attribute": "aromatic"
+  },
+  "skin_type1": {
+    "code": "skin_type1",
+    "labels": { "en_US": "All skin types" },
+    "attribute": "skin_type"
+  },
+  "skin_type2": {
+    "code": "skin_type2",
+    "labels": { "en_US": "Combination skin" },
+    "attribute": "skin_type"
+  },
+  "skin_type3": {
+    "code": "skin_type3",
+    "labels": { "en_US": "Oily skin" },
+    "attribute": "skin_type"
+  },
+  "skin_type4": {
+    "code": "skin_type4",
+    "labels": { "en_US": "Blemished skin" },
+    "attribute": "skin_type"
+  },
+  "hair_type1": {
+    "code": "hair_type1",
+    "labels": { "en_US": "Straight" },
+    "attribute": "hair_type"
+  },
+  "hair_type2": {
+    "code": "hair_type2",
+    "labels": { "en_US": "Wavy" },
+    "attribute": "hair_type"
+  },
+  "hair_type3": {
+    "code": "hair_type3",
+    "labels": { "en_US": "Curly" },
+    "attribute": "hair_type"
+  },
+  "hair_type4": {
+    "code": "hair_type4",
+    "labels": { "en_US": "Thick" },
+    "attribute": "hair_type"
+  },
+  "hair_type5": {
+    "code": "hair_type5",
+    "labels": { "en_US": "Frizzy" },
+    "attribute": "hair_type"
+  },
+  "hair_type6": {
+    "code": "hair_type6",
+    "labels": { "en_US": "Damaged" },
+    "attribute": "hair_type"
+  },
+  "hair_type7": {
+    "code": "hair_type7",
+    "labels": { "en_US": "Fine" },
+    "attribute": "hair_type"
+  },
+  "action_field1": {
+    "code": "action_field1",
+    "labels": { "en_US": "Skin, hair, nails" },
+    "attribute": "action_field"
+  },
+  "action_field2": {
+    "code": "action_field2",
+    "labels": { "en_US": "Musculat health" },
+    "attribute": "action_field"
+  },
+  "action_field3": {
+    "code": "action_field3",
+    "labels": { "en_US": "Imune support" },
+    "attribute": "action_field"
+  },
+  "action_field4": {
+    "code": "action_field4",
+    "labels": { "en_US": "Well being" },
+    "attribute": "action_field"
+  },
+  "action_field5": {
+    "code": "action_field5",
+    "labels": { "en_US": "Brain" },
+    "attribute": "action_field"
+  },
+  "action_field6": {
+    "code": "action_field6",
+    "labels": { "en_US": "Energy and fatigue" },
+    "attribute": "action_field"
+  },
+  "action_field7": {
+    "code": "action_field7",
+    "labels": { "en_US": "Digestive health" },
+    "attribute": "action_field"
+  },
+  "language1": {
+    "code": "language1",
+    "labels": { "en_US": "English" },
+    "attribute": "language"
+  },
+  "language2": {
+    "code": "language2",
+    "labels": { "en_US": "Spanish" },
+    "attribute": "language"
+  },
+  "language3": {
+    "code": "language3",
+    "labels": { "en_US": "French" },
+    "attribute": "language"
+  },
+  "language4": {
+    "code": "language4",
+    "labels": { "en_US": "German" },
+    "attribute": "language"
+  },
+  "language5": {
+    "code": "language5",
+    "labels": { "en_US": "Japanese" },
+    "attribute": "language"
+  },
+  "language6": {
+    "code": "language6",
+    "labels": { "en_US": "Chinese" },
+    "attribute": "language"
+  },
+  "language7": {
+    "code": "language7",
+    "labels": { "en_US": "Italian" },
+    "attribute": "language"
+  },
+  "language8": {
+    "code": "language8",
+    "labels": { "en_US": "Portuguese" },
+    "attribute": "language"
+  },
+  "language9": {
+    "code": "language9",
+    "labels": { "en_US": "Russian" },
+    "attribute": "language"
+  },
+  "power_type1": {
+    "code": "power_type1",
+    "labels": { "en_US": "Battery" },
+    "attribute": "power_type"
+  },
+  "power_type2": {
+    "code": "power_type2",
+    "labels": { "en_US": "Electric" },
+    "attribute": "power_type"
+  },
+  "power_type3": {
+    "code": "power_type3",
+    "labels": { "en_US": "Gas" },
+    "attribute": "power_type"
+  },
+  "power_type4": {
+    "code": "power_type4",
+    "labels": { "en_US": "Solar" },
+    "attribute": "power_type"
+  },
+  "power_type5": {
+    "code": "power_type5",
+    "labels": { "en_US": "Charcoal" },
+    "attribute": "power_type"
+  },
+  "display_type1": {
+    "code": "display_type1",
+    "labels": { "en_US": "Retina" },
+    "attribute": "display_type"
+  },
+  "display_type2": {
+    "code": "display_type2",
+    "labels": { "en_US": "LCD" },
+    "attribute": "display_type"
+  },
+  "display_type3": {
+    "code": "display_type3",
+    "labels": { "en_US": "HD" },
+    "attribute": "display_type"
+  },
+  "display_type4": {
+    "code": "display_type4",
+    "labels": { "en_US": "LED" },
+    "attribute": "display_type"
+  },
+  "display_type5": {
+    "code": "display_type5",
+    "labels": { "en_US": "AMOLED" },
+    "attribute": "display_type"
+  },
+  "display_type6": {
+    "code": "display_type6",
+    "labels": { "en_US": "OLED" },
+    "attribute": "display_type"
+  },
+  "display_type7": {
+    "code": "display_type7",
+    "labels": { "en_US": "TFT" },
+    "attribute": "display_type"
+  },
+  "display_type8": {
+    "code": "display_type8",
+    "labels": { "en_US": "Liquid Crystal" },
+    "attribute": "display_type"
+  },
+  "resolution1": {
+    "code": "resolution1",
+    "labels": { "en_US": "1024 x 600" },
+    "attribute": "resolution"
+  },
+  "resolution2": {
+    "code": "resolution2",
+    "labels": { "en_US": "1280 x 800" },
+    "attribute": "resolution"
+  },
+  "resolution3": {
+    "code": "resolution3",
+    "labels": { "en_US": "1366 x 768" },
+    "attribute": "resolution"
+  },
+  "resolution4": {
+    "code": "resolution4",
+    "labels": { "en_US": "1600 x 900" },
+    "attribute": "resolution"
+  },
+  "resolution5": {
+    "code": "resolution5",
+    "labels": { "en_US": "1680 x 1050" },
+    "attribute": "resolution"
+  },
+  "resolution6": {
+    "code": "resolution6",
+    "labels": { "en_US": "1920 x 1080" },
+    "attribute": "resolution"
+  },
+  "energy_class1": {
+    "code": "energy_class1",
+    "labels": { "en_US": "A" },
+    "attribute": "energy_class"
+  },
+  "energy_class2": {
+    "code": "energy_class2",
+    "labels": { "en_US": "B" },
+    "attribute": "energy_class"
+  },
+  "energy_class3": {
+    "code": "energy_class3",
+    "labels": { "en_US": "C" },
+    "attribute": "energy_class"
+  },
+  "energy_class4": {
+    "code": "energy_class4",
+    "labels": { "en_US": "D" },
+    "attribute": "energy_class"
+  },
+  "energy_class5": {
+    "code": "energy_class5",
+    "labels": { "en_US": "E" },
+    "attribute": "energy_class"
+  },
+  "energy_class6": {
+    "code": "energy_class6",
+    "labels": { "en_US": "F" },
+    "attribute": "energy_class"
+  },
+  "energy_class7": {
+    "code": "energy_class7",
+    "labels": { "en_US": "G" },
+    "attribute": "energy_class"
+  },
+  "platform1": {
+    "code": "platform1",
+    "labels": { "en_US": "Nintendo Switch" },
+    "attribute": "platform"
+  },
+  "platform2": {
+    "code": "platform2",
+    "labels": { "en_US": "Nintendo Wii" },
+    "attribute": "platform"
+  },
+  "platform3": {
+    "code": "platform3",
+    "labels": { "en_US": "PC" },
+    "attribute": "platform"
+  },
+  "platform4": {
+    "code": "platform4",
+    "labels": { "en_US": "Mac" },
+    "attribute": "platform"
+  },
+  "platform5": {
+    "code": "platform5",
+    "labels": { "en_US": "Playstation 5" },
+    "attribute": "platform"
+  },
+  "platform6": {
+    "code": "platform6",
+    "labels": { "en_US": "Xbox One" },
+    "attribute": "platform"
+  },
+  "operating_system1": {
+    "code": "operating_system1",
+    "labels": { "en_US": "Windows" },
+    "attribute": "operating_system"
+  },
+  "operating_system2": {
+    "code": "operating_system2",
+    "labels": { "en_US": "Apple" },
+    "attribute": "operating_system"
+  },
+  "operating_system3": {
+    "code": "operating_system3",
+    "labels": { "en_US": "Android" },
+    "attribute": "operating_system"
+  },
+  "video_game_genre1": {
+    "code": "video_game_genre1",
+    "labels": { "en_US": "MMO" },
+    "attribute": "video_game_genre"
+  },
+  "video_game_genre2": {
+    "code": "video_game_genre2",
+    "labels": { "en_US": "MMORPG" },
+    "attribute": "video_game_genre"
+  },
+  "video_game_genre3": {
+    "code": "video_game_genre3",
+    "labels": { "en_US": "RPG" },
+    "attribute": "video_game_genre"
+  },
+  "video_game_genre4": {
+    "code": "video_game_genre4",
+    "labels": { "en_US": "Sports" },
+    "attribute": "video_game_genre"
+  },
+  "video_game_genre5": {
+    "code": "video_game_genre5",
+    "labels": { "en_US": "Action" },
+    "attribute": "video_game_genre"
+  },
+  "video_game_genre6": {
+    "code": "video_game_genre6",
+    "labels": { "en_US": "Strategy" },
+    "attribute": "video_game_genre"
+  },
+  "video_game_players1": {
+    "code": "video_game_players1",
+    "labels": { "en_US": 1 },
+    "attribute": "video_game_players"
+  },
+  "video_game_players2": {
+    "code": "video_game_players2",
+    "labels": {
+      "en_US": {
+        "date": "2023-02-01 00:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "UTC"
+      }
+    },
+    "attribute": "video_game_players"
+  },
+  "video_game_players3": {
+    "code": "video_game_players3",
+    "labels": {
+      "en_US": {
+        "date": "2023-04-01 00:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "UTC"
+      }
+    },
+    "attribute": "video_game_players"
+  },
+  "video_game_players4": {
+    "code": "video_game_players4",
+    "labels": {
+      "en_US": {
+        "date": "2023-06-01 00:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "UTC"
+      }
+    },
+    "attribute": "video_game_players"
+  },
+  "video_game_players5": {
+    "code": "video_game_players5",
+    "labels": { "en_US": 2 },
+    "attribute": "video_game_players"
+  },
+  "video_game_players6": {
+    "code": "video_game_players6",
+    "labels": {
+      "en_US": {
+        "date": "2023-04-02 00:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "UTC"
+      }
+    },
+    "attribute": "video_game_players"
+  },
+  "video_game_players7": {
+    "code": "video_game_players7",
+    "labels": {
+      "en_US": {
+        "date": "2023-06-02 00:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "UTC"
+      }
+    },
+    "attribute": "video_game_players"
+  },
+  "video_game_players8": {
+    "code": "video_game_players8",
+    "labels": { "en_US": 3 },
+    "attribute": "video_game_players"
+  },
+  "video_game_players9": {
+    "code": "video_game_players9",
+    "labels": { "en_US": 4 },
+    "attribute": "video_game_players"
+  },
+  "headphone_type1": {
+    "code": "headphone_type1",
+    "labels": { "en_US": "Over-Ear" },
+    "attribute": "headphone_type"
+  },
+  "headphone_type2": {
+    "code": "headphone_type2",
+    "labels": { "en_US": "In-Ear" },
+    "attribute": "headphone_type"
+  },
+  "headphone_type3": {
+    "code": "headphone_type3",
+    "labels": { "en_US": "Earbuds" },
+    "attribute": "headphone_type"
+  },
+  "headphone_type4": {
+    "code": "headphone_type4",
+    "labels": { "en_US": "Closed-Back" },
+    "attribute": "headphone_type"
+  },
+  "headphone_type5": {
+    "code": "headphone_type5",
+    "labels": { "en_US": "Open-Back" },
+    "attribute": "headphone_type"
+  },
+  "picture_quality1": {
+    "code": "picture_quality1",
+    "labels": { "en_US": "8K" },
+    "attribute": "picture_quality"
+  },
+  "picture_quality2": {
+    "code": "picture_quality2",
+    "labels": { "en_US": "4K" },
+    "attribute": "picture_quality"
+  },
+  "picture_quality3": {
+    "code": "picture_quality3",
+    "labels": { "en_US": "HD" },
+    "attribute": "picture_quality"
+  },
+  "picture_quality4": {
+    "code": "picture_quality4",
+    "labels": { "en_US": "SD" },
+    "attribute": "picture_quality"
+  },
+  "picture_quality5": {
+    "code": "picture_quality5",
+    "labels": { "en_US": "Full HD" },
+    "attribute": "picture_quality"
+  },
+  "picture_quality6": {
+    "code": "picture_quality6",
+    "labels": { "en_US": "Ultra HD" },
+    "attribute": "picture_quality"
+  },
+  "processor1": {
+    "code": "processor1",
+    "labels": { "en_US": "Qualcomm Snapdragon" },
+    "attribute": "processor"
+  },
+  "processor2": {
+    "code": "processor2",
+    "labels": { "en_US": "Apple A-series" },
+    "attribute": "processor"
+  },
+  "processor3": {
+    "code": "processor3",
+    "labels": { "en_US": "Samsung Exynos" },
+    "attribute": "processor"
+  },
+  "processor4": {
+    "code": "processor4",
+    "labels": { "en_US": "MediaTek Dimensity" },
+    "attribute": "processor"
+  },
+  "processor5": {
+    "code": "processor5",
+    "labels": { "en_US": "Huawei Kirin" },
+    "attribute": "processor"
+  },
+  "processor6": {
+    "code": "processor6",
+    "labels": { "en_US": "Intel Atom" },
+    "attribute": "processor"
+  },
+  "processor7": {
+    "code": "processor7",
+    "labels": { "en_US": "HiSilicon Kirin" },
+    "attribute": "processor"
+  },
+  "processor8": {
+    "code": "processor8",
+    "labels": { "en_US": "NVIDIA Tegra" },
+    "attribute": "processor"
+  },
+  "processor9": {
+    "code": "processor9",
+    "labels": { "en_US": "AMD Ryzen Mobile" },
+    "attribute": "processor"
+  },
+  "processor10": {
+    "code": "processor10",
+    "labels": { "en_US": "MediaTek Helio" },
+    "attribute": "processor"
+  },
+  "processor11": {
+    "code": "processor11",
+    "labels": { "en_US": "Dual Core" },
+    "attribute": "processor"
+  },
+  "processor12": {
+    "code": "processor12",
+    "labels": { "en_US": "MediaTek" },
+    "attribute": "processor"
+  },
+  "PEGI_rating1": {
+    "code": "PEGI_rating1",
+    "labels": { "en_US": "PEGI 3" },
+    "attribute": "PEGI_rating"
+  },
+  "PEGI_rating2": {
+    "code": "PEGI_rating2",
+    "labels": { "en_US": "PEGI 12" },
+    "attribute": "PEGI_rating"
+  },
+  "PEGI_rating3": {
+    "code": "PEGI_rating3",
+    "labels": { "en_US": "PEGI 16" },
+    "attribute": "PEGI_rating"
+  },
+  "PEGI_rating4": {
+    "code": "PEGI_rating4",
+    "labels": { "en_US": "PEGI 18" },
+    "attribute": "PEGI_rating"
+  },
+  "bedding_size1": {
+    "code": "bedding_size1",
+    "labels": { "en_US": "King 190x200" },
+    "attribute": "bedding_size"
+  },
+  "bedding_size2": {
+    "code": "bedding_size2",
+    "labels": { "en_US": "Queen 150x200" },
+    "attribute": "bedding_size"
+  },
+  "bedding_size3": {
+    "code": "bedding_size3",
+    "labels": { "en_US": "Super King 250x200" },
+    "attribute": "bedding_size"
+  },
+  "bedding_size4": {
+    "code": "bedding_size4",
+    "labels": { "en_US": "Standard Double 140x200" },
+    "attribute": "bedding_size"
+  },
+  "fragrance_family1": {
+    "code": "fragrance_family1",
+    "labels": { "en_US": "Lavender" },
+    "attribute": "fragrance_family"
+  },
+  "fragrance_family2": {
+    "code": "fragrance_family2",
+    "labels": { "en_US": "Eucalyptus" },
+    "attribute": "fragrance_family"
+  },
+  "fragrance_family3": {
+    "code": "fragrance_family3",
+    "labels": { "en_US": "Jasmine" },
+    "attribute": "fragrance_family"
+  },
+  "fragrance_family4": {
+    "code": "fragrance_family4",
+    "labels": { "en_US": "Peppermint" },
+    "attribute": "fragrance_family"
+  },
+  "fragrance_family5": {
+    "code": "fragrance_family5",
+    "labels": { "en_US": "Cherry blossom" },
+    "attribute": "fragrance_family"
+  },
+  "fragrance_family6": {
+    "code": "fragrance_family6",
+    "labels": { "en_US": "Vetiver" },
+    "attribute": "fragrance_family"
+  },
+  "fragrance_family7": {
+    "code": "fragrance_family7",
+    "labels": { "en_US": "Patchouli" },
+    "attribute": "fragrance_family"
+  },
+  "caraffe_material1": {
+    "code": "caraffe_material1",
+    "labels": { "en_US": "Recycled glass" },
+    "attribute": "caraffe_material"
+  },
+  "caraffe_material2": {
+    "code": "caraffe_material2",
+    "labels": { "en_US": "Glass" },
+    "attribute": "caraffe_material"
+  },
+  "made_in1": {
+    "code": "made_in1",
+    "labels": { "en_US": "Made in France" },
+    "attribute": "made_in"
+  },
+  "made_in2": {
+    "code": "made_in2",
+    "labels": { "en_US": "Made in Italy" },
+    "attribute": "made_in"
+  },
+  "made_in3": {
+    "code": "made_in3",
+    "labels": { "en_US": "Made in India" },
+    "attribute": "made_in"
+  },
+  "made_in4": {
+    "code": "made_in4",
+    "labels": { "en_US": "Made in China" },
+    "attribute": "made_in"
+  },
+  "slices_number1": {
+    "code": "slices_number1",
+    "labels": { "en_US": "2 slices" },
+    "attribute": "slices_number"
+  },
+  "slices_number2": {
+    "code": "slices_number2",
+    "labels": { "en_US": "4 slices" },
+    "attribute": "slices_number"
+  },
+  "slices_number3": {
+    "code": "slices_number3",
+    "labels": { "en_US": "6 slices" },
+    "attribute": "slices_number"
+  },
+  "slices_number4": {
+    "code": "slices_number4",
+    "labels": { "en_US": "8 slices" },
+    "attribute": "slices_number"
+  },
+  "aesthetics1": {
+    "code": "aesthetics1",
+    "labels": { "en_US": "50\u2019s Style" },
+    "attribute": "aesthetics"
+  },
+  "aesthetics2": {
+    "code": "aesthetics2",
+    "labels": { "en_US": "Dolce Vita" },
+    "attribute": "aesthetics"
+  },
+  "aesthetics3": {
+    "code": "aesthetics3",
+    "labels": { "en_US": "70\u2019s Style" },
+    "attribute": "aesthetics"
+  },
+  "aesthetics4": {
+    "code": "aesthetics4",
+    "labels": { "en_US": "Union Jack" },
+    "attribute": "aesthetics"
+  },
+  "aesthetics5": {
+    "code": "aesthetics5",
+    "labels": { "en_US": "Sicilian" },
+    "attribute": "aesthetics"
+  },
+  "aesthetics6": {
+    "code": "aesthetics6",
+    "labels": { "en_US": "Contemporary" },
+    "attribute": "aesthetics"
+  },
+  "finishing1": {
+    "code": "finishing1",
+    "labels": { "en_US": "Matt" },
+    "attribute": "finishing"
+  },
+  "finishing2": {
+    "code": "finishing2",
+    "labels": { "en_US": "Glossy" },
+    "attribute": "finishing"
+  },
+  "finishing3": {
+    "code": "finishing3",
+    "labels": { "en_US": "Stainless steel" },
+    "attribute": "finishing"
+  },
+  "finishing4": {
+    "code": "finishing4",
+    "labels": { "en_US": "Black Stainless steel" },
+    "attribute": "finishing"
+  },
+  "diaper_size1": {
+    "code": "diaper_size1",
+    "labels": { "en_US": "Size 1: 8 - 14 lbs (4-6 kg)" },
+    "attribute": "diaper_size"
+  },
+  "diaper_size2": {
+    "code": "diaper_size2",
+    "labels": { "en_US": "Size 2: 12 - 18 lbs (5-8 kg)" },
+    "attribute": "diaper_size"
+  },
+  "diaper_size3": {
+    "code": "diaper_size3",
+    "labels": { "en_US": "Size 3: 16 - 21 lbs (7-13 kg)" },
+    "attribute": "diaper_size"
+  },
+  "diaper_size4": {
+    "code": "diaper_size4",
+    "labels": { "en_US": "Size 4: 20 - 32 lbs  (9-17 kg)" },
+    "attribute": "diaper_size"
+  },
+  "diaper_size5": {
+    "code": "diaper_size5",
+    "labels": { "en_US": "Size 5: 27 - 35 lbs (>12 kg) " },
+    "attribute": "diaper_size"
+  },
+  "diaper_size6": {
+    "code": "diaper_size6",
+    "labels": { "en_US": "Size 6: Over 35 lbs (>16 kg)" },
+    "attribute": "diaper_size"
+  },
+  "print1": {
+    "code": "print1",
+    "labels": { "en_US": "Animal" },
+    "attribute": "print"
+  },
+  "print2": {
+    "code": "print2",
+    "labels": { "en_US": "Cake" },
+    "attribute": "print"
+  },
+  "print3": {
+    "code": "print3",
+    "labels": { "en_US": "Hello" },
+    "attribute": "print"
+  },
+  "print4": {
+    "code": "print4",
+    "labels": { "en_US": "Sea" },
+    "attribute": "print"
+  },
+  "print5": {
+    "code": "print5",
+    "labels": { "en_US": "Palm tree" },
+    "attribute": "print"
+  },
+  "material_properties1": {
+    "code": "material_properties1",
+    "labels": { "en_US": "Free from harmful chemicals like phthalates" },
+    "attribute": "material_properties"
+  },
+  "material_properties2": {
+    "code": "material_properties2",
+    "labels": { "en_US": "Hypoallergenic " },
+    "attribute": "material_properties"
+  },
+  "material_properties3": {
+    "code": "material_properties3",
+    "labels": { "en_US": "Easy to clean" },
+    "attribute": "material_properties"
+  },
+  "material_properties4": {
+    "code": "material_properties4",
+    "labels": { "en_US": "Safe contact with food" },
+    "attribute": "material_properties"
+  },
+  "material_properties5": {
+    "code": "material_properties5",
+    "labels": { "en_US": "Soft, does not break if dropped" },
+    "attribute": "material_properties"
+  },
+  "age_suitability1": {
+    "code": "age_suitability1",
+    "labels": { "en_US": "0 - 6 months" },
+    "attribute": "age_suitability"
+  },
+  "age_suitability2": {
+    "code": "age_suitability2",
+    "labels": { "en_US": "6 - 12 months" },
+    "attribute": "age_suitability"
+  },
+  "age_suitability3": {
+    "code": "age_suitability3",
+    "labels": { "en_US": "6 - 18 months" },
+    "attribute": "age_suitability"
+  },
+  "age_suitability4": {
+    "code": "age_suitability4",
+    "labels": { "en_US": "> 12 months" },
+    "attribute": "age_suitability"
+  },
+  "age_suitability5": {
+    "code": "age_suitability5",
+    "labels": { "en_US": "> 18 mois" },
+    "attribute": "age_suitability"
+  },
+  "age_suitability6": {
+    "code": "age_suitability6",
+    "labels": { "en_US": "> 24 months" },
+    "attribute": "age_suitability"
+  },
+  "age_suitability7": {
+    "code": "age_suitability7",
+    "labels": { "en_US": "> 36 months" },
+    "attribute": "age_suitability"
+  },
+  "standards1": {
+    "code": "standards1",
+    "labels": { "en_US": "Tested according to latest EU regulations" },
+    "attribute": "standards"
+  },
+  "standards2": {
+    "code": "standards2",
+    "labels": { "en_US": "FSC" },
+    "attribute": "standards"
+  },
+  "standards3": {
+    "code": "standards3",
+    "labels": { "en_US": "Made in France" },
+    "attribute": "standards"
+  },
+  "standards4": {
+    "code": "standards4",
+    "labels": { "en_US": "Made in USA" },
+    "attribute": "standards"
+  },
+  "standards5": {
+    "code": "standards5",
+    "labels": { "en_US": "Totally Chlorine Free (TCF)" },
+    "attribute": "standards"
+  },
+  "standards6": {
+    "code": "standards6",
+    "labels": { "en_US": "Dermatologically tested" },
+    "attribute": "standards"
+  },
+  "excluded_toxic_products1": {
+    "code": "excluded_toxic_products1",
+    "labels": { "en_US": "Chlorine bleach" },
+    "attribute": "excluded_toxic_products"
+  },
+  "excluded_toxic_products2": {
+    "code": "excluded_toxic_products2",
+    "labels": { "en_US": "Lotion" },
+    "attribute": "excluded_toxic_products"
+  },
+  "excluded_toxic_products3": {
+    "code": "excluded_toxic_products3",
+    "labels": { "en_US": "Perfume" },
+    "attribute": "excluded_toxic_products"
+  },
+  "excluded_toxic_products4": {
+    "code": "excluded_toxic_products4",
+    "labels": { "en_US": "Latex" },
+    "attribute": "excluded_toxic_products"
+  },
+  "excluded_toxic_products5": {
+    "code": "excluded_toxic_products5",
+    "labels": { "en_US": "Endocrine disruptor" },
+    "attribute": "excluded_toxic_products"
+  },
+  "warranty_period1": {
+    "code": "warranty_period1",
+    "labels": { "en_US": "1 year" },
+    "attribute": "warranty_period"
+  },
+  "warranty_period2": {
+    "code": "warranty_period2",
+    "labels": { "en_US": "2 years" },
+    "attribute": "warranty_period"
+  },
+  "warranty_period3": {
+    "code": "warranty_period3",
+    "labels": { "en_US": "3 years" },
+    "attribute": "warranty_period"
+  },
+  "warranty_period4": {
+    "code": "warranty_period4",
+    "labels": { "en_US": "4 years" },
+    "attribute": "warranty_period"
+  },
+  "warranty_period5": {
+    "code": "warranty_period5",
+    "labels": { "en_US": "5 years" },
+    "attribute": "warranty_period"
+  },
+  "sport_type1": {
+    "code": "sport_type1",
+    "labels": { "en_US": "Basketball" },
+    "attribute": "sport_type"
+  },
+  "sport_type2": {
+    "code": "sport_type2",
+    "labels": { "en_US": "Football" },
+    "attribute": "sport_type"
+  },
+  "sport_type3": {
+    "code": "sport_type3",
+    "labels": { "en_US": "Handball" },
+    "attribute": "sport_type"
+  },
+  "cut1": { "code": "cut1", "labels": { "en_US": "Slim" }, "attribute": "cut" },
+  "cut2": {
+    "code": "cut2",
+    "labels": { "en_US": "Regular" },
+    "attribute": "cut"
+  },
+  "cut3": {
+    "code": "cut3",
+    "labels": { "en_US": "Skinny" },
+    "attribute": "cut"
+  },
+  "cut4": {
+    "code": "cut4",
+    "labels": { "en_US": "Oversized" },
+    "attribute": "cut"
+  },
+  "frame1": {
+    "code": "frame1",
+    "labels": { "en_US": "Step-through" },
+    "attribute": "frame"
+  },
+  "frame2": {
+    "code": "frame2",
+    "labels": { "en_US": "High-step" },
+    "attribute": "frame"
+  },
+  "frame3": {
+    "code": "frame3",
+    "labels": { "en_US": "Folding" },
+    "attribute": "frame"
+  },
+  "frame4": {
+    "code": "frame4",
+    "labels": { "en_US": "Penny-farthing" },
+    "attribute": "frame"
+  },
+  "frame5": {
+    "code": "frame5",
+    "labels": { "en_US": "Recumbent" },
+    "attribute": "frame"
+  },
+  "fork1": {
+    "code": "fork1",
+    "labels": { "en_US": "Suspension" },
+    "attribute": "fork"
+  },
+  "fork2": {
+    "code": "fork2",
+    "labels": { "en_US": "Road" },
+    "attribute": "fork"
+  },
+  "fork3": {
+    "code": "fork3",
+    "labels": { "en_US": "Cyclo-cross" },
+    "attribute": "fork"
+  },
+  "fork4": {
+    "code": "fork4",
+    "labels": { "en_US": "Rigid" },
+    "attribute": "fork"
+  },
+  "fork5": {
+    "code": "fork5",
+    "labels": { "en_US": "BMX" },
+    "attribute": "fork"
+  },
+  "brakes_type1": {
+    "code": "brakes_type1",
+    "labels": { "en_US": "Hydraulic disc" },
+    "attribute": "brakes_type"
+  },
+  "brakes_type2": {
+    "code": "brakes_type2",
+    "labels": { "en_US": "Mechanical disc" },
+    "attribute": "brakes_type"
+  },
+  "brakes_type3": {
+    "code": "brakes_type3",
+    "labels": { "en_US": "V-brakes" },
+    "attribute": "brakes_type"
+  },
+  "brakes_type4": {
+    "code": "brakes_type4",
+    "labels": { "en_US": "Drum brakes" },
+    "attribute": "brakes_type"
+  },
+  "wheels1": {
+    "code": "wheels1",
+    "labels": { "en_US": "622 mm" },
+    "attribute": "wheels"
+  },
+  "wheels2": {
+    "code": "wheels2",
+    "labels": { "en_US": "28''" },
+    "attribute": "wheels"
+  },
+  "wheels3": {
+    "code": "wheels3",
+    "labels": { "en_US": "700 mm" },
+    "attribute": "wheels"
+  },
+  "wheels4": {
+    "code": "wheels4",
+    "labels": { "en_US": "650 mm" },
+    "attribute": "wheels"
+  },
+  "rear_derailleur1": {
+    "code": "rear_derailleur1",
+    "labels": { "en_US": "SRAM Rival XPLR AXS" },
+    "attribute": "rear_derailleur"
+  },
+  "rear_derailleur2": {
+    "code": "rear_derailleur2",
+    "labels": { "en_US": "Shimano 105 R7000" },
+    "attribute": "rear_derailleur"
+  },
+  "saddle1": {
+    "code": "saddle1",
+    "labels": { "en_US": "Racing" },
+    "attribute": "saddle"
+  },
+  "saddle2": {
+    "code": "saddle2",
+    "labels": { "en_US": "Comfort" },
+    "attribute": "saddle"
+  },
+  "saddle3": {
+    "code": "saddle3",
+    "labels": { "en_US": "Gender-specific" },
+    "attribute": "saddle"
+  },
+  "saddle4": {
+    "code": "saddle4",
+    "labels": { "en_US": "Cruiser" },
+    "attribute": "saddle"
+  },
+  "bike_type1": {
+    "code": "bike_type1",
+    "labels": { "en_US": "Gravel" },
+    "attribute": "bike_type"
+  },
+  "bike_type2": {
+    "code": "bike_type2",
+    "labels": { "en_US": "Mountain" },
+    "attribute": "bike_type"
+  },
+  "bike_type3": {
+    "code": "bike_type3",
+    "labels": { "en_US": "Road" },
+    "attribute": "bike_type"
+  },
+  "bike_type4": {
+    "code": "bike_type4",
+    "labels": { "en_US": "Hybrid" },
+    "attribute": "bike_type"
+  },
+  "bike_type5": {
+    "code": "bike_type5",
+    "labels": { "en_US": "City" },
+    "attribute": "bike_type"
+  },
+  "bike_type6": {
+    "code": "bike_type6",
+    "labels": { "en_US": "Kids" },
+    "attribute": "bike_type"
+  },
+  "bike_type7": {
+    "code": "bike_type7",
+    "labels": { "en_US": "Electric" },
+    "attribute": "bike_type"
+  },
+  "bike_type8": {
+    "code": "bike_type8",
+    "labels": { "en_US": "Fixies" },
+    "attribute": "bike_type"
+  },
+  "bike_type9": {
+    "code": "bike_type9",
+    "labels": { "en_US": "Cargo" },
+    "attribute": "bike_type"
+  },
+  "bike_type10": {
+    "code": "bike_type10",
+    "labels": { "en_US": "Folding" },
+    "attribute": "bike_type"
+  },
+  "bike_type11": {
+    "code": "bike_type11",
+    "labels": { "en_US": "BMX" },
+    "attribute": "bike_type"
+  },
+  "usage1": {
+    "code": "usage1",
+    "labels": { "en_US": "Touring" },
+    "attribute": "usage"
+  },
+  "usage2": {
+    "code": "usage2",
+    "labels": { "en_US": "Speed" },
+    "attribute": "usage"
+  },
+  "usage3": {
+    "code": "usage3",
+    "labels": { "en_US": "Utility" },
+    "attribute": "usage"
+  },
+  "usage4": {
+    "code": "usage4",
+    "labels": { "en_US": "Mountain" },
+    "attribute": "usage"
+  },
+  "usage5": {
+    "code": "usage5",
+    "labels": { "en_US": "Commuting" },
+    "attribute": "usage"
+  },
+  "usage6": {
+    "code": "usage6",
+    "labels": { "en_US": "Triathlon" },
+    "attribute": "usage"
+  },
+  "indoor_outdoor1": {
+    "code": "indoor_outdoor1",
+    "labels": { "en_US": "Indoor" },
+    "attribute": "indoor_outdoor"
+  },
+  "indoor_outdoor2": {
+    "code": "indoor_outdoor2",
+    "labels": { "en_US": "Outdoor" },
+    "attribute": "indoor_outdoor"
+  },
+  "fitness_apparel_type1": {
+    "code": "fitness_apparel_type1",
+    "labels": { "en_US": "Treadmill" },
+    "attribute": "fitness_apparel_type"
+  },
+  "fitness_apparel_type2": {
+    "code": "fitness_apparel_type2",
+    "labels": { "en_US": "Cross-trainer" },
+    "attribute": "fitness_apparel_type"
+  },
+  "fitness_apparel_type3": {
+    "code": "fitness_apparel_type3",
+    "labels": { "en_US": "Stepper" },
+    "attribute": "fitness_apparel_type"
+  },
+  "fitness_apparel_type4": {
+    "code": "fitness_apparel_type4",
+    "labels": { "en_US": "Rowing-machine" },
+    "attribute": "fitness_apparel_type"
+  },
+  "fitness_apparel_type5": {
+    "code": "fitness_apparel_type5",
+    "labels": { "en_US": "Exercise bike" },
+    "attribute": "fitness_apparel_type"
+  },
+  "vehicle_type1": {
+    "code": "vehicle_type1",
+    "labels": { "en_US": "4x4" },
+    "attribute": "vehicle_type"
+  },
+  "vehicle_type2": {
+    "code": "vehicle_type2",
+    "labels": { "en_US": "City cars" },
+    "attribute": "vehicle_type"
+  },
+  "vehicle_type3": {
+    "code": "vehicle_type3",
+    "labels": { "en_US": "Supermini" },
+    "attribute": "vehicle_type"
+  },
+  "vehicle_type4": {
+    "code": "vehicle_type4",
+    "labels": { "en_US": "Small MPV" },
+    "attribute": "vehicle_type"
+  },
+  "vehicle_type5": {
+    "code": "vehicle_type5",
+    "labels": { "en_US": "Large MPV" },
+    "attribute": "vehicle_type"
+  },
+  "vehicle_type6": {
+    "code": "vehicle_type6",
+    "labels": { "en_US": "Sport" },
+    "attribute": "vehicle_type"
+  },
+  "vehicle_type7": {
+    "code": "vehicle_type7",
+    "labels": { "en_US": "Roadster" },
+    "attribute": "vehicle_type"
+  },
+  "season1": {
+    "code": "season1",
+    "labels": { "en_US": "Winter" },
+    "attribute": "season"
+  },
+  "season2": {
+    "code": "season2",
+    "labels": { "en_US": "Summer" },
+    "attribute": "season"
+  },
+  "season3": {
+    "code": "season3",
+    "labels": { "en_US": "4 seasons" },
+    "attribute": "season"
+  },
+  "fuel_efficiency1": {
+    "code": "fuel_efficiency1",
+    "labels": { "en_US": "A" },
+    "attribute": "fuel_efficiency"
+  },
+  "fuel_efficiency2": {
+    "code": "fuel_efficiency2",
+    "labels": { "en_US": "B" },
+    "attribute": "fuel_efficiency"
+  },
+  "fuel_efficiency3": {
+    "code": "fuel_efficiency3",
+    "labels": { "en_US": "C" },
+    "attribute": "fuel_efficiency"
+  },
+  "fuel_efficiency4": {
+    "code": "fuel_efficiency4",
+    "labels": { "en_US": "D" },
+    "attribute": "fuel_efficiency"
+  },
+  "fuel_efficiency5": {
+    "code": "fuel_efficiency5",
+    "labels": { "en_US": "E" },
+    "attribute": "fuel_efficiency"
+  },
+  "brake_fluid_specification1": {
+    "code": "brake_fluid_specification1",
+    "labels": { "en_US": "DOT 3" },
+    "attribute": "brake_fluid_specification"
+  },
+  "brake_fluid_specification2": {
+    "code": "brake_fluid_specification2",
+    "labels": { "en_US": "DOT 4" },
+    "attribute": "brake_fluid_specification"
+  },
+  "brake_fluid_specification3": {
+    "code": "brake_fluid_specification3",
+    "labels": { "en_US": "DOT 4+" },
+    "attribute": "brake_fluid_specification"
+  },
+  "brake_fluid_specification4": {
+    "code": "brake_fluid_specification4",
+    "labels": { "en_US": "DOT 5" },
+    "attribute": "brake_fluid_specification"
+  },
+  "brake_fluid_specification5": {
+    "code": "brake_fluid_specification5",
+    "labels": { "en_US": "DOT 5.1" },
+    "attribute": "brake_fluid_specification"
+  },
+  "oil_type1": {
+    "code": "oil_type1",
+    "labels": { "en_US": "Synthetic oil" },
+    "attribute": "oil_type"
+  },
+  "oil_type2": {
+    "code": "oil_type2",
+    "labels": { "en_US": "Synthetic blend oil" },
+    "attribute": "oil_type"
+  },
+  "oil_type3": {
+    "code": "oil_type3",
+    "labels": { "en_US": "High mileage oil" },
+    "attribute": "oil_type"
+  },
+  "oil_type4": {
+    "code": "oil_type4",
+    "labels": { "en_US": "Conventional motor oil" },
+    "attribute": "oil_type"
+  },
+  "oil_viscosity1": {
+    "code": "oil_viscosity1",
+    "labels": { "en_US": "5W40" },
+    "attribute": "oil_viscosity"
+  },
+  "oil_viscosity2": {
+    "code": "oil_viscosity2",
+    "labels": { "en_US": "5W30" },
+    "attribute": "oil_viscosity"
+  },
+  "oil_viscosity3": {
+    "code": "oil_viscosity3",
+    "labels": { "en_US": "10W40" },
+    "attribute": "oil_viscosity"
+  },
+  "oil_viscosity4": {
+    "code": "oil_viscosity4",
+    "labels": { "en_US": "15W40" },
+    "attribute": "oil_viscosity"
+  },
+  "litterature_genre1": {
+    "code": "litterature_genre1",
+    "labels": { "en_US": "Children's" },
+    "attribute": "litterature_genre"
+  },
+  "litterature_genre2": {
+    "code": "litterature_genre2",
+    "labels": { "en_US": "Novel" },
+    "attribute": "litterature_genre"
+  },
+  "litterature_genre3": {
+    "code": "litterature_genre3",
+    "labels": { "en_US": "Poetry" },
+    "attribute": "litterature_genre"
+  },
+  "litterature_genre4": {
+    "code": "litterature_genre4",
+    "labels": { "en_US": "Drama" },
+    "attribute": "litterature_genre"
+  },
+  "litterature_genre5": {
+    "code": "litterature_genre5",
+    "labels": { "en_US": "Science fiction" },
+    "attribute": "litterature_genre"
+  },
+  "litterature_genre6": {
+    "code": "litterature_genre6",
+    "labels": { "en_US": "Biography" },
+    "attribute": "litterature_genre"
+  },
+  "litterature_genre7": {
+    "code": "litterature_genre7",
+    "labels": { "en_US": "Fable" },
+    "attribute": "litterature_genre"
+  },
+  "style1": {
+    "code": "style1",
+    "labels": { "en_US": "Solitaire" },
+    "attribute": "style"
+  },
+  "style2": {
+    "code": "style2",
+    "labels": { "en_US": "Halo" },
+    "attribute": "style"
+  },
+  "style3": {
+    "code": "style3",
+    "labels": { "en_US": "Eternity Band" },
+    "attribute": "style"
+  },
+  "style4": {
+    "code": "style4",
+    "labels": { "en_US": "Vintage" },
+    "attribute": "style"
+  },
+  "style5": {
+    "code": "style5",
+    "labels": { "en_US": "Modern" },
+    "attribute": "style"
+  },
+  "style6": {
+    "code": "style6",
+    "labels": { "en_US": "Casual" },
+    "attribute": "style"
+  },
+  "style7": {
+    "code": "style7",
+    "labels": { "en_US": "Formal" },
+    "attribute": "style"
+  },
+  "style8": {
+    "code": "style8",
+    "labels": { "en_US": "Minimalist" },
+    "attribute": "style"
+  },
+  "style9": {
+    "code": "style9",
+    "labels": { "en_US": "Classic" },
+    "attribute": "style"
+  },
+  "gemstone_details1": {
+    "code": "gemstone_details1",
+    "labels": { "en_US": "Diamond" },
+    "attribute": "gemstone_details"
+  },
+  "gemstone_details2": {
+    "code": "gemstone_details2",
+    "labels": { "en_US": "Sapphire" },
+    "attribute": "gemstone_details"
+  },
+  "gemstone_details3": {
+    "code": "gemstone_details3",
+    "labels": { "en_US": "Ruby" },
+    "attribute": "gemstone_details"
+  },
+  "gemstone_details4": {
+    "code": "gemstone_details4",
+    "labels": { "en_US": "Emerald" },
+    "attribute": "gemstone_details"
+  },
+  "gemstone_details5": {
+    "code": "gemstone_details5",
+    "labels": { "en_US": "Amethyst" },
+    "attribute": "gemstone_details"
+  },
+  "gemstone_details6": {
+    "code": "gemstone_details6",
+    "labels": { "en_US": "Aquamarine" },
+    "attribute": "gemstone_details"
+  },
+  "gemstone_details7": {
+    "code": "gemstone_details7",
+    "labels": { "en_US": "Topaz" },
+    "attribute": "gemstone_details"
+  },
+  "gemstone_details8": {
+    "code": "gemstone_details8",
+    "labels": { "en_US": "Opal" },
+    "attribute": "gemstone_details"
+  },
+  "gemstone_details9": {
+    "code": "gemstone_details9",
+    "labels": { "en_US": "Pearl" },
+    "attribute": "gemstone_details"
+  },
+  "gemstone_details10": {
+    "code": "gemstone_details10",
+    "labels": { "en_US": "Tanzanite" },
+    "attribute": "gemstone_details"
+  },
+  "collection1": {
+    "code": "collection1",
+    "labels": { "en_US": "Vintage Glamour" },
+    "attribute": "collection"
+  },
+  "collection2": {
+    "code": "collection2",
+    "labels": { "en_US": "Nature-Inspired" },
+    "attribute": "collection"
+  },
+  "collection3": {
+    "code": "collection3",
+    "labels": { "en_US": "Heart" },
+    "attribute": "collection"
+  },
+  "collection4": {
+    "code": "collection4",
+    "labels": { "en_US": "Nature" },
+    "attribute": "collection"
+  },
+  "collection5": {
+    "code": "collection5",
+    "labels": { "en_US": "Ocean" },
+    "attribute": "collection"
+  },
+  "collection6": {
+    "code": "collection6",
+    "labels": { "en_US": "Animal" },
+    "attribute": "collection"
+  },
+  "collection7": {
+    "code": "collection7",
+    "labels": { "en_US": "Geometric" },
+    "attribute": "collection"
+  },
+  "collection8": {
+    "code": "collection8",
+    "labels": { "en_US": "Floral" },
+    "attribute": "collection"
+  },
+  "collection9": {
+    "code": "collection9",
+    "labels": { "en_US": "Spiritual" },
+    "attribute": "collection"
+  },
+  "jewelry_cut1": {
+    "code": "jewelry_cut1",
+    "labels": { "en_US": "Round Brilliant" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut2": {
+    "code": "jewelry_cut2",
+    "labels": { "en_US": "Princess Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut3": {
+    "code": "jewelry_cut3",
+    "labels": { "en_US": "Emerald Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut4": {
+    "code": "jewelry_cut4",
+    "labels": { "en_US": "Oval Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut5": {
+    "code": "jewelry_cut5",
+    "labels": { "en_US": "Cushion Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut6": {
+    "code": "jewelry_cut6",
+    "labels": { "en_US": "Pear Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut7": {
+    "code": "jewelry_cut7",
+    "labels": { "en_US": "Marquise Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut8": {
+    "code": "jewelry_cut8",
+    "labels": { "en_US": "Heart Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut9": {
+    "code": "jewelry_cut9",
+    "labels": { "en_US": "Asscher Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "clarity1": {
+    "code": "clarity1",
+    "labels": { "en_US": "Flawless" },
+    "attribute": "clarity"
+  },
+  "clarity2": {
+    "code": "clarity2",
+    "labels": { "en_US": "Internally Flawless (IF)" },
+    "attribute": "clarity"
+  },
+  "clarity3": {
+    "code": "clarity3",
+    "labels": { "en_US": "Very Very Slightly Included (VVS1/VVS2)" },
+    "attribute": "clarity"
+  },
+  "clarity4": {
+    "code": "clarity4",
+    "labels": { "en_US": "Very Slightly Included (VS1/VS2)" },
+    "attribute": "clarity"
+  },
+  "clarity5": {
+    "code": "clarity5",
+    "labels": { "en_US": "Slightly Included (SI1/SI2)" },
+    "attribute": "clarity"
+  },
+  "clarity6": {
+    "code": "clarity6",
+    "labels": { "en_US": "Included (I1/I2/I3)" },
+    "attribute": "clarity"
+  },
+  "clarity7": {
+    "code": "clarity7",
+    "labels": { "en_US": "Eye Clean" },
+    "attribute": "clarity"
+  },
+  "clarity8": {
+    "code": "clarity8",
+    "labels": { "en_US": "Slightly Included to Eye Clean" },
+    "attribute": "clarity"
+  },
+  "engravings1": {
+    "code": "engravings1",
+    "labels": { "en_US": "Custom Text" },
+    "attribute": "engravings"
+  },
+  "engravings2": {
+    "code": "engravings2",
+    "labels": { "en_US": "Date" },
+    "attribute": "engravings"
+  },
+  "engravings3": {
+    "code": "engravings3",
+    "labels": { "en_US": "Name" },
+    "attribute": "engravings"
+  },
+  "engravings4": {
+    "code": "engravings4",
+    "labels": { "en_US": "Message" },
+    "attribute": "engravings"
+  },
+  "clasp_type1": {
+    "code": "clasp_type1",
+    "labels": { "en_US": "Lobster Clasp" },
+    "attribute": "clasp_type"
+  },
+  "clasp_type2": {
+    "code": "clasp_type2",
+    "labels": { "en_US": "Toggle Clasp" },
+    "attribute": "clasp_type"
+  },
+  "clasp_type3": {
+    "code": "clasp_type3",
+    "labels": { "en_US": "Spring Ring Clasp" },
+    "attribute": "clasp_type"
+  },
+  "clasp_type4": {
+    "code": "clasp_type4",
+    "labels": { "en_US": "Magnetic Clasp" },
+    "attribute": "clasp_type"
+  },
+  "clasp_type5": {
+    "code": "clasp_type5",
+    "labels": { "en_US": "Box Clasp" },
+    "attribute": "clasp_type"
+  },
+  "clasp_type6": {
+    "code": "clasp_type6",
+    "labels": { "en_US": "Slide Clasp" },
+    "attribute": "clasp_type"
+  },
+  "bracelet_type1": {
+    "code": "bracelet_type1",
+    "labels": { "en_US": "Bangle" },
+    "attribute": "bracelet_type"
+  },
+  "bracelet_type2": {
+    "code": "bracelet_type2",
+    "labels": { "en_US": "Cuff" },
+    "attribute": "bracelet_type"
+  },
+  "bracelet_type3": {
+    "code": "bracelet_type3",
+    "labels": { "en_US": "Chain" },
+    "attribute": "bracelet_type"
+  },
+  "bracelet_type4": {
+    "code": "bracelet_type4",
+    "labels": { "en_US": "Beaded" },
+    "attribute": "bracelet_type"
+  },
+  "bracelet_type5": {
+    "code": "bracelet_type5",
+    "labels": { "en_US": "Leather" },
+    "attribute": "bracelet_type"
+  },
+  "bracelet_type6": {
+    "code": "bracelet_type6",
+    "labels": { "en_US": "Stretch" },
+    "attribute": "bracelet_type"
+  },
+  "bracelet_type7": {
+    "code": "bracelet_type7",
+    "labels": { "en_US": "Tennis" },
+    "attribute": "bracelet_type"
+  },
+  "bracelet_type8": {
+    "code": "bracelet_type8",
+    "labels": { "en_US": "Charm" },
+    "attribute": "bracelet_type"
+  },
+  "gender1": {
+    "code": "gender1",
+    "labels": { "en_US": "Men" },
+    "attribute": "gender"
+  },
+  "gender2": {
+    "code": "gender2",
+    "labels": { "en_US": "Women" },
+    "attribute": "gender"
+  },
+  "gender3": {
+    "code": "gender3",
+    "labels": { "en_US": "Unisex" },
+    "attribute": "gender"
+  },
+  "gender4": {
+    "code": "gender4",
+    "labels": { "en_US": "Gender-neutral" },
+    "attribute": "gender"
+  },
+  "strap_type1": {
+    "code": "strap_type1",
+    "labels": { "en_US": "Bracelet" },
+    "attribute": "strap_type"
+  },
+  "strap_type2": {
+    "code": "strap_type2",
+    "labels": { "en_US": "Milanese" },
+    "attribute": "strap_type"
+  },
+  "strap_type3": {
+    "code": "strap_type3",
+    "labels": { "en_US": "Rubber" },
+    "attribute": "strap_type"
+  },
+  "strap_type4": {
+    "code": "strap_type4",
+    "labels": { "en_US": "NATO" },
+    "attribute": "strap_type"
+  },
+  "strap_type5": {
+    "code": "strap_type5",
+    "labels": { "en_US": "Strap" },
+    "attribute": "strap_type"
+  },
+  "movement_type1": {
+    "code": "movement_type1",
+    "labels": { "en_US": "Quartz" },
+    "attribute": "movement_type"
+  },
+  "movement_type2": {
+    "code": "movement_type2",
+    "labels": { "en_US": "Mecanical" },
+    "attribute": "movement_type"
+  },
+  "movement_type3": {
+    "code": "movement_type3",
+    "labels": { "en_US": "Automatic" },
+    "attribute": "movement_type"
+  },
+  "movement_type4": {
+    "code": "movement_type4",
+    "labels": { "en_US": "Solar" },
+    "attribute": "movement_type"
+  },
+  "watch_type1": {
+    "code": "watch_type1",
+    "labels": { "en_US": "Analog" },
+    "attribute": "watch_type"
+  },
+  "watch_type2": {
+    "code": "watch_type2",
+    "labels": { "en_US": "Digital" },
+    "attribute": "watch_type"
+  },
+  "watch_type3": {
+    "code": "watch_type3",
+    "labels": { "en_US": "Analog-Digital" },
+    "attribute": "watch_type"
+  },
+  "watch_type4": {
+    "code": "watch_type4",
+    "labels": { "en_US": "Chronograph" },
+    "attribute": "watch_type"
+  },
+  "watch_type5": {
+    "code": "watch_type5",
+    "labels": { "en_US": "Smartwatch" },
+    "attribute": "watch_type"
+  },
+  "seating_capacity1": {
+    "code": "seating_capacity1",
+    "labels": { "en_US": "2-Seater" },
+    "attribute": "seating_capacity"
+  },
+  "seating_capacity2": {
+    "code": "seating_capacity2",
+    "labels": { "en_US": "3-Seater" },
+    "attribute": "seating_capacity"
+  },
+  "seating_capacity3": {
+    "code": "seating_capacity3",
+    "labels": { "en_US": "Sectional" },
+    "attribute": "seating_capacity"
+  },
+  "seating_capacity4": {
+    "code": "seating_capacity4",
+    "labels": { "en_US": "Recliner" },
+    "attribute": "seating_capacity"
+  },
+  "leg_type1": {
+    "code": "leg_type1",
+    "labels": { "en_US": "Wooden Tapered Legs" },
+    "attribute": "leg_type"
+  },
+  "leg_type2": {
+    "code": "leg_type2",
+    "labels": { "en_US": "Metal Legs" },
+    "attribute": "leg_type"
+  },
+  "leg_type3": {
+    "code": "leg_type3",
+    "labels": { "en_US": "Block Feet" },
+    "attribute": "leg_type"
+  },
+  "configuration1": {
+    "code": "configuration1",
+    "labels": { "en_US": "L-Shaped" },
+    "attribute": "configuration"
+  },
+  "configuration2": {
+    "code": "configuration2",
+    "labels": { "en_US": "U-Shaped" },
+    "attribute": "configuration"
+  },
+  "configuration3": {
+    "code": "configuration3",
+    "labels": { "en_US": "Chaise on Left" },
+    "attribute": "configuration"
+  },
+  "configuration4": {
+    "code": "configuration4",
+    "labels": { "en_US": "Chaise on Right" },
+    "attribute": "configuration"
+  },
+  "plant_type1": {
+    "code": "plant_type1",
+    "labels": { "en_US": "Tree" },
+    "attribute": "plant_type"
+  },
+  "plant_type2": {
+    "code": "plant_type2",
+    "labels": { "en_US": "Succulent" },
+    "attribute": "plant_type"
+  },
+  "plant_type3": {
+    "code": "plant_type3",
+    "labels": { "en_US": "Vine" },
+    "attribute": "plant_type"
+  },
+  "plant_type4": {
+    "code": "plant_type4",
+    "labels": { "en_US": "Fern" },
+    "attribute": "plant_type"
+  },
+  "plant_type5": {
+    "code": "plant_type5",
+    "labels": { "en_US": "Flowering Plant" },
+    "attribute": "plant_type"
+  },
+  "watering_needs1": {
+    "code": "watering_needs1",
+    "labels": { "en_US": "Low" },
+    "attribute": "watering_needs"
+  },
+  "watering_needs2": {
+    "code": "watering_needs2",
+    "labels": { "en_US": "Moderate" },
+    "attribute": "watering_needs"
+  },
+  "watering_needs3": {
+    "code": "watering_needs3",
+    "labels": { "en_US": "High" },
+    "attribute": "watering_needs"
+  },
+  "light_requirements1": {
+    "code": "light_requirements1",
+    "labels": { "en_US": "Low Light" },
+    "attribute": "light_requirements"
+  },
+  "light_requirements2": {
+    "code": "light_requirements2",
+    "labels": { "en_US": "Indirect Light" },
+    "attribute": "light_requirements"
+  },
+  "light_requirements3": {
+    "code": "light_requirements3",
+    "labels": { "en_US": "Bright Light" },
+    "attribute": "light_requirements"
+  },
+  "light_requirements4": {
+    "code": "light_requirements4",
+    "labels": { "en_US": "Full Sun" },
+    "attribute": "light_requirements"
+  },
+  "toxicity1": {
+    "code": "toxicity1",
+    "labels": { "en_US": "Non-Toxic" },
+    "attribute": "toxicity"
+  },
+  "toxicity2": {
+    "code": "toxicity2",
+    "labels": { "en_US": "Toxic to Pets" },
+    "attribute": "toxicity"
+  },
+  "toxicity3": {
+    "code": "toxicity3",
+    "labels": { "en_US": "Toxic to Humans" },
+    "attribute": "toxicity"
+  },
+  "wax_type1": {
+    "code": "wax_type1",
+    "labels": { "en_US": "Paraffin wax" },
+    "attribute": "wax_type"
+  },
+  "wax_type2": {
+    "code": "wax_type2",
+    "labels": { "en_US": "Soy wax" },
+    "attribute": "wax_type"
+  },
+  "wax_type3": {
+    "code": "wax_type3",
+    "labels": { "en_US": "Palm wax" },
+    "attribute": "wax_type"
+  },
+  "wax_type4": {
+    "code": "wax_type4",
+    "labels": { "en_US": "Beeswax" },
+    "attribute": "wax_type"
+  },
+  "wax_type5": {
+    "code": "wax_type5",
+    "labels": { "en_US": "Gel wax" },
+    "attribute": "wax_type"
+  },
+  "wax_type6": {
+    "code": "wax_type6",
+    "labels": { "en_US": "Rapeseed wax" },
+    "attribute": "wax_type"
+  },
+  "wax_type7": {
+    "code": "wax_type7",
+    "labels": { "en_US": "Coconut wax" },
+    "attribute": "wax_type"
+  },
+  "fuel_type1": {
+    "code": "fuel_type1",
+    "labels": { "en_US": "Gas" },
+    "attribute": "fuel_type"
+  },
+  "fuel_type2": {
+    "code": "fuel_type2",
+    "labels": { "en_US": "Charcoal" },
+    "attribute": "fuel_type"
+  },
+  "fuel_type3": {
+    "code": "fuel_type3",
+    "labels": { "en_US": "Wood Pellets" },
+    "attribute": "fuel_type"
+  },
+  "fuel_type4": {
+    "code": "fuel_type4",
+    "labels": { "en_US": "Electric" },
+    "attribute": "fuel_type"
+  }
 }
