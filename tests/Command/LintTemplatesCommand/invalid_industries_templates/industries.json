@@ -38,6 +38,15 @@
       "a_family"
     ]
   },
+  "too_long_en_US_label_industry": {
+    "code": "too_long_en_US_label_industry",
+    "labels": {
+      "en_US": "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt."
+    },
+    "family_templates": [
+      "a_family"
+    ]
+  },
   "missing_family_templates_industry": {
     "code": "missing_family_templates_industry",
     "labels": {

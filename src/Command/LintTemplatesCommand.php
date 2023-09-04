@@ -36,12 +36,9 @@ class LintTemplatesCommand extends Command
         'pim_catalog_price_collection',
         'pim_catalog_textarea',
         'pim_catalog_text',
-        'pim_reference_data_multiselect',
-        'pim_reference_data_simpleselect',
         'akeneo_reference_entity',
         'akeneo_reference_entity_collection',
         'pim_catalog_asset_collection',
-        'pim_assets_collection',
         'pim_catalog_table',
     ];
 
@@ -150,7 +147,10 @@ class LintTemplatesCommand extends Command
                     message: 'This value should match with key.',
                 ),
                 'labels' => new Collection([
-                    'en_US' => new NotBlank(),
+                    'en_US' => [
+                        new NotBlank(),
+                        new Length(max: 255),
+                    ],
                 ]),
                 'family_templates' => [
                     new Count(min: 1),
@@ -203,14 +203,20 @@ class LintTemplatesCommand extends Command
                     ],
                 ]),
                 'description' => new Collection([
-                    'en_US' => new NotBlank(),
+                    'en_US' => [
+                        new NotBlank(),
+                        new Length(max: 255),
+                    ],
                 ]),
                 'attributes' => [
                     new Count(min: 1),
                     new All(new Collection([
                         'code' => new NotBlank(),
                         'labels' => new Collection([
-                            'en_US' => new NotBlank(),
+                            'en_US' => [
+                                new NotBlank(),
+                                new Length(max: 255),
+                            ],
                         ]),
                         'type' => new Choice(
                             choices: self::ATTRIBUTE_TYPES,
@@ -310,7 +316,10 @@ class LintTemplatesCommand extends Command
                     message: 'This value should match with key.',
                 ),
                 'labels' => new Collection([
-                    'en_US' => new NotBlank(),
+                    'en_US' => [
+                        new NotBlank(),
+                        new Length(max: 255),
+                    ],
                 ]),
                 'attribute' => new Choice(
                     choices: $attributeCodesInFamilies,

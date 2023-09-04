@@ -15,7 +15,8 @@
       "missing_description_family",
       "missing_labels_family",
       "extra_fields_family",
-      "too_long_en_US_label_family"
+      "too_long_en_US_label_family",
+      "too_long_en_US_description_family"
     ]
   }
 }
