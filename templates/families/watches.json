@@ -1,256 +1,210 @@
 {
-    "code": "watches",
-    "labels": {
-        "en_US": "Watches"
+  "code": "watches",
+  "labels": { "en_US": "Watches" },
+  "description": {
+    "en_US": "Embrace timeless elegance with our 'Watches' family template - a sophisticated array of pre-built attributes to easily manage your timepieces, adding a touch of luxury to your everyday style."
+  },
+  "attributes": [
+    {
+      "code": "EAN",
+      "labels": { "en_US": "Main Identifier" },
+      "type": "pim_catalog_identifier",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": true
     },
-    "description": {
-        "en_US": "Embrace timeless elegance with our 'Watches' family template - a sophisticated array of pre-built attributes to easily manage your timepieces, adding a touch of luxury to your everyday style."
+    {
+      "code": "price",
+      "labels": { "en_US": "Price" },
+      "type": "pim_catalog_price_collection",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
     },
-    "attributes": [
-        {
-            "code": "EAN",
-            "labels": {
-                "en_US": "Main Identifier"
-            },
-            "type": "pim_catalog_identifier",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": true
-        },
-        {
-            "code": "price",
-            "labels": {
-                "en_US": "Price"
-            },
-            "type": "pim_catalog_price_collection",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "product_title",
-            "labels": {
-                "en_US": "Product title"
-            },
-            "type": "pim_catalog_text",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "short_description",
-            "labels": {
-                "en_US": "Short description"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "long_description",
-            "labels": {
-                "en_US": "Long description"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "brand",
-            "labels": {
-                "en_US": "Brand"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "main_image",
-            "labels": {
-                "en_US": "Main image"
-            },
-            "type": "pim_catalog_image",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "detailed_image",
-            "labels": {
-                "en_US": "Detailed image"
-            },
-            "type": "pim_catalog_image",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "atmosphere_image",
-            "labels": {
-                "en_US": "Atmosphere image"
-            },
-            "type": "pim_catalog_image",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "material",
-            "labels": {
-                "en_US": "Case material"
-            },
-            "type": "pim_catalog_multiselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "case_thickness",
-            "labels": {
-                "en_US": "Case thickness"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false,
-            "metric_family": "Length"
-        },
-        {
-            "code": "case_diameter",
-            "labels": {
-                "en_US": "Case diameter"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false,
-            "metric_family": "Length"
-        },
-        {
-            "code": "water_resistance",
-            "labels": {
-                "en_US": "Water resistance"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false,
-            "metric_family": "Length"
-        },
-        {
-            "code": "warranty_period",
-            "labels": {
-                "en_US": "Warranty period"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "watch_type",
-            "labels": {
-                "en_US": "Watch type"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "movement_type",
-            "labels": {
-                "en_US": "Movement type"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "color",
-            "labels": {
-                "en_US": "Dial color"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "display_type",
-            "labels": {
-                "en_US": "Display type"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "gender",
-            "labels": {
-                "en_US": "Gender"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "material",
-            "labels": {
-                "en_US": "Strap material"
-            },
-            "type": "pim_catalog_multiselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "strap_type",
-            "labels": {
-                "en_US": "Strap type"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "color",
-            "labels": {
-                "en_US": "Strap color"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        }
-    ]
+    {
+      "code": "product_title",
+      "labels": { "en_US": "Product title" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "short_description",
+      "labels": { "en_US": "Short description" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "long_description",
+      "labels": { "en_US": "Long description" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "brand",
+      "labels": { "en_US": "Brand" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "main_image",
+      "labels": { "en_US": "Main image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "detailed_image",
+      "labels": { "en_US": "Detailed image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "atmosphere_image",
+      "labels": { "en_US": "Atmosphere image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "material",
+      "labels": { "en_US": "Case material" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "case_thickness",
+      "labels": { "en_US": "Case thickness" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Length"
+    },
+    {
+      "code": "case_diameter",
+      "labels": { "en_US": "Case diameter" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Length"
+    },
+    {
+      "code": "water_resistance",
+      "labels": { "en_US": "Water resistance" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Length"
+    },
+    {
+      "code": "warranty_period",
+      "labels": { "en_US": "Warranty period" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "watch_type",
+      "labels": { "en_US": "Watch type" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "movement_type",
+      "labels": { "en_US": "Movement type" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "color",
+      "labels": { "en_US": "Dial color" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "display_type",
+      "labels": { "en_US": "Display type" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "gender",
+      "labels": { "en_US": "Gender" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "material",
+      "labels": { "en_US": "Strap material" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "strap_type",
+      "labels": { "en_US": "Strap type" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "color",
+      "labels": { "en_US": "Strap color" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    }
+  ]
 }

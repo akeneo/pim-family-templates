@@ -1,0 +1,112 @@
+{
+  "missing_code_industry": {
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "a_family"
+    ]
+  },
+  "mismatching_code_industry": {
+    "code": "wrong",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "a_family"
+    ]
+  },
+  "missing_labels_industry": {
+    "code": "missing_labels_industry",
+    "family_templates": [
+      "a_family"
+    ]
+  },
+  "missing_en_US_label_industry": {
+    "code": "missing_en_US_label_industry",
+    "labels": {},
+    "family_templates": [
+      "a_family"
+    ]
+  },
+  "empty_en_US_label_industry": {
+    "code": "empty_en_US_label_industry",
+    "labels": {
+      "en_US": ""
+    },
+    "family_templates": [
+      "a_family"
+    ]
+  },
+  "too_long_en_US_label_industry": {
+    "code": "too_long_en_US_label_industry",
+    "labels": {
+      "en_US": "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt."
+    },
+    "family_templates": [
+      "a_family"
+    ]
+  },
+  "missing_family_templates_industry": {
+    "code": "missing_family_templates_industry",
+    "labels": {
+      "en_US": "An industry"
+    }
+  },
+  "empty_family_templates_industry": {
+    "code": "empty_family_templates_industry",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": []
+  },
+  "an_industry": {
+    "code": "an_industry",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "a_family"
+    ]
+  },
+  "duplicated_code_industry": {
+    "code": "an_industry",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "a_family"
+    ]
+  },
+  "duplicated_family_templates_industry": {
+    "code": "duplicated_family_templates_industry",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "a_family",
+      "another_family",
+      "a_family"
+    ]
+  },
+  "unknown_family_template_industry": {
+    "code": "unknown_family_template_industry",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "a_family",
+      "unknown_family_template"
+    ]
+  },
+  "extra_fields_industry": {
+    "code": "extra_fields_industry",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "a_family"
+    ],
+    "cc": "steven"
+  }
+}

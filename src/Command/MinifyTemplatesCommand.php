@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Akeneo\TemplateGenerator\Command;
+namespace Akeneo\PimFamilyTemplates\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;

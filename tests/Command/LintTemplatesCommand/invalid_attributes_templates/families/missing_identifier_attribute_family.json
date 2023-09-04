@@ -1,0 +1,22 @@
+{
+  "code": "missing_identifier_attribute_family",
+  "labels": {
+    "en_US": "A family"
+  },
+  "description": {
+    "en_US": "A family"
+  },
+  "attributes": [
+    {
+      "code": "color",
+      "labels": {
+        "en_US": "Color"
+      },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    }
+  ]
+}

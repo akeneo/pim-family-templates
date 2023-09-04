@@ -1,0 +1,7 @@
+{
+  "name": "pim-family-templates",
+  "private": true,
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  }
+}

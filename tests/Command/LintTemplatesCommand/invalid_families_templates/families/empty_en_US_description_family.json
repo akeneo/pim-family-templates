@@ -1,0 +1,22 @@
+{
+  "code": "empty_en_US_description_family",
+  "labels": {
+    "en_US": "A family"
+  },
+  "description": {
+    "en_US": ""
+  },
+  "attributes": [
+    {
+      "code": "EAN",
+      "labels": {
+        "en_US": "Main Identifier"
+      },
+      "type": "pim_catalog_identifier",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": true
+    }
+  ]
+}

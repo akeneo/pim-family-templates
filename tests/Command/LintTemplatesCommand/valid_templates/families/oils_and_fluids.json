@@ -1,0 +1,212 @@
+{
+  "code": "oils_and_fluids",
+  "labels": {
+    "en_US": "Oils and fluids"
+  },
+  "description": {
+    "en_US": "Lubricate your vehicle with our 'Oils and Fluids' family template - a well-oiled set of pre-built attributes to effortlessly manage your automotive care, keeping your engine running at peak performance."
+  },
+  "attributes": [
+    {
+      "code": "EAN",
+      "labels": {
+        "en_US": "Main Identifier"
+      },
+      "type": "pim_catalog_identifier",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": true
+    },
+    {
+      "code": "price",
+      "labels": {
+        "en_US": "Price"
+      },
+      "type": "pim_catalog_price_collection",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "product_title",
+      "labels": {
+        "en_US": "Product title"
+      },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "short_description",
+      "labels": {
+        "en_US": "Short description"
+      },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "long_description",
+      "labels": {
+        "en_US": "Long description"
+      },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "brand",
+      "labels": {
+        "en_US": "Brand"
+      },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "main_image",
+      "labels": {
+        "en_US": "Main image"
+      },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "detailed_image",
+      "labels": {
+        "en_US": "Detailed image"
+      },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "atmosphere_image",
+      "labels": {
+        "en_US": "Atmosphere image"
+      },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "width",
+      "labels": {
+        "en_US": "Width"
+      },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Length"
+    },
+    {
+      "code": "height",
+      "labels": {
+        "en_US": "Height"
+      },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Length"
+    },
+    {
+      "code": "vehicle_type",
+      "labels": {
+        "en_US": "Vehicle type"
+      },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "brake_fluid_specification",
+      "labels": {
+        "en_US": "Brake fluid specification"
+      },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "volume",
+      "labels": {
+        "en_US": "Volume"
+      },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Volume"
+    },
+    {
+      "code": "oil_type",
+      "labels": {
+        "en_US": "Oil Type"
+      },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "oil_viscosity",
+      "labels": {
+        "en_US": "Oil Viscosity"
+      },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "operating_tips",
+      "labels": {
+        "en_US": "Operating tips"
+      },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "composition",
+      "labels": {
+        "en_US": "Composition"
+      },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    }
+  ]
+}

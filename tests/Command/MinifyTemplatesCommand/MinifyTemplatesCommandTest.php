@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Akeneo\Test\TemplateGenerator\Command\MinifyTemplatesCommand;
+namespace Akeneo\Test\PimFamilyTemplates\Command\MinifyTemplatesCommand;
 
-use Akeneo\TemplateGenerator\Command\MinifyTemplatesCommand;
+use Akeneo\PimFamilyTemplates\Command\MinifyTemplatesCommand;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Tester\CommandTester;
 

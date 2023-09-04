@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Akeneo\Test\TemplateGenerator\Command\GenerateTemplatesCommand;
+namespace Akeneo\Test\PimFamilyTemplates\Command\GenerateTemplatesCommand;
 
-use Akeneo\TemplateGenerator\Command\GenerateTemplatesCommand;
+use Akeneo\PimFamilyTemplates\Command\GenerateTemplatesCommand;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Tester\CommandTester;
 

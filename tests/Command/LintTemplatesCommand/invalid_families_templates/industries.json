@@ -1,0 +1,22 @@
+{
+  "an_industry": {
+    "code": "an_industry",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "missing_code_family",
+      "missing_en_US_description_family",
+      "missing_en_US_label_family",
+      "empty_en_US_description_family",
+      "empty_en_US_label_family",
+      "missing_attributes_family",
+      "mismatching_code_family",
+      "missing_description_family",
+      "missing_labels_family",
+      "extra_fields_family",
+      "too_long_en_US_label_family",
+      "too_long_en_US_description_family"
+    ]
+  }
+}

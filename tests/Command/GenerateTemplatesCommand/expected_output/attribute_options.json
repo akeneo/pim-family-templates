@@ -209,6 +209,20 @@
     },
     "attribute": "platform"
   },
+  "platform6": {
+    "code": "platform6",
+    "labels": {
+      "en_US": "6"
+    },
+    "attribute": "platform"
+  },
+  "platform7": {
+    "code": "platform7",
+    "labels": {
+      "en_US": "1-2"
+    },
+    "attribute": "platform"
+  },
   "video_game_genre1": {
     "code": "video_game_genre1",
     "labels": {

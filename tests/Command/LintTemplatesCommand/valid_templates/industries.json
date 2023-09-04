@@ -1,0 +1,20 @@
+{
+  "industry_luxury_goods_and_jewellery": {
+    "code": "industry_luxury_goods_and_jewellery",
+    "labels": {
+      "en_US": "Luxury goods & jewellery"
+    },
+    "family_templates": [
+      "watches"
+    ]
+  },
+  "industry_automotive": {
+    "code": "industry_automotive",
+    "labels": {
+      "en_US": "Automotive"
+    },
+    "family_templates": [
+      "oils_and_fluids"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "code": "empty_attribute_metric_family_family",
+  "labels": {
+    "en_US": "A family"
+  },
+  "description": {
+    "en_US": "A family"
+  },
+  "attributes": [
+    {
+      "code": "EAN",
+      "labels": {
+        "en_US": "Main Identifier"
+      },
+      "type": "pim_catalog_identifier",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": true
+    },
+    {
+      "code": "weight",
+      "labels": {
+        "en_US": "Weight"
+      },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": ""
+    }
+  ]
+}

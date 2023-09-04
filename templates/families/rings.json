@@ -1,255 +1,209 @@
 {
-    "code": "rings",
-    "labels": {
-        "en_US": "Rings"
+  "code": "rings",
+  "labels": { "en_US": "Rings" },
+  "description": {
+    "en_US": "Adorn yourself with elegance using our 'Rings' family template - effortlessly manage your collection of exquisite bands, adding a touch of timeless beauty to your every gesture."
+  },
+  "attributes": [
+    {
+      "code": "EAN",
+      "labels": { "en_US": "Main Identifier" },
+      "type": "pim_catalog_identifier",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": true
     },
-    "description": {
-        "en_US": "Adorn yourself with elegance using our 'Rings' family template - effortlessly manage your collection of exquisite bands, adding a touch of timeless beauty to your every gesture."
+    {
+      "code": "price",
+      "labels": { "en_US": "Price" },
+      "type": "pim_catalog_price_collection",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
     },
-    "attributes": [
-        {
-            "code": "EAN",
-            "labels": {
-                "en_US": "Main Identifier"
-            },
-            "type": "pim_catalog_identifier",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": true
-        },
-        {
-            "code": "price",
-            "labels": {
-                "en_US": "Price"
-            },
-            "type": "pim_catalog_price_collection",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "product_title",
-            "labels": {
-                "en_US": "Product title"
-            },
-            "type": "pim_catalog_text",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "short_description",
-            "labels": {
-                "en_US": "Short description"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "long_description",
-            "labels": {
-                "en_US": "Long description"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "brand",
-            "labels": {
-                "en_US": "Brand"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "main_image",
-            "labels": {
-                "en_US": "Main image"
-            },
-            "type": "pim_catalog_image",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "detailed_image",
-            "labels": {
-                "en_US": "Detailed image"
-            },
-            "type": "pim_catalog_image",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "atmosphere_image",
-            "labels": {
-                "en_US": "Atmosphere image"
-            },
-            "type": "pim_catalog_image",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "size",
-            "labels": {
-                "en_US": "Size"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "material",
-            "labels": {
-                "en_US": "Material"
-            },
-            "type": "pim_catalog_multiselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "style",
-            "labels": {
-                "en_US": "Style"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "gemstone_details",
-            "labels": {
-                "en_US": "Gemstone details"
-            },
-            "type": "pim_catalog_multiselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "weight",
-            "labels": {
-                "en_US": "Weight"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false,
-            "metric_family": "Weight"
-        },
-        {
-            "code": "band_width",
-            "labels": {
-                "en_US": "Band width"
-            },
-            "type": "pim_catalog_metric",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false,
-            "metric_family": "Length"
-        },
-        {
-            "code": "resizable",
-            "labels": {
-                "en_US": "Resizable"
-            },
-            "type": "pim_catalog_boolean",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "collection",
-            "labels": {
-                "en_US": "Collection \/ Theme"
-            },
-            "type": "pim_catalog_multiselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "certification",
-            "labels": {
-                "en_US": "Certification"
-            },
-            "type": "pim_catalog_textarea",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "carat_weight",
-            "labels": {
-                "en_US": "Carat weight"
-            },
-            "type": "pim_catalog_number",
-            "scopable": false,
-            "localizable": true,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "jewelry_cut",
-            "labels": {
-                "en_US": "Cut"
-            },
-            "type": "pim_catalog_multiselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "clarity",
-            "labels": {
-                "en_US": "Clarity"
-            },
-            "type": "pim_catalog_multiselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        },
-        {
-            "code": "gender",
-            "labels": {
-                "en_US": "Gender"
-            },
-            "type": "pim_catalog_simpleselect",
-            "scopable": false,
-            "localizable": false,
-            "group": "template",
-            "unique": false
-        }
-    ]
+    {
+      "code": "product_title",
+      "labels": { "en_US": "Product title" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "short_description",
+      "labels": { "en_US": "Short description" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "long_description",
+      "labels": { "en_US": "Long description" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "brand",
+      "labels": { "en_US": "Brand" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "main_image",
+      "labels": { "en_US": "Main image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "detailed_image",
+      "labels": { "en_US": "Detailed image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "atmosphere_image",
+      "labels": { "en_US": "Atmosphere image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "size",
+      "labels": { "en_US": "Size" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "material",
+      "labels": { "en_US": "Material" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "style",
+      "labels": { "en_US": "Style" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "gemstone_details",
+      "labels": { "en_US": "Gemstone details" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "weight",
+      "labels": { "en_US": "Weight" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Weight"
+    },
+    {
+      "code": "band_width",
+      "labels": { "en_US": "Band width" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Length"
+    },
+    {
+      "code": "resizable",
+      "labels": { "en_US": "Resizable" },
+      "type": "pim_catalog_boolean",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "collection",
+      "labels": { "en_US": "Collection / Theme" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "certification",
+      "labels": { "en_US": "Certification" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "carat_weight",
+      "labels": { "en_US": "Carat weight" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "jewelry_cut",
+      "labels": { "en_US": "Cut" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "clarity",
+      "labels": { "en_US": "Clarity" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "gender",
+      "labels": { "en_US": "Gender" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    }
+  ]
 }

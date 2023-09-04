@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Akeneo\TemplateGenerator\Command;
+namespace Akeneo\PimFamilyTemplates\Command;
 
 use OpenSpout\Reader\ReaderInterface;
 use OpenSpout\Reader\SheetInterface;
@@ -55,7 +55,12 @@ class GenerateTemplatesCommand extends Command
         $headers = $rows->current()->toArray();
         $rows->next();
         while ($rows->valid()) {
-            $content[] = array_combine($headers, $rows->current()->toArray());
+            $rowContent = array_map(
+                static fn (mixed $value) => is_int($value) ? strval($value) : $value,
+                $rows->current()->toArray(),
+            );
+
+            $content[] = array_combine($headers, $rowContent);
 
             $rows->next();
         }
@@ -145,10 +150,10 @@ class GenerateTemplatesCommand extends Command
                     'en_US' => $rawAttribute['label-en_US'],
                 ],
                 'type' => $rawAttribute['type'],
-                'scopable' => 1 === $rawAttribute['scopable'],
-                'localizable' => 1 === $rawAttribute['localizable'],
+                'scopable' => '1' === $rawAttribute['scopable'],
+                'localizable' => '1' === $rawAttribute['localizable'],
                 'group' => $rawAttribute['group'],
-                'unique' => 1 === $rawAttribute['unique'],
+                'unique' => '1' === $rawAttribute['unique'],
             ];
 
             if ('' !== $rawAttribute['metric_family']) {
@@ -204,7 +209,7 @@ class GenerateTemplatesCommand extends Command
 
     private function writeJsonFile(string $filePath, array $data): void
     {
-        $json = json_encode($data, JSON_PRETTY_PRINT);
+        $json = json_encode($data);
         file_put_contents($filePath, $json);
     }
 

@@ -1,0 +1,44 @@
+{
+  "code": "another_family",
+  "labels": {
+    "en_US": "Another family"
+  },
+  "description": {
+    "en_US": "Another family"
+  },
+  "attributes": [
+    {
+      "code": "EAN",
+      "labels": {
+        "en_US": "Main Identifier"
+      },
+      "type": "pim_catalog_identifier",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": true
+    },
+    {
+      "code": "color",
+      "labels": {
+        "en_US": "Color"
+      },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "an_attribute",
+      "labels": {
+        "en_US": "An attribute"
+      },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    }
+  ]
+}
