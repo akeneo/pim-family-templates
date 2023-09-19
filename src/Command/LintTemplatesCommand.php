@@ -216,10 +216,12 @@ class LintTemplatesCommand extends Command
                 'attribute_as_main_media' => [
                     new Type('string'),
                     new NotBlank(),
+                    new Length(max: 255),
                 ],
                 'attribute_as_label' => [
                     new Type('string'),
                     new NotBlank(),
+                    new Length(max: 255),
                 ],
                 'attributes' => [
                     new Count(min: 1),
