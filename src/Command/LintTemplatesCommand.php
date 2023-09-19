@@ -286,10 +286,23 @@ class LintTemplatesCommand extends Command
 
             if (array_key_exists('attributes', $family) && !empty($family['attributes'])) {
                 $hasAttributeIdentifier = false;
-
+                $familyAttributeCodes = [];
                 foreach ($family['attributes'] as $index => $attribute) {
                     if (!array_key_exists('type', $attribute)) {
                         continue;
+                    }
+
+                    if (!in_array($attribute['code'], $familyAttributeCodes)) {
+                        $familyAttributeCodes[] = $attribute['code'];
+                    } else {
+                        $violations[$fileName]->add(new ConstraintViolation(
+                            sprintf('Each attribute code should be unique. Attribute : %s is duplicated.', $attribute['code']),
+                            null,
+                            [],
+                            null,
+                            '[attributes]',
+                            null,
+                        ));
                     }
 
                     $hasAttributeIdentifier = $hasAttributeIdentifier || 'pim_catalog_identifier' === $attribute['type'];
