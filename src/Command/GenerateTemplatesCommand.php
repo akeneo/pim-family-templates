@@ -15,6 +15,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class GenerateTemplatesCommand extends Command
 {
     protected static $defaultName = 'templates:generate';
+    private const ATTRIBUTE_TYPE_METRIC = 'pim_catalog_metric';
 
     protected function configure(): void
     {
@@ -131,6 +132,8 @@ class GenerateTemplatesCommand extends Command
                     'description' => [
                         'en_US' => $rawDescription['description-en_US'],
                     ],
+                    'attribute_as_main_media' => $rawDescription['attribute_as_main_media'],
+                    'attribute_as_label' => $rawDescription['attribute_as_label'],
                 ];
 
                 return $descriptions;
@@ -156,8 +159,28 @@ class GenerateTemplatesCommand extends Command
                 'unique' => '1' === $rawAttribute['unique'],
             ];
 
-            if ('' !== $rawAttribute['metric_family']) {
+            if ((!empty($rawAttribute['metric_family']) || !empty($rawAttribute['unit'])) && $rawAttribute['type'] !== self::ATTRIBUTE_TYPE_METRIC) {
+                throw new \Exception('Only measurement attributes should have a metric family or a default unit.');
+            }
+
+            if (!empty($rawAttribute['metric_family'])) {
                 $attribute['metric_family'] = $rawAttribute['metric_family'];
+            }
+
+            if (!empty($rawAttribute['unit'])) {
+                $attribute['unit'] = $rawAttribute['unit'];
+            }
+
+            if (!empty($rawAttribute['unit_symbol'])) {
+                $attribute['unit_symbol'] = $rawAttribute['unit_symbol'];
+            }
+
+            if (!empty($rawAttribute['decimals_allowed'])) {
+                $attribute['decimals_allowed'] = $rawAttribute['decimals_allowed'];
+            }
+
+            if (!empty($rawAttribute['negative_allowed'])) {
+                $attribute['negative_allowed'] = $rawAttribute['negative_allowed'];
             }
 
             return $attribute;

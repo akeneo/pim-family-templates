@@ -2,8 +2,10 @@
   "code": "televisions",
   "labels": { "en_US": "Televisions" },
   "description": {
-    "en_US": "Enhance your viewing experience with our 'Televisions' family template - a stunning set of pre-built attributes to easily manage your entertainment centerpiece, bringing cinematic magic to your living room."
+    "en_US": "Enhance your viewing experience with our 'Televisions' family other - a stunning set of pre-built attributes to easily manage your entertainment centerpiece, bringing cinematic magic to your living room."
   },
+  "attribute_as_main_media": "main_image",
+  "attribute_as_label": "product_title",
   "attributes": [
     {
       "code": "EAN",
@@ -11,7 +13,7 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": true
     },
     {
@@ -20,7 +22,7 @@
       "type": "pim_catalog_price_collection",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -29,7 +31,7 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -38,7 +40,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -47,7 +49,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -56,7 +58,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -65,7 +67,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -74,7 +76,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -83,7 +85,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -92,7 +94,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -101,9 +103,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter"
     },
     {
       "code": "height",
@@ -111,9 +114,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter"
     },
     {
       "code": "width",
@@ -121,9 +125,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter"
     },
     {
       "code": "weight",
@@ -131,9 +136,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Weight"
+      "metric_family": "Weight",
+      "unit": "Kilogram"
     },
     {
       "code": "storage_capacity",
@@ -141,9 +147,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "binary"
+      "metric_family": "Binary",
+      "unit": "Gigabyte"
     },
     {
       "code": "screen_size",
@@ -151,9 +158,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Inch"
     },
     {
       "code": "language",
@@ -161,7 +169,7 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -170,7 +178,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -179,9 +187,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Power"
+      "metric_family": "Power",
+      "unit": "Volt"
     },
     {
       "code": "display_type",
@@ -189,7 +198,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -198,7 +207,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -207,7 +216,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -216,7 +225,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -225,7 +234,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -234,7 +243,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -243,9 +252,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Power"
+      "metric_family": "Power",
+      "unit": "Watt"
     },
     {
       "code": "built_in_speakers",
@@ -253,7 +263,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -262,7 +272,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -271,7 +281,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -280,9 +290,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Frequency"
+      "metric_family": "Frequency",
+      "unit": "Hertz"
     },
     {
       "code": "curved_screen",
@@ -290,7 +301,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -299,7 +310,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -308,7 +319,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -317,7 +328,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     }
   ]

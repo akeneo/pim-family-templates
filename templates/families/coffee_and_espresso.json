@@ -2,8 +2,10 @@
   "code": "coffee_and_espresso",
   "labels": { "en_US": "Coffee & espresso" },
   "description": {
-    "en_US": "Savor the richness of life with our 'Coffee and Espresso' family template - a flavorful assortment of pre-built attributes to effortlessly manage your favorite brews, invigorating your senses with each sip."
+    "en_US": "Savor the richness of life with our 'Coffee and Espresso' family other - a flavorful assortment of pre-built attributes to effortlessly manage your favorite brews, invigorating your senses with each sip."
   },
+  "attribute_as_main_media": "main_image",
+  "attribute_as_label": "product_title",
   "attributes": [
     {
       "code": "EAN",
@@ -11,7 +13,7 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": true
     },
     {
@@ -20,7 +22,7 @@
       "type": "pim_catalog_price_collection",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -29,7 +31,7 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -38,7 +40,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -47,7 +49,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -56,7 +58,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -65,7 +67,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -74,7 +76,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -83,7 +85,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -92,7 +94,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -101,7 +103,7 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -110,7 +112,7 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -119,7 +121,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -128,7 +130,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -137,7 +139,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -146,9 +148,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Power"
+      "metric_family": "Power",
+      "unit": "Watt"
     },
     {
       "code": "voltage",
@@ -156,9 +159,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Power"
+      "metric_family": "Voltage",
+      "unit": "Volt"
     },
     {
       "code": "aesthetics",
@@ -166,7 +170,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -175,7 +179,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -184,9 +188,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter"
     },
     {
       "code": "height",
@@ -194,9 +199,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter"
     },
     {
       "code": "weight",
@@ -204,9 +210,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Weight"
+      "metric_family": "Weight",
+      "unit": "Gram"
     },
     {
       "code": "automatic_programming",
@@ -214,7 +221,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -223,7 +230,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -232,9 +239,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Volume"
+      "metric_family": "Volume",
+      "unit": "Liter"
     }
   ]
 }

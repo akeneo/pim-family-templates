@@ -2,8 +2,10 @@
   "code": "baby_stroller",
   "labels": { "en_US": "Baby stroller" },
   "description": {
-    "en_US": "Explore the world with your little one using our 'Baby Stroller' family template - a thoughtful collection of pre-built attributes to effortlessly manage your strolling companion, creating unforgettable memories with ease."
+    "en_US": "Explore the world with your little one using our 'Baby Stroller' family other - a thoughtful collection of pre-built attributes to effortlessly manage your strolling companion, creating unforgettable memories with ease."
   },
+  "attribute_as_main_media": "main_image",
+  "attribute_as_label": "product_title",
   "attributes": [
     {
       "code": "EAN",
@@ -11,7 +13,7 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": true
     },
     {
@@ -20,7 +22,7 @@
       "type": "pim_catalog_price_collection",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -29,7 +31,7 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -38,7 +40,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -47,7 +49,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -56,7 +58,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -65,7 +67,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -74,7 +76,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -83,7 +85,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -92,7 +94,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -101,7 +103,7 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -110,9 +112,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Weight"
+      "metric_family": "Weight",
+      "unit": "Kilogram"
     },
     {
       "code": "height",
@@ -120,9 +123,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter"
     },
     {
       "code": "width",
@@ -130,9 +134,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter"
     },
     {
       "code": "depth",
@@ -140,9 +145,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter"
     },
     {
       "code": "age_suitability",
@@ -150,7 +156,7 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -159,7 +165,7 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -168,9 +174,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Weight"
+      "metric_family": "Weight",
+      "unit": "Kilogram"
     },
     {
       "code": "care_instructions",
@@ -178,7 +185,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -187,7 +194,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     }
   ]

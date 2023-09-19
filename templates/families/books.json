@@ -2,8 +2,10 @@
   "code": "books",
   "labels": { "en_US": "Books" },
   "description": {
-    "en_US": "Dive into a world of endless knowledge with our 'Books' family template - effortlessly manage your collection of treasured hardcovers and paperbacks, fostering a journey of inspiration and discovery."
+    "en_US": "Dive into a world of endless knowledge with our 'Books' family other - effortlessly manage your collection of treasured hardcovers and paperbacks, fostering a journey of inspiration and discovery."
   },
+  "attribute_as_main_media": "main_image",
+  "attribute_as_label": "product_title",
   "attributes": [
     {
       "code": "EAN",
@@ -11,7 +13,7 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": true
     },
     {
@@ -20,7 +22,7 @@
       "type": "pim_catalog_price_collection",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -29,7 +31,7 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -38,7 +40,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -47,7 +49,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -56,7 +58,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -65,7 +67,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -74,7 +76,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -83,7 +85,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -92,7 +94,7 @@
       "type": "pim_catalog_number",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": true
     },
     {
@@ -101,7 +103,7 @@
       "type": "pim_catalog_number",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -110,7 +112,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -119,7 +121,7 @@
       "type": "pim_catalog_number",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -128,7 +130,7 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -137,7 +139,7 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -146,7 +148,7 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -155,9 +157,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Weight"
+      "metric_family": "Weight",
+      "unit": "Gram"
     },
     {
       "code": "height",
@@ -165,9 +168,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter"
     },
     {
       "code": "length",
@@ -175,9 +179,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter"
     }
   ]
 }

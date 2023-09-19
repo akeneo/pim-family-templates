@@ -2,8 +2,10 @@
   "code": "skin_care",
   "labels": { "en_US": "Skin care" },
   "description": {
-    "en_US": "Indulge in a radiant glow with our 'Skin Care' family template - a thoughtfully crafted set of pre-built attributes to effortlessly manage your beauty regimen, unlocking your skin's true potential."
+    "en_US": "Indulge in a radiant glow with our 'Skin Care' family other - a thoughtfully crafted set of pre-built attributes to effortlessly manage your beauty regimen, unlocking your skin's true potential."
   },
+  "attribute_as_main_media": "main_image",
+  "attribute_as_label": "product_title",
   "attributes": [
     {
       "code": "EAN",
@@ -11,7 +13,7 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": true
     },
     {
@@ -20,7 +22,7 @@
       "type": "pim_catalog_price_collection",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -29,7 +31,7 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -38,7 +40,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -47,7 +49,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -56,7 +58,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -65,7 +67,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -74,7 +76,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -83,7 +85,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -92,9 +94,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Weight"
+      "metric_family": "Weight",
+      "unit": "Kilogram"
     },
     {
       "code": "content_type",
@@ -102,7 +105,7 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -111,9 +114,10 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Volume"
+      "metric_family": "Volume",
+      "unit": "Liter"
     },
     {
       "code": "benefits",
@@ -121,7 +125,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -130,7 +134,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -139,7 +143,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -148,7 +152,7 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -157,7 +161,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -166,7 +170,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -175,7 +179,7 @@
       "type": "pim_catalog_date",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -184,7 +188,7 @@
       "type": "pim_catalog_number",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -193,7 +197,7 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -202,7 +206,7 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -211,7 +215,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     }
   ]
