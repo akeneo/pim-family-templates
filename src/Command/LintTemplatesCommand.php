@@ -213,6 +213,14 @@ class LintTemplatesCommand extends Command
                         new Length(max: 255),
                     ],
                 ]),
+                'attribute_as_main_media' => [
+                    new Type('string'),
+                    new NotBlank(),
+                ],
+                'attribute_as_label' => [
+                    new Type('string'),
+                    new NotBlank(),
+                ],
                 'attributes' => [
                     new Count(min: 1),
                     new All(new Collection([
@@ -245,6 +253,18 @@ class LintTemplatesCommand extends Command
                             new Required(),
                         ],
                         'metric_family' => [
+                            new Optional(),
+                        ],
+                        'unit' => [
+                            new Optional(),
+                        ],
+                        'unit_symbol' => [
+                            new Optional(),
+                        ],
+                        'decimals_allowed' => [
+                            new Optional(),
+                        ],
+                        'negative_allowed' => [
                             new Optional(),
                         ],
                     ])),
