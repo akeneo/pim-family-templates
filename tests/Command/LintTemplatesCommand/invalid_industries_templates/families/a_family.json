@@ -6,6 +6,8 @@
   "description": {
     "en_US": "A family"
   },
+  "attribute_as_label": "ean",
+  "attribute_as_main_media": "an_image",
   "attributes": [
     {
       "code": "EAN",
@@ -17,6 +19,17 @@
       "localizable": false,
       "group": "template",
       "unique": true
+    },
+    {
+      "code": "an_image",
+      "labels": {
+        "en_US": "An image"
+      },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
     }
   ]
 }

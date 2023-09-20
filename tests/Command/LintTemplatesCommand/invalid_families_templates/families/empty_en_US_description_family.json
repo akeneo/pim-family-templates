@@ -6,6 +6,8 @@
   "description": {
     "en_US": ""
   },
+  "attribute_as_label": "an_attribute",
+  "attribute_as_main_media": "an_image",
   "attributes": [
     {
       "code": "EAN",

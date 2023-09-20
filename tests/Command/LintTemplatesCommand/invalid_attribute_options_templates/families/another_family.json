@@ -6,6 +6,8 @@
   "description": {
     "en_US": "Another family"
   },
+  "attribute_as_label": "ean",
+  "attribute_as_main_media": "an_image",
   "attributes": [
     {
       "code": "EAN",
@@ -35,6 +37,17 @@
         "en_US": "An attribute"
       },
       "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "atmosphere_image",
+      "labels": {
+        "en_US": "Atmosphere image"
+      },
+      "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
       "group": "template",

@@ -6,6 +6,8 @@
   "description": {
     "en_US": "Immerse yourself in sound with our 'Headphones' family template - a premium assortment of pre-built attributes to manage your audio companions, delivering a personal concert experience wherever you go."
   },
+  "attribute_as_label": "product_title",
+  "attribute_as_main_media": "main_image",
   "attributes": [
     {
       "code": "EAN",
@@ -82,8 +84,9 @@
       "scopable": false,
       "localizable": false,
       "group": "template",
+      "unique": false,
       "metric_family": "length",
-      "unique": false
+      "unit": "centimeter"
     },
     {
       "code": "width",
@@ -94,8 +97,9 @@
       "scopable": false,
       "localizable": false,
       "group": "template",
+      "unique": false,
       "metric_family": "length",
-      "unique": false
+      "unit": "centimeter"
     },
     {
       "code": "bluetooth",

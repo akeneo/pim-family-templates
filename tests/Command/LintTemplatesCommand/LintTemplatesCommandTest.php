@@ -43,6 +43,8 @@ class LintTemplatesCommandTest extends TestCase
                 '[families][too_long_en_US_label_family][labels][en_US] This value is too long. It should have 255 characters or less.',
                 '[families][extra_fields_family][cc] This field was not expected.',
                 '[families][mismatching_code_family][code] This value should match with file name.',
+                '[families][missing_attribute_as_label_family][attribute_as_label] This field is missing.',
+                '[families][missing_attribute_as_main_media_family][attribute_as_main_media] This field is missing.',
                 '[families][missing_attributes_family][attributes] This field is missing.',
                 '[families][missing_code_family][code] This field is missing.',
                 '[families][missing_description_family][description] This field is missing.',

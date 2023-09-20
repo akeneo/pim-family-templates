@@ -3,6 +3,8 @@
   "labels": {
     "en_US": "A family"
   },
+  "attribute_as_label": "EAN",
+  "attribute_as_main_media": "an_image",
   "attributes": [
     {
       "code": "EAN",
