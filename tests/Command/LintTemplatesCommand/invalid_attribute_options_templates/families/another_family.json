@@ -6,7 +6,7 @@
   "description": {
     "en_US": "Another family"
   },
-  "attribute_as_label": "ean",
+  "attribute_as_label": "an_attribute",
   "attribute_as_main_media": "an_image",
   "attributes": [
     {
@@ -43,7 +43,7 @@
       "unique": false
     },
     {
-      "code": "atmosphere_image",
+      "code": "an_image",
       "labels": {
         "en_US": "Atmosphere image"
       },

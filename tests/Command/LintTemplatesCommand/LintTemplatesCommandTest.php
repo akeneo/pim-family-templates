@@ -46,6 +46,8 @@ class LintTemplatesCommandTest extends TestCase
                 '[families][missing_attribute_as_label_family][attribute_as_label] This field is missing.',
                 '[families][missing_attribute_as_main_media_family][attribute_as_main_media] This field is missing.',
                 '[families][missing_attributes_family][attributes] This field is missing.',
+                '[families][missing_attributes_family][attribute_as_main_media] This value is not a valid media attribute code.',
+                '[families][missing_attributes_family][attribute_as_label] This value is not a valid attribute code.',
                 '[families][missing_code_family][code] This field is missing.',
                 '[families][missing_description_family][description] This field is missing.',
                 '[families][missing_en_US_description_family][description][en_US] This field is missing.',
@@ -58,6 +60,8 @@ class LintTemplatesCommandTest extends TestCase
             self::INVALID_ATTRIBUTES_TEMPLATES_DIRECTORY,
             [
                 '[families][empty_attributes_family][attributes] This collection should contain 1 element or more.',
+                '[families][empty_attributes_family][attribute_as_main_media] This value is not a valid media attribute code.',
+                '[families][empty_attributes_family][attribute_as_label] This value is not a valid attribute code.',
                 '[families][missing_attribute_code_family][attributes][0][code] This field is missing.',
                 '[families][missing_attribute_labels_family][attributes][0][labels] This field is missing.',
                 '[families][missing_attribute_en_US_label_family][attributes][0][labels][en_US] This field is missing.',

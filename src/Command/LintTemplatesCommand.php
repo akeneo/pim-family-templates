@@ -42,6 +42,8 @@ class LintTemplatesCommand extends Command
         'pim_catalog_table',
     ];
 
+    private const ATTRIBUTE_TYPE_IMAGE = 'pim_catalog_image';
+
     protected static $defaultName = 'templates:lint';
     private ValidatorInterface $validator;
 
@@ -194,6 +196,17 @@ class LintTemplatesCommand extends Command
         $violations = [];
 
         foreach ($families as $fileName => $family) {
+            $attributeCodes = [];
+            $mediaAttributeCodes = [];
+            if (!empty($family['attributes'])) {
+                foreach ($family['attributes'] as $attribute) {
+                    if ($attribute['type'] === self::ATTRIBUTE_TYPE_IMAGE) {
+                        $mediaAttributeCodes[] = $attribute['code'];
+                    }
+                    $attributeCodes[] = $attribute['code'];
+                }
+            }
+
             $violations[$fileName] = $this->validator->validate($family, new Collection([
                 'code' => new EqualTo(
                     value: $fileName,
@@ -216,12 +229,18 @@ class LintTemplatesCommand extends Command
                 'attribute_as_main_media' => [
                     new Type('string'),
                     new NotBlank(),
-                    new Length(max: 255),
+                    new Choice(
+                        choices: $mediaAttributeCodes,
+                        message: 'This value is not a valid media attribute code.',
+                    ),
                 ],
                 'attribute_as_label' => [
                     new Type('string'),
                     new NotBlank(),
-                    new Length(max: 255),
+                    new Choice(
+                        choices: $attributeCodes,
+                        message: 'This value is not a valid attribute code.',
+                    ),
                 ],
                 'attributes' => [
                     new Count(min: 1),
