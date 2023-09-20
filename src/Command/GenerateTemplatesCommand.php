@@ -159,10 +159,6 @@ class GenerateTemplatesCommand extends Command
                 'unique' => '1' === $rawAttribute['unique'],
             ];
 
-            if ((!empty($rawAttribute['metric_family']) || !empty($rawAttribute['unit'])) && $rawAttribute['type'] !== self::ATTRIBUTE_TYPE_METRIC) {
-                throw new \Exception('Only measurement attributes should have a metric family or a default unit.');
-            }
-
             if (!empty($rawAttribute['metric_family'])) {
                 $attribute['metric_family'] = $rawAttribute['metric_family'];
             }
