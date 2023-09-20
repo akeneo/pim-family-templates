@@ -89,7 +89,7 @@
       "unique": false
     },
     {
-      "code": "case_material",
+      "code": "material",
       "labels": { "en_US": "Case material" },
       "type": "pim_catalog_multiselect",
       "scopable": false,
@@ -158,7 +158,7 @@
       "unique": false
     },
     {
-      "code": "dial_color",
+      "code": "color",
       "labels": { "en_US": "Dial color" },
       "type": "pim_catalog_simpleselect",
       "scopable": false,

@@ -114,7 +114,8 @@
       "localizable": false,
       "group": "other",
       "unique": false,
-      "metric_family": "Weight"
+      "metric_family": "Weight",
+      "unit": "Gram"
     },
     {
       "code": "brightness_adjustment",
@@ -151,7 +152,8 @@
       "localizable": false,
       "group": "other",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Inch"
     },
     {
       "code": "storage",
@@ -161,7 +163,8 @@
       "localizable": false,
       "group": "other",
       "unique": false,
-      "metric_family": "Binary"
+      "metric_family": "Binary",
+      "unit": "Gigabyte"
     }
   ]
 }
