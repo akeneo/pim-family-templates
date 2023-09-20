@@ -200,10 +200,12 @@ class LintTemplatesCommand extends Command
             $mediaAttributeCodes = [];
             if (!empty($family['attributes'])) {
                 foreach ($family['attributes'] as $attribute) {
-                    if ($attribute['type'] === self::ATTRIBUTE_TYPE_IMAGE) {
+                    if (!empty($attribute['type']) && $attribute['type'] === self::ATTRIBUTE_TYPE_IMAGE) {
                         $mediaAttributeCodes[] = $attribute['code'];
                     }
-                    $attributeCodes[] = $attribute['code'];
+                    if (!empty($attribute['code'])) {
+                        $attributeCodes[] = $attribute['code'];
+                    }
                 }
             }
 
@@ -307,21 +309,23 @@ class LintTemplatesCommand extends Command
                 $hasAttributeIdentifier = false;
                 $familyAttributeCodes = [];
                 foreach ($family['attributes'] as $index => $attribute) {
-                    if (!array_key_exists('type', $attribute)) {
+                    if (empty($attribute['type'])) {
                         continue;
                     }
 
-                    if (!in_array($attribute['code'], $familyAttributeCodes)) {
-                        $familyAttributeCodes[] = $attribute['code'];
-                    } else {
-                        $violations[$fileName]->add(new ConstraintViolation(
-                            sprintf('Each attribute code should be unique. Attribute : %s is duplicated.', $attribute['code']),
-                            null,
-                            [],
-                            null,
-                            '[attributes]',
-                            null,
-                        ));
+                    if (!empty($attribute['code'])) {
+                        if (!in_array($attribute['code'], $familyAttributeCodes)) {
+                            $familyAttributeCodes[] = $attribute['code'];
+                        } else {
+                            $violations[$fileName]->add(new ConstraintViolation(
+                                sprintf('Each attribute code should be unique. Attribute : %s is duplicated.', $attribute['code']),
+                                null,
+                                [],
+                                null,
+                                '[attributes]',
+                                null,
+                            ));
+                        }
                     }
 
                     $hasAttributeIdentifier = $hasAttributeIdentifier || 'pim_catalog_identifier' === $attribute['type'];
