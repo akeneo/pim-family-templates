@@ -15,7 +15,6 @@ use Symfony\Component\Console\Output\OutputInterface;
 class GenerateTemplatesCommand extends Command
 {
     protected static $defaultName = 'templates:generate';
-    private const ATTRIBUTE_TYPE_METRIC = 'pim_catalog_metric';
 
     protected function configure(): void
     {
