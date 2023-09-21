@@ -202,12 +202,12 @@ class LintTemplatesCommand extends Command
 
         foreach ($families as $fileName => $family) {
             $attributeAsLabelChoices = [];
-            $mediaAttributeCodes = [];
+            $mediaAttributeChoices = [];
             if (!empty($family['attributes'])) {
                 foreach ($family['attributes'] as $attribute) {
                     if (isset($attribute['type'])) {
                         if ($attribute['type'] === self::ATTRIBUTE_TYPE_IMAGE) {
-                            $mediaAttributeCodes[] = $attribute['code'];
+                            $mediaAttributeChoices[] = $attribute['code'];
                         }
                         if (isset($attribute['code']) && in_array($attribute['type'], [self::ATTRIBUTE_TYPE_IDENTIFIER, self::ATTRIBUTE_TYPE_TEXT])) {
                             $attributeAsLabelChoices[] = $attribute['code'];
@@ -238,7 +238,7 @@ class LintTemplatesCommand extends Command
                 'attribute_as_main_media' => [
                     new Type('string'),
                     new Choice(
-                        choices: $mediaAttributeCodes,
+                        choices: $mediaAttributeChoices,
                         message: 'This value is not a valid media attribute code.',
                     ),
                 ],
