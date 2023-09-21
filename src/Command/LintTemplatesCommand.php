@@ -449,9 +449,9 @@ class LintTemplatesCommand extends Command
                     null,
                 ));
                 break;
-            case empty($attribute[$property]):
+            case !is_string($attribute[$property]):
                 $violations[$fileName]->add(new ConstraintViolation(
-                    'This value should not be blank.',
+                    'This value should be of type string.',
                     null,
                     [],
                     null,
@@ -459,9 +459,9 @@ class LintTemplatesCommand extends Command
                     null,
                 ));
                 break;
-            case !is_string($attribute[$property]):
+            case empty($attribute[$property]):
                 $violations[$fileName]->add(new ConstraintViolation(
-                    'This value should be of type string.',
+                    'This value should not be blank.',
                     null,
                     [],
                     null,
