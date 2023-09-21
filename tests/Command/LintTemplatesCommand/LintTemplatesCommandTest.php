@@ -83,6 +83,8 @@ class LintTemplatesCommandTest extends TestCase
                 '[families][empty_attribute_metric_family_family][attributes][1][metric_family] This value should not be blank.',
                 '[families][empty_attribute_metric_family_family][attributes][1][unit] This value should not be blank.',
                 '[families][missing_identifier_attribute_family][attributes] This collection should contain 1 attribute identifier or more.',
+                '[families][missing_attribute_decimals_allowed_family][attributes][1][decimals_allowed] This field is missing.',
+                '[families][missing_attribute_negative_allowed_family][attributes][1][negative_allowed] This field is missing.',
             ]
         ];
         yield 'Invalid attribute options' => [

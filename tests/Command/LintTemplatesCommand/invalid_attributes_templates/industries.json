@@ -24,7 +24,9 @@
       "missing_attribute_metric_family_family",
       "empty_attribute_metric_family_family",
       "missing_identifier_attribute_family",
-      "too_long_attribute_en_US_label_family"
+      "too_long_attribute_en_US_label_family",
+      "missing_attribute_decimals_allowed_family",
+      "missing_attribute_negative_allowed_family"
     ]
   }
 }
