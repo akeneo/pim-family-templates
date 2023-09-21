@@ -23,7 +23,8 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": true
     },
     {
       "code": "product_title",
@@ -95,7 +96,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "resolution",
@@ -104,7 +107,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "weight",
@@ -115,7 +120,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Gram"
+      "unit": "Gram",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "brightness_adjustment",
@@ -153,7 +160,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Inch"
+      "unit": "Inch",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "storage",
@@ -164,7 +173,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Binary",
-      "unit": "Gigabyte"
+      "unit": "Gigabyte",
+      "decimals_allowed": true,
+      "negative_allowed": false
     }
   ]
 }

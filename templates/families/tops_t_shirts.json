@@ -23,7 +23,8 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": true
     },
     {
       "code": "product_title",

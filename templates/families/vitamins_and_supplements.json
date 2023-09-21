@@ -23,7 +23,8 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": true
     },
     {
       "code": "product_title",
@@ -97,7 +98,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Gram"
+      "unit": "Gram",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "cure_days",
@@ -126,7 +129,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Volume",
-      "unit": "Liter"
+      "unit": "Liter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "benefits",
@@ -180,7 +185,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "skin_type",

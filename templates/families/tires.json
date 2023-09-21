@@ -23,7 +23,8 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": true
     },
     {
       "code": "product_title",
@@ -97,7 +98,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Millimeter"
+      "unit": "Millimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "height",
@@ -108,7 +111,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Millimeter"
+      "unit": "Millimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "tire_load",
@@ -119,7 +124,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Gram"
+      "unit": "Gram",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "speed",
@@ -130,7 +137,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Speed",
-      "unit": "Kilometer_per_hour"
+      "unit": "Kilometer_per_hour",
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "vehicle_type",
@@ -159,7 +168,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Decibel",
-      "unit": "Decibel"
+      "unit": "Decibel",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "fuel_efficiency",

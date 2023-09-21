@@ -23,7 +23,8 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": true
     },
     {
       "code": "product_title",
@@ -151,7 +152,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Power",
-      "unit": "Watt"
+      "unit": "Watt",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "voltage",
@@ -162,7 +165,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Voltage",
-      "unit": "Volt"
+      "unit": "Volt",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "aesthetics",
@@ -191,7 +196,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter"
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "height",
@@ -202,7 +209,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter"
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "weight",
@@ -213,7 +222,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Gram"
+      "unit": "Gram",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "automatic_programming",
@@ -242,7 +253,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Volume",
-      "unit": "Liter"
+      "unit": "Liter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     }
   ]
 }

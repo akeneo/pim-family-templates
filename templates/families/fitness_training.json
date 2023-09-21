@@ -23,7 +23,8 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": true
     },
     {
       "code": "product_title",
@@ -106,7 +107,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter"
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "length",
@@ -117,7 +120,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter"
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "width",
@@ -128,7 +133,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter"
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "weight",
@@ -139,7 +146,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Killogram"
+      "unit": "Killogram",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "number_of_programs",
@@ -148,7 +157,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "fitness_apparel_type",
@@ -168,7 +179,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Speed",
-      "unit": "Kilometer_per_hour"
+      "unit": "Kilometer_per_hour",
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "bluetooth",
@@ -188,7 +201,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Power",
-      "unit": "Watt"
+      "unit": "Watt",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "max_incline",
@@ -199,7 +214,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Angle",
-      "unit": "Degree"
+      "unit": "Degree",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "screen",

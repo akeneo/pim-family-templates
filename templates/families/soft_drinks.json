@@ -23,7 +23,8 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": true
     },
     {
       "code": "product_title",
@@ -142,7 +143,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Volume",
-      "unit": "Liter"
+      "unit": "Liter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "ingredients",

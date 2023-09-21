@@ -23,7 +23,8 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": true
     },
     {
       "code": "product_title",
@@ -115,7 +116,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter"
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "height",
@@ -126,7 +129,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter"
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "fragrance_family",

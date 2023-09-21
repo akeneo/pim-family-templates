@@ -23,7 +23,8 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": true
     },
     {
       "code": "product_title",
@@ -106,7 +107,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter"
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "width",
@@ -117,7 +120,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter"
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "weight",
@@ -128,7 +133,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Kilogram"
+      "unit": "Kilogram",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "bluetooth",
@@ -166,7 +173,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Power",
-      "unit": "Watt"
+      "unit": "Watt",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "wireless",

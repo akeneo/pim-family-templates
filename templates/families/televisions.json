@@ -23,7 +23,8 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": true
     },
     {
       "code": "product_title",
@@ -106,7 +107,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter"
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "height",
@@ -117,7 +120,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter"
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "width",
@@ -128,7 +133,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter"
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "weight",
@@ -139,7 +146,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Kilogram"
+      "unit": "Kilogram",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "storage_capacity",
@@ -150,7 +159,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Binary",
-      "unit": "Gigabyte"
+      "unit": "Gigabyte",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "screen_size",
@@ -161,7 +172,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Inch"
+      "unit": "Inch",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "language",
@@ -190,7 +203,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Power",
-      "unit": "Volt"
+      "unit": "Volt",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "display_type",
@@ -255,7 +270,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Power",
-      "unit": "Watt"
+      "unit": "Watt",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "built_in_speakers",
@@ -293,7 +310,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Frequency",
-      "unit": "Hertz"
+      "unit": "Hertz",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "curved_screen",

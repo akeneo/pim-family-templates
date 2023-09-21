@@ -23,7 +23,8 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": true
     },
     {
       "code": "product_title",
@@ -133,7 +134,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Gram"
+      "unit": "Gram",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "band_width",
@@ -144,7 +147,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter"
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "resizable",
@@ -180,7 +185,9 @@
       "scopable": false,
       "localizable": true,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "jewelry_cut",
