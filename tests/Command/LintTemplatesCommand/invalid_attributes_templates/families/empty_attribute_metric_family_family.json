@@ -31,7 +31,9 @@
       "group": "template",
       "unique": false,
       "metric_family": "",
-      "unit": ""
+      "unit": "",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "product_title",

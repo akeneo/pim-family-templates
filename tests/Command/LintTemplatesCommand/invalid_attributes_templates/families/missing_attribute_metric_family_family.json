@@ -29,7 +29,9 @@
       "scopable": false,
       "localizable": false,
       "group": "template",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "product_title",

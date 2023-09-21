@@ -29,7 +29,8 @@
       "scopable": false,
       "localizable": false,
       "group": "template",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": true
     },
     {
       "code": "product_title",
@@ -130,7 +131,9 @@
       "group": "template",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter"
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "case_diameter",
@@ -143,7 +146,9 @@
       "group": "template",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter"
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "water_resistance",
@@ -156,7 +161,9 @@
       "group": "template",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Meter"
+      "unit": "Meter",
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "warranty_period",

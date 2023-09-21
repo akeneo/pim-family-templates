@@ -26,7 +26,6 @@ class LintTemplatesCommand extends Command
     private const ATTRIBUTE_TYPES = [
         self::ATTRIBUTE_TYPE_BOOLEAN,
         self::ATTRIBUTE_TYPE_DATE,
-        self::ATTRIBUTE_TYPE_FILE,
         self::ATTRIBUTE_TYPE_IDENTIFIER,
         self::ATTRIBUTE_TYPE_IMAGE,
         self::ATTRIBUTE_TYPE_METRIC,
@@ -36,10 +35,6 @@ class LintTemplatesCommand extends Command
         self::ATTRIBUTE_TYPE_PRICE_COLLECTION,
         self::ATTRIBUTE_TYPE_TEXTAREA,
         self::ATTRIBUTE_TYPE_TEXT,
-        self::ATTRIBUTE_TYPE_REFERENCE_ENTITY,
-        self::ATTRIBUTE_TYPE_REFERENCE_ENTITY_COLLECTION,
-        self::ATTRIBUTE_TYPE_ASSET_COLLECTION,
-        self::ATTRIBUTE_TYPE_TABLE,
     ];
 
     private const ATTRIBUTE_TYPE_IMAGE = 'pim_catalog_image';
@@ -50,14 +45,9 @@ class LintTemplatesCommand extends Command
     private const ATTRIBUTE_TYPE_PRICE_COLLECTION = 'pim_catalog_price_collection';
     private const ATTRIBUTE_TYPE_BOOLEAN = 'pim_catalog_boolean';
     private const ATTRIBUTE_TYPE_DATE = 'pim_catalog_date';
-    private const ATTRIBUTE_TYPE_FILE = 'pim_catalog_file';
     private const ATTRIBUTE_TYPE_MULTISELECT = 'pim_catalog_multiselect';
     private const ATTRIBUTE_TYPE_SIMPLESELECT = 'pim_catalog_simpleselect';
     private const ATTRIBUTE_TYPE_TEXTAREA = 'pim_catalog_textarea';
-    private const ATTRIBUTE_TYPE_REFERENCE_ENTITY = 'akeneo_reference_entity';
-    private const ATTRIBUTE_TYPE_REFERENCE_ENTITY_COLLECTION = 'akeneo_reference_entity_collection';
-    private const ATTRIBUTE_TYPE_ASSET_COLLECTION = 'pim_catalog_file';
-    private const ATTRIBUTE_TYPE_TABLE = 'pim_catalog_table';
 
     protected static $defaultName = 'templates:lint';
     private ValidatorInterface $validator;
@@ -247,7 +237,6 @@ class LintTemplatesCommand extends Command
                 ]),
                 'attribute_as_main_media' => [
                     new Type('string'),
-                    new NotBlank(),
                     new Choice(
                         choices: $mediaAttributeCodes,
                         message: 'This value is not a valid media attribute code.',
@@ -255,7 +244,6 @@ class LintTemplatesCommand extends Command
                 ],
                 'attribute_as_label' => [
                     new Type('string'),
-                    new NotBlank(),
                     new Choice(
                         choices: $attributeAsLabelChoices,
                         message: 'This value is not a valid attribute code.',
@@ -345,16 +333,16 @@ class LintTemplatesCommand extends Command
                     $hasAttributeIdentifier = $hasAttributeIdentifier || 'pim_catalog_identifier' === $attribute['type'];
 
                     if (self::ATTRIBUTE_TYPE_METRIC === $attribute['type']) {
-                        $this->assertValidProperty('metric_family', $attribute, $index, $fileName, $violations);
-                        $this->assertValidProperty('unit', $attribute, $index, $fileName, $violations);
+                        $this->assertValidStringProperty('metric_family', $attribute, $index, $fileName, $violations);
+                        $this->assertValidStringProperty('unit', $attribute, $index, $fileName, $violations);
                     }
 
                     if (in_array($attribute['type'], [self::ATTRIBUTE_TYPE_NUMBER, self::ATTRIBUTE_TYPE_METRIC, self::ATTRIBUTE_TYPE_PRICE_COLLECTION])) {
-                        $this->assertValidProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
+                        $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
                     }
 
                     if (in_array($attribute['type'], [self::ATTRIBUTE_TYPE_NUMBER, self::ATTRIBUTE_TYPE_METRIC])) {
-                        $this->assertValidProperty('negative_allowed', $attribute, $index, $fileName, $violations);
+                        $this->assertValidBooleanProperty('negative_allowed', $attribute, $index, $fileName, $violations);
                     }
                 }
 
@@ -447,9 +435,9 @@ class LintTemplatesCommand extends Command
         return json_decode(json: $json, flags: JSON_OBJECT_AS_ARRAY);
     }
 
-    private function assertValidProperty(string $property, array $attribute, int $index, string $fileName, array &$violations): void
+    private function assertValidStringProperty(string $property, array $attribute, int $index, string $fileName, array &$violations): void
     {
-        $propertyPath = sprintf('[attributes][%d]['.$property.']', $index);
+        $propertyPath = sprintf('[attributes][%d][%s]', $index, $property);
         switch (true) {
             case !array_key_exists($property, $attribute):
                 $violations[$fileName]->add(new ConstraintViolation(
@@ -474,6 +462,33 @@ class LintTemplatesCommand extends Command
             case !is_string($attribute[$property]):
                 $violations[$fileName]->add(new ConstraintViolation(
                     'This value should be of type string.',
+                    null,
+                    [],
+                    null,
+                    $propertyPath,
+                    null,
+                ));
+                break;
+        }
+    }
+
+    private function assertValidBooleanProperty(string $property, array $attribute, int $index, string $fileName, array &$violations): void
+    {
+        $propertyPath = sprintf('[attributes][%d][%s]', $index, $property);
+        switch (true) {
+            case !array_key_exists($property, $attribute):
+                $violations[$fileName]->add(new ConstraintViolation(
+                    'This field is missing.',
+                    null,
+                    [],
+                    null,
+                    $propertyPath,
+                    null,
+                ));
+                break;
+            case !is_bool($attribute[$property]):
+                $violations[$fileName]->add(new ConstraintViolation(
+                    'This value should be of type boolean.',
                     null,
                     [],
                     null,

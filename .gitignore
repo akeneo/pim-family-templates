@@ -1,6 +1,5 @@
 node_modules/
 var/
 vendor/
-tests/Command/GenerateTemplatesCommand/actual_output/
 
 .phpunit.result.cache
