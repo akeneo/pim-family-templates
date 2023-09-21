@@ -348,6 +348,14 @@ class LintTemplatesCommand extends Command
                         $this->assertValidProperty('metric_family', $attribute, $index, $fileName, $violations);
                         $this->assertValidProperty('unit', $attribute, $index, $fileName, $violations);
                     }
+
+                    if (in_array($attribute['type'], [self::ATTRIBUTE_TYPE_NUMBER, self::ATTRIBUTE_TYPE_METRIC, self::ATTRIBUTE_TYPE_PRICE_COLLECTION])) {
+                        $this->assertValidProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
+                    }
+
+                    if (in_array($attribute['type'], [self::ATTRIBUTE_TYPE_NUMBER, self::ATTRIBUTE_TYPE_METRIC])) {
+                        $this->assertValidProperty('negative_allowed', $attribute, $index, $fileName, $violations);
+                    }
                 }
 
                 if (!$hasAttributeIdentifier) {

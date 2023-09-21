@@ -14,7 +14,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "price",
@@ -23,7 +25,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "product_title",
@@ -32,7 +36,9 @@
       "scopable": false,
       "localizable": true,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "short_description",
@@ -41,7 +47,9 @@
       "scopable": false,
       "localizable": true,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "long_description",
@@ -50,7 +58,9 @@
       "scopable": false,
       "localizable": true,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "brand",
@@ -59,7 +69,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "main_image",
@@ -68,7 +80,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "detailed_image",
@@ -77,7 +91,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "atmosphere_image",
@@ -86,7 +102,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "allergens",
@@ -95,7 +113,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "organic",
@@ -104,7 +124,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "non_gmo",
@@ -113,7 +135,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "alcohol_percentage",
@@ -123,7 +147,8 @@
       "localizable": false,
       "group": "other",
       "unique": false,
-      "decimals_allowed": "1"
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "wine_type",
@@ -132,7 +157,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "tasting_note",
@@ -141,7 +168,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "grape_variety",
@@ -150,7 +179,9 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "capacity",
@@ -161,7 +192,9 @@
       "group": "other",
       "unique": false,
       "metric_family": "Volume",
-      "unit": "Liter"
+      "unit": "Liter",
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "ingredients",
@@ -170,7 +203,9 @@
       "scopable": false,
       "localizable": true,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "conservation_instructions",
@@ -179,7 +214,9 @@
       "scopable": false,
       "localizable": true,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "nutritional_values",
@@ -188,7 +225,9 @@
       "scopable": false,
       "localizable": true,
       "group": "other",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     }
   ]
 }
