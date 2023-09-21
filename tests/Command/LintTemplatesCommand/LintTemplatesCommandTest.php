@@ -79,7 +79,9 @@ class LintTemplatesCommandTest extends TestCase
                 '[families][wrong_attribute_localizable_family][attributes][0][localizable] This value should be of type bool.',
                 '[families][wrong_attribute_unique_family][attributes][0][unique] This value should be of type bool.',
                 '[families][missing_attribute_metric_family_family][attributes][1][metric_family] This field is missing.',
+                '[families][missing_attribute_metric_family_family][attributes][1][unit] This field is missing.',
                 '[families][empty_attribute_metric_family_family][attributes][1][metric_family] This value should not be blank.',
+                '[families][empty_attribute_metric_family_family][attributes][1][unit] This value should not be blank.',
                 '[families][missing_identifier_attribute_family][attributes] This collection should contain 1 attribute identifier or more.',
             ]
         ];

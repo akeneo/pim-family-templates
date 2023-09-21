@@ -161,8 +161,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Volume",
-      "unit": "Liter",
-      "unit_symbol": "L"
+      "unit": "Liter"
     },
     {
       "code": "ingredients",

@@ -6,7 +6,7 @@
   "description": {
     "en_US": "Embrace timeless elegance with our 'Watches' family template - a sophisticated array of pre-built attributes to easily manage your timepieces, adding a touch of luxury to your everyday style."
   },
-  "attribute_as_label": "short_description",
+  "attribute_as_label": "product_title",
   "attribute_as_main_media": "atmosphere_image",
   "attributes": [
     {
@@ -129,7 +129,8 @@
       "localizable": false,
       "group": "template",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter"
     },
     {
       "code": "case_diameter",
@@ -141,7 +142,8 @@
       "localizable": false,
       "group": "template",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter"
     },
     {
       "code": "water_resistance",
@@ -153,7 +155,8 @@
       "localizable": false,
       "group": "template",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Meter"
     },
     {
       "code": "warranty_period",

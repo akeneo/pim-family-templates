@@ -166,16 +166,12 @@ class GenerateTemplatesCommand extends Command
                 $attribute['unit'] = $rawAttribute['unit'];
             }
 
-            if (!empty($rawAttribute['unit_symbol'])) {
-                $attribute['unit_symbol'] = $rawAttribute['unit_symbol'];
+            if (isset($rawAttribute['decimals_allowed']) && $rawAttribute['decimals_allowed'] !== '') {
+                $attribute['decimals_allowed'] = $rawAttribute['decimals_allowed'] === '1';
             }
 
-            if (!empty($rawAttribute['decimals_allowed'])) {
-                $attribute['decimals_allowed'] = $rawAttribute['decimals_allowed'];
-            }
-
-            if (!empty($rawAttribute['negative_allowed'])) {
-                $attribute['negative_allowed'] = $rawAttribute['negative_allowed'];
+            if (isset($rawAttribute['negative_allowed']) && $rawAttribute['negative_allowed'] !== '') {
+                $attribute['negative_allowed'] = $rawAttribute['negative_allowed'] === '1';
             }
 
             return $attribute;

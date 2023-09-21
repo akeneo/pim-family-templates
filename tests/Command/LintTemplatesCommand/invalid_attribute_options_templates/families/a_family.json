@@ -6,7 +6,7 @@
   "description": {
     "en_US": "A family"
   },
-  "attribute_as_label": "brand",
+  "attribute_as_label": "product_title",
   "attribute_as_main_media": "an_image",
   "attributes": [
     {
@@ -28,6 +28,17 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "product_title",
+      "labels": {
+        "en_US": "Product title"
+      },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
       "group": "template",
       "unique": false
     },

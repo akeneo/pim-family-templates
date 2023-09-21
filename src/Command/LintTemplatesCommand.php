@@ -24,25 +24,40 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 class LintTemplatesCommand extends Command
 {
     private const ATTRIBUTE_TYPES = [
-        'pim_catalog_boolean',
-        'pim_catalog_date',
-        'pim_catalog_file',
-        'pim_catalog_identifier',
-        'pim_catalog_image',
-        'pim_catalog_metric',
-        'pim_catalog_number',
-        'pim_catalog_multiselect',
-        'pim_catalog_simpleselect',
-        'pim_catalog_price_collection',
-        'pim_catalog_textarea',
-        'pim_catalog_text',
-        'akeneo_reference_entity',
-        'akeneo_reference_entity_collection',
-        'pim_catalog_asset_collection',
-        'pim_catalog_table',
+        self::ATTRIBUTE_TYPE_BOOLEAN,
+        self::ATTRIBUTE_TYPE_DATE,
+        self::ATTRIBUTE_TYPE_FILE,
+        self::ATTRIBUTE_TYPE_IDENTIFIER,
+        self::ATTRIBUTE_TYPE_IMAGE,
+        self::ATTRIBUTE_TYPE_METRIC,
+        self::ATTRIBUTE_TYPE_NUMBER,
+        self::ATTRIBUTE_TYPE_MULTISELECT,
+        self::ATTRIBUTE_TYPE_SIMPLESELECT,
+        self::ATTRIBUTE_TYPE_PRICE_COLLECTION,
+        self::ATTRIBUTE_TYPE_TEXTAREA,
+        self::ATTRIBUTE_TYPE_TEXT,
+        self::ATTRIBUTE_TYPE_REFERENCE_ENTITY,
+        self::ATTRIBUTE_TYPE_REFERENCE_ENTITY_COLLECTION,
+        self::ATTRIBUTE_TYPE_ASSET_COLLECTION,
+        self::ATTRIBUTE_TYPE_TABLE,
     ];
 
     private const ATTRIBUTE_TYPE_IMAGE = 'pim_catalog_image';
+    private const ATTRIBUTE_TYPE_TEXT = 'pim_catalog_text';
+    private const ATTRIBUTE_TYPE_IDENTIFIER = 'pim_catalog_identifier';
+    private const ATTRIBUTE_TYPE_METRIC = 'pim_catalog_metric';
+    private const ATTRIBUTE_TYPE_NUMBER = 'pim_catalog_number';
+    private const ATTRIBUTE_TYPE_PRICE_COLLECTION = 'pim_catalog_price_collection';
+    private const ATTRIBUTE_TYPE_BOOLEAN = 'pim_catalog_boolean';
+    private const ATTRIBUTE_TYPE_DATE = 'pim_catalog_date';
+    private const ATTRIBUTE_TYPE_FILE = 'pim_catalog_file';
+    private const ATTRIBUTE_TYPE_MULTISELECT = 'pim_catalog_multiselect';
+    private const ATTRIBUTE_TYPE_SIMPLESELECT = 'pim_catalog_simpleselect';
+    private const ATTRIBUTE_TYPE_TEXTAREA = 'pim_catalog_textarea';
+    private const ATTRIBUTE_TYPE_REFERENCE_ENTITY = 'akeneo_reference_entity';
+    private const ATTRIBUTE_TYPE_REFERENCE_ENTITY_COLLECTION = 'akeneo_reference_entity_collection';
+    private const ATTRIBUTE_TYPE_ASSET_COLLECTION = 'pim_catalog_file';
+    private const ATTRIBUTE_TYPE_TABLE = 'pim_catalog_table';
 
     protected static $defaultName = 'templates:lint';
     private ValidatorInterface $validator;
@@ -196,15 +211,17 @@ class LintTemplatesCommand extends Command
         $violations = [];
 
         foreach ($families as $fileName => $family) {
-            $attributeCodes = [];
+            $attributeAsLabelChoices = [];
             $mediaAttributeCodes = [];
             if (!empty($family['attributes'])) {
                 foreach ($family['attributes'] as $attribute) {
-                    if (!empty($attribute['type']) && $attribute['type'] === self::ATTRIBUTE_TYPE_IMAGE) {
-                        $mediaAttributeCodes[] = $attribute['code'];
-                    }
-                    if (!empty($attribute['code'])) {
-                        $attributeCodes[] = $attribute['code'];
+                    if (isset($attribute['type'])) {
+                        if ($attribute['type'] === self::ATTRIBUTE_TYPE_IMAGE) {
+                            $mediaAttributeCodes[] = $attribute['code'];
+                        }
+                        if (isset($attribute['code']) && in_array($attribute['type'], [self::ATTRIBUTE_TYPE_IDENTIFIER, self::ATTRIBUTE_TYPE_TEXT])) {
+                            $attributeAsLabelChoices[] = $attribute['code'];
+                        }
                     }
                 }
             }
@@ -240,7 +257,7 @@ class LintTemplatesCommand extends Command
                     new Type('string'),
                     new NotBlank(),
                     new Choice(
-                        choices: $attributeCodes,
+                        choices: $attributeAsLabelChoices,
                         message: 'This value is not a valid attribute code.',
                     ),
                 ],
@@ -279,9 +296,6 @@ class LintTemplatesCommand extends Command
                             new Optional(),
                         ],
                         'unit' => [
-                            new Optional(),
-                        ],
-                        'unit_symbol' => [
                             new Optional(),
                         ],
                         'decimals_allowed' => [
@@ -330,40 +344,9 @@ class LintTemplatesCommand extends Command
 
                     $hasAttributeIdentifier = $hasAttributeIdentifier || 'pim_catalog_identifier' === $attribute['type'];
 
-                    if ('pim_catalog_metric' === $attribute['type']) {
-                        $propertyPath = sprintf('[attributes][%d][metric_family]', $index);
-                        switch (true) {
-                            case !array_key_exists('metric_family', $attribute):
-                                $violations[$fileName]->add(new ConstraintViolation(
-                                    'This field is missing.',
-                                    null,
-                                    [],
-                                    null,
-                                    $propertyPath,
-                                    null,
-                                ));
-                                break;
-                            case empty($attribute['metric_family']):
-                                $violations[$fileName]->add(new ConstraintViolation(
-                                    'This value should not be blank.',
-                                    null,
-                                    [],
-                                    null,
-                                    $propertyPath,
-                                    null,
-                                ));
-                                break;
-                            case !is_string($attribute['metric_family']):
-                                $violations[$fileName]->add(new ConstraintViolation(
-                                    'This value should be of type string.',
-                                    null,
-                                    [],
-                                    null,
-                                    $propertyPath,
-                                    null,
-                                ));
-                                break;
-                        }
+                    if (self::ATTRIBUTE_TYPE_METRIC === $attribute['type']) {
+                        $this->assertValidProperty('metric_family', $attribute, $index, $fileName, $violations);
+                        $this->assertValidProperty('unit', $attribute, $index, $fileName, $violations);
                     }
                 }
 
@@ -454,5 +437,42 @@ class LintTemplatesCommand extends Command
         $json = file_get_contents($filePath);
 
         return json_decode(json: $json, flags: JSON_OBJECT_AS_ARRAY);
+    }
+
+    private function assertValidProperty(string $property, array $attribute, int $index, string $fileName, array &$violations): void
+    {
+        $propertyPath = sprintf('[attributes][%d]['.$property.']', $index);
+        switch (true) {
+            case !array_key_exists($property, $attribute):
+                $violations[$fileName]->add(new ConstraintViolation(
+                    'This field is missing.',
+                    null,
+                    [],
+                    null,
+                    $propertyPath,
+                    null,
+                ));
+                break;
+            case empty($attribute[$property]):
+                $violations[$fileName]->add(new ConstraintViolation(
+                    'This value should not be blank.',
+                    null,
+                    [],
+                    null,
+                    $propertyPath,
+                    null,
+                ));
+                break;
+            case !is_string($attribute[$property]):
+                $violations[$fileName]->add(new ConstraintViolation(
+                    'This value should be of type string.',
+                    null,
+                    [],
+                    null,
+                    $propertyPath,
+                    null,
+                ));
+                break;
+        }
     }
 }

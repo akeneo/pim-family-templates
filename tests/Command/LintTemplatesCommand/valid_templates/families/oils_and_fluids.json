@@ -6,7 +6,7 @@
   "description": {
     "en_US": "Lubricate your vehicle with our 'Oils and Fluids' family template - a well-oiled set of pre-built attributes to effortlessly manage your automotive care, keeping your engine running at peak performance."
   },
-  "attribute_as_label": "short_description",
+  "attribute_as_label": "product_title",
   "attribute_as_main_media": "atmosphere_image",
   "attributes": [
     {
@@ -118,7 +118,8 @@
       "localizable": false,
       "group": "template",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter"
     },
     {
       "code": "height",
@@ -130,7 +131,8 @@
       "localizable": false,
       "group": "template",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter"
     },
     {
       "code": "vehicle_type",
@@ -164,7 +166,8 @@
       "localizable": false,
       "group": "template",
       "unique": false,
-      "metric_family": "Volume"
+      "metric_family": "Volume",
+      "unit": "Liter"
     },
     {
       "code": "oil_type",
