@@ -131,6 +131,18 @@
       "localizable": false,
       "group": "template",
       "unique": false
+    },
+    {
+      "code": "price",
+      "group": "template",
+      "labels": {
+            "en_US": "Price"
+      },
+      "localizable": false,
+      "negative_allowed": false,
+      "scopable": false,
+      "type": "pim_catalog_price_collection",
+      "unique": false
     }
   ]
 }
