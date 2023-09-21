@@ -35,6 +35,7 @@ class LintTemplatesCommand extends Command
         self::ATTRIBUTE_TYPE_PRICE_COLLECTION,
         self::ATTRIBUTE_TYPE_TEXTAREA,
         self::ATTRIBUTE_TYPE_TEXT,
+        self::ATTRIBUTE_TYPE_FILE,
     ];
 
     private const ATTRIBUTE_TYPE_IMAGE = 'pim_catalog_image';
@@ -48,6 +49,7 @@ class LintTemplatesCommand extends Command
     private const ATTRIBUTE_TYPE_MULTISELECT = 'pim_catalog_multiselect';
     private const ATTRIBUTE_TYPE_SIMPLESELECT = 'pim_catalog_simpleselect';
     private const ATTRIBUTE_TYPE_TEXTAREA = 'pim_catalog_textarea';
+    private const ATTRIBUTE_TYPE_FILE = 'pim_catalog_file';
 
     protected static $defaultName = 'templates:lint';
     private ValidatorInterface $validator;
