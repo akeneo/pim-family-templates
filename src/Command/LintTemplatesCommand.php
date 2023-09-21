@@ -206,7 +206,7 @@ class LintTemplatesCommand extends Command
             if (!empty($family['attributes'])) {
                 foreach ($family['attributes'] as $attribute) {
                     if (isset($attribute['type'])) {
-                        if ($attribute['type'] === self::ATTRIBUTE_TYPE_IMAGE) {
+                        if (self::ATTRIBUTE_TYPE_IMAGE === $attribute['type']) {
                             $mediaAttributeChoices[] = $attribute['code'];
                         }
                         if (isset($attribute['code']) && in_array($attribute['type'], [self::ATTRIBUTE_TYPE_IDENTIFIER, self::ATTRIBUTE_TYPE_TEXT])) {
