@@ -139,10 +139,11 @@
             "en_US": "Price"
       },
       "localizable": false,
-      "negative_allowed": false,
       "scopable": false,
       "type": "pim_catalog_price_collection",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": true,
+      "negative_allowed": false
     }
   ]
 }

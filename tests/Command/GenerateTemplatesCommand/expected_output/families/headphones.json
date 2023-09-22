@@ -86,7 +86,9 @@
       "group": "template",
       "unique": false,
       "metric_family": "length",
-      "unit": "centimeter"
+      "unit": "centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "width",
@@ -99,7 +101,9 @@
       "group": "template",
       "unique": false,
       "metric_family": "length",
-      "unit": "centimeter"
+      "unit": "centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "bluetooth",
