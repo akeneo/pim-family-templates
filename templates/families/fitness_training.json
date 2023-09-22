@@ -4,6 +4,8 @@
   "description": {
     "en_US": "Achieve your fitness goals with our 'Fitness Training' family template - a dynamic collection of pre-built attributes to seamlessly manage your workouts, empowering you to lead a healthier and more active lifestyle."
   },
+  "attribute_as_main_media": "main_image",
+  "attribute_as_label": "product_title",
   "attributes": [
     {
       "code": "EAN",
@@ -11,7 +13,7 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": true
     },
     {
@@ -20,8 +22,9 @@
       "type": "pim_catalog_price_collection",
       "scopable": false,
       "localizable": false,
-      "group": "template",
-      "unique": false
+      "group": "other",
+      "unique": false,
+      "decimals_allowed": true
     },
     {
       "code": "product_title",
@@ -29,7 +32,7 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -38,7 +41,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -47,7 +50,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -56,7 +59,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -65,7 +68,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -74,7 +77,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -83,7 +86,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -92,7 +95,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -101,9 +104,12 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "length",
@@ -111,9 +117,12 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "width",
@@ -121,9 +130,12 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "weight",
@@ -131,9 +143,12 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Weight"
+      "metric_family": "Weight",
+      "unit": "Killogram",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "number_of_programs",
@@ -141,8 +156,10 @@
       "type": "pim_catalog_number",
       "scopable": false,
       "localizable": false,
-      "group": "template",
-      "unique": false
+      "group": "other",
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "fitness_apparel_type",
@@ -150,7 +167,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -159,9 +176,12 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Speed"
+      "metric_family": "Speed",
+      "unit": "Kilometer_per_hour",
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "bluetooth",
@@ -169,7 +189,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     },
     {
@@ -178,9 +198,12 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Power"
+      "metric_family": "Power",
+      "unit": "Watt",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "max_incline",
@@ -188,9 +211,12 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false,
-      "metric_family": "Angle"
+      "metric_family": "Angle",
+      "unit": "Degree",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "screen",
@@ -198,7 +224,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "group": "template",
+      "group": "other",
       "unique": false
     }
   ]

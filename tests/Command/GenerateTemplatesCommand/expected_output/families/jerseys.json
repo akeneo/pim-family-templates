@@ -6,6 +6,8 @@
   "description": {
     "en_US": "Cheer on your favorite teams with our 'Jerseys' family template - a winning assortment of pre-built attributes to easily manage your sports apparel, showing your team spirit in style."
   },
+  "attribute_as_label": "short_description",
+  "attribute_as_main_media": "atmosphere_image",
   "attributes": [
     {
       "code": "EAN",

@@ -64,6 +64,36 @@
     "labels": { "en_US": "White" },
     "attribute": "color"
   },
+  "strap_color1": {
+    "code": "strap_color1",
+    "labels": { "en_US": "Blue" },
+    "attribute": "strap_color"
+  },
+  "strap_color2": {
+    "code": "strap_color2",
+    "labels": { "en_US": "Black" },
+    "attribute": "strap_color"
+  },
+  "strap_color3": {
+    "code": "strap_color3",
+    "labels": { "en_US": "Pink" },
+    "attribute": "strap_color"
+  },
+  "strap_color4": {
+    "code": "strap_color4",
+    "labels": { "en_US": "Grey" },
+    "attribute": "strap_color"
+  },
+  "strap_color5": {
+    "code": "strap_color5",
+    "labels": { "en_US": "Yellow" },
+    "attribute": "strap_color"
+  },
+  "strap_color6": {
+    "code": "strap_color6",
+    "labels": { "en_US": "White" },
+    "attribute": "strap_color"
+  },
   "size1": { "code": "size1", "labels": { "en_US": "S" }, "attribute": "size" },
   "size2": { "code": "size2", "labels": { "en_US": "M" }, "attribute": "size" },
   "size3": { "code": "size3", "labels": { "en_US": "L" }, "attribute": "size" },
@@ -270,6 +300,91 @@
     "code": "material17",
     "labels": { "en_US": "Carbon fiber" },
     "attribute": "material"
+  },
+  "strap_material1": {
+    "code": "strap_material1",
+    "labels": { "en_US": "Metal" },
+    "attribute": "strap_material"
+  },
+  "strap_material2": {
+    "code": "strap_material2",
+    "labels": { "en_US": "Plastic" },
+    "attribute": "strap_material"
+  },
+  "strap_material3": {
+    "code": "strap_material3",
+    "labels": { "en_US": "Wood" },
+    "attribute": "strap_material"
+  },
+  "strap_material4": {
+    "code": "strap_material4",
+    "labels": { "en_US": "Glass" },
+    "attribute": "strap_material"
+  },
+  "strap_material5": {
+    "code": "strap_material5",
+    "labels": { "en_US": "Synthetic fibers" },
+    "attribute": "strap_material"
+  },
+  "strap_material6": {
+    "code": "strap_material6",
+    "labels": { "en_US": "Bemboo" },
+    "attribute": "strap_material"
+  },
+  "strap_material7": {
+    "code": "strap_material7",
+    "labels": { "en_US": "Ceramic" },
+    "attribute": "strap_material"
+  },
+  "strap_material8": {
+    "code": "strap_material8",
+    "labels": { "en_US": "Titanium" },
+    "attribute": "strap_material"
+  },
+  "strap_material9": {
+    "code": "strap_material9",
+    "labels": { "en_US": "Stainless steel" },
+    "attribute": "strap_material"
+  },
+  "strap_material10": {
+    "code": "strap_material10",
+    "labels": { "en_US": "Steel" },
+    "attribute": "strap_material"
+  },
+  "strap_material11": {
+    "code": "strap_material11",
+    "labels": { "en_US": "White gold" },
+    "attribute": "strap_material"
+  },
+  "strap_material12": {
+    "code": "strap_material12",
+    "labels": { "en_US": "Yellow gold" },
+    "attribute": "strap_material"
+  },
+  "strap_material13": {
+    "code": "strap_material13",
+    "labels": { "en_US": "Rose gold" },
+    "attribute": "strap_material"
+  },
+  "strap_material14": {
+    "code": "strap_material14",
+    "labels": { "en_US": "Platinum" },
+    "attribute": "strap_material"
+  },
+  "strap_material15": {
+    "code": "strap_material15",
+    "labels": { "en_US": "Sterling silver" },
+    "attribute": "strap_material"
+  },
+  "strap_material16": {
+    "code": "strap_material16",
+    "labels": { "en_US": "Silver" },
+    "attribute": "strap_material"
+  },
+  "strap_material17": {
+    "code": "strap_material17",
+    "labels": { "en_US": "Carbon fiber" },
+    "attribute": "strap_material"
   },
   "care_instructions1": {
     "code": "care_instructions1",

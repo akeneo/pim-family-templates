@@ -6,6 +6,8 @@
   "description": {
     "en_US": "Embark on epic adventures with our 'Videogames' family template - an immersive collection of pre-built attributes to seamlessly manage your gaming essentials, unlocking a world of entertainment and excitement."
   },
+  "attribute_as_label": "product_title",
+  "attribute_as_main_media": "main_image",
   "attributes": [
     {
       "code": "EAN",
@@ -72,7 +74,8 @@
       "localizable": false,
       "group": "template",
       "metric_family": "binary",
-      "unique": false
+      "unique": false,
+      "unit": "bytes"
     },
     {
       "code": "language",
@@ -128,6 +131,19 @@
       "localizable": false,
       "group": "template",
       "unique": false
+    },
+    {
+      "code": "price",
+      "group": "template",
+      "labels": {
+            "en_US": "Price"
+      },
+      "localizable": false,
+      "scopable": false,
+      "type": "pim_catalog_price_collection",
+      "unique": false,
+      "decimals_allowed": true,
+      "negative_allowed": false
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "code": "too_long_en_US_description_family",
+  "code": "missing_attribute_decimals_allowed_family",
   "labels": {
     "en_US": "A family"
   },
   "description": {
-    "en_US": "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt."
+    "en_US": "A family"
   },
   "attribute_as_label": "product_title",
   "attribute_as_main_media": "an_image",
@@ -19,6 +19,20 @@
       "localizable": false,
       "group": "template",
       "unique": true
+    },
+    {
+      "code": "height",
+      "labels": {
+        "en_US": "Height"
+      },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false,
+      "metric_family": "Length",
+      "unit": "Centimeter",
+      "negative_allowed": false
     },
     {
       "code": "product_title",

@@ -131,6 +131,8 @@ class GenerateTemplatesCommand extends Command
                     'description' => [
                         'en_US' => $rawDescription['description-en_US'],
                     ],
+                    'attribute_as_main_media' => $rawDescription['attribute_as_main_media'],
+                    'attribute_as_label' => $rawDescription['attribute_as_label'],
                 ];
 
                 return $descriptions;
@@ -156,8 +158,20 @@ class GenerateTemplatesCommand extends Command
                 'unique' => '1' === $rawAttribute['unique'],
             ];
 
-            if ('' !== $rawAttribute['metric_family']) {
+            if (!empty($rawAttribute['metric_family'])) {
                 $attribute['metric_family'] = $rawAttribute['metric_family'];
+            }
+
+            if (!empty($rawAttribute['unit'])) {
+                $attribute['unit'] = $rawAttribute['unit'];
+            }
+
+            if ('' !== $rawAttribute['decimals_allowed']) {
+                $attribute['decimals_allowed'] = '1' === $rawAttribute['decimals_allowed'];
+            }
+
+            if ('' !== $rawAttribute['negative_allowed']) {
+                $attribute['negative_allowed'] = '1' === $rawAttribute['negative_allowed'];
             }
 
             return $attribute;

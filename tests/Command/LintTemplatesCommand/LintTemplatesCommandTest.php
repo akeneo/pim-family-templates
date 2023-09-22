@@ -43,7 +43,11 @@ class LintTemplatesCommandTest extends TestCase
                 '[families][too_long_en_US_label_family][labels][en_US] This value is too long. It should have 255 characters or less.',
                 '[families][extra_fields_family][cc] This field was not expected.',
                 '[families][mismatching_code_family][code] This value should match with file name.',
+                '[families][missing_attribute_as_label_family][attribute_as_label] This field is missing.',
+                '[families][missing_attribute_as_main_media_family][attribute_as_main_media] This field is missing.',
                 '[families][missing_attributes_family][attributes] This field is missing.',
+                '[families][missing_attributes_family][attribute_as_main_media] This value is not a valid media attribute code.',
+                '[families][missing_attributes_family][attribute_as_label] This value is not a valid attribute code.',
                 '[families][missing_code_family][code] This field is missing.',
                 '[families][missing_description_family][description] This field is missing.',
                 '[families][missing_en_US_description_family][description][en_US] This field is missing.',
@@ -56,6 +60,8 @@ class LintTemplatesCommandTest extends TestCase
             self::INVALID_ATTRIBUTES_TEMPLATES_DIRECTORY,
             [
                 '[families][empty_attributes_family][attributes] This collection should contain 1 element or more.',
+                '[families][empty_attributes_family][attribute_as_main_media] This value is not a valid media attribute code.',
+                '[families][empty_attributes_family][attribute_as_label] This value is not a valid attribute code.',
                 '[families][missing_attribute_code_family][attributes][0][code] This field is missing.',
                 '[families][missing_attribute_labels_family][attributes][0][labels] This field is missing.',
                 '[families][missing_attribute_en_US_label_family][attributes][0][labels][en_US] This field is missing.',
@@ -73,8 +79,12 @@ class LintTemplatesCommandTest extends TestCase
                 '[families][wrong_attribute_localizable_family][attributes][0][localizable] This value should be of type bool.',
                 '[families][wrong_attribute_unique_family][attributes][0][unique] This value should be of type bool.',
                 '[families][missing_attribute_metric_family_family][attributes][1][metric_family] This field is missing.',
+                '[families][missing_attribute_metric_family_family][attributes][1][unit] This field is missing.',
                 '[families][empty_attribute_metric_family_family][attributes][1][metric_family] This value should not be blank.',
+                '[families][empty_attribute_metric_family_family][attributes][1][unit] This value should not be blank.',
                 '[families][missing_identifier_attribute_family][attributes] This collection should contain 1 attribute identifier or more.',
+                '[families][missing_attribute_decimals_allowed_family][attributes][1][decimals_allowed] This field is missing.',
+                '[families][missing_attribute_negative_allowed_family][attributes][1][negative_allowed] This field is missing.',
             ]
         ];
         yield 'Invalid attribute options' => [

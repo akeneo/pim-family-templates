@@ -6,6 +6,8 @@
   "description": {
     "en_US": "Embrace timeless elegance with our 'Watches' family template - a sophisticated array of pre-built attributes to easily manage your timepieces, adding a touch of luxury to your everyday style."
   },
+  "attribute_as_label": "product_title",
+  "attribute_as_main_media": "atmosphere_image",
   "attributes": [
     {
       "code": "EAN",
@@ -27,7 +29,8 @@
       "scopable": false,
       "localizable": false,
       "group": "template",
-      "unique": false
+      "unique": false,
+      "decimals_allowed": true
     },
     {
       "code": "product_title",
@@ -107,7 +110,7 @@
       "unique": false
     },
     {
-      "code": "material",
+      "code": "case_material",
       "labels": {
         "en_US": "Case material"
       },
@@ -127,7 +130,10 @@
       "localizable": false,
       "group": "template",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "case_diameter",
@@ -139,7 +145,10 @@
       "localizable": false,
       "group": "template",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Centimeter",
+      "decimals_allowed": true,
+      "negative_allowed": false
     },
     {
       "code": "water_resistance",
@@ -151,7 +160,10 @@
       "localizable": false,
       "group": "template",
       "unique": false,
-      "metric_family": "Length"
+      "metric_family": "Length",
+      "unit": "Meter",
+      "decimals_allowed": false,
+      "negative_allowed": false
     },
     {
       "code": "warranty_period",
@@ -220,7 +232,7 @@
       "unique": false
     },
     {
-      "code": "material",
+      "code": "strap_material",
       "labels": {
         "en_US": "Strap material"
       },
@@ -242,11 +254,22 @@
       "unique": false
     },
     {
-      "code": "color",
+      "code": "strap_color",
       "labels": {
         "en_US": "Strap color"
       },
       "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "instructions",
+      "labels": {
+        "en_US": "Instructions"
+      },
+      "type": "pim_catalog_file",
       "scopable": false,
       "localizable": false,
       "group": "template",

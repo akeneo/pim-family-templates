@@ -41,7 +41,7 @@ class GenerateTemplatesCommandTest extends TestCase
 
         $expectedFiles = array_filter(
             scandir($expectedDirectoryPath),
-            static fn (string $expectedFile) => !in_array($expectedFile, ['.', '..'])
+            static fn (string $expectedFile) => !in_array($expectedFile, ['.', '..', '.DS_Store'])
         );
 
         foreach ($expectedFiles as $expectedFile) {
