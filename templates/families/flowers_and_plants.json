@@ -1,6 +1,6 @@
 {
   "code": "flowers_and_plants",
-  "labels": { "en_US": "Flowers & plants" },
+  "labels": { "en_US": "Flowers and plants" },
   "description": {
     "en_US": "Breathe life into your space with our 'Flowers and Plants' family other - a blooming selection of pre-built attributes to easily manage your green companions, infusing your surroundings with natural beauty."
   },
@@ -107,7 +107,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -120,7 +120,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -133,7 +133,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },

@@ -673,7 +673,7 @@
   },
   "allergen12": {
     "code": "allergen12",
-    "labels": { "en_US": "Sulphur dioxide & sulphites " },
+    "labels": { "en_US": "Sulphur dioxide and sulphites " },
     "attribute": "allergens"
   },
   "allergen13": {

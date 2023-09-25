@@ -188,7 +188,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -201,7 +201,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -214,7 +214,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Kilogram",
+      "unit": "KILOGRAM",
       "decimals_allowed": true,
       "negative_allowed": false
     }

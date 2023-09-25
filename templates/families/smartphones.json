@@ -107,7 +107,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -120,7 +120,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -133,7 +133,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -155,7 +155,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Binary",
-      "unit": "Gigabyte",
+      "unit": "GIGABYTE",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -168,7 +168,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Inch",
+      "unit": "INCH",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -191,7 +191,7 @@
       "unique": false
     },
     {
-      "code": "voltage",
+      "code": "Voltage",
       "labels": { "en_US": "Voltage" },
       "type": "pim_catalog_metric",
       "scopable": false,
@@ -199,7 +199,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Voltage",
-      "unit": "Volt",
+      "unit": "VOLT",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -266,7 +266,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Binary",
-      "unit": "Gigabyte",
+      "unit": "GIGABYTE",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -281,14 +281,14 @@
     },
     {
       "code": "wattage",
-      "labels": { "en_US": "Wattage" },
+      "labels": { "en_US": "WATTage" },
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
       "group": "other",
       "unique": false,
       "metric_family": "Power",
-      "unit": "Watt",
+      "unit": "WATT",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -319,7 +319,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Frequency",
-      "unit": "Hertz",
+      "unit": "HERTZ",
       "decimals_allowed": true,
       "negative_allowed": false
     },

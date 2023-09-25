@@ -98,7 +98,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Gram",
+      "unit": "GRAM",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -120,7 +120,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Volume",
-      "unit": "Liter",
+      "unit": "LITER",
       "decimals_allowed": true,
       "negative_allowed": false
     },

@@ -1,6 +1,6 @@
 {
   "code": "teas_and_herbal_teas",
-  "labels": { "en_US": "Teas & herbal teas" },
+  "labels": { "en_US": "Teas and herbal teas" },
   "description": {
     "en_US": "Unwind with our 'Teas and Herbal Teas' family other - a soothing collection of pre-built attributes to effortlessly manage your beverage essentials, enveloping your senses in serene relaxation."
   },
@@ -98,7 +98,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Gram",
+      "unit": "GRAM",
       "decimals_allowed": true,
       "negative_allowed": false
     },
