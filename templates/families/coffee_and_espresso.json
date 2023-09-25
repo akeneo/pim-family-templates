@@ -145,7 +145,7 @@
     },
     {
       "code": "wattage",
-      "labels": { "en_US": "WATTage" },
+      "labels": { "en_US": "Wattage" },
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
@@ -157,7 +157,7 @@
       "negative_allowed": false
     },
     {
-      "code": "Voltage",
+      "code": "voltage",
       "labels": { "en_US": "Voltage" },
       "type": "pim_catalog_metric",
       "scopable": false,
