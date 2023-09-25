@@ -1,6 +1,6 @@
 {
   "code": "vitamins_and_supplements",
-  "labels": { "en_US": "Vitamins & supplements" },
+  "labels": { "en_US": "Vitamins and supplements" },
   "description": {
     "en_US": "Boost your well-being with our 'Vitamins and Supplements' family other - a healthful collection of pre-built attributes to effortlessly manage your essential nutrients, empowering you to embrace a healthier lifestyle."
   },
@@ -98,7 +98,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Gram",
+      "unit": "GRAM",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -129,7 +129,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Volume",
-      "unit": "Liter",
+      "unit": "LITER",
       "decimals_allowed": true,
       "negative_allowed": false
     },

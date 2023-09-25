@@ -152,7 +152,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Power",
-      "unit": "Watt",
+      "unit": "WATT",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -165,7 +165,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Voltage",
-      "unit": "Volt",
+      "unit": "VOLT",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -196,7 +196,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimer",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -209,7 +209,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimer",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -222,7 +222,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Kilogram",
+      "unit": "KILOGRAM",
       "decimals_allowed": true,
       "negative_allowed": false
     },

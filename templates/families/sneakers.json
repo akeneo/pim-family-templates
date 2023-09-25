@@ -161,7 +161,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Millimeter",
+      "unit": "MILLIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     }

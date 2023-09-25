@@ -134,7 +134,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Gram",
+      "unit": "GRAM",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -147,7 +147,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -183,10 +183,10 @@
       "labels": { "en_US": "Carat weight" },
       "type": "pim_catalog_number",
       "scopable": false,
-      "localizable": true,
+      "localizable": false,
       "group": "other",
       "unique": false,
-      "decimals_allowed": false,
+      "decimals_allowed": true,
       "negative_allowed": false
     },
     {

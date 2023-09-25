@@ -1,6 +1,6 @@
 {
   "code": "bedding_and_towels",
-  "labels": { "en_US": "Bedding & towel" },
+  "labels": { "en_US": "Bedding and towel" },
   "description": {
     "en_US": "Transform your bedroom into a sanctuary of comfort with our 'Bedding and Towels' family template - a cozy selection of pre-built attributes to manage your linen essentials, ensuring restful nights and luxurious self-care moments."
   },
@@ -125,7 +125,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -138,7 +138,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -151,7 +151,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },

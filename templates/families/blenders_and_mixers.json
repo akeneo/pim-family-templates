@@ -1,6 +1,6 @@
 {
   "code": "blenders_and_mixers",
-  "labels": { "en_US": "Blenders & mixers" },
+  "labels": { "en_US": "Blenders and mixers" },
   "description": {
     "en_US": "Blend perfection into your kitchen with our 'Blenders and Mixers' family template - a powerful assortment of pre-built attributes to easily manage your culinary essentials, taking your cooking to new heights."
   },
@@ -143,7 +143,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Power",
-      "unit": "Watt",
+      "unit": "WATT",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -156,7 +156,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Voltage",
-      "unit": "Volt",
+      "unit": "VOLT",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -187,7 +187,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -200,7 +200,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -213,7 +213,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Kilogram",
+      "unit": "KILOGRAM",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -226,7 +226,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Volume",
-      "unit": "Liter",
+      "unit": "LITER",
       "decimals_allowed": true,
       "negative_allowed": false
     }

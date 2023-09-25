@@ -1,6 +1,6 @@
 {
   "code": "coffee_and_espresso",
-  "labels": { "en_US": "Coffee & espresso" },
+  "labels": { "en_US": "Coffee and espresso" },
   "description": {
     "en_US": "Savor the richness of life with our 'Coffee and Espresso' family template - a flavorful assortment of pre-built attributes to effortlessly manage your favorite brews, invigorating your senses with each sip."
   },
@@ -152,7 +152,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Power",
-      "unit": "Watt",
+      "unit": "WATT",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -165,7 +165,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Voltage",
-      "unit": "Volt",
+      "unit": "VOLT",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -196,7 +196,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -209,7 +209,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Length",
-      "unit": "Centimeter",
+      "unit": "CENTIMETER",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -222,7 +222,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "Gram",
+      "unit": "GRAM",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -253,7 +253,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Volume",
-      "unit": "Liter",
+      "unit": "LITER",
       "decimals_allowed": true,
       "negative_allowed": false
     }
