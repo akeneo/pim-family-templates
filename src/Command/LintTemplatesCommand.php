@@ -334,17 +334,23 @@ class LintTemplatesCommand extends Command
 
                     $hasAttributeIdentifier = $hasAttributeIdentifier || 'pim_catalog_identifier' === $attribute['type'];
 
-                    if (self::ATTRIBUTE_TYPE_METRIC === $attribute['type']) {
-                        $this->assertValidStringProperty('metric_family', $attribute, $index, $fileName, $violations);
-                        $this->assertValidStringProperty('unit', $attribute, $index, $fileName, $violations);
-                    }
-
-                    if (in_array($attribute['type'], [self::ATTRIBUTE_TYPE_NUMBER, self::ATTRIBUTE_TYPE_METRIC, self::ATTRIBUTE_TYPE_PRICE_COLLECTION])) {
-                        $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
-                    }
-
-                    if (in_array($attribute['type'], [self::ATTRIBUTE_TYPE_NUMBER, self::ATTRIBUTE_TYPE_METRIC])) {
-                        $this->assertValidBooleanProperty('negative_allowed', $attribute, $index, $fileName, $violations);
+                    switch ($attribute['type']) {
+                        case self::ATTRIBUTE_TYPE_IDENTIFIER:
+                            $this->assertValidAttributeIdentifier($attribute, $index, $fileName, $violations);
+                        break;
+                        case self::ATTRIBUTE_TYPE_METRIC:
+                            $this->assertValidStringProperty('metric_family', $attribute, $index, $fileName, $violations);
+                            $this->assertValidStringProperty('unit', $attribute, $index, $fileName, $violations);
+                            $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
+                            $this->assertValidBooleanProperty('negative_allowed', $attribute, $index, $fileName, $violations);
+                        break;
+                        case self::ATTRIBUTE_TYPE_NUMBER:
+                            $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
+                            $this->assertValidBooleanProperty('negative_allowed', $attribute, $index, $fileName, $violations);
+                        break;
+                        case self::ATTRIBUTE_TYPE_PRICE_COLLECTION:
+                            $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
+                        break;
                     }
                 }
 
@@ -498,6 +504,21 @@ class LintTemplatesCommand extends Command
                     null,
                 ));
                 break;
+        }
+    }
+
+    private function assertValidAttributeIdentifier(array $attribute, int $index, string $fileName, array $violations): void
+    {
+        $propertyPath = sprintf('[attributes][%d]', $index);
+        if ($attribute['unique'] === false) {
+            $violations[$fileName]->add(new ConstraintViolation(
+                'Attribute identifier should be unique.',
+                null,
+                [],
+                null,
+                sprintf('%s[%s]', $propertyPath, 'unique'),
+                null,
+            ));
         }
     }
 }
