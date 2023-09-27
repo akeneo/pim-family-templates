@@ -1,0 +1,79 @@
+{
+  "code": "wrong_attribute_code_family",
+  "labels": {
+    "en_US": "A family"
+  },
+  "description": {
+    "en_US": "A family"
+  },
+  "attribute_as_label": "title_products",
+  "attribute_as_main_media": "an_image",
+  "attributes": [
+    {
+      "code": "EAN",
+      "labels": {
+        "en_US": "Main Identifier"
+      },
+      "type": "pim_catalog_identifier",
+      "localizable": false,
+      "scopable": false,
+      "group": "template",
+      "unique": true
+    },
+    {
+      "code": "title_products",
+      "labels": {
+        "en_US": "Product title"
+      },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "groups",
+      "labels": {
+        "en_US": "groups"
+      },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "enabled",
+      "labels": {
+        "en_US": "enabled"
+      },
+      "type": "pim_catalog_boolean",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "family",
+      "labels": {
+        "en_US": "Family"
+      },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    },
+    {
+      "code": "an_image",
+      "labels": {
+        "en_US": "Atmosphere image"
+      },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "group": "template",
+      "unique": false
+    }
+  ]
+}

@@ -16,6 +16,8 @@
       "missing_attribute_group_family",
       "wrong_attribute_unique_family",
       "wrong_attribute_localizable_family",
+      "wrong_attribute_code_family",
+      "wrong_attribute_identifier_family",
       "wrong_attribute_scopable_family",
       "wrong_attribute_type_family",
       "empty_attribute_group_family",
