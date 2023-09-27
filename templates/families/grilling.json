@@ -116,7 +116,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "CENTIMETER",
+      "unit": "KILOGRAM",
       "decimals_allowed": true,
       "negative_allowed": false
     },
