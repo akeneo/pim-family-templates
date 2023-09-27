@@ -340,20 +340,20 @@ class LintTemplatesCommand extends Command
                     switch ($attribute['type']) {
                         case self::ATTRIBUTE_TYPE_IDENTIFIER:
                             $this->assertValidAttributeIdentifier($attribute, $propertyPath, $fileName, $violations);
-                        break;
+                            break;
                         case self::ATTRIBUTE_TYPE_METRIC:
                             $this->assertValidStringProperty('metric_family', $attribute, $index, $fileName, $violations);
                             $this->assertValidStringProperty('unit', $attribute, $index, $fileName, $violations);
                             $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
                             $this->assertValidBooleanProperty('negative_allowed', $attribute, $index, $fileName, $violations);
-                        break;
+                            break;
                         case self::ATTRIBUTE_TYPE_NUMBER:
                             $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
                             $this->assertValidBooleanProperty('negative_allowed', $attribute, $index, $fileName, $violations);
-                        break;
+                            break;
                         case self::ATTRIBUTE_TYPE_PRICE_COLLECTION:
                             $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
-                        break;
+                            break;
                     }
                 }
 
@@ -512,7 +512,7 @@ class LintTemplatesCommand extends Command
 
     private function assertValidAttributeIdentifier(array $attribute, string $propertyPath, string $fileName, array $violations): void
     {
-        if (array_key_exists('unique', $attribute) && $attribute['unique'] === false) {
+        if (array_key_exists('unique', $attribute) && false === $attribute['unique']) {
             $violations[$fileName]->add(new ConstraintViolation(
                 'Attribute identifier should be unique.',
                 null,
