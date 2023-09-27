@@ -135,7 +135,7 @@
       "unique": false
     },
     {
-      "code": "excluded_toxic_products",
+      "code": "excluded_toxic",
       "labels": { "en_US": "List of excluded toxic products" },
       "type": "pim_catalog_multiselect",
       "scopable": false,

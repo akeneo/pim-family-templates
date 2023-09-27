@@ -14,7 +14,7 @@
       "scopable": false,
       "localizable": false,
       "group": "other",
-      "unique": false
+      "unique": true
     },
     {
       "code": "price",

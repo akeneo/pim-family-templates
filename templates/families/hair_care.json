@@ -98,7 +98,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "KILOGRAM",
+      "unit": "GRAM",
       "decimals_allowed": true,
       "negative_allowed": false
     },

@@ -107,7 +107,7 @@
       "group": "other",
       "unique": false,
       "metric_family": "Weight",
-      "unit": "CENTIMETER",
+      "unit": "GRAM",
       "decimals_allowed": true,
       "negative_allowed": false
     },

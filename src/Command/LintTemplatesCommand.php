@@ -14,6 +14,7 @@ use Symfony\Component\Validator\Constraints\EqualTo;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Constraints\Optional;
+use Symfony\Component\Validator\Constraints\Regex;
 use Symfony\Component\Validator\Constraints\Required;
 use Symfony\Component\Validator\Constraints\Type;
 use Symfony\Component\Validator\Constraints\Unique;
@@ -256,6 +257,7 @@ class LintTemplatesCommand extends Command
                     new All(new Collection([
                         'code' => [
                             new Type('string'),
+                            new Regex('/^(?!(id|associationTypes|categories|categoryId|completeness|enabled|(?i)\bfamily\b|groups|associations|products|scope|treeId|values|category|parent|label|(.)*_(products|groups)|entity_type|attributes|uuid|identifier)$)/i'),
                             new NotBlank(),
                         ],
                         'labels' => new Collection([
@@ -334,17 +336,24 @@ class LintTemplatesCommand extends Command
 
                     $hasAttributeIdentifier = $hasAttributeIdentifier || 'pim_catalog_identifier' === $attribute['type'];
 
-                    if (self::ATTRIBUTE_TYPE_METRIC === $attribute['type']) {
-                        $this->assertValidStringProperty('metric_family', $attribute, $index, $fileName, $violations);
-                        $this->assertValidStringProperty('unit', $attribute, $index, $fileName, $violations);
-                    }
-
-                    if (in_array($attribute['type'], [self::ATTRIBUTE_TYPE_NUMBER, self::ATTRIBUTE_TYPE_METRIC, self::ATTRIBUTE_TYPE_PRICE_COLLECTION])) {
-                        $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
-                    }
-
-                    if (in_array($attribute['type'], [self::ATTRIBUTE_TYPE_NUMBER, self::ATTRIBUTE_TYPE_METRIC])) {
-                        $this->assertValidBooleanProperty('negative_allowed', $attribute, $index, $fileName, $violations);
+                    $propertyPath = sprintf('[attributes][%d]', $index);
+                    switch ($attribute['type']) {
+                        case self::ATTRIBUTE_TYPE_IDENTIFIER:
+                            $this->assertValidAttributeIdentifier($attribute, $propertyPath, $fileName, $violations);
+                            break;
+                        case self::ATTRIBUTE_TYPE_METRIC:
+                            $this->assertValidStringProperty('metric_family', $attribute, $index, $fileName, $violations);
+                            $this->assertValidStringProperty('unit', $attribute, $index, $fileName, $violations);
+                            $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
+                            $this->assertValidBooleanProperty('negative_allowed', $attribute, $index, $fileName, $violations);
+                            break;
+                        case self::ATTRIBUTE_TYPE_NUMBER:
+                            $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
+                            $this->assertValidBooleanProperty('negative_allowed', $attribute, $index, $fileName, $violations);
+                            break;
+                        case self::ATTRIBUTE_TYPE_PRICE_COLLECTION:
+                            $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
+                            break;
                     }
                 }
 
@@ -437,7 +446,7 @@ class LintTemplatesCommand extends Command
         return json_decode(json: $json, flags: JSON_OBJECT_AS_ARRAY);
     }
 
-    private function assertValidStringProperty(string $property, array $attribute, int $index, string $fileName, array &$violations): void
+    private function assertValidStringProperty(string $property, array $attribute, int $index, string $fileName, array $violations): void
     {
         $propertyPath = sprintf('[attributes][%d][%s]', $index, $property);
         switch (true) {
@@ -474,7 +483,7 @@ class LintTemplatesCommand extends Command
         }
     }
 
-    private function assertValidBooleanProperty(string $property, array $attribute, int $index, string $fileName, array &$violations): void
+    private function assertValidBooleanProperty(string $property, array $attribute, int $index, string $fileName, array $violations): void
     {
         $propertyPath = sprintf('[attributes][%d][%s]', $index, $property);
         switch (true) {
@@ -498,6 +507,20 @@ class LintTemplatesCommand extends Command
                     null,
                 ));
                 break;
+        }
+    }
+
+    private function assertValidAttributeIdentifier(array $attribute, string $propertyPath, string $fileName, array $violations): void
+    {
+        if (array_key_exists('unique', $attribute) && false === $attribute['unique']) {
+            $violations[$fileName]->add(new ConstraintViolation(
+                'Attribute identifier should be unique.',
+                null,
+                [],
+                null,
+                sprintf('%s[%s]', $propertyPath, 'unique'),
+                null,
+            ));
         }
     }
 }

@@ -202,7 +202,7 @@
       "localizable": false,
       "group": "other",
       "unique": false,
-      "metric_family": "Power",
+      "metric_family": "Voltage",
       "unit": "VOLT",
       "decimals_allowed": true,
       "negative_allowed": false

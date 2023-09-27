@@ -1866,30 +1866,30 @@
     "labels": { "en_US": "Dermatologically tested" },
     "attribute": "standards"
   },
-  "excluded_toxic_products1": {
-    "code": "excluded_toxic_products1",
+  "excluded_toxic1": {
+    "code": "excluded_toxic1",
     "labels": { "en_US": "Chlorine bleach" },
-    "attribute": "excluded_toxic_products"
+    "attribute": "excluded_toxic"
   },
-  "excluded_toxic_products2": {
-    "code": "excluded_toxic_products2",
+  "excluded_toxic2": {
+    "code": "excluded_toxic2",
     "labels": { "en_US": "Lotion" },
-    "attribute": "excluded_toxic_products"
+    "attribute": "excluded_toxic"
   },
-  "excluded_toxic_products3": {
-    "code": "excluded_toxic_products3",
+  "excluded_toxic3": {
+    "code": "excluded_toxic3",
     "labels": { "en_US": "Perfume" },
-    "attribute": "excluded_toxic_products"
+    "attribute": "excluded_toxic"
   },
-  "excluded_toxic_products4": {
-    "code": "excluded_toxic_products4",
+  "excluded_toxic4": {
+    "code": "excluded_toxic4",
     "labels": { "en_US": "Latex" },
-    "attribute": "excluded_toxic_products"
+    "attribute": "excluded_toxic"
   },
-  "excluded_toxic_products5": {
-    "code": "excluded_toxic_products5",
+  "excluded_toxic5": {
+    "code": "excluded_toxic5",
     "labels": { "en_US": "Endocrine disruptor" },
-    "attribute": "excluded_toxic_products"
+    "attribute": "excluded_toxic"
   },
   "warranty_period1": {
     "code": "warranty_period1",
