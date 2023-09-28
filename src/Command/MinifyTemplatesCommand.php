@@ -83,7 +83,10 @@ class MinifyTemplatesCommand extends Command
 
     private function addAttributeOptionsToFamilyTemplates(array $familyTemplates, array $attributeOptions): array
     {
-        return array_map(fn (array $familyTemplate) => $this->addAttributeOptionsToFamilyTemplate($familyTemplate, $attributeOptions), $familyTemplates);
+        return array_map(
+            fn (array $familyTemplate) => $this->addAttributeOptionsToFamilyTemplate($familyTemplate, $attributeOptions),
+            $familyTemplates,
+        );
     }
 
     private function addAttributeOptionsToFamilyTemplate(array $familyTemplate, array $attributeOptions): array
