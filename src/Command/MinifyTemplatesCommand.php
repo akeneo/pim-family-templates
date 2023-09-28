@@ -29,11 +29,11 @@ class MinifyTemplatesCommand extends Command
         $familyTemplates = $this->readFamilyTemplates($templatesDirectory);
         $attributeOptions = $this->readAttributeOptions($templatesDirectory);
 
+        $familyTemplates = $this->addAttributeOptionsToFamilyTemplates($familyTemplates, $attributeOptions);
         $outputFile = $input->getArgument('output_file');
         file_put_contents($outputFile, json_encode([
             'industries' => $industries,
             'family_templates' => $familyTemplates,
-            'attribute_options' => $attributeOptions,
         ]));
 
         return Command::SUCCESS;
@@ -79,5 +79,29 @@ class MinifyTemplatesCommand extends Command
         $json = file_get_contents($filePath);
 
         return json_decode(json: $json, flags: JSON_OBJECT_AS_ARRAY);
+    }
+
+    private function addAttributeOptionsToFamilyTemplates(array $familyTemplates, array $attributeOptions): array
+    {
+        return array_map(
+            fn (array $familyTemplate) => $this->addAttributeOptionsToFamilyTemplate($familyTemplate, $attributeOptions),
+            $familyTemplates,
+        );
+    }
+
+    private function addAttributeOptionsToFamilyTemplate(array $familyTemplate, array $attributeOptions): array
+    {
+        $attributesWithOptions = array_filter(
+            $familyTemplate['attributes'],
+            static fn (array $attribute) => in_array($attribute['type'], ['pim_catalog_simpleselect', 'pim_catalog_multiselect']),
+        );
+
+        $attributeCodes = array_map(static fn (array $attribute) => $attribute['code'], $attributesWithOptions);
+        $familyTemplate['attribute_options'] = array_filter(
+            $attributeOptions,
+            static fn (array $attributeOption) => in_array($attributeOption['attribute'], $attributeCodes),
+        );
+
+        return $familyTemplate;
     }
 }
