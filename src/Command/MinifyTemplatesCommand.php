@@ -91,8 +91,12 @@ class MinifyTemplatesCommand extends Command
 
     private function addAttributeOptionsToFamilyTemplate(array $familyTemplate, array $attributeOptions): array
     {
-        $attributeCodes = array_map(static fn ($attribute) => $attribute['code'], $familyTemplate['attributes']);
+        $attributesWithOptions = array_filter(
+            $familyTemplate['attributes'],
+            static fn (array $attribute) => in_array($attribute['type'], ['pim_catalog_simpleselect', 'pim_catalog_multiselect']),
+        );
 
+        $attributeCodes = array_map(static fn (array $attribute) => $attribute['code'], $attributesWithOptions);
         $familyTemplate['attribute_options'] = array_filter(
             $attributeOptions,
             static fn (array $attributeOption) => in_array($attributeOption['attribute'], $attributeCodes),
