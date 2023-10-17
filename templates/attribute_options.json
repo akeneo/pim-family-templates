@@ -388,37 +388,37 @@
   },
   "care_instructions1": {
     "code": "care_instructions1",
-    "labels": { "en_US": "Machine Wash" },
+    "labels": { "en_US": "Machine wash" },
     "attribute": "care_instructions"
   },
   "care_instructions2": {
     "code": "care_instructions2",
-    "labels": { "en_US": "Hand Wash" },
+    "labels": { "en_US": "Hand wash" },
     "attribute": "care_instructions"
   },
   "care_instructions3": {
     "code": "care_instructions3",
-    "labels": { "en_US": "Dry. Clean" },
+    "labels": { "en_US": "Dry clean" },
     "attribute": "care_instructions"
   },
   "care_instructions4": {
     "code": "care_instructions4",
-    "labels": { "en_US": "Do Not Wash" },
+    "labels": { "en_US": "Do not wash" },
     "attribute": "care_instructions"
   },
   "care_instructions5": {
     "code": "care_instructions5",
-    "labels": { "en_US": "Tumble Dry" },
+    "labels": { "en_US": "Tumble dry" },
     "attribute": "care_instructions"
   },
   "care_instructions6": {
     "code": "care_instructions6",
-    "labels": { "en_US": "Line Dry" },
+    "labels": { "en_US": "Line dry" },
     "attribute": "care_instructions"
   },
   "care_instructions7": {
     "code": "care_instructions7",
-    "labels": { "en_US": "Dry Flat" },
+    "labels": { "en_US": "Dry flat" },
     "attribute": "care_instructions"
   },
   "care_instructions8": {
@@ -428,7 +428,7 @@
   },
   "care_instructions9": {
     "code": "care_instructions9",
-    "labels": { "en_US": "Do Not Irin" },
+    "labels": { "en_US": "Do not iron" },
     "attribute": "care_instructions"
   },
   "care_instructions10": {
@@ -578,7 +578,7 @@
   },
   "neck_style5": {
     "code": "neck_style5",
-    "labels": { "en_US": "Asymetric" },
+    "labels": { "en_US": "Asymmetric" },
     "attribute": "neck_style"
   },
   "heel_type1": {
