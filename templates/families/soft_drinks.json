@@ -2,7 +2,7 @@
   "code": "soft_drinks",
   "labels": { "en_US": "Soft drinks" },
   "description": {
-    "en_US": "Quench your thirst with our 'Soft Drinks' family other - a refreshing selection of pre-built attributes to effortlessly manage your favorite beverages, cooling you off with every sip."
+    "en_US": "Quench your thirst with our 'Soft Drinks' family template - a refreshing selection of pre-built attributes to effortlessly manage your favorite beverages, cooling you off with every sip."
   },
   "attribute_as_main_media": "main_image",
   "attribute_as_label": "product_title",
