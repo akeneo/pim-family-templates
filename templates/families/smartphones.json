@@ -161,7 +161,7 @@
     },
     {
       "code": "screen_size",
-      "labels": { "en_US": "Screen size (inches)" },
+      "labels": { "en_US": "Screen size" },
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
