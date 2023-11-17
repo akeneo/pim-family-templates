@@ -4,15 +4,31 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
+use Akeneo\PimFamilyTemplates\Command\CalculateMetricsCommand;
 use Akeneo\PimFamilyTemplates\Command\GenerateTemplatesCommand;
 use Akeneo\PimFamilyTemplates\Command\LintTemplatesCommand;
 use Akeneo\PimFamilyTemplates\Command\MinifyTemplatesCommand;
+use JiraRestApi\Board\BoardService;
+use JiraRestApi\Configuration\ArrayConfiguration;
 use Symfony\Component\Console\Application;
+use Symfony\Component\Dotenv\Dotenv;
+
+$dotenv = new Dotenv();
+$dotenv->loadEnv(
+    path: __DIR__.'/../.env',
+    overrideExistingVars: true,
+);
+
+$boardService = new BoardService(new ArrayConfiguration([
+    'jiraHost' => $_ENV['JIRA_HOST'] ?? '',
+    'jiraUser' => $_ENV['JIRA_USER'] ?? '',
+    'jiraPassword' => $_ENV['JIRA_TOKEN'] ?? ''
+]));
 
 $application = new Application();
-
 $application->add(new GenerateTemplatesCommand());
 $application->add(new MinifyTemplatesCommand());
 $application->add(new LintTemplatesCommand());
+$application->add(new CalculateMetricsCommand($boardService));
 
 $application->run();
