@@ -154,7 +154,6 @@ class GenerateTemplatesCommand extends Command
                 'type' => $rawAttribute['type'],
                 'scopable' => '1' === $rawAttribute['scopable'],
                 'localizable' => '1' === $rawAttribute['localizable'],
-                'group' => $rawAttribute['group'],
                 'unique' => '1' === $rawAttribute['unique'],
             ];
 

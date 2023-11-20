@@ -279,7 +279,6 @@ class LintTemplatesCommand extends Command
                             new Type('bool'),
                             new Required(),
                         ],
-                        'group' => new NotBlank(),
                         'unique' => [
                             new Type('bool'),
                             new Required(),
