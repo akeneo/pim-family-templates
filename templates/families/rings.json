@@ -13,7 +13,6 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": true
     },
     {
@@ -22,7 +21,6 @@
       "type": "pim_catalog_price_collection",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false,
       "decimals_allowed": true
     },
@@ -32,7 +30,6 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "group": "other",
       "unique": false
     },
     {
@@ -41,7 +38,6 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "other",
       "unique": false
     },
     {
@@ -50,7 +46,6 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "other",
       "unique": false
     },
     {
@@ -59,7 +54,6 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
@@ -68,7 +62,6 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
@@ -77,7 +70,6 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
@@ -86,125 +78,98 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "other",
-      "unique": false
-    },
-    {
-      "code": "size",
-      "labels": { "en_US": "Size" },
-      "type": "pim_catalog_simpleselect",
-      "scopable": false,
-      "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
       "code": "material",
-      "labels": { "en_US": "Material" },
+      "labels": { "en_US": "Case material" },
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
-      "code": "style",
-      "labels": { "en_US": "Style" },
+      "code": "case_thickness",
+      "labels": { "en_US": "Case thickness" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "metric_family": "Length",
+      "unit": "MILLIMETER",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "case_diameter",
+      "labels": { "en_US": "Case diameter" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "metric_family": "Length",
+      "unit": "MILLIMETER",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "water_resistance",
+      "labels": { "en_US": "Water resistance" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "metric_family": "Pressure",
+      "unit": "BAR",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "warranty_period",
+      "labels": { "en_US": "Warranty period" },
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
-      "code": "gemstone_details",
-      "labels": { "en_US": "Gemstone details" },
-      "type": "pim_catalog_multiselect",
+      "code": "watch_type",
+      "labels": { "en_US": "Watch type" },
+      "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
-      "code": "weight",
-      "labels": { "en_US": "Weight" },
-      "type": "pim_catalog_metric",
+      "code": "movement_type",
+      "labels": { "en_US": "Movement type" },
+      "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "other",
-      "unique": false,
-      "metric_family": "Weight",
-      "unit": "GRAM",
-      "decimals_allowed": true,
-      "negative_allowed": false
-    },
-    {
-      "code": "band_width",
-      "labels": { "en_US": "Band width" },
-      "type": "pim_catalog_metric",
-      "scopable": false,
-      "localizable": false,
-      "group": "other",
-      "unique": false,
-      "metric_family": "Length",
-      "unit": "CENTIMETER",
-      "decimals_allowed": true,
-      "negative_allowed": false
-    },
-    {
-      "code": "resizable",
-      "labels": { "en_US": "Resizable" },
-      "type": "pim_catalog_boolean",
-      "scopable": false,
-      "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
-      "code": "collection",
-      "labels": { "en_US": "Collection / Theme" },
-      "type": "pim_catalog_multiselect",
+      "code": "movement_calibre",
+      "labels": { "en_US": "Calibre" },
+      "type": "pim_catalog_text",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
-      "code": "certification",
-      "labels": { "en_US": "Certification" },
-      "type": "pim_catalog_textarea",
+      "code": "color",
+      "labels": { "en_US": "Dial color" },
+      "type": "pim_catalog_simpleselect",
       "scopable": false,
-      "localizable": true,
-      "group": "other",
+      "localizable": false,
       "unique": false
     },
     {
-      "code": "carat_weight",
-      "labels": { "en_US": "Carat weight" },
-      "type": "pim_catalog_number",
+      "code": "display_type",
+      "labels": { "en_US": "Display type" },
+      "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "other",
-      "unique": false,
-      "decimals_allowed": true,
-      "negative_allowed": false
-    },
-    {
-      "code": "jewelry_cut",
-      "labels": { "en_US": "Cut" },
-      "type": "pim_catalog_multiselect",
-      "scopable": false,
-      "localizable": false,
-      "group": "other",
-      "unique": false
-    },
-    {
-      "code": "clarity",
-      "labels": { "en_US": "Clarity" },
-      "type": "pim_catalog_multiselect",
-      "scopable": false,
-      "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
@@ -213,7 +178,80 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "other",
+      "unique": false
+    },
+    {
+      "code": "strap_material",
+      "labels": { "en_US": "Strap material" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false
+    },
+    {
+      "code": "strap_type",
+      "labels": { "en_US": "Strap type" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false
+    },
+    {
+      "code": "strap_color",
+      "labels": { "en_US": "Strap color" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false
+    },
+    {
+      "code": "watch_complications",
+      "labels": { "en_US": "Complications" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false
+    },
+    {
+      "code": "number_of_jewels",
+      "labels": { "en_US": "Number of Jewels" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "code": "power_reserve",
+      "labels": { "en_US": "Power Reserve" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "metric_family": "Duration",
+      "unit": "HOUR",
+      "decimals_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "code": "frequency",
+      "labels": { "en_US": "Frequency" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "metric_family": "Frequency",
+      "unit": "HERTZ",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "strap_clasp_type",
+      "labels": { "en_US": "Clasp" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
       "unique": false
     }
   ]

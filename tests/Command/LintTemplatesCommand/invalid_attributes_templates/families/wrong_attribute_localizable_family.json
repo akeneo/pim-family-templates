@@ -17,7 +17,6 @@
       "type": "pim_catalog_identifier",
       "localizable": 1,
       "scopable": false,
-      "group": "template",
       "unique": true
     },
     {
@@ -28,7 +27,6 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "group": "template",
       "unique": false
     },
     {
@@ -39,7 +37,6 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
       "unique": false
     },
     {
@@ -50,7 +47,6 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
       "unique": false
     }
   ]
