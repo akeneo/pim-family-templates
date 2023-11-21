@@ -6,7 +6,8 @@
         "openspout/openspout": "^4.15",
         "symfony/console": "^6.3",
         "symfony/validator": "^6.3",
-        "lesstif/php-jira-rest-client": "^5.7"
+        "lesstif/php-jira-rest-client": "^5.7",
+        "symfony/process": "^6.3"
     },
     "autoload": {
         "psr-4": {

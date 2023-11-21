@@ -1,4 +1,5 @@
 PHP = docker compose run --rm php
+PHP_GCLOUD = docker compose run --rm php-gcloud
 NODE = docker compose run --rm node
 
 .PHONY: install
@@ -45,4 +46,4 @@ minify-templates:
 
 .PHONY: calculate-metrics
 calculate-metrics:
-	$(PHP) bin/console metrics:calculate
+	$(PHP_GCLOUD) bin/console metrics:calculate
