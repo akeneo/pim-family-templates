@@ -17,7 +17,6 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "group": "template",
       "unique": true
     },
     {
@@ -28,7 +27,6 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "template",
       "unique": false,
       "metric_family": "Length",
       "unit": "Centimeter",
@@ -42,7 +40,6 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "group": "template",
       "unique": false
     },
     {
@@ -53,7 +50,6 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "template",
       "unique": false
     },
     {
@@ -64,7 +60,6 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "template",
       "unique": false
     }
   ]

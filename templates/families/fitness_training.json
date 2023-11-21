@@ -13,7 +13,6 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": true
     },
     {
@@ -22,7 +21,6 @@
       "type": "pim_catalog_price_collection",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false,
       "decimals_allowed": true
     },
@@ -32,7 +30,6 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "group": "other",
       "unique": false
     },
     {
@@ -41,7 +38,6 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "other",
       "unique": false
     },
     {
@@ -50,7 +46,6 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "group": "other",
       "unique": false
     },
     {
@@ -59,7 +54,6 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
@@ -68,7 +62,6 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
@@ -77,7 +70,6 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
@@ -86,7 +78,6 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
@@ -95,7 +86,6 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
@@ -104,7 +94,6 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false,
       "metric_family": "Length",
       "unit": "CENTIMETER",
@@ -117,7 +106,6 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false,
       "metric_family": "Length",
       "unit": "CENTIMETER",
@@ -130,7 +118,6 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false,
       "metric_family": "Length",
       "unit": "CENTIMETER",
@@ -143,7 +130,6 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false,
       "metric_family": "Weight",
       "unit": "KILOGRAM",
@@ -156,7 +142,6 @@
       "type": "pim_catalog_number",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false,
       "decimals_allowed": false,
       "negative_allowed": false
@@ -167,7 +152,6 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
@@ -176,7 +160,6 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false,
       "metric_family": "Speed",
       "unit": "KILOMETER_PER_HOUR",
@@ -189,7 +172,6 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false
     },
     {
@@ -198,7 +180,6 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false,
       "metric_family": "Power",
       "unit": "WATT",
@@ -211,7 +192,6 @@
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false,
       "metric_family": "Angle",
       "unit": "DEGREE",
@@ -224,7 +204,6 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "group": "other",
       "unique": false
     }
   ]
