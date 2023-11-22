@@ -2,6 +2,7 @@
 
 namespace Akeneo\PimFamilyTemplates\Command;
 
+use GuzzleHttp\ClientInterface;
 use JiraRestApi\Board\BoardService;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -21,6 +22,7 @@ class CalculateMetricsCommand extends Command
 
     public function __construct(
         private readonly BoardService $jiraBoardService,
+        private readonly ClientInterface $client,
     ) {
         parent::__construct();
     }
@@ -38,11 +40,15 @@ class CalculateMetricsCommand extends Command
         $output->writeln(sprintf('Fetched %d customers which have kickoff date older less than 6 months from Jira', count($customers)));
 
         $projectIds = array_keys($customers);
-        $customerNamesAndInstances = $this->findCustomerNamesAndInstancesFromBigQuery($projectIds);
-        $output->writeln(sprintf('Fetched %d (out of %d) customer names and instances from BigQuery', count($customerNamesAndInstances), count($customers)));
+        $customersInfo = $this->findCustomerInfosFromBigQuery($projectIds);
+        $output->writeln(sprintf('Fetched %d (out of %d) customers info from BigQuery', count($customersInfo), count($customers)));
 
-        // Fetch client which used the feature from Datadog
-        // Calculate % of client which used the feature
+        $instances = array_column($customersInfo, 'instances', 'project_id');
+        $customersWhoUsedFeature = $this->findCustomersWhoUsedFeatureFromDatadog($instances);
+        $output->writeln(sprintf('Found %d (out of %d) customers who used the feature from Datadog', count($customersWhoUsedFeature), count($customers)));
+
+        $metric = count($customersWhoUsedFeature) / count($customers) * 100;
+        $output->writeln(sprintf('Metric 1: %f percents of new customers (6 months) has used Family Template feature during the last two weeks', $metric));
 
         return Command::SUCCESS;
     }
@@ -52,7 +58,7 @@ class CalculateMetricsCommand extends Command
      */
     private function findCustomersOlderLessThan6MonthsFromJira(): array
     {
-        $jql = '"Account ID[Short text]" is not empty AND "SF Project ID[Short text]" is not empty AND "Project Kick Off Date[Date]" > startOfDay(-6M)';
+        $jql = '"SF Project ID[Short text]" is not empty AND "Project Kick Off Date[Date]" > startOfDay(-6M)';
 
         $issues = $this->jiraBoardService->getBoardIssues(self::SERVICES_JIRA_BOARD_ID, [
             'jql' => $jql,
@@ -77,7 +83,7 @@ class CalculateMetricsCommand extends Command
         return $customers;
     }
 
-    private function findCustomerNamesAndInstancesFromBigQuery(array $projectIds): array
+    private function findCustomerInfosFromBigQuery(array $projectIds): array
     {
         $sql = <<<SQL
 SELECT sf_project.Id as sf_project_id, sf_project.Customer_Account_Name__c as customer_name, JSON_OBJECT(ARRAY_AGG(papo_product.environment), ARRAY_AGG(papo_product.instance_fqdn_prefix)) as instances
@@ -101,18 +107,72 @@ SQL;
 
         $rows = json_decode($process->getOutput(), true);
 
-        if (false === $rows) {
-            throw new \RuntimeException(sprintf('Unable to fetch customer instances from BigQuery : %s.', $process->getErrorOutput()));
+        if (null === $rows) {
+            throw new \RuntimeException(sprintf('Unable to fetch customer instances from BigQuery. Error output: %s', $process->getErrorOutput()));
         }
 
-        $customerNamesAndInstances = [];
+        $customersInfo = [];
         foreach ($rows as $row) {
-            $customerNamesAndInstances[$row['sf_project_id']] = [
+            $customersInfo[$row['sf_project_id']] = [
                 'name' => $row['customer_name'],
-                'instances' => $row['instances'],
+                'instances' => json_decode($row['instances'], true),
             ];
         }
 
-        return $customerNamesAndInstances;
+        return $customersInfo;
+    }
+
+    private function findCustomersWhoUsedFeatureFromDatadog(array $customersInstances): array
+    {
+        $search = [
+            'filter' => [
+                'query' => '"New family created from template" @channel:app @context.akeneo_context:"Family template"',
+                'from' => 'now-2w',
+            ],
+            'page' => [
+                'limit' => 1000,
+            ],
+        ];
+
+        $response = $this->client->request(
+            'POST',
+            '/api/v2/logs/events/search',
+            [
+                'body' => json_encode($search),
+            ],
+        );
+
+        $logs = json_decode($response->getBody()->getContents(), true)['data'];
+
+        $tenantIdsWhoUsedFeature = [];
+        foreach ($logs as $log) {
+            $tenantId = $log['attributes']['attributes']['tenant_id'] ?? null;
+            if (null === $tenantId) {
+                continue;
+            }
+            if (in_array($tenantId, $tenantIdsWhoUsedFeature)) {
+                continue;
+            }
+
+            $tenantIdsWhoUsedFeature[] = $tenantId;
+        }
+
+        $customersWhoUsedFeature = [];
+        foreach ($customersInstances as $projectId => $customerInstances) {
+            foreach ($customerInstances as $customerInstance) {
+                if (in_array($projectId, $customersWhoUsedFeature)) {
+                    break;
+                }
+                if (null === $customerInstance) {
+                    continue;
+                }
+                $instanceTenantId = sprintf('srnt-%s', $customerInstance);
+                if (in_array($instanceTenantId, $tenantIdsWhoUsedFeature)) {
+                    $customersWhoUsedFeature[] = $projectId;
+                }
+            }
+        }
+
+        return $customersWhoUsedFeature;
     }
 }

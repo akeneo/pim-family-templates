@@ -8,6 +8,7 @@ use Akeneo\PimFamilyTemplates\Command\CalculateMetricsCommand;
 use Akeneo\PimFamilyTemplates\Command\GenerateTemplatesCommand;
 use Akeneo\PimFamilyTemplates\Command\LintTemplatesCommand;
 use Akeneo\PimFamilyTemplates\Command\MinifyTemplatesCommand;
+use GuzzleHttp\Client;
 use JiraRestApi\Board\BoardService;
 use JiraRestApi\Configuration\ArrayConfiguration;
 use Symfony\Component\Console\Application;
@@ -25,10 +26,20 @@ $boardService = new BoardService(new ArrayConfiguration([
     'jiraPassword' => $_ENV['JIRA_TOKEN'] ?? ''
 ]));
 
+$datadogClient = new Client([
+    'base_uri' => $_ENV['DATADOG_API_URL'],
+    'headers' => [
+        'DD-API-KEY' => $_ENV['DATADOG_API_KEY'],
+        'DD-APPLICATION_KEY' => $_ENV['DATADOG_APP_KEY'],
+        'Accept' => 'application/json',
+        'Content-Type' => 'application/json',
+    ],
+]);
+
 $application = new Application();
 $application->add(new GenerateTemplatesCommand());
 $application->add(new MinifyTemplatesCommand());
 $application->add(new LintTemplatesCommand());
-$application->add(new CalculateMetricsCommand($boardService));
+$application->add(new CalculateMetricsCommand($boardService, $datadogClient));
 
 $application->run();
