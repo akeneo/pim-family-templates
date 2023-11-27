@@ -17,6 +17,7 @@ class CalculateMetricsCommand extends Command
     private const KICK_OFF_DATE_JIRA_CUSTOM_FIELD = 'customfield_13564';
     private const GCP_LOCATION = 'eu';
     private const GCP_PROJECT_ID = 'akecld-prd-pim-saas-prod';
+    private const DATADOG_LOGS_LIMIT = 1000;
 
     protected static $defaultName = 'metrics:calculate';
 
@@ -36,15 +37,14 @@ class CalculateMetricsCommand extends Command
 
     public function execute(InputInterface $input, OutputInterface $output): int
     {
-        $customers = $this->findCustomersOlderLessThan6MonthsFromJira();
-        $output->writeln(sprintf('Fetched %d customers which have kickoff date older less than 6 months from Jira', count($customers)));
+        $customers = $this->findSaasCustomersOlderLessThan6MonthsFromJira();
+        $output->writeln(sprintf('Fetched %d SaaS customers which have kickoff date older less than 6 months from Jira', count($customers)));
 
         $projectIds = array_keys($customers);
-        $customersInfo = $this->findCustomerInfosFromBigQuery($projectIds);
-        $output->writeln(sprintf('Fetched %d (out of %d) customers info from BigQuery', count($customersInfo), count($customers)));
+        $customersInstances = $this->findCustomersInstancesFromBigQuery($projectIds);
+        $output->writeln(sprintf('Fetched %d (out of %d) customers instances from BigQuery', count($customersInstances), count($customers)));
 
-        $instances = array_column($customersInfo, 'instances', 'project_id');
-        $customersWhoUsedFeature = $this->findCustomersWhoUsedFeatureFromDatadog($instances);
+        $customersWhoUsedFeature = $this->findCustomersWhoUsedFeatureFromDatadog($customersInstances);
         $output->writeln(sprintf('Found %d (out of %d) customers who used the feature from Datadog', count($customersWhoUsedFeature), count($customers)));
 
         $metric = count($customersWhoUsedFeature) / count($customers) * 100;
@@ -56,7 +56,7 @@ class CalculateMetricsCommand extends Command
     /**
      * @return array<string, array{sf_project_id: string, kick_off_date: \DateTimeImmutable}>
      */
-    private function findCustomersOlderLessThan6MonthsFromJira(): array
+    private function findSaasCustomersOlderLessThan6MonthsFromJira(): array
     {
         $jql = '"SF Project ID[Short text]" is not empty AND "Project Kick Off Date[Date]" > startOfDay(-6M)';
 
@@ -66,7 +66,7 @@ class CalculateMetricsCommand extends Command
         ]);
 
         if (self::SERVICES_JIRA_MAX_RESULTS <= count($issues)) {
-            throw new \RuntimeException('Max results reached. Increase it or implement pagination.');
+            throw new \RuntimeException('Max results reached on Jira API. Increase it or implement pagination.');
         }
 
         $customers = [];
@@ -83,14 +83,18 @@ class CalculateMetricsCommand extends Command
         return $customers;
     }
 
-    private function findCustomerInfosFromBigQuery(array $projectIds): array
+    private function findCustomersInstancesFromBigQuery(array $projectIds): array
     {
         $sql = <<<SQL
-SELECT sf_project.Id as sf_project_id, sf_project.Customer_Account_Name__c as customer_name, JSON_OBJECT(ARRAY_AGG(papo_product.environment), ARRAY_AGG(papo_product.instance_fqdn_prefix)) as instances
-FROM `ake-actionable-product-data.source_salesforce.Project__c` sf_project
-JOIN `ake-actionable-product-data.source_portal.akeneo_pp_product` papo_product ON CAST(papo_product.project_id AS STRING) = sf_project.PapoID__c
-WHERE sf_project.PIMType__c IN ('Cloud Serenity Mode', 'Growth Edition') AND papo_product.discr = 'pim_saas_instance' AND sf_project.Id IN (%s)
-GROUP BY sf_project.Id, sf_project.Customer_Account_Name__c;
+SELECT
+  sf_project.project_record_id as sf_project_id,
+  ARRAY_AGG(JSON_OBJECT(['type', 'tenant_id'], [papo_product.environment, papo_product.instance_name])) as instances
+FROM
+  `ake-actionable-product-data.pim_customers_data.sf_project` sf_project
+JOIN `ake-actionable-product-data.pim_customers_data.papo_product` papo_product ON sf_project.partners_portal_project_id = papo_product.project_id
+WHERE
+  sf_project.pim_version = 'SaaS' AND sf_project.project_record_id IN (%s)
+GROUP BY sf_project.project_record_id;
 SQL;
         $sqlProjectIds = join(', ', array_map(static fn (string $projectId) => sprintf("'%s'", $projectId), $projectIds));
 
@@ -111,26 +115,26 @@ SQL;
             throw new \RuntimeException(sprintf('Unable to fetch customer instances from BigQuery. Error output: %s', $process->getErrorOutput()));
         }
 
-        $customersInfo = [];
+        $customersInstances = [];
         foreach ($rows as $row) {
-            $customersInfo[$row['sf_project_id']] = [
-                'name' => $row['customer_name'],
-                'instances' => json_decode($row['instances'], true),
-            ];
+            $customersInstances[$row['sf_project_id']] = array_map(
+                static fn (string $rawInstances) => json_decode(json: $rawInstances, associative: true, flags: JSON_OBJECT_AS_ARRAY),
+                $row['instances'],
+            );
         }
 
-        return $customersInfo;
+        return $customersInstances;
     }
 
     private function findCustomersWhoUsedFeatureFromDatadog(array $customersInstances): array
     {
         $search = [
             'filter' => [
-                'query' => '"New family created from template" @channel:app @context.akeneo_context:"Family template"',
-                'from' => 'now-2w',
+                'query' => '"New family created from template" @channel:app @context.akeneo_context:"Family template" tags:akecld-prd-pim-saas-prod',
+                'from' => 'now-15d',
             ],
             'page' => [
-                'limit' => 1000,
+                'limit' => self::DATADOG_LOGS_LIMIT,
             ],
         ];
 
@@ -143,6 +147,10 @@ SQL;
         );
 
         $logs = json_decode($response->getBody()->getContents(), true)['data'];
+
+        if (self::DATADOG_LOGS_LIMIT <= count($logs)) {
+            throw new \RuntimeException('Logs limit reached on Datadog API. Increase it or implement pagination.');
+        }
 
         $tenantIdsWhoUsedFeature = [];
         foreach ($logs as $log) {
@@ -163,11 +171,7 @@ SQL;
                 if (in_array($projectId, $customersWhoUsedFeature)) {
                     break;
                 }
-                if (null === $customerInstance) {
-                    continue;
-                }
-                $instanceTenantId = sprintf('srnt-%s', $customerInstance);
-                if (in_array($instanceTenantId, $tenantIdsWhoUsedFeature)) {
+                if (in_array($customerInstance['tenant_id'], $tenantIdsWhoUsedFeature)) {
                     $customersWhoUsedFeature[] = $projectId;
                 }
             }
