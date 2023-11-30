@@ -8,6 +8,8 @@ use Akeneo\PimFamilyTemplates\Command\CalculateMetricsCommand;
 use Akeneo\PimFamilyTemplates\Command\GenerateTemplatesCommand;
 use Akeneo\PimFamilyTemplates\Command\LintTemplatesCommand;
 use Akeneo\PimFamilyTemplates\Command\MinifyTemplatesCommand;
+use Akeneo\PimFamilyTemplates\Command\SaveUsageCommand;
+use Google\Cloud\BigQuery\BigQueryClient;
 use GuzzleHttp\Client;
 use JiraRestApi\Board\BoardService;
 use JiraRestApi\Configuration\ArrayConfiguration;
@@ -19,6 +21,11 @@ $dotenv->loadEnv(
     path: __DIR__.'/../.env',
     overrideExistingVars: true,
 );
+
+$bigQueryClient = new BigQueryClient([
+    'projectId' => $_ENV['GCP_PROJECT_ID'],
+    'keyFile' => json_decode(json: $_ENV['GCP_SERVICE_ACCOUNT'], flags: JSON_OBJECT_AS_ARRAY),
+]);
 
 $boardService = new BoardService(new ArrayConfiguration([
     'jiraHost' => $_ENV['JIRA_HOST'] ?? '',
@@ -41,5 +48,6 @@ $application->add(new GenerateTemplatesCommand());
 $application->add(new MinifyTemplatesCommand());
 $application->add(new LintTemplatesCommand());
 $application->add(new CalculateMetricsCommand($boardService, $datadogClient));
+$application->add(new SaveUsageCommand($datadogClient, $bigQueryClient));
 
 $application->run();

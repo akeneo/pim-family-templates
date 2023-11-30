@@ -44,6 +44,10 @@ minify-templates:
 	$(PHP) mkdir $(DIST_DIR)
 	$(PHP) bin/console templates:minify $(TEMPLATES_DIR) $(DIST_DIR)/minified.json
 
+.PHONY: save-usage
+save-usage:
+	$(PHP_GCLOUD) bin/console usage:save
+
 .PHONY: calculate-metrics
 calculate-metrics:
 	$(PHP_GCLOUD) bin/console metrics:calculate
