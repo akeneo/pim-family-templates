@@ -8,13 +8,13 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class SaveUsageCommand extends Command
+class SaveUsagesCommand extends Command
 {
     private const DATADOG_LOGS_LIMIT = 1000;
     private const BIGQUERY_DATASET = 'raccoons';
     private const BIGQUERY_TABLE = 'create_family_from_template_usage';
 
-    protected static $defaultName = 'usage:save';
+    protected static $defaultName = 'usages:save';
 
     public function __construct(
         private readonly ClientInterface $datadogClient,

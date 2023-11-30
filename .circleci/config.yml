@@ -1,5 +1,27 @@
 version: 2.1
 
+orbs:
+  slack: circleci/slack@3.4.2
+
+slack-fail-post-step: &slack-fail-post-step
+  post-steps:
+    - slack/status:
+        channel: raccoons-alerting
+        webhook: $SLACK_KER_FAMILH_WEBHOOK
+        fail_only: true
+
+slack-post-step: &slack-post-step
+  post-steps:
+    - slack/status:
+        channel: raccoons-alerting
+        webhook: $SLACK_KER_FAMILH_WEBHOOK
+        fail_only: false
+
+parameters:
+  trigger:
+    default: ""
+    type: string
+
 jobs:
   install:
     machine:
@@ -65,6 +87,19 @@ jobs:
           root: ~/
           paths:
             - project
+
+  save_usages:
+    machine:
+      image: ubuntu-2204:2023.07.2
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          name: Set up file permissions
+          command: sudo chown -R 1000:1000 ../project
+      - run:
+          name: Save usages
+          command: make save-usages
 
   commit_and_push:
     machine:
@@ -134,3 +169,18 @@ workflows:
       - commit_and_push:
           requires:
             - minify_templates
+
+  save_usages:
+    when:
+      or:
+        - and:
+            - equal: [scheduled_pipeline, << pipeline.trigger_source >>]
+            - equal: [save_usages, << pipeline.schedule.name >>]
+        - equal: [save_usages, << pipeline.parameters.trigger >>]
+    jobs:
+      - install:
+          <<: *slack-fail-post-step
+      - save_usages:
+          <<: *slack-post-step
+          requires:
+            - install

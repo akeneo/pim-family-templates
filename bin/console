@@ -7,16 +7,16 @@ require __DIR__.'/../vendor/autoload.php';
 use Akeneo\PimFamilyTemplates\Command\GenerateTemplatesCommand;
 use Akeneo\PimFamilyTemplates\Command\LintTemplatesCommand;
 use Akeneo\PimFamilyTemplates\Command\MinifyTemplatesCommand;
-use Akeneo\PimFamilyTemplates\Command\SaveUsageCommand;
+use Akeneo\PimFamilyTemplates\Command\SaveUsagesCommand;
 use Google\Cloud\BigQuery\BigQueryClient;
 use GuzzleHttp\Client;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Dotenv\Dotenv;
 
 $dotenv = new Dotenv();
-$dotenv->loadEnv(
+$dotenv->usePutenv();
+$dotenv->bootEnv(
     path: __DIR__.'/../.env',
-    overrideExistingVars: true,
 );
 
 $bigQueryClient = new BigQueryClient([
@@ -38,6 +38,6 @@ $application = new Application();
 $application->add(new GenerateTemplatesCommand());
 $application->add(new MinifyTemplatesCommand());
 $application->add(new LintTemplatesCommand());
-$application->add(new SaveUsageCommand($datadogClient, $bigQueryClient));
+$application->add(new SaveUsagesCommand($datadogClient, $bigQueryClient));
 
 $application->run();

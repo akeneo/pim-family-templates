@@ -1,4 +1,4 @@
-PHP = docker compose run --rm php
+PHP = docker compose run --rm -e DATADOG_API_KEY -e DATADOG_APP_KEY -e GCP_SERVICE_ACCOUNT php
 NODE = docker compose run --rm node
 
 .PHONY: install
@@ -43,6 +43,6 @@ minify-templates:
 	$(PHP) mkdir $(DIST_DIR)
 	$(PHP) bin/console templates:minify $(TEMPLATES_DIR) $(DIST_DIR)/minified.json
 
-.PHONY: save-usage
-save-usage:
-	$(PHP) bin/console usage:save
+.PHONY: save-usages
+save-usages:
+	$(PHP) bin/console usages:save
