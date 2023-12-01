@@ -1,4 +1,5 @@
 PHP = docker compose run --rm -e DATADOG_API_KEY -e DATADOG_APP_KEY -e GCP_SERVICE_ACCOUNT php
+PHP_GCLOUD = docker compose run --rm php-gcloud
 NODE = docker compose run --rm node
 
 .PHONY: install
@@ -46,3 +47,7 @@ minify-templates:
 .PHONY: save-usages
 save-usages:
 	$(PHP) bin/console usages:save
+
+.PHONY: calculate-metrics
+calculate-metrics:
+	$(PHP_GCLOUD) bin/console metrics:calculate
