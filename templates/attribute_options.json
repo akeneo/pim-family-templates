@@ -104,85 +104,81 @@
     "labels": { "en_US": "Brown" },
     "attribute": "strap_color"
   },
-  "size1": { "code": "size1", "labels": { "en_US": "S" }, "attribute": "size" },
-  "size2": { "code": "size2", "labels": { "en_US": "M" }, "attribute": "size" },
-  "size3": { "code": "size3", "labels": { "en_US": "L" }, "attribute": "size" },
-  "size4": {
-    "code": "size4",
+  "sizeS": { "code": "sizeS", "labels": { "en_US": "S" }, "attribute": "size" },
+  "sizeM": { "code": "sizeM", "labels": { "en_US": "M" }, "attribute": "size" },
+  "sizeL": { "code": "sizeL", "labels": { "en_US": "L" }, "attribute": "size" },
+  "sizeXS": {
+    "code": "sizeXS",
     "labels": { "en_US": "XS" },
     "attribute": "size"
   },
-  "size5": {
-    "code": "size5",
+  "sizeXL": {
+    "code": "sizeXL",
     "labels": { "en_US": "XL" },
     "attribute": "size"
   },
-  "size6": { "code": "size6", "labels": { "en_US": "5" }, "attribute": "size" },
-  "size7": { "code": "size7", "labels": { "en_US": "6" }, "attribute": "size" },
-  "size8": { "code": "size8", "labels": { "en_US": "7" }, "attribute": "size" },
-  "size9": { "code": "size9", "labels": { "en_US": "8" }, "attribute": "size" },
-  "size10": {
-    "code": "size10",
-    "labels": { "en_US": "9" },
-    "attribute": "size"
-  },
-  "size11": {
-    "code": "size11",
+  "size5": { "code": "size5", "labels": { "en_US": "5" }, "attribute": "size" },
+  "size6": { "code": "size6", "labels": { "en_US": "6" }, "attribute": "size" },
+  "size7": { "code": "size7", "labels": { "en_US": "7" }, "attribute": "size" },
+  "size8": { "code": "size8", "labels": { "en_US": "8" }, "attribute": "size" },
+  "size9": { "code": "size9", "labels": { "en_US": "9" }, "attribute": "size" },
+  "size35": {
+    "code": "size35",
     "labels": { "en_US": "35" },
     "attribute": "size"
   },
-  "size12": {
-    "code": "size12",
+  "size36": {
+    "code": "size36",
     "labels": { "en_US": "36" },
     "attribute": "size"
   },
-  "size13": {
-    "code": "size13",
+  "size37": {
+    "code": "size37",
     "labels": { "en_US": "37" },
     "attribute": "size"
   },
-  "size14": {
-    "code": "size14",
+  "size38": {
+    "code": "size38",
     "labels": { "en_US": "38" },
     "attribute": "size"
   },
-  "size15": {
-    "code": "size15",
+  "size39": {
+    "code": "size39",
     "labels": { "en_US": "39" },
     "attribute": "size"
   },
-  "size16": {
-    "code": "size16",
+  "size40": {
+    "code": "size40",
     "labels": { "en_US": "40" },
     "attribute": "size"
   },
-  "size17": {
-    "code": "size17",
+  "size86": {
+    "code": "size86",
     "labels": { "en_US": "86" },
     "attribute": "size"
   },
-  "size18": {
-    "code": "size18",
+  "size94": {
+    "code": "size94",
     "labels": { "en_US": "94" },
     "attribute": "size"
   },
-  "size19": {
-    "code": "size19",
+  "size102": {
+    "code": "size102",
     "labels": { "en_US": "102" },
     "attribute": "size"
   },
-  "size20": {
-    "code": "size20",
+  "size208": {
+    "code": "size208",
     "labels": { "en_US": "108" },
     "attribute": "size"
   },
-  "size21": {
-    "code": "size21",
+  "size120": {
+    "code": "size120",
     "labels": { "en_US": "120" },
     "attribute": "size"
   },
-  "size22": {
-    "code": "size22",
+  "size130": {
+    "code": "size130",
     "labels": { "en_US": "130" },
     "attribute": "size"
   },
@@ -2511,6 +2507,91 @@
     "code": "collection9",
     "labels": { "en_US": "Spiritual" },
     "attribute": "collection"
+  },
+  "jewelry_cut1": {
+    "code": "jewelry_cut1",
+    "labels": { "en_US": "Round Brilliant" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut2": {
+    "code": "jewelry_cut2",
+    "labels": { "en_US": "Princess Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut3": {
+    "code": "jewelry_cut3",
+    "labels": { "en_US": "Emerald Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut4": {
+    "code": "jewelry_cut4",
+    "labels": { "en_US": "Oval Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut5": {
+    "code": "jewelry_cut5",
+    "labels": { "en_US": "Cushion Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut6": {
+    "code": "jewelry_cut6",
+    "labels": { "en_US": "Pear Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut7": {
+    "code": "jewelry_cut7",
+    "labels": { "en_US": "Marquise Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut8": {
+    "code": "jewelry_cut8",
+    "labels": { "en_US": "Heart Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "jewelry_cut9": {
+    "code": "jewelry_cut9",
+    "labels": { "en_US": "Asscher Cut" },
+    "attribute": "jewelry_cut"
+  },
+  "clarity1": {
+    "code": "clarity1",
+    "labels": { "en_US": "Flawless" },
+    "attribute": "clarity"
+  },
+  "clarity2": {
+    "code": "clarity2",
+    "labels": { "en_US": "Internally Flawless (IF)" },
+    "attribute": "clarity"
+  },
+  "clarity3": {
+    "code": "clarity3",
+    "labels": { "en_US": "Very Very Slightly Included (VVS1/VVS2)" },
+    "attribute": "clarity"
+  },
+  "clarity4": {
+    "code": "clarity4",
+    "labels": { "en_US": "Very Slightly Included (VS1/VS2)" },
+    "attribute": "clarity"
+  },
+  "clarity5": {
+    "code": "clarity5",
+    "labels": { "en_US": "Slightly Included (SI1/SI2)" },
+    "attribute": "clarity"
+  },
+  "clarity6": {
+    "code": "clarity6",
+    "labels": { "en_US": "Included (I1/I2/I3)" },
+    "attribute": "clarity"
+  },
+  "clarity7": {
+    "code": "clarity7",
+    "labels": { "en_US": "Eye clean" },
+    "attribute": "clarity"
+  },
+  "clarity8": {
+    "code": "clarity8",
+    "labels": { "en_US": "Slightly included to eye clean" },
+    "attribute": "clarity"
   },
   "engravings1": {
     "code": "engravings1",

@@ -149,6 +149,14 @@
       "unique": false
     },
     {
+      "code": "movement_calibre",
+      "labels": { "en_US": "Calibre" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": false,
+      "unique": false
+    },
+    {
       "code": "color",
       "labels": { "en_US": "Dial color" },
       "type": "pim_catalog_simpleselect",
@@ -191,6 +199,56 @@
     {
       "code": "strap_color",
       "labels": { "en_US": "Strap color" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false
+    },
+    {
+      "code": "watch_complications",
+      "labels": { "en_US": "Complications" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false
+    },
+    {
+      "code": "number_of_jewels",
+      "labels": { "en_US": "Number of Jewels" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "code": "power_reserve",
+      "labels": { "en_US": "Power Reserve" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "metric_family": "Duration",
+      "unit": "HOUR",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "frequency",
+      "labels": { "en_US": "Frequency" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "metric_family": "Frequency",
+      "unit": "HERTZ",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "strap_clasp_type",
+      "labels": { "en_US": "Clasp" },
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
