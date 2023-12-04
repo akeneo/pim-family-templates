@@ -1,4 +1,4 @@
-PHP = docker compose run --rm -e DATADOG_API_KEY -e DATADOG_APP_KEY -e GCP_SERVICE_ACCOUNT php
+PHP = docker compose run --rm php
 NODE = docker compose run --rm node
 
 .PHONY: install
@@ -45,4 +45,8 @@ minify-templates:
 
 .PHONY: save-usages
 save-usages:
+ifeq ($(CI),true)
+	docker compose run --rm -e DATADOG_API_KEY -e DATADOG_APP_KEY -e GCP_SERVICE_ACCOUNT php bin/console usages:save
+else
 	$(PHP) bin/console usages:save
+endif
