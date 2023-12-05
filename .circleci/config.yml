@@ -99,7 +99,7 @@ jobs:
           command: sudo chown -R 1000:1000 ../project
       - run:
           name: Save usages
-          command: make save-usages
+          command: CI=true make save-usages
 
   commit_and_push:
     machine:

@@ -25,8 +25,8 @@ class SaveUsagesCommand extends Command
 
     public function execute(InputInterface $input, OutputInterface $output): int
     {
-        $mostRecentUsage = $this->fetchMostRecentUsageFromBigQuery();
-        $newUsages = $this->fetchNewUsagesFromDatadog($mostRecentUsage);
+        $latestSavedCreatedAt = $this->fetchLatestSavedCreatedAtFromBigQuery();
+        $newUsages = $this->fetchNewUsagesFromDatadog($latestSavedCreatedAt);
         $this->saveNewUsagesToBigQuery($newUsages);
 
         $output->writeln(sprintf('%d new usages has been saved', count($newUsages)));
@@ -34,7 +34,7 @@ class SaveUsagesCommand extends Command
         return Command::SUCCESS;
     }
 
-    private function fetchMostRecentUsageFromBigQuery(): array|null
+    private function fetchLatestSavedCreatedAtFromBigQuery(): \DateTime|null
     {
         $sql = <<<SQL
 SELECT * FROM `akecld-saas-dev.raccoons.create_family_from_template_usage` ORDER BY created_at DESC LIMIT 1;
@@ -46,10 +46,10 @@ SQL;
 
         $results->rows()->rewind();
 
-        return $results->rows()->current();
+        return $results->rows()->current()['created_at'] ?? null;
     }
 
-    private function fetchNewUsagesFromDatadog(array|null $mostRecentUsage): array
+    private function fetchNewUsagesFromDatadog(\DateTime|null $latestSavedCreatedAt): array
     {
         $searchQuery = <<<DATADOG
 "New family created from template" @channel:app @context.akeneo_context:"Family template" tags:(akecld-prd-pim-saas-prod OR akecld-prd-pim-saas-desa OR akecld-prd-pim-saas-sipa)
@@ -81,12 +81,13 @@ DATADOG;
 
         $usages = [];
         foreach ($logs as $log) {
-            if (!$this->isNewLog($mostRecentUsage, $log)) {
+            $createdAt = new \DateTime($log['attributes']['attributes']['datetime'], new \DateTimeZone('UTC'));
+
+            if (!$this->isNewLog($latestSavedCreatedAt, $createdAt)) {
                 continue;
             }
 
             $templateCode = $log['attributes']['attributes']['context']['template_code'];
-            $createdAt = (new \DateTimeImmutable($log['attributes']['attributes']['datetime'], new \DateTimeZone('UTC')))->format('Y-m-d H:i:s.u');
             $tenantId = $log['attributes']['attributes']['tenant_id'];
             $gcpProjectId = null;
             foreach ($log['attributes']['tags'] as $tag) {
@@ -98,7 +99,7 @@ DATADOG;
 
             $usages[] = [
                 'template_code' => $templateCode,
-                'created_at' => $createdAt,
+                'created_at' => $createdAt->format('Y-m-d H:i:s.u'),
                 'tenant_id' => $tenantId,
                 'gcp_project_id' => $gcpProjectId,
             ];
@@ -107,15 +108,13 @@ DATADOG;
         return $usages;
     }
 
-    private function isNewLog(?array $mostRecentUsage, array $currentLog): bool
+    private function isNewLog(?\DateTime $latestSavedCreatedAt, \DateTime $createdAt): bool
     {
-        if (null === $mostRecentUsage) {
+        if (null === $latestSavedCreatedAt) {
             return true;
         }
 
-        $currentLogCreatedAt = new \DateTimeImmutable($currentLog['attributes']['attributes']['datetime'], new \DateTimeZone('UTC'));
-
-        return $mostRecentUsage['created_at'] < $currentLogCreatedAt;
+        return $latestSavedCreatedAt < $createdAt;
     }
 
     private function saveNewUsagesToBigQuery(array $usages): void
