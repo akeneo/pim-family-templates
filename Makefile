@@ -1,4 +1,5 @@
 PHP = docker compose run --rm php
+PHP_GCLOUD = docker compose run --rm php-gcloud
 NODE = docker compose run --rm node
 
 .PHONY: install
@@ -50,3 +51,7 @@ ifeq ($(CI),true)
 else
 	$(PHP) bin/console usages:save
 endif
+
+.PHONY: calculate-metrics
+calculate-metrics:
+	$(PHP_GCLOUD) bin/console metrics:calculate
