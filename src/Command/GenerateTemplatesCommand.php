@@ -157,6 +157,7 @@ class GenerateTemplatesCommand extends Command
                 'scopable' => '1' === $rawAttribute['scopable'],
                 'localizable' => '1' === $rawAttribute['localizable'],
                 'unique' => '1' === $rawAttribute['unique'],
+                'group' => $rawAttribute['attribute_group'],
             ];
 
             if (!empty($rawAttribute['metric_family'])) {

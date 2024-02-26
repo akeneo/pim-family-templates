@@ -13,7 +13,8 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true
+      "unique": true,
+      "group": "other"
     },
     {
       "code": "price",
@@ -22,6 +23,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "decimals_allowed": true
     },
     {
@@ -30,7 +32,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "short_description",
@@ -38,7 +41,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "long_description",
@@ -46,7 +50,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "brand",
@@ -54,7 +59,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "main_image",
@@ -62,7 +68,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "detailed_image",
@@ -70,7 +77,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "atmosphere_image",
@@ -78,7 +86,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "color",
@@ -86,7 +95,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "depth",
@@ -95,6 +105,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Length",
       "unit": "CENTIMETER",
       "decimals_allowed": true,
@@ -107,6 +118,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Length",
       "unit": "CENTIMETER",
       "decimals_allowed": true,
@@ -119,6 +131,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Length",
       "unit": "CENTIMETER",
       "decimals_allowed": true,
@@ -131,6 +144,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Weight",
       "unit": "KILOGRAM",
       "decimals_allowed": true,
@@ -143,6 +157,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Binary",
       "unit": "GIGABYTE",
       "decimals_allowed": true,
@@ -155,6 +170,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Length",
       "unit": "INCH",
       "decimals_allowed": true,
@@ -166,7 +182,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "power_type",
@@ -174,7 +191,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "voltage",
@@ -183,6 +201,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Voltage",
       "unit": "VOLT",
       "decimals_allowed": true,
@@ -194,7 +213,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "resolution",
@@ -202,7 +222,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "wifi",
@@ -210,7 +231,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "bluetooth",
@@ -218,7 +240,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "energy_class",
@@ -226,7 +249,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "platform",
@@ -234,7 +258,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "video_game_players",
@@ -242,7 +267,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "battery_life",
@@ -250,7 +276,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "wattage",
@@ -259,6 +286,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Power",
       "unit": "WATT",
       "decimals_allowed": true,
@@ -270,7 +298,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "built_in_speakers",
@@ -278,7 +307,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "refresh_rate",
@@ -287,6 +317,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Frequency",
       "unit": "HERTZ",
       "decimals_allowed": true,
@@ -298,7 +329,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "supports_3D",
@@ -306,7 +338,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "processor",
@@ -314,7 +347,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     }
   ]
 }

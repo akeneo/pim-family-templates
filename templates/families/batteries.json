@@ -13,7 +13,8 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true
+      "unique": true,
+      "group": "other"
     },
     {
       "code": "product_title",
@@ -21,7 +22,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "main_image",
@@ -29,7 +31,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "battery_passport_identification",
@@ -37,7 +40,8 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true
+      "unique": true,
+      "group": "dpp"
     },
     {
       "code": "responsible_economic_operator_identification",
@@ -46,6 +50,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": false
     },
@@ -56,6 +61,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": false
     },
@@ -65,7 +71,8 @@
       "type": "pim_catalog_date",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "manufacturing_place",
@@ -73,7 +80,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "battery_category",
@@ -81,7 +89,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "battery_weight",
@@ -90,6 +99,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "metric_family": "Weight",
       "unit": "GRAM",
       "decimals_allowed": true,
@@ -101,7 +111,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "id_of_eu_declaration_of_conformity",
@@ -109,7 +120,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "results_of_tests_reports",
@@ -117,7 +129,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "meaning_of_labels_and_symbols",
@@ -125,7 +138,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "cadmium_and_lead_symbols",
@@ -133,7 +147,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "critical_raw_materials",
@@ -141,7 +156,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "battery_chemistry",
@@ -149,7 +165,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "name_of_hazardous_substances",
@@ -157,7 +174,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "impact_of_substances_on_the_environment_human_health_safety",
@@ -167,7 +185,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "carbon_footprint_label",
@@ -175,7 +194,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "battery_carbon_footprint",
@@ -186,6 +206,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -196,6 +217,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -205,7 +227,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "web_link_to_public_carbon_footprint_study",
@@ -213,7 +236,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "information_of_the_due_diligence_report",
@@ -221,7 +245,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "extinguishing_agent",
@@ -229,7 +254,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "renewable_content_share",
@@ -238,6 +264,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -250,6 +277,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -262,6 +290,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -273,7 +302,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "role_of_end_users_in_contributing_to_the_separate_collection_of_waste_batteries",
@@ -283,7 +313,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "information_on_separate_collection_take_back_collection_points",
@@ -293,7 +324,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "certified_usable_battery_energy",
@@ -302,6 +334,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": false
     },
@@ -312,6 +345,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "metric_family": "ElectricCharge",
       "unit": "AMPEREHOUR",
       "decimals_allowed": true,
@@ -324,6 +358,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "metric_family": "Voltage",
       "unit": "VOLT",
       "decimals_allowed": true,
@@ -336,6 +371,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "metric_family": "Voltage",
       "unit": "VOLT",
       "decimals_allowed": true,
@@ -348,6 +384,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "metric_family": "Voltage",
       "unit": "VOLT",
       "decimals_allowed": true,
@@ -360,6 +397,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "metric_family": "Power",
       "unit": "WATT",
       "decimals_allowed": true,
@@ -372,6 +410,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "metric_family": "Power",
       "unit": "WATT",
       "decimals_allowed": true,
@@ -386,6 +425,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": true,
       "negative_allowed": true
     },
@@ -396,6 +436,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -408,6 +449,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -420,6 +462,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -432,6 +475,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -442,6 +486,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": true,
       "negative_allowed": true
     },
@@ -452,6 +497,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -462,6 +508,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -472,6 +519,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -481,7 +529,8 @@
       "type": "pim_catalog_date",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "temperature_range_idle_state_lower_boundary",
@@ -490,6 +539,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -500,6 +550,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     }

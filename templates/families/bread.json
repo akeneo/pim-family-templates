@@ -13,7 +13,8 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true
+      "unique": true,
+      "group": "other"
     },
     {
       "code": "price",
@@ -22,6 +23,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "decimals_allowed": true
     },
     {
@@ -30,7 +32,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "short_description",
@@ -38,7 +41,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "long_description",
@@ -46,7 +50,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "brand",
@@ -54,7 +59,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "main_image",
@@ -62,7 +68,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "detailed_image",
@@ -70,7 +77,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "atmosphere_image",
@@ -78,7 +86,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "bread_type",
@@ -86,7 +95,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "allergens",
@@ -94,7 +104,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "organic",
@@ -102,7 +113,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "vegetarian",
@@ -110,7 +122,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "gluten_free",
@@ -118,7 +131,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "sugar_free",
@@ -126,7 +140,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "non_gmo",
@@ -134,7 +149,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "trans_fat_free",
@@ -142,7 +158,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "msg_free",
@@ -150,7 +167,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "nutritional_values",
@@ -158,7 +176,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "ingredients",
@@ -166,7 +185,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     }
   ]
 }
