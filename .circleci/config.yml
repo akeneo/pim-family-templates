@@ -3,6 +3,10 @@ version: 2.1
 orbs:
   slack: circleci/slack@3.4.2
 
+machine: &machine
+  machine:
+    image: ubuntu-2204:current
+
 slack-fail-post-step: &slack-fail-post-step
   post-steps:
     - slack/status:
@@ -24,8 +28,7 @@ parameters:
 
 jobs:
   install:
-    machine:
-      image: ubuntu-2204:2023.07.2
+    <<: *machine
     steps:
       - checkout
       - run:
@@ -40,8 +43,7 @@ jobs:
             - project
 
   test_generator:
-    machine:
-      image: ubuntu-2204:2023.07.2
+    <<: *machine
     steps:
       - attach_workspace:
           at: ~/
@@ -59,8 +61,7 @@ jobs:
           command: make tests
 
   lint_templates:
-    machine:
-      image: ubuntu-2204:2023.07.2
+    <<: *machine
     steps:
       - attach_workspace:
           at: ~/
@@ -72,8 +73,7 @@ jobs:
           command: make lint-templates
 
   minify_templates:
-    machine:
-      image: ubuntu-2204:2023.07.2
+    <<: *machine
     steps:
       - attach_workspace:
           at: ~/
@@ -89,8 +89,7 @@ jobs:
             - project
 
   save_usages:
-    machine:
-      image: ubuntu-2204:2023.07.2
+    <<: *machine
     steps:
       - attach_workspace:
           at: ~/
@@ -102,8 +101,7 @@ jobs:
           command: CI=true make save-usages
 
   commit_and_push:
-    machine:
-      image: ubuntu-2204:2023.07.2
+    <<: *machine
     steps:
       - attach_workspace:
           at: ~/
