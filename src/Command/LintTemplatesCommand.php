@@ -529,7 +529,7 @@ class LintTemplatesCommand extends Command
     {
         $propertyPath = sprintf('[attributes][%d][validation_rule]', $index);
         switch (true) {
-            case (!empty($attribute['validation_rule']) && !in_array($attribute['validation_rule'], self::VALIDATION_RULES)):
+            case !empty($attribute['validation_rule']) && !in_array($attribute['validation_rule'], self::VALIDATION_RULES):
                 $violations[$fileName]->add(new ConstraintViolation(
                     'This value is not a valid validation rule.',
                     null,
