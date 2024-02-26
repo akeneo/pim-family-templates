@@ -75,13 +75,16 @@ class LintTemplatesCommand extends Command
         $industries = $this->readIndustries($templateDirectory);
         $families = $this->readFamilies($templateDirectory);
         $attributeOptions = $this->readAttributeOptions($templateDirectory);
+        $attributeGroups = $this->readAttributeGroups($templateDirectory);
+        $attributeGroupsCodes = array_keys($attributeGroups);
         $familyCodesInIndustries = $this->getFamilyCodesInIndustries($industries);
         $familyTemplateFileNames = array_keys($families);
         $attributeCodesInFamilies = $this->getAttributeCodesInFamilies($families);
 
         $industriesViolations = $this->lintIndustries($industries, $familyTemplateFileNames);
-        $familiesViolations = $this->lintFamilies($families, $familyCodesInIndustries);
+        $familiesViolations = $this->lintFamilies($families, $familyCodesInIndustries, $attributeGroupsCodes);
         $attributeOptionsViolations = $this->lintAttributeOptions($attributeOptions, $attributeCodesInFamilies);
+        $attributeGroupsViolations = $this->lintAttributeGroups($attributeGroups);
 
         $flattenViolations = [
             ...$this->flatViolations('industries', $industriesViolations),
@@ -125,6 +128,13 @@ class LintTemplatesCommand extends Command
         $attributeOptionsFilePath = sprintf('%s/%s', $templatesDirectory, 'attribute_options.json');
 
         return $this->readJsonFile($attributeOptionsFilePath);
+    }
+
+    private function readAttributeGroups(string $templatesDirectory): array
+    {
+        $attributeGroupsFilePath = sprintf('%s/%s', $templatesDirectory, 'attribute_groups.json');
+
+        return $this->readJsonFile($attributeGroupsFilePath);
     }
 
     private function getFamilyCodesInIndustries(array $industries): array
@@ -199,7 +209,7 @@ class LintTemplatesCommand extends Command
         return $violations;
     }
 
-    private function lintFamilies(array $families, array $familyCodesInIndustries): array
+    private function lintFamilies(array $families, array $familyCodesInIndustries, array $attributeGroupsCodes): array
     {
         $violations = [];
 
@@ -270,6 +280,10 @@ class LintTemplatesCommand extends Command
                         'type' => new Choice(
                             choices: self::ATTRIBUTE_TYPES,
                             message: 'This value is not a valid attribute type.',
+                        ),
+                        'group' => new Choice(
+                            choices: $attributeGroupsCodes,
+                            message: 'This value is not a valid attribute group.',
                         ),
                         'scopable' => [
                             new Type('bool'),
@@ -412,6 +426,43 @@ class LintTemplatesCommand extends Command
             }
 
             $lintedAttributeOptionCodes[] = $attributeOption['code'];
+        }
+
+        return $violations;
+    }
+
+    private function lintAttributeGroups(array $attributeGroups): array
+    {
+        $violations = [];
+        $lintedAttributeGroupCodes = [];
+
+        foreach ($attributeGroups as $key => $attributeGroup) {
+            $violations[$key] = $this->validator->validate($attributeGroup, new Collection([
+                'code' => new EqualTo(
+                    value: $key,
+                    message: 'This value should match with key.',
+                ),
+                'labels' => new Collection([
+                    'en_US' => [
+                        new Type('string'),
+                        new NotBlank(),
+                        new Length(max: 255),
+                    ],
+                ]),
+            ]));
+
+            if (in_array($attributeGroup['code'], $lintedAttributeGroupCodes)) {
+                $violations[$key]->add(new ConstraintViolation(
+                    'This value should be unique.',
+                    null,
+                    [],
+                    null,
+                    '[code]',
+                    null,
+                ));
+            }
+
+            $lintedAttributeGroupCodes[] = $attributeGroup['code'];
         }
 
         return $violations;
