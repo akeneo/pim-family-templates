@@ -16,5 +16,14 @@
     "family_templates": [
       "oils_and_fluids"
     ]
+  },
+  "industry_batteries": {
+    "code": "industry_batteries",
+    "family_templates": [
+      "batteries"
+    ],
+    "labels": {
+      "en_US": "Batteries"
+    }
   }
 }

@@ -251,6 +251,17 @@
       "scopable": false,
       "localizable": false,
       "unique": false
+    },
+    {
+      "code": "email",
+      "labels": {
+        "en_US": "Email"
+      },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "validation_rule": "emailte"
     }
   ]
 }
