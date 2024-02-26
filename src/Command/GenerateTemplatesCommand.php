@@ -34,6 +34,7 @@ class GenerateTemplatesCommand extends Command
         $industries = $this->readIndustries($reader);
         $familyTemplates = $this->readFamilyTemplates($reader, $industries);
         $attributeOptions = $this->readAttributeOptions($reader);
+        $attributeGroups = $this->readAttributeGroups($reader);
 
         $outputDirectory = $input->getArgument('output_directory');
 
@@ -41,6 +42,7 @@ class GenerateTemplatesCommand extends Command
         $this->writeIndustriesJson($outputDirectory, $industries);
         $this->writeFamilyTemplatesJson($outputDirectory, $familyTemplates);
         $this->writeAttributeOptionsJson($outputDirectory, $attributeOptions);
+        $this->writeAttributeGroupsJson($outputDirectory, $attributeGroups);
 
         return Command::SUCCESS;
     }
@@ -198,6 +200,19 @@ class GenerateTemplatesCommand extends Command
         return array_combine(array_column($attributeOptions, 'code'), $attributeOptions);
     }
 
+    private function readAttributeGroups(ReaderInterface $reader): array
+    {
+        $rawAttributeGroups = $this->getSheetContent($reader, 'attribute_groups');
+        $attributeGroups = array_map(static fn (array $attributeGroup) => [
+            'code' => $attributeGroup['code'],
+            'labels' => [
+                'en_US' => $attributeGroup['label-en_US'],
+            ],
+        ], $rawAttributeGroups);
+
+        return array_combine(array_column($attributeGroups, 'code'), $attributeGroups);
+    }
+
     private function writeIndustriesJson(string $outputDirectory, array $industries): void
     {
         $industriesJsonFilePath = sprintf('%s/%s.json', $outputDirectory, 'industries');
@@ -216,8 +231,14 @@ class GenerateTemplatesCommand extends Command
 
     private function writeAttributeOptionsJson(string $outputDirectory, array $attributeOptions): void
     {
-        $industriesJsonFilePath = sprintf('%s/%s.json', $outputDirectory, 'attribute_options');
-        $this->writeJsonFile($industriesJsonFilePath, $attributeOptions);
+        $attributeOptionsJsonFilePath = sprintf('%s/%s.json', $outputDirectory, 'attribute_options');
+        $this->writeJsonFile($attributeOptionsJsonFilePath, $attributeOptions);
+    }
+
+    private function writeAttributeGroupsJson(string $outputDirectory, array $attributeGroups): void
+    {
+        $attributeGroupsJsonFilePath = sprintf('%s/%s.json', $outputDirectory, 'attribute_groups');
+        $this->writeJsonFile($attributeGroupsJsonFilePath, $attributeGroups);
     }
 
     private function writeJsonFile(string $filePath, array $data): void
