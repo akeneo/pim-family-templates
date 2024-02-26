@@ -261,7 +261,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "validation_rule": "emailte"
+      "validation_rule": "email"
     }
   ]
 }
