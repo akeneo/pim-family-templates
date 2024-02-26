@@ -39,6 +39,11 @@ class LintTemplatesCommand extends Command
         self::ATTRIBUTE_TYPE_FILE,
     ];
 
+    private const VALIDATION_RULES = [
+        self::VALIDATION_RULE_URL,
+        self::VALIDATION_RULE_EMAIL,
+    ];
+
     private const ATTRIBUTE_TYPE_IMAGE = 'pim_catalog_image';
     private const ATTRIBUTE_TYPE_TEXT = 'pim_catalog_text';
     private const ATTRIBUTE_TYPE_IDENTIFIER = 'pim_catalog_identifier';
@@ -51,6 +56,9 @@ class LintTemplatesCommand extends Command
     private const ATTRIBUTE_TYPE_SIMPLESELECT = 'pim_catalog_simpleselect';
     private const ATTRIBUTE_TYPE_TEXTAREA = 'pim_catalog_textarea';
     private const ATTRIBUTE_TYPE_FILE = 'pim_catalog_file';
+
+    private const VALIDATION_RULE_URL = 'url';
+    private const VALIDATION_RULE_EMAIL = 'email';
 
     protected static $defaultName = 'templates:lint';
     private ValidatorInterface $validator;
@@ -295,6 +303,9 @@ class LintTemplatesCommand extends Command
                         'negative_allowed' => [
                             new Optional(),
                         ],
+                        'validation_rule' => [
+                            new Optional(),
+                        ],
                     ])),
                 ],
             ]));
@@ -352,6 +363,11 @@ class LintTemplatesCommand extends Command
                             break;
                         case self::ATTRIBUTE_TYPE_PRICE_COLLECTION:
                             $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
+                            break;
+                        case self::ATTRIBUTE_TYPE_TEXT:
+                            if (array_key_exists('validation_rule', $attribute)) {
+                                $this->assertValidAttributeValidationRule($attribute, $index, $fileName, $violations);
+                            }
                             break;
                     }
                 }
@@ -499,6 +515,23 @@ class LintTemplatesCommand extends Command
             case !is_bool($attribute[$property]):
                 $violations[$fileName]->add(new ConstraintViolation(
                     'This value should be of type boolean.',
+                    null,
+                    [],
+                    null,
+                    $propertyPath,
+                    null,
+                ));
+                break;
+        }
+    }
+
+    private function assertValidAttributeValidationRule(array $attribute, int $index, string $fileName, array $violations): void
+    {
+        $propertyPath = sprintf('[attributes][%d][validation_rule]', $index);
+        switch (true) {
+            case (!empty($attribute['validation_rule']) && !in_array($attribute['validation_rule'], self::VALIDATION_RULES)):
+                $violations[$fileName]->add(new ConstraintViolation(
+                    'This value is not a valid validation rule.',
                     null,
                     [],
                     null,

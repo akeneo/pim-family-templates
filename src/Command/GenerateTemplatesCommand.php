@@ -173,6 +173,10 @@ class GenerateTemplatesCommand extends Command
                 $attribute['negative_allowed'] = '1' === $rawAttribute['negative_allowed'];
             }
 
+            if (!empty($rawAttribute['validation_rule'])) {
+                $attribute['validation_rule'] = $rawAttribute['validation_rule'];
+            }
+
             return $attribute;
         }, $familyTemplate);
 
