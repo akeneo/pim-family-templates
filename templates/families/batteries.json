@@ -1,0 +1,507 @@
+{
+  "code": "batteries",
+  "labels": { "en_US": "Batteries" },
+  "description": {
+    "en_US": "Power up your devices with our 'Batteries' DPP template - effortlessly manage your battery inventory, ensuring uninterrupted performance and endless productivity whenever you need it most."
+  },
+  "attribute_as_main_media": "main_image",
+  "attribute_as_label": "product_title",
+  "attributes": [
+    {
+      "code": "EAN",
+      "labels": { "en_US": "Main Identifier" },
+      "type": "pim_catalog_identifier",
+      "scopable": false,
+      "localizable": false,
+      "unique": true
+    },
+    {
+      "code": "product_title",
+      "labels": { "en_US": "Product title" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "main_image",
+      "labels": { "en_US": "Main image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "unique": false
+    },
+    {
+      "code": "battery_passport_identification",
+      "labels": { "en_US": "Battery passport identification" },
+      "type": "pim_catalog_identifier",
+      "scopable": false,
+      "localizable": false,
+      "unique": true
+    },
+    {
+      "code": "responsible_economic_operator_identification",
+      "labels": { "en_US": "Responsible economic operator identification" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "code": "manufacturers_identification",
+      "labels": { "en_US": "Manufacturer\u2019s identification" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "code": "manufacturing_date",
+      "labels": { "en_US": "Manufacturing date" },
+      "type": "pim_catalog_date",
+      "scopable": false,
+      "localizable": false,
+      "unique": false
+    },
+    {
+      "code": "manufacturing_place",
+      "labels": { "en_US": "Manufacturing place" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "battery_category",
+      "labels": { "en_US": "Battery category" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false
+    },
+    {
+      "code": "battery_weight",
+      "labels": { "en_US": "Battery weight" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "metric_family": "Weight",
+      "unit": "GRAM",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "eu_declaration_of_conformity",
+      "labels": { "en_US": "EU declaration of conformity" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "id_of_eu_declaration_of_conformity",
+      "labels": { "en_US": "ID of EU declaration of conformity" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "results_of_tests_reports",
+      "labels": { "en_US": "Results of tests reports" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "meaning_of_labels_and_symbols",
+      "labels": { "en_US": "Meaning of labels and symbols" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "cadmium_and_lead_symbols",
+      "labels": { "en_US": "Cadmium and lead symbols" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "critical_raw_materials",
+      "labels": { "en_US": "Critical raw materials" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false
+    },
+    {
+      "code": "battery_chemistry",
+      "labels": { "en_US": "Battery chemistry" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "name_of_hazardous_substances",
+      "labels": { "en_US": "Name of hazardous substances" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "impact_of_substances_on_the_environment_human_health_safety",
+      "labels": {
+        "en_US": "Impact of substances on the environment, human health, safety"
+      },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "carbon_footprint_label",
+      "labels": { "en_US": "Carbon footprint label" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "battery_carbon_footprint",
+      "labels": {
+        "en_US": "Carbon footprint as declared (kg CO2e / 1 kWh of total energy)"
+      },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "carbon_footprint_per_the_4_life_cycle_stages",
+      "labels": { "en_US": "Carbon footprint per the 4 life cycle stages (%)" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "code": "carbon_footprint_performance_class",
+      "labels": { "en_US": "Carbon footprint performance class" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "web_link_to_public_carbon_footprint_study",
+      "labels": { "en_US": "Web link to public carbon footprint study" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "information_of_the_due_diligence_report",
+      "labels": { "en_US": "Information of the due diligence report" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "extinguishing_agent",
+      "labels": { "en_US": "Extinguishing agent" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "renewable_content_share",
+      "labels": { "en_US": "Renewable content share" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "pre_consumer_recycled_content_share",
+      "labels": {
+        "en_US": "Pre-consumer recycled content share of Li/ Co/ Ni/ Pb"
+      },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "post_consumer_recycled_content_share",
+      "labels": {
+        "en_US": "Post-consumer recycled content share of Li/ Co/ Ni/ Pb"
+      },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "role_of_end_users_in_contributing_to_waste_prevention",
+      "labels": {
+        "en_US": "Role of end-users in contributing to waste prevention"
+      },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "role_of_end_users_in_contributing_to_the_separate_collection_of_waste_batteries",
+      "labels": {
+        "en_US": "Role of end-users in contributing to the separate collection of waste batteries"
+      },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "information_on_separate_collection_take_back_collection_points",
+      "labels": {
+        "en_US": "Information on separate collection, take back, collection points and preparing for re-use, preparing for repurposing and recycling operations"
+      },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false
+    },
+    {
+      "code": "certified_usable_battery_energy",
+      "labels": { "en_US": "Certified usable battery energy (UBEcertified)" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "code": "rated_capacity",
+      "labels": { "en_US": "Rated capacity" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "metric_family": "ElectricCharge",
+      "unit": "AMPEREHOUR",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "nominal_voltage",
+      "labels": { "en_US": "Nominal voltage" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "metric_family": "Voltage",
+      "unit": "VOLT",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "minimum_voltage",
+      "labels": { "en_US": "Minimum voltage" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "metric_family": "Voltage",
+      "unit": "VOLT",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "maximum_voltage",
+      "labels": { "en_US": "Maximum voltage" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "metric_family": "Voltage",
+      "unit": "VOLT",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "original_power_capability",
+      "labels": { "en_US": "Original power capability (in Watts)" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "metric_family": "Power",
+      "unit": "WATT",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "maximum_permitted_battery_power",
+      "labels": { "en_US": "Maximum permitted battery power" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "metric_family": "Power",
+      "unit": "WATT",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "ratio_between_nominal_allowed_battery_power_and_battery_energy",
+      "labels": {
+        "en_US": "Ratio between nominal allowed battery power (W) and battery energy (Wh)"
+      },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": true
+    },
+    {
+      "code": "initial_round_trip_energy_efficiency",
+      "labels": { "en_US": "Initial round trip energy efficiency" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": true
+    },
+    {
+      "code": "round_trip_energy_efficiency_at_50_percent_of_cycle_life",
+      "labels": {
+        "en_US": "Round trip energy efficiency at 50% of cycle life"
+      },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": true
+    },
+    {
+      "code": "initial_internal_resistance_on_battery_level",
+      "labels": {
+        "en_US": "Initial internal resistance on battery level (cell & pack)"
+      },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": true
+    },
+    {
+      "code": "expected_battery_lifetime",
+      "labels": {
+        "en_US": "Expected lifetime: Number of charge-discharge cycles"
+      },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": true
+    },
+    {
+      "code": "c_rate_of_relevant_cycle_life_test",
+      "labels": { "en_US": "C-rate of relevant cycle-life test" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "code": "capacity_threshold_for_exhaustion",
+      "labels": { "en_US": "Capacity threshold for exhaustion" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": true
+    },
+    {
+      "code": "soce_threshold_for_exhaustion",
+      "labels": { "en_US": "SOCE threshold for exhaustion" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": true
+    },
+    {
+      "code": "warranty_period_of_the_battery",
+      "labels": { "en_US": "Warranty period of the battery" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": true
+    },
+    {
+      "code": "date_of_putting_the_battery_into_service",
+      "labels": { "en_US": "Date of putting the battery into service" },
+      "type": "pim_catalog_date",
+      "scopable": false,
+      "localizable": false,
+      "unique": false
+    },
+    {
+      "code": "temperature_range_idle_state_lower_boundary",
+      "labels": { "en_US": "Temperature range idle state (lower boundary)" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": true
+    },
+    {
+      "code": "temperature_range_idle_state_upper_boundary",
+      "labels": { "en_US": "Temperature range idle state (upper boundary)" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "decimals_allowed": false,
+      "negative_allowed": true
+    }
+  ]
+}
