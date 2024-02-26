@@ -365,9 +365,7 @@ class LintTemplatesCommand extends Command
                             $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
                             break;
                         case self::ATTRIBUTE_TYPE_TEXT:
-                            if (array_key_exists('validation_rule', $attribute)) {
-                                $this->assertValidAttributeValidationRule($attribute, $index, $fileName, $violations);
-                            }
+                            $this->assertValidAttributeValidationRule($attribute, $index, $fileName, $violations);
                             break;
                     }
                 }
@@ -528,17 +526,15 @@ class LintTemplatesCommand extends Command
     private function assertValidAttributeValidationRule(array $attribute, int $index, string $fileName, array $violations): void
     {
         $propertyPath = sprintf('[attributes][%d][validation_rule]', $index);
-        switch (true) {
-            case !empty($attribute['validation_rule']) && !in_array($attribute['validation_rule'], self::VALIDATION_RULES):
-                $violations[$fileName]->add(new ConstraintViolation(
-                    'This value is not a valid validation rule.',
-                    null,
-                    [],
-                    null,
-                    $propertyPath,
-                    null,
-                ));
-                break;
+        if (!empty($attribute['validation_rule']) && !in_array($attribute['validation_rule'], self::VALIDATION_RULES)) {
+            $violations[$fileName]->add(new ConstraintViolation(
+                sprintf('This value is not a valid validation rule. Please use one of the following : %s.', implode(',', self::VALIDATION_RULES)),
+                null,
+                [],
+                null,
+                $propertyPath,
+                null,
+            ));
         }
     }
 
