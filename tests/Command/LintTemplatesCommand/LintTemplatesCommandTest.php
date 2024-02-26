@@ -88,6 +88,7 @@ class LintTemplatesCommandTest extends TestCase
                 '[families][missing_identifier_attribute_family][attributes] This collection should contain 1 attribute identifier or more.',
                 '[families][missing_attribute_decimals_allowed_family][attributes][1][decimals_allowed] This field is missing.',
                 '[families][missing_attribute_negative_allowed_family][attributes][1][negative_allowed] This field is missing.',
+                '[families][wrong_validation_rule_family][attributes][3][validation_rule] This value is not a valid validation rule.',
             ]
         ];
         yield 'Invalid attribute options' => [
