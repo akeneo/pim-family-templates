@@ -196,7 +196,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "decimals_allowed": false,
+      "decimals_allowed": true,
       "negative_allowed": false
     },
     {
@@ -386,7 +386,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "decimals_allowed": false,
+      "decimals_allowed": true,
       "negative_allowed": true
     },
     {
