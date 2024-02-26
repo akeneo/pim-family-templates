@@ -51,7 +51,7 @@
     },
     {
       "code": "manufacturers_identification",
-      "labels": { "en_US": "Manufacturer\u2019s identification" },
+      "labels": { "en_US": "Manufacturer's identification" },
       "type": "pim_catalog_number",
       "scopable": false,
       "localizable": false,
