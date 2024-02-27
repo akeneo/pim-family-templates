@@ -1,6 +1,8 @@
 {
   "code": "batteries",
-  "labels": { "en_US": "Batteries" },
+  "labels": {
+    "en_US": "Batteries"
+  },
   "description": {
     "en_US": "Power up your devices with our 'Batteries' DPP template - effortlessly manage your battery inventory, ensuring uninterrupted performance and endless productivity whenever you need it most."
   },
@@ -9,7 +11,9 @@
   "attributes": [
     {
       "code": "EAN",
-      "labels": { "en_US": "Main Identifier" },
+      "labels": {
+        "en_US": "Main Identifier"
+      },
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
@@ -18,7 +22,9 @@
     },
     {
       "code": "product_title",
-      "labels": { "en_US": "Product title" },
+      "labels": {
+        "en_US": "Product title"
+      },
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
@@ -28,7 +34,9 @@
     },
     {
       "code": "main_image",
-      "labels": { "en_US": "Main image" },
+      "labels": {
+        "en_US": "Main image"
+      },
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
@@ -37,7 +45,9 @@
     },
     {
       "code": "battery_passport_identification",
-      "labels": { "en_US": "Battery passport identification" },
+      "labels": {
+        "en_US": "Battery passport identification"
+      },
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
@@ -46,7 +56,9 @@
     },
     {
       "code": "responsible_economic_operator_identification",
-      "labels": { "en_US": "Responsible economic operator identification" },
+      "labels": {
+        "en_US": "Responsible economic operator identification"
+      },
       "type": "pim_catalog_number",
       "scopable": false,
       "localizable": false,
@@ -57,7 +69,9 @@
     },
     {
       "code": "manufacturers_identification",
-      "labels": { "en_US": "Manufacturer's identification" },
+      "labels": {
+        "en_US": "Manufacturer's identification"
+      },
       "type": "pim_catalog_number",
       "scopable": false,
       "localizable": false,
@@ -68,7 +82,9 @@
     },
     {
       "code": "manufacturing_date",
-      "labels": { "en_US": "Manufacturing date" },
+      "labels": {
+        "en_US": "Manufacturing date"
+      },
       "type": "pim_catalog_date",
       "scopable": false,
       "localizable": false,
@@ -77,16 +93,21 @@
     },
     {
       "code": "manufacturing_place",
-      "labels": { "en_US": "Manufacturing place" },
+      "labels": {
+        "en_US": "Manufacturing place"
+      },
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "group": "dpp"
+      "group": "dpp",
+      "validation_rule": ""
     },
     {
       "code": "battery_category",
-      "labels": { "en_US": "Battery category" },
+      "labels": {
+        "en_US": "Battery category"
+      },
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
@@ -95,7 +116,9 @@
     },
     {
       "code": "battery_weight",
-      "labels": { "en_US": "Battery weight" },
+      "labels": {
+        "en_US": "Battery weight"
+      },
       "type": "pim_catalog_metric",
       "scopable": false,
       "localizable": false,
@@ -108,99 +131,15 @@
     },
     {
       "code": "eu_declaration_of_conformity",
-      "labels": { "en_US": "EU declaration of conformity" },
+      "labels": {
+        "en_US": "EU declaration of conformity"
+      },
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
       "unique": false,
       "group": "dpp",
       "validation_rule": "url"
-    },
-    {
-      "code": "original_power_capability",
-      "labels": { "en_US": "Original power capability (in Watts)" },
-      "type": "pim_catalog_metric",
-      "scopable": false,
-      "localizable": false,
-      "unique": false,
-      "metric_family": "Power",
-      "unit": "WATT",
-      "decimals_allowed": true,
-      "negative_allowed": false
-    },
-    {
-      "code": "maximum_permitted_battery_power",
-      "labels": { "en_US": "Maximum permitted battery power" },
-      "type": "pim_catalog_metric",
-      "scopable": false,
-      "localizable": false,
-      "unique": false,
-      "metric_family": "Power",
-      "unit": "WATT",
-      "decimals_allowed": true,
-      "negative_allowed": false
-    },
-    {
-      "code": "ratio_between_nominal_allowed_battery_power_and_battery_energy",
-      "labels": {
-        "en_US": "Ratio between nominal allowed battery power (W) and battery energy (Wh)"
-      },
-      "type": "pim_catalog_number",
-      "scopable": false,
-      "localizable": false,
-      "unique": false,
-      "decimals_allowed": false,
-      "negative_allowed": true
-    },
-    {
-      "code": "initial_round_trip_energy_efficiency",
-      "labels": { "en_US": "Initial round trip energy efficiency" },
-      "type": "pim_catalog_number",
-      "scopable": false,
-      "localizable": false,
-      "unique": false,
-      "decimals_allowed": false,
-      "negative_allowed": true
-    },
-    {
-      "code": "round_trip_energy_efficiency_at_50_percent_of_cycle_life",
-      "labels": {
-        "en_US": "Round trip energy efficiency at 50% of cycle life"
-      },
-      "type": "pim_catalog_number",
-      "scopable": false,
-      "localizable": false,
-      "unique": false,
-      "decimals_allowed": false,
-      "negative_allowed": true
-    },
-    {
-      "code": "date_of_putting_the_battery_into_service",
-      "labels": { "en_US": "Date of putting the battery into service" },
-      "type": "pim_catalog_date",
-      "scopable": false,
-      "localizable": false,
-      "unique": false
-    },
-    {
-      "code": "temperature_range_idle_state_lower_boundary",
-      "labels": { "en_US": "Temperature range idle state (lower boundary)" },
-      "type": "pim_catalog_number",
-      "scopable": false,
-      "localizable": false,
-      "unique": false,
-      "decimals_allowed": false,
-      "negative_allowed": true
-    },
-    {
-      "code": "temperature_range_idle_state_upper_boundary",
-      "labels": { "en_US": "Temperature range idle state (upper boundary)" },
-      "type": "pim_catalog_number",
-      "scopable": false,
-      "localizable": false,
-      "unique": false,
-      "decimals_allowed": false,
-      "negative_allowed": true
     }
   ]
 }
