@@ -11,6 +11,7 @@
   "attributes": [
     {
       "code": "EAN",
+      "group": "other",
       "labels": {
         "en_US": "Main Identifier"
       },
@@ -21,6 +22,7 @@
     },
     {
       "code": "price",
+      "group": "other",
       "labels": {
         "en_US": "Price"
       },
@@ -31,6 +33,7 @@
     },
     {
       "code": "short_description",
+      "group": "other",
       "labels": {
         "en_US": "Short description"
       },
@@ -41,6 +44,7 @@
     },
     {
       "code": "atmosphere_image",
+      "group": "other",
       "labels": {
         "en_US": "Atmosphere image"
       },
@@ -51,6 +55,7 @@
     },
     {
       "code": "player",
+      "group": "other",
       "labels": {
         "en_US": "Player"
       },
@@ -61,6 +66,7 @@
     },
     {
       "code": "sport_type",
+      "group": "other",
       "labels": {
         "en_US": "Sport type"
       },
@@ -71,6 +77,7 @@
     },
     {
       "code": "color",
+      "group": "other",
       "labels": {
         "en_US": "Color"
       },
@@ -81,6 +88,7 @@
     },
     {
       "code": "fabric",
+      "group": "other",
       "labels": {
         "en_US": "Fabric"
       },
@@ -91,6 +99,7 @@
     },
     {
       "code": "cut",
+      "group": "other",
       "labels": {
         "en_US": "Cut"
       },

@@ -90,6 +90,7 @@ class LintTemplatesCommand extends Command
             ...$this->flatViolations('industries', $industriesViolations),
             ...$this->flatViolations('families', $familiesViolations),
             ...$this->flatViolations('attribute_options', $attributeOptionsViolations),
+            ...$this->flatViolations('attribute_groups', $attributeGroupsViolationste),
         ];
 
         $this->displayViolations($output, $flattenViolations);

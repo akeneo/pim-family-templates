@@ -1,0 +1,118 @@
+{
+  "code": "batteries",
+  "labels": { "en_US": "Batteries" },
+  "description": {
+    "en_US": "Power up your devices with our 'Batteries' DPP template - effortlessly manage your battery inventory, ensuring uninterrupted performance and endless productivity whenever you need it most."
+  },
+  "attribute_as_main_media": "main_image",
+  "attribute_as_label": "product_title",
+  "attributes": [
+    {
+      "code": "EAN",
+      "labels": { "en_US": "Main Identifier" },
+      "type": "pim_catalog_identifier",
+      "scopable": false,
+      "localizable": false,
+      "unique": true,
+      "group": "other"
+    },
+    {
+      "code": "product_title",
+      "labels": { "en_US": "Product title" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false,
+      "group": "other"
+    },
+    {
+      "code": "main_image",
+      "labels": { "en_US": "Main image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "other"
+    },
+    {
+      "code": "battery_passport_identification",
+      "labels": { "en_US": "Battery passport identification" },
+      "type": "pim_catalog_identifier",
+      "scopable": false,
+      "localizable": false,
+      "unique": true,
+      "group": "dpp"
+    },
+    {
+      "code": "responsible_economic_operator_identification",
+      "labels": { "en_US": "Responsible economic operator identification" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp",
+      "decimals_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "code": "manufacturers_identification",
+      "labels": { "en_US": "Manufacturer's identification" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp",
+      "decimals_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "code": "manufacturing_date",
+      "labels": { "en_US": "Manufacturing date" },
+      "type": "pim_catalog_date",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "manufacturing_place",
+      "labels": { "en_US": "Manufacturing place" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "battery_category",
+      "labels": { "en_US": "Battery category" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "battery_weight",
+      "labels": { "en_US": "Battery weight" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp",
+      "metric_family": "Weight",
+      "unit": "GRAM",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "eu_declaration_of_conformity",
+      "labels": { "en_US": "EU declaration of conformity" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false,
+      "group": "dpp"
+    }
+  ]
+}

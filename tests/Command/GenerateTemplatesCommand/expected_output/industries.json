@@ -17,5 +17,10 @@
     "family_templates": [
       "jerseys"
     ]
+  },
+  "industry_batteries": {
+    "code": "industry_batteries",
+    "labels": { "en_US": "Batteries" },
+    "family_templates": ["batteries"]
   }
 }

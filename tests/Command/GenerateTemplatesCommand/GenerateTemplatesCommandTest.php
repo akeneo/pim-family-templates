@@ -49,7 +49,7 @@ class GenerateTemplatesCommandTest extends TestCase
             $expectedFilePath = sprintf('%s/%s', $expectedDirectoryPath, $expectedFile);
 
             if (is_dir($expectedFilePath)) {
-                $this->assertDirectoryEquals($actualFilePath, $expectedFilePath);
+                $this->assertDirectoryEquals($expectedFilePath, $actualFilePath);
                 continue;
             }
 
