@@ -112,7 +112,8 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "group": "dpp"
+      "group": "dpp",
+      "validation_rule": "url"
     },
     {
       "code": "id_of_eu_declaration_of_conformity",
@@ -121,7 +122,8 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "group": "dpp"
+      "group": "dpp",
+      "validation_rule": "url"
     },
     {
       "code": "results_of_tests_reports",
@@ -130,7 +132,8 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "group": "dpp"
+      "group": "dpp",
+      "validation_rule": "url"
     },
     {
       "code": "meaning_of_labels_and_symbols",
@@ -139,7 +142,8 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "group": "dpp"
+      "group": "dpp",
+      "validation_rule": "url"
     },
     {
       "code": "cadmium_and_lead_symbols",
@@ -148,7 +152,8 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "group": "dpp"
+      "group": "dpp",
+      "validation_rule": "url"
     },
     {
       "code": "critical_raw_materials",
@@ -237,7 +242,8 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "group": "dpp"
+      "group": "dpp",
+      "validation_rule": "url"
     },
     {
       "code": "information_of_the_due_diligence_report",
@@ -246,7 +252,8 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "group": "dpp"
+      "group": "dpp",
+      "validation_rule": "url"
     },
     {
       "code": "extinguishing_agent",

@@ -24,7 +24,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": ""
     },
     {
       "code": "an_attribute",

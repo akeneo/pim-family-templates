@@ -2,6 +2,7 @@
 
 namespace Akeneo\PimFamilyTemplates\Command;
 
+use Akeneo\PimFamilyTemplates\Model\AttributeType;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -24,33 +25,13 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 class LintTemplatesCommand extends Command
 {
-    private const ATTRIBUTE_TYPES = [
-        self::ATTRIBUTE_TYPE_BOOLEAN,
-        self::ATTRIBUTE_TYPE_DATE,
-        self::ATTRIBUTE_TYPE_IDENTIFIER,
-        self::ATTRIBUTE_TYPE_IMAGE,
-        self::ATTRIBUTE_TYPE_METRIC,
-        self::ATTRIBUTE_TYPE_NUMBER,
-        self::ATTRIBUTE_TYPE_MULTISELECT,
-        self::ATTRIBUTE_TYPE_SIMPLESELECT,
-        self::ATTRIBUTE_TYPE_PRICE_COLLECTION,
-        self::ATTRIBUTE_TYPE_TEXTAREA,
-        self::ATTRIBUTE_TYPE_TEXT,
-        self::ATTRIBUTE_TYPE_FILE,
+    private const VALIDATION_RULES = [
+        self::VALIDATION_RULE_URL,
+        self::VALIDATION_RULE_EMAIL,
     ];
 
-    private const ATTRIBUTE_TYPE_IMAGE = 'pim_catalog_image';
-    private const ATTRIBUTE_TYPE_TEXT = 'pim_catalog_text';
-    private const ATTRIBUTE_TYPE_IDENTIFIER = 'pim_catalog_identifier';
-    private const ATTRIBUTE_TYPE_METRIC = 'pim_catalog_metric';
-    private const ATTRIBUTE_TYPE_NUMBER = 'pim_catalog_number';
-    private const ATTRIBUTE_TYPE_PRICE_COLLECTION = 'pim_catalog_price_collection';
-    private const ATTRIBUTE_TYPE_BOOLEAN = 'pim_catalog_boolean';
-    private const ATTRIBUTE_TYPE_DATE = 'pim_catalog_date';
-    private const ATTRIBUTE_TYPE_MULTISELECT = 'pim_catalog_multiselect';
-    private const ATTRIBUTE_TYPE_SIMPLESELECT = 'pim_catalog_simpleselect';
-    private const ATTRIBUTE_TYPE_TEXTAREA = 'pim_catalog_textarea';
-    private const ATTRIBUTE_TYPE_FILE = 'pim_catalog_file';
+    private const VALIDATION_RULE_URL = 'url';
+    private const VALIDATION_RULE_EMAIL = 'email';
 
     protected static $defaultName = 'templates:lint';
     private ValidatorInterface $validator;
@@ -220,10 +201,10 @@ class LintTemplatesCommand extends Command
             if (!empty($family['attributes'])) {
                 foreach ($family['attributes'] as $attribute) {
                     if (isset($attribute['type'])) {
-                        if (self::ATTRIBUTE_TYPE_IMAGE === $attribute['type']) {
+                        if (AttributeType::ATTRIBUTE_TYPE_IMAGE->value === $attribute['type']) {
                             $mediaAttributeChoices[] = $attribute['code'];
                         }
-                        if (isset($attribute['code']) && in_array($attribute['type'], [self::ATTRIBUTE_TYPE_IDENTIFIER, self::ATTRIBUTE_TYPE_TEXT])) {
+                        if (isset($attribute['code']) && in_array($attribute['type'], [AttributeType::ATTRIBUTE_TYPE_IDENTIFIER->value, AttributeType::ATTRIBUTE_TYPE_TEXT->value])) {
                             $attributeAsLabelChoices[] = $attribute['code'];
                         }
                     }
@@ -279,7 +260,7 @@ class LintTemplatesCommand extends Command
                             ],
                         ]),
                         'type' => new Choice(
-                            choices: self::ATTRIBUTE_TYPES,
+                            choices: AttributeType::getChoices(),
                             message: 'This value is not a valid attribute type.',
                         ),
                         'group' => new Choice(
@@ -308,6 +289,9 @@ class LintTemplatesCommand extends Command
                             new Optional(),
                         ],
                         'negative_allowed' => [
+                            new Optional(),
+                        ],
+                        'validation_rule' => [
                             new Optional(),
                         ],
                     ])),
@@ -352,21 +336,24 @@ class LintTemplatesCommand extends Command
 
                     $propertyPath = sprintf('[attributes][%d]', $index);
                     switch ($attribute['type']) {
-                        case self::ATTRIBUTE_TYPE_IDENTIFIER:
+                        case AttributeType::ATTRIBUTE_TYPE_IDENTIFIER->value:
                             $this->assertValidAttributeIdentifier($attribute, $propertyPath, $fileName, $violations);
                             break;
-                        case self::ATTRIBUTE_TYPE_METRIC:
+                        case AttributeType::ATTRIBUTE_TYPE_METRIC->value:
                             $this->assertValidStringProperty('metric_family', $attribute, $index, $fileName, $violations);
                             $this->assertValidStringProperty('unit', $attribute, $index, $fileName, $violations);
                             $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
                             $this->assertValidBooleanProperty('negative_allowed', $attribute, $index, $fileName, $violations);
                             break;
-                        case self::ATTRIBUTE_TYPE_NUMBER:
+                        case AttributeType::ATTRIBUTE_TYPE_NUMBER->value:
                             $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
                             $this->assertValidBooleanProperty('negative_allowed', $attribute, $index, $fileName, $violations);
                             break;
-                        case self::ATTRIBUTE_TYPE_PRICE_COLLECTION:
+                        case AttributeType::ATTRIBUTE_TYPE_PRICE_COLLECTION->value:
                             $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
+                            break;
+                        case AttributeType::ATTRIBUTE_TYPE_TEXT->value:
+                            $this->assertValidAttributeValidationRule($attribute, $index, $fileName, $violations);
                             break;
                     }
                 }
@@ -558,6 +545,33 @@ class LintTemplatesCommand extends Command
                     null,
                 ));
                 break;
+        }
+    }
+
+    private function assertValidAttributeValidationRule(array $attribute, int $index, string $fileName, array $violations): void
+    {
+        $propertyPath = sprintf('[attributes][%d][validation_rule]', $index);
+        switch (true) {
+            case !array_key_exists('validation_rule', $attribute):
+                $violations[$fileName]->add(new ConstraintViolation(
+                    'This field is missing.',
+                    null,
+                    [],
+                    null,
+                    $propertyPath,
+                    null,
+                ));
+                break;
+            case !empty($attribute['validation_rule']) && !in_array($attribute['validation_rule'], self::VALIDATION_RULES):
+                $violations[$fileName]->add(new ConstraintViolation(
+                    sprintf('This value is not a valid validation rule. Please use one of the following : %s.', implode(',', self::VALIDATION_RULES)),
+                    null,
+                    [],
+                    null,
+                    $propertyPath,
+                    null,
+                ));
+            break;
         }
     }
 
