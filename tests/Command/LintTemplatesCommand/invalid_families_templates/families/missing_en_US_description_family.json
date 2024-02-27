@@ -15,7 +15,8 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true
+      "unique": true,
+      "group": "other"
     },
     {
       "code": "product_title",
@@ -26,7 +27,8 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "validation_rule": ""
+      "validation_rule": "",
+      "group": "other"
     },
     {
       "code": "an_attribute",
@@ -36,7 +38,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "an_image",
@@ -46,7 +49,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     }
   ]
 }

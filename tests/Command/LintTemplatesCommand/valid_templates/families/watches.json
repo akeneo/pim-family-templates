@@ -17,7 +17,8 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true
+      "unique": true,
+      "group": "other"
     },
     {
       "code": "price",
@@ -28,7 +29,8 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "decimals_allowed": true
+      "decimals_allowed": true,
+      "group": "other"
     },
     {
       "code": "product_title",
@@ -39,7 +41,8 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "validation_rule": ""
+      "validation_rule": "",
+      "group": "other"
     },
     {
       "code": "short_description",
@@ -49,7 +52,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "long_description",
@@ -59,7 +63,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "brand",
@@ -69,7 +74,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "main_image",
@@ -79,7 +85,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "detailed_image",
@@ -89,7 +96,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "atmosphere_image",
@@ -99,7 +107,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "case_material",
@@ -109,7 +118,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "case_thickness",
@@ -123,7 +133,8 @@
       "metric_family": "Length",
       "unit": "Centimeter",
       "decimals_allowed": true,
-      "negative_allowed": false
+      "negative_allowed": false,
+      "group": "other"
     },
     {
       "code": "case_diameter",
@@ -137,7 +148,8 @@
       "metric_family": "Length",
       "unit": "Centimeter",
       "decimals_allowed": true,
-      "negative_allowed": false
+      "negative_allowed": false,
+      "group": "other"
     },
     {
       "code": "water_resistance",
@@ -151,7 +163,8 @@
       "metric_family": "Length",
       "unit": "Meter",
       "decimals_allowed": false,
-      "negative_allowed": false
+      "negative_allowed": false,
+      "group": "other"
     },
     {
       "code": "warranty_period",
@@ -161,7 +174,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "watch_type",
@@ -171,7 +185,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "movement_type",
@@ -181,7 +196,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "color",
@@ -191,7 +207,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "display_type",
@@ -201,7 +218,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "gender",
@@ -211,7 +229,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "strap_material",
@@ -221,7 +240,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "strap_type",
@@ -231,7 +251,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "strap_color",
@@ -241,7 +262,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "instructions",
@@ -251,7 +273,8 @@
       "type": "pim_catalog_file",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "email",
@@ -262,7 +285,8 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "validation_rule": "email"
+      "validation_rule": "email",
+      "group": "other"
     }
   ]
 }
