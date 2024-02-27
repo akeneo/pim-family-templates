@@ -27,7 +27,8 @@
       "too_long_attribute_en_US_label_family",
       "missing_attribute_decimals_allowed_family",
       "missing_attribute_negative_allowed_family",
-      "wrong_validation_rule_family"
+      "wrong_attribute_validation_rule_family",
+      "missing_attribute_validation_rule_family"
     ]
   }
 }

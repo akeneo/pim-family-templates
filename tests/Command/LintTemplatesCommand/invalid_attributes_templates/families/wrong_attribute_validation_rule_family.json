@@ -1,5 +1,5 @@
 {
-  "code": "wrong_validation_rule_family",
+  "code": "wrong_attribute_validation_rule_family",
   "labels": {
     "en_US": "A family"
   },
@@ -27,7 +27,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": ""
     },
     {
       "code": "an_image",

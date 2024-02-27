@@ -190,10 +190,10 @@ class LintTemplatesCommand extends Command
             if (!empty($family['attributes'])) {
                 foreach ($family['attributes'] as $attribute) {
                     if (isset($attribute['type'])) {
-                        if (AttributeType::ATTRIBUTE_TYPE_IMAGE === $attribute['type']) {
+                        if (AttributeType::ATTRIBUTE_TYPE_IMAGE->value === $attribute['type']) {
                             $mediaAttributeChoices[] = $attribute['code'];
                         }
-                        if (isset($attribute['code']) && in_array($attribute['type'], [AttributeType::ATTRIBUTE_TYPE_IDENTIFIER, AttributeType::ATTRIBUTE_TYPE_TEXT])) {
+                        if (isset($attribute['code']) && in_array($attribute['type'], [AttributeType::ATTRIBUTE_TYPE_IDENTIFIER->value, AttributeType::ATTRIBUTE_TYPE_TEXT->value])) {
                             $attributeAsLabelChoices[] = $attribute['code'];
                         }
                     }
@@ -321,23 +321,23 @@ class LintTemplatesCommand extends Command
 
                     $propertyPath = sprintf('[attributes][%d]', $index);
                     switch ($attribute['type']) {
-                        case AttributeType::ATTRIBUTE_TYPE_IDENTIFIER:
+                        case AttributeType::ATTRIBUTE_TYPE_IDENTIFIER->value:
                             $this->assertValidAttributeIdentifier($attribute, $propertyPath, $fileName, $violations);
                             break;
-                        case AttributeType::ATTRIBUTE_TYPE_METRIC:
+                        case AttributeType::ATTRIBUTE_TYPE_METRIC->value:
                             $this->assertValidStringProperty('metric_family', $attribute, $index, $fileName, $violations);
                             $this->assertValidStringProperty('unit', $attribute, $index, $fileName, $violations);
                             $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
                             $this->assertValidBooleanProperty('negative_allowed', $attribute, $index, $fileName, $violations);
                             break;
-                        case AttributeType::ATTRIBUTE_TYPE_NUMBER:
+                        case AttributeType::ATTRIBUTE_TYPE_NUMBER->value:
                             $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
                             $this->assertValidBooleanProperty('negative_allowed', $attribute, $index, $fileName, $violations);
                             break;
-                        case AttributeType::ATTRIBUTE_TYPE_PRICE_COLLECTION:
+                        case AttributeType::ATTRIBUTE_TYPE_PRICE_COLLECTION->value:
                             $this->assertValidBooleanProperty('decimals_allowed', $attribute, $index, $fileName, $violations);
                             break;
-                        case AttributeType::ATTRIBUTE_TYPE_TEXT:
+                        case AttributeType::ATTRIBUTE_TYPE_TEXT->value:
                             $this->assertValidAttributeValidationRule($attribute, $index, $fileName, $violations);
                             break;
                     }
@@ -499,15 +499,27 @@ class LintTemplatesCommand extends Command
     private function assertValidAttributeValidationRule(array $attribute, int $index, string $fileName, array $violations): void
     {
         $propertyPath = sprintf('[attributes][%d][validation_rule]', $index);
-        if (!empty($attribute['validation_rule']) && !in_array($attribute['validation_rule'], self::VALIDATION_RULES)) {
-            $violations[$fileName]->add(new ConstraintViolation(
-                sprintf('This value is not a valid validation rule. Please use one of the following : %s.', implode(',', self::VALIDATION_RULES)),
-                null,
-                [],
-                null,
-                $propertyPath,
-                null,
-            ));
+        switch (true) {
+            case !array_key_exists('validation_rule', $attribute):
+                $violations[$fileName]->add(new ConstraintViolation(
+                    'This field is missing.',
+                    null,
+                    [],
+                    null,
+                    $propertyPath,
+                    null,
+                ));
+                break;
+            case !empty($attribute['validation_rule']) && !in_array($attribute['validation_rule'], self::VALIDATION_RULES):
+                $violations[$fileName]->add(new ConstraintViolation(
+                    sprintf('This value is not a valid validation rule. Please use one of the following : %s.', implode(',', self::VALIDATION_RULES)),
+                    null,
+                    [],
+                    null,
+                    $propertyPath,
+                    null,
+                ));
+            break;
         }
     }
 
