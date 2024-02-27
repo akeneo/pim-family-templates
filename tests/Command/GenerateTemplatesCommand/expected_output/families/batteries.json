@@ -14,8 +14,7 @@
       "scopable": false,
       "localizable": false,
       "unique": true,
-      "group": "other",
-      "unique": true
+      "group": "other"
     },
     {
       "code": "product_title",
@@ -201,7 +200,7 @@
       "localizable": false,
       "unique": false,
       "decimals_allowed": false,
-      "negative_allowed": true,
+      "negative_allowed": true
     }
   ]
 }
