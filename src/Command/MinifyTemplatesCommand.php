@@ -126,7 +126,7 @@ class MinifyTemplatesCommand extends Command
     {
         $familyTemplate['attributes'] = array_map(function (array $attribute) use ($attributeGroups) {
             $attribute['group'] = $attributeGroups[$attribute['group']];
-            
+
             return $attribute;
         }, $familyTemplate['attributes']);
 
