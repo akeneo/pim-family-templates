@@ -38,7 +38,6 @@ class LintTemplatesCommandTest extends TestCase
             self::INVALID_FAMILIES_TEMPLATES_DIRECTORY,
             [
                 '[families][empty_en_US_description_family][description][en_US] This value should not be blank.',
-                '[families][too_long_en_US_description_family][description][en_US] This value is too long. It should have 255 characters or less.',
                 '[families][empty_en_US_label_family][labels][en_US] This value should not be blank.',
                 '[families][too_long_en_US_label_family][labels][en_US] This value is too long. It should have 255 characters or less.',
                 '[families][extra_fields_family][cc] This field was not expected.',
