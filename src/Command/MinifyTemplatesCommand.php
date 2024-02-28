@@ -28,8 +28,10 @@ class MinifyTemplatesCommand extends Command
         $industries = $this->readIndustries($templatesDirectory);
         $familyTemplates = $this->readFamilyTemplates($templatesDirectory);
         $attributeOptions = $this->readAttributeOptions($templatesDirectory);
+        $attributeGroups = $this->readAttributeGroups($templatesDirectory);
 
         $familyTemplates = $this->addAttributeOptionsToFamilyTemplates($familyTemplates, $attributeOptions);
+        $familyTemplates = $this->addAttributeGroupsToFamilyTemplates($familyTemplates, $attributeGroups);
         $outputFile = $input->getArgument('output_file');
         file_put_contents($outputFile, json_encode([
             'industries' => $industries,
@@ -69,6 +71,13 @@ class MinifyTemplatesCommand extends Command
         return $this->readJsonFile($attributeOptionsFilePath);
     }
 
+    private function readAttributeGroups(string $templatesDirectory): array
+    {
+        $attributeGroupsFilePath = $this->getFilePath($templatesDirectory, 'attribute_groups');
+
+        return $this->readJsonFile($attributeGroupsFilePath);
+    }
+
     private function getFilePath(string $templatesDirectory, string $fileNameWithoutExtension): string
     {
         return sprintf('%s/%s.json', $templatesDirectory, $fileNameWithoutExtension);
@@ -101,6 +110,24 @@ class MinifyTemplatesCommand extends Command
             $attributeOptions,
             static fn (array $attributeOption) => in_array($attributeOption['attribute'], $attributeCodes),
         );
+
+        return $familyTemplate;
+    }
+
+    private function addAttributeGroupsToFamilyTemplates(array $familyTemplates, array $attributeGroups): array
+    {
+        return array_map(
+            fn (array $familyTemplate) => $this->addAttributeGroupsToFamilyTemplate($familyTemplate, $attributeGroups),
+            $familyTemplates,
+        );
+    }
+
+    private function addAttributeGroupsToFamilyTemplate(array $familyTemplate, array $attributeGroups): array
+    {
+        $familyTemplate['attributes'] = array_map(function (array $attribute) use ($attributeGroups) {
+            $attribute['group'] = $attributeGroups[$attribute['group']];
+            return $attribute;
+        }, $familyTemplate['attributes']);
 
         return $familyTemplate;
     }
