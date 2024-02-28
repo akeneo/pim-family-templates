@@ -2,7 +2,7 @@
   "code": "batteries",
   "labels": { "en_US": "Batteries" },
   "description": {
-    "en_US": "Power up your devices with our 'Batteries' DPP template - effortlessly manage your battery inventory, ensuring uninterrupted performance and endless productivity whenever you need it most."
+    "en_US": "Power up your devices with our 'Batteries' DPP template - effortlessly manage your battery inventory, ensuring uninterrupted performance and endless productivity whenever you need it most. Note that we only cover customer-facing mandatory attributes with this DPP family."
   },
   "attribute_as_main_media": "main_image",
   "attribute_as_label": "product_title",
@@ -288,7 +288,7 @@
     {
       "code": "information_on_separate_collection_take_back_collection_points",
       "labels": {
-        "en_US": "Information on separate collection, take back, collection points and preparing for re-use, preparing for repurposing and recycling operations"
+        "en_US": "Info on separate collection, take back and preparing for re-use/repurposing and recycling ops"
       },
       "type": "pim_catalog_text",
       "scopable": false,
