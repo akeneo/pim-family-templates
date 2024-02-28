@@ -65,7 +65,7 @@ class LintTemplatesCommandTest extends TestCase
                 '[families][missing_attribute_code_family][attributes][0][code] This field is missing.',
                 '[families][missing_attribute_labels_family][attributes][0][labels] This field is missing.',
                 '[families][missing_attribute_en_US_label_family][attributes][0][labels][en_US] This field is missing.',
-                '[families][too_long_attribute_en_US_label_family][attributes][0][labels][en_US] This value is too long. It should have 255 characters or less.',
+                '[families][too_long_attribute_en_US_label_family][attributes][0][labels][en_US] This value is too long. It should have 100 characters or less.',
                 '[families][missing_attribute_type_family][attributes][1][type] This field is missing.',
                 '[families][missing_attribute_scopable_family][attributes][0][scopable] This field is missing.',
                 '[families][missing_attribute_localizable_family][attributes][0][localizable] This field is missing.',
