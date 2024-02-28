@@ -30,7 +30,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "short_description",
@@ -124,7 +125,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "publisher",
@@ -132,7 +134,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "licence",
@@ -140,7 +143,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "weight",

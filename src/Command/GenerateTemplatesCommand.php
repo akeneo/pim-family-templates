@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Akeneo\PimFamilyTemplates\Command;
 
+use Akeneo\PimFamilyTemplates\Model\AttributeType;
 use OpenSpout\Reader\ReaderInterface;
 use OpenSpout\Reader\SheetInterface;
 use OpenSpout\Reader\XLSX\Reader as XlsxReader;
@@ -171,6 +172,10 @@ class GenerateTemplatesCommand extends Command
 
             if ('' !== $rawAttribute['negative_allowed']) {
                 $attribute['negative_allowed'] = '1' === $rawAttribute['negative_allowed'];
+            }
+
+            if ($rawAttribute['type'] === AttributeType::ATTRIBUTE_TYPE_TEXT->value) {
+                $attribute['validation_rule'] = empty($rawAttribute['validation_rule']) ? null : $rawAttribute['validation_rule'];
             }
 
             return $attribute;

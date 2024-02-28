@@ -21,7 +21,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "main_image",
@@ -73,7 +74,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "battery_category",
@@ -101,7 +103,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": "url"
     },
     {
       "code": "id_of_eu_declaration_of_conformity",
@@ -109,7 +112,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": "url"
     },
     {
       "code": "results_of_tests_reports",
@@ -117,7 +121,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": "url"
     },
     {
       "code": "meaning_of_labels_and_symbols",
@@ -125,7 +130,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": "url"
     },
     {
       "code": "cadmium_and_lead_symbols",
@@ -133,7 +139,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": "url"
     },
     {
       "code": "critical_raw_materials",
@@ -175,7 +182,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "battery_carbon_footprint",
@@ -205,7 +213,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "web_link_to_public_carbon_footprint_study",
@@ -213,7 +222,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": "url"
     },
     {
       "code": "information_of_the_due_diligence_report",
@@ -221,7 +231,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": "url"
     },
     {
       "code": "extinguishing_agent",
@@ -229,7 +240,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "renewable_content_share",
@@ -273,7 +285,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "role_of_end_users_in_contributing_to_the_separate_collection_of_waste_batteries",
@@ -283,7 +296,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "information_on_separate_collection_take_back_collection_points",
@@ -293,7 +307,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "certified_usable_battery_energy",

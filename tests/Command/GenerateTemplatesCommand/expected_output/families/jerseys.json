@@ -57,7 +57,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "sport_type",
