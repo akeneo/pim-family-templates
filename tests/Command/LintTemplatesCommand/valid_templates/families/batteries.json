@@ -13,7 +13,8 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true
+      "unique": true,
+      "group": "other"
     },
     {
       "code": "product_title",
@@ -22,7 +23,8 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "validation_rule": null
+      "validation_rule": null,
+      "group": "other"
     },
     {
       "code": "main_image",
@@ -30,7 +32,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "eu_declaration_of_conformity",
@@ -39,7 +42,8 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "validation_rule": "url"
+      "validation_rule": "url",
+      "group": "dpp"
     },
     {
       "code": "original_power_capability",
@@ -51,7 +55,8 @@
       "metric_family": "Power",
       "unit": "WATT",
       "decimals_allowed": true,
-      "negative_allowed": false
+      "negative_allowed": false,
+      "group": "dpp"
     },
     {
       "code": "maximum_permitted_battery_power",
@@ -63,7 +68,8 @@
       "metric_family": "Power",
       "unit": "WATT",
       "decimals_allowed": true,
-      "negative_allowed": false
+      "negative_allowed": false,
+      "group": "dpp"
     },
     {
       "code": "ratio_between_nominal_allowed_battery_power_and_battery_energy",
@@ -75,7 +81,8 @@
       "localizable": false,
       "unique": false,
       "decimals_allowed": false,
-      "negative_allowed": true
+      "negative_allowed": true,
+      "group": "dpp"
     },
     {
       "code": "initial_round_trip_energy_efficiency",
@@ -85,7 +92,8 @@
       "localizable": false,
       "unique": false,
       "decimals_allowed": false,
-      "negative_allowed": true
+      "negative_allowed": true,
+      "group": "dpp"
     },
     {
       "code": "round_trip_energy_efficiency_at_50_percent_of_cycle_life",
@@ -97,7 +105,8 @@
       "localizable": false,
       "unique": false,
       "decimals_allowed": false,
-      "negative_allowed": true
+      "negative_allowed": true,
+      "group": "dpp"
     },
     {
       "code": "date_of_putting_the_battery_into_service",
@@ -105,7 +114,8 @@
       "type": "pim_catalog_date",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "temperature_range_idle_state_lower_boundary",
@@ -115,7 +125,8 @@
       "localizable": false,
       "unique": false,
       "decimals_allowed": false,
-      "negative_allowed": true
+      "negative_allowed": true,
+      "group": "dpp"
     },
     {
       "code": "temperature_range_idle_state_upper_boundary",
@@ -125,7 +136,8 @@
       "localizable": false,
       "unique": false,
       "decimals_allowed": false,
-      "negative_allowed": true
+      "negative_allowed": true,
+      "group": "dpp"
     }
   ]
 }

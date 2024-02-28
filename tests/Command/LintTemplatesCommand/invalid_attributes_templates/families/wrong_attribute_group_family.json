@@ -29,7 +29,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "validation_rule": "",
+      "validation_rule": null,
       "group": "wrong_group"
     },
     {
