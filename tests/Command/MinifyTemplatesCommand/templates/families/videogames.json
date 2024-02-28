@@ -15,7 +15,8 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true
+      "unique": true,
+      "group": "other"
     },
     {
       "code": "product_title",
@@ -25,7 +26,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "brand",
@@ -35,7 +37,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "main_image",
@@ -45,7 +48,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "memory_card_slot",
@@ -55,7 +59,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "storage_capacity",
@@ -66,7 +71,8 @@
       "scopable": false,
       "localizable": false,
       "metric_family": "binary",
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "language",
@@ -76,7 +82,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "display_type",
@@ -86,7 +93,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "platform",
@@ -96,7 +104,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "video_game_genre",
@@ -106,7 +115,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "PEGI_rating",
@@ -116,7 +126,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     }
   ]
 }
