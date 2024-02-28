@@ -13,8 +13,7 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true,
-      "group": "other"
+      "unique": true
     },
     {
       "code": "price",
@@ -23,7 +22,6 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "group": "other",
       "decimals_allowed": true
     },
     {
@@ -33,7 +31,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "group": "other"
+      "validation_rule": null
     },
     {
       "code": "short_description",
@@ -41,8 +39,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "long_description",
@@ -50,8 +47,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "brand",
@@ -59,8 +55,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "main_image",
@@ -68,8 +63,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "detailed_image",
@@ -77,8 +71,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "atmosphere_image",
@@ -86,8 +79,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "min_age",
@@ -96,7 +88,6 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "group": "other",
       "decimals_allowed": false,
       "negative_allowed": false
     },
@@ -107,7 +98,6 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "group": "other",
       "decimals_allowed": false,
       "negative_allowed": false
     },
@@ -118,7 +108,6 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "group": "other",
       "metric_family": "Weight",
       "unit": "GRAM",
       "decimals_allowed": true,
@@ -130,8 +119,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "processor",
@@ -139,8 +127,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "smartlight",
@@ -148,8 +135,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "screen_size",
@@ -158,7 +144,6 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "group": "other",
       "metric_family": "Length",
       "unit": "INCH",
       "decimals_allowed": true,
@@ -171,7 +156,6 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "group": "other",
       "metric_family": "Binary",
       "unit": "GIGABYTE",
       "decimals_allowed": true,

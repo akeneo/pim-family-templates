@@ -13,8 +13,7 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true,
-      "group": "other"
+      "unique": true
     },
     {
       "code": "price",
@@ -23,7 +22,6 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "group": "other",
       "decimals_allowed": true
     },
     {
@@ -33,7 +31,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "group": "other"
+      "validation_rule": null
     },
     {
       "code": "short_description",
@@ -41,8 +39,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "long_description",
@@ -50,8 +47,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "brand",
@@ -59,8 +55,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "main_image",
@@ -68,8 +63,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "detailed_image",
@@ -77,8 +71,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "atmosphere_image",
@@ -86,8 +79,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "color",
@@ -95,8 +87,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "color_name",
@@ -105,7 +96,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "group": "other"
+      "validation_rule": null
     },
     {
       "code": "material",
@@ -113,8 +104,7 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "recycled_material",
@@ -122,8 +112,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "made_in",
@@ -131,8 +120,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "slices_number",
@@ -140,8 +128,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "wattage",
@@ -150,7 +137,6 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "group": "other",
       "metric_family": "Power",
       "unit": "WATT",
       "decimals_allowed": true,
@@ -163,7 +149,6 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "group": "other",
       "metric_family": "Voltage",
       "unit": "VOLT",
       "decimals_allowed": true,
@@ -175,8 +160,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "finishing",
@@ -184,8 +168,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "length",
@@ -194,7 +177,6 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "group": "other",
       "metric_family": "Length",
       "unit": "CENTIMETER",
       "decimals_allowed": true,
@@ -207,7 +189,6 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "group": "other",
       "metric_family": "Length",
       "unit": "CENTIMETER",
       "decimals_allowed": true,
@@ -220,7 +201,6 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "group": "other",
       "metric_family": "Weight",
       "unit": "KILOGRAM",
       "decimals_allowed": true,
@@ -232,8 +212,7 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     }
   ]
 }

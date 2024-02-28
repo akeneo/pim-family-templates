@@ -13,8 +13,7 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true,
-      "group": "other"
+      "unique": true
     },
     {
       "code": "price",
@@ -23,7 +22,6 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "group": "other",
       "decimals_allowed": true
     },
     {
@@ -33,7 +31,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "group": "other"
+      "validation_rule": null
     },
     {
       "code": "short_description",
@@ -41,8 +39,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "long_description",
@@ -50,8 +47,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "brand",
@@ -59,8 +55,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "main_image",
@@ -68,8 +63,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "detailed_image",
@@ -77,8 +71,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "atmosphere_image",
@@ -86,8 +79,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "color",
@@ -95,8 +87,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "material",
@@ -104,8 +95,7 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "material_properties",
@@ -113,8 +103,7 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "weight",
@@ -123,7 +112,6 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "group": "other",
       "metric_family": "Weight",
       "unit": "GRAM",
       "decimals_allowed": true,
@@ -135,8 +123,7 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "maintenance_instructions",
@@ -144,8 +131,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "standards",
@@ -153,8 +139,7 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "excluded_toxic",
@@ -162,8 +147,7 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     }
   ]
 }

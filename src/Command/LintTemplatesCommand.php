@@ -571,7 +571,7 @@ class LintTemplatesCommand extends Command
                     $propertyPath,
                     null,
                 ));
-            break;
+                break;
         }
     }
 

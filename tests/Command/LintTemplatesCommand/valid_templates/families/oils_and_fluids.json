@@ -17,8 +17,7 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true,
-      "group": "other"
+      "unique": true
     },
     {
       "code": "price",
@@ -29,8 +28,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "decimals_allowed": true,
-      "group": "other"
+      "decimals_allowed": true
     },
     {
       "code": "product_title",
@@ -41,8 +39,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "validation_rule": "",
-      "group": "other"
+      "validation_rule": null
     },
     {
       "code": "short_description",
@@ -52,8 +49,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "long_description",
@@ -63,8 +59,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "brand",
@@ -74,8 +69,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "main_image",
@@ -85,8 +79,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "detailed_image",
@@ -96,8 +89,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "atmosphere_image",
@@ -107,8 +99,7 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "width",
@@ -122,8 +113,7 @@
       "metric_family": "Length",
       "unit": "Centimeter",
       "decimals_allowed": true,
-      "negative_allowed": false,
-      "group": "other"
+      "negative_allowed": false
     },
     {
       "code": "height",
@@ -137,8 +127,7 @@
       "metric_family": "Length",
       "unit": "Centimeter",
       "decimals_allowed": true,
-      "negative_allowed": false,
-      "group": "other"
+      "negative_allowed": false
     },
     {
       "code": "vehicle_type",
@@ -148,8 +137,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "brake_fluid_specification",
@@ -159,8 +147,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "volume",
@@ -174,8 +161,7 @@
       "metric_family": "Volume",
       "unit": "Liter",
       "decimals_allowed": true,
-      "negative_allowed": false,
-      "group": "other"
+      "negative_allowed": false
     },
     {
       "code": "oil_type",
@@ -185,8 +171,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "oil_viscosity",
@@ -196,8 +181,7 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "operating_tips",
@@ -207,8 +191,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false,
-      "group": "other"
+      "unique": false
     },
     {
       "code": "composition",
@@ -218,8 +201,7 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false,
-      "group": "other"
+      "unique": false
     }
   ]
 }
