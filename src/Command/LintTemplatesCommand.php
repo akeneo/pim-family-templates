@@ -216,7 +216,6 @@ class LintTemplatesCommand extends Command
                     'en_US' => [
                         new Type('string'),
                         new NotBlank(),
-                        new Length(max: 255),
                     ],
                 ]),
                 'attribute_as_main_media' => [
@@ -245,7 +244,7 @@ class LintTemplatesCommand extends Command
                             'en_US' => [
                                 new Type('string'),
                                 new NotBlank(),
-                                new Length(max: 255),
+                                new Length(max: 100),
                             ],
                         ]),
                         'type' => new Choice(
