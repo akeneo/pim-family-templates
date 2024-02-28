@@ -48,7 +48,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
-      "validation_rule": ""
+      "validation_rule": null
     }
   ]
 }

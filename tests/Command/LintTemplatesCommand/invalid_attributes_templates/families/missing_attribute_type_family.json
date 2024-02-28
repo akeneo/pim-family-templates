@@ -37,7 +37,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "validation_rule": ""
+      "validation_rule": null
     },
     {
       "code": "an_attribute",
