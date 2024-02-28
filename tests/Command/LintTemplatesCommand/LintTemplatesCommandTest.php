@@ -90,7 +90,7 @@ class LintTemplatesCommandTest extends TestCase
                 '[families][wrong_attribute_validation_rule_family][attributes][3][validation_rule] This value is not a valid validation rule. Please use one of the following : url,email.',
                 '[families][missing_attribute_validation_rule_family][attributes][1][validation_rule] This field is missing.',
                 '[families][missing_attribute_group_family][attributes][1][group] This field is missing.',
-                '[families][wrong_attribute_group_family][attributes][1][group] This value is not a valid attribute group.'
+                '[families][wrong_attribute_group_family][attributes][1][group] This attribute group does not exist.'
             ]
         ];
         yield 'Invalid attribute options' => [

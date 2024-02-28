@@ -116,20 +116,14 @@ class MinifyTemplatesCommand extends Command
 
     private function addAttributeGroupsToFamilyTemplates(array $familyTemplates, array $attributeGroups): array
     {
-        return array_map(
-            fn (array $familyTemplate) => $this->addAttributeGroupsToFamilyTemplate($familyTemplate, $attributeGroups),
-            $familyTemplates,
-        );
-    }
+        return array_map(function (array $familyTemplate) use ($attributeGroups) {
+            $attributeGroupCodes = array_map(fn ($attribute) => $attribute['group'], $familyTemplate['attributes']);
+            $familyTemplate['attribute_groups'] = array_filter(
+                $attributeGroups,
+                static fn (array $attributeGroup) => in_array($attributeGroup['code'], $attributeGroupCodes),
+            );
 
-    private function addAttributeGroupsToFamilyTemplate(array $familyTemplate, array $attributeGroups): array
-    {
-        $familyTemplate['attributes'] = array_map(function (array $attribute) use ($attributeGroups) {
-            $attribute['group'] = $attributeGroups[$attribute['group']];
-
-            return $attribute;
-        }, $familyTemplate['attributes']);
-
-        return $familyTemplate;
+            return $familyTemplate;
+        }, $familyTemplates);
     }
 }

@@ -264,7 +264,7 @@ class LintTemplatesCommand extends Command
                         ),
                         'group' => new Choice(
                             choices: $attributeGroupsCodes,
-                            message: 'This value is not a valid attribute group.',
+                            message: 'This attribute group does not exist.',
                         ),
                         'scopable' => [
                             new Type('bool'),
@@ -433,7 +433,7 @@ class LintTemplatesCommand extends Command
                     'en_US' => [
                         new Type('string'),
                         new NotBlank(),
-                        new Length(max: 255),
+                        new Length(max: 100),
                     ],
                 ]),
             ]));
