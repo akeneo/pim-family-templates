@@ -101,7 +101,7 @@
       "localizable": true,
       "unique": false,
       "group": "dpp",
-      "validation_rule": ""
+      "validation_rule": null
     },
     {
       "code": "battery_category",
