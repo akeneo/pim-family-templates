@@ -510,7 +510,7 @@ class LintTemplatesCommand extends Command
                     null,
                 ));
                 break;
-            case !empty($attribute['validation_rule']) && !in_array($attribute['validation_rule'], self::VALIDATION_RULES):
+            case !is_null($attribute['validation_rule']) && !in_array($attribute['validation_rule'], self::VALIDATION_RULES):
                 $violations[$fileName]->add(new ConstraintViolation(
                     sprintf('This value is not a valid validation rule. Please use one of the following : %s.', implode(',', self::VALIDATION_RULES)),
                     null,
