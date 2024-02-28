@@ -13,7 +13,8 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true
+      "unique": true,
+      "group": "other"
     },
     {
       "code": "price",
@@ -22,6 +23,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "decimals_allowed": true
     },
     {
@@ -31,6 +33,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "other",
       "validation_rule": null
     },
     {
@@ -39,7 +42,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "long_description",
@@ -47,7 +51,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "brand",
@@ -55,7 +60,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "main_image",
@@ -63,7 +69,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "detailed_image",
@@ -71,7 +78,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "atmosphere_image",
@@ -79,7 +87,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "material",
@@ -87,7 +96,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "case_thickness",
@@ -96,6 +106,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Length",
       "unit": "MILLIMETER",
       "decimals_allowed": true,
@@ -108,6 +119,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Length",
       "unit": "MILLIMETER",
       "decimals_allowed": true,
@@ -120,6 +132,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Pressure",
       "unit": "BAR",
       "decimals_allowed": true,
@@ -131,7 +144,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "watch_type",
@@ -139,7 +153,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "movement_type",
@@ -147,7 +162,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "movement_calibre",
@@ -156,6 +172,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "validation_rule": null
     },
     {
@@ -164,7 +181,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "display_type",
@@ -172,7 +190,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "gender",
@@ -180,7 +199,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "strap_material",
@@ -188,7 +208,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "strap_type",
@@ -196,7 +217,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "strap_color",
@@ -204,7 +226,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "watch_complications",
@@ -212,7 +235,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "number_of_jewels",
@@ -221,6 +245,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "decimals_allowed": false,
       "negative_allowed": false
     },
@@ -231,6 +256,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Duration",
       "unit": "HOUR",
       "decimals_allowed": true,
@@ -243,6 +269,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Frequency",
       "unit": "HERTZ",
       "decimals_allowed": true,
@@ -254,7 +281,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     }
   ]
 }

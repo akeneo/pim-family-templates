@@ -13,7 +13,8 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true
+      "unique": true,
+      "group": "other"
     },
     {
       "code": "product_title",
@@ -22,6 +23,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "other",
       "validation_rule": null
     },
     {
@@ -30,7 +32,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "battery_passport_identification",
@@ -38,7 +41,8 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true
+      "unique": true,
+      "group": "dpp"
     },
     {
       "code": "responsible_economic_operator_identification",
@@ -47,6 +51,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": false
     },
@@ -57,6 +62,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": false
     },
@@ -66,7 +72,8 @@
       "type": "pim_catalog_date",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "manufacturing_place",
@@ -75,6 +82,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "dpp",
       "validation_rule": null
     },
     {
@@ -83,7 +91,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "battery_weight",
@@ -92,6 +101,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "metric_family": "Weight",
       "unit": "GRAM",
       "decimals_allowed": true,
@@ -104,6 +114,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "dpp",
       "validation_rule": "url"
     },
     {
@@ -113,6 +124,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "dpp",
       "validation_rule": "url"
     },
     {
@@ -122,6 +134,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "dpp",
       "validation_rule": "url"
     },
     {
@@ -131,6 +144,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "dpp",
       "validation_rule": "url"
     },
     {
@@ -140,6 +154,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "dpp",
       "validation_rule": "url"
     },
     {
@@ -148,7 +163,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "battery_chemistry",
@@ -156,7 +172,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "name_of_hazardous_substances",
@@ -164,7 +181,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "impact_of_substances_on_the_environment_human_health_safety",
@@ -174,7 +192,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "carbon_footprint_label",
@@ -183,6 +202,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "dpp",
       "validation_rule": null
     },
     {
@@ -194,6 +214,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -204,6 +225,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -214,6 +236,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "dpp",
       "validation_rule": null
     },
     {
@@ -223,6 +246,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "dpp",
       "validation_rule": "url"
     },
     {
@@ -232,6 +256,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "dpp",
       "validation_rule": "url"
     },
     {
@@ -241,6 +266,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "dpp",
       "validation_rule": null
     },
     {
@@ -250,6 +276,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -262,6 +289,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -274,6 +302,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": true,
       "negative_allowed": false
     },
@@ -286,6 +315,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "dpp",
       "validation_rule": null
     },
     {
@@ -297,6 +327,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "dpp",
       "validation_rule": null
     },
     {
@@ -308,6 +339,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "dpp",
       "validation_rule": null
     },
     {
@@ -317,6 +349,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": false
     },
@@ -327,6 +360,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "metric_family": "ElectricCharge",
       "unit": "AMPEREHOUR",
       "decimals_allowed": true,
@@ -339,6 +373,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "metric_family": "Voltage",
       "unit": "VOLT",
       "decimals_allowed": true,
@@ -351,6 +386,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "metric_family": "Voltage",
       "unit": "VOLT",
       "decimals_allowed": true,
@@ -363,6 +399,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "metric_family": "Voltage",
       "unit": "VOLT",
       "decimals_allowed": true,
@@ -375,6 +412,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "metric_family": "Power",
       "unit": "WATT",
       "decimals_allowed": true,
@@ -387,6 +425,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "metric_family": "Power",
       "unit": "WATT",
       "decimals_allowed": true,
@@ -401,6 +440,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": true,
       "negative_allowed": true
     },
@@ -411,6 +451,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -423,6 +464,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -435,6 +477,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -447,6 +490,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -457,6 +501,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": true,
       "negative_allowed": true
     },
@@ -467,6 +512,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -477,6 +523,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -487,6 +534,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -496,7 +544,8 @@
       "type": "pim_catalog_date",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "dpp"
     },
     {
       "code": "temperature_range_idle_state_lower_boundary",
@@ -505,6 +554,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     },
@@ -515,6 +565,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "dpp",
       "decimals_allowed": false,
       "negative_allowed": true
     }

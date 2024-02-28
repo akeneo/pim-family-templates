@@ -13,7 +13,8 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true
+      "unique": true,
+      "group": "other"
     },
     {
       "code": "price",
@@ -22,6 +23,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "decimals_allowed": true
     },
     {
@@ -31,6 +33,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "other",
       "validation_rule": null
     },
     {
@@ -39,7 +42,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "long_description",
@@ -47,7 +51,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "brand",
@@ -55,7 +60,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "main_image",
@@ -63,7 +69,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "detailed_image",
@@ -71,7 +78,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "atmosphere_image",
@@ -79,7 +87,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "indoor_outdoor",
@@ -87,7 +96,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "height",
@@ -96,6 +106,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Length",
       "unit": "CENTIMETER",
       "decimals_allowed": true,
@@ -108,6 +119,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Length",
       "unit": "CENTIMETER",
       "decimals_allowed": true,
@@ -120,6 +132,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Length",
       "unit": "CENTIMETER",
       "decimals_allowed": true,
@@ -132,6 +145,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Weight",
       "unit": "KILOGRAM",
       "decimals_allowed": true,
@@ -144,6 +158,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "decimals_allowed": false,
       "negative_allowed": false
     },
@@ -153,7 +168,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "max_speed",
@@ -162,6 +178,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Speed",
       "unit": "KILOMETER_PER_HOUR",
       "decimals_allowed": true,
@@ -173,7 +190,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "motor_hp",
@@ -182,6 +200,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Power",
       "unit": "WATT",
       "decimals_allowed": true,
@@ -194,6 +213,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Angle",
       "unit": "DEGREE",
       "decimals_allowed": true,
@@ -205,7 +225,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     }
   ]
 }

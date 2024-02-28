@@ -13,7 +13,8 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true
+      "unique": true,
+      "group": "other"
     },
     {
       "code": "price",
@@ -22,6 +23,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "decimals_allowed": true
     },
     {
@@ -31,6 +33,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
+      "group": "other",
       "validation_rule": null
     },
     {
@@ -39,7 +42,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "long_description",
@@ -47,7 +51,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "brand",
@@ -55,7 +60,8 @@
       "type": "pim_catalog_simpleselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "main_image",
@@ -63,7 +69,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "detailed_image",
@@ -71,7 +78,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "atmosphere_image",
@@ -79,7 +87,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "weight",
@@ -88,6 +97,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Weight",
       "unit": "GRAM",
       "decimals_allowed": true,
@@ -99,7 +109,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "capacity",
@@ -108,6 +119,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "metric_family": "Volume",
       "unit": "LITER",
       "decimals_allowed": true,
@@ -119,7 +131,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "formula",
@@ -127,7 +140,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "application_tips",
@@ -135,7 +149,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "aromatic",
@@ -143,7 +158,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "active_ingredients",
@@ -151,7 +167,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "warnings",
@@ -159,7 +176,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "expiration_date",
@@ -167,7 +185,8 @@
       "type": "pim_catalog_date",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "batch_number",
@@ -176,6 +195,7 @@
       "scopable": false,
       "localizable": false,
       "unique": false,
+      "group": "other",
       "decimals_allowed": false,
       "negative_allowed": false
     },
@@ -185,7 +205,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "standards",
@@ -193,7 +214,8 @@
       "type": "pim_catalog_multiselect",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "organic",
@@ -201,7 +223,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     }
   ]
 }
