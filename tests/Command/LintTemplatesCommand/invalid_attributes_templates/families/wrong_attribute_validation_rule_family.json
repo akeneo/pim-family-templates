@@ -1,5 +1,5 @@
 {
-  "code": "wrong_attribute_type_family",
+  "code": "wrong_attribute_validation_rule_family",
   "labels": {
     "en_US": "A family"
   },
@@ -15,19 +15,9 @@
         "en_US": "Main Identifier"
       },
       "type": "pim_catalog_identifier",
-      "scopable": false,
       "localizable": false,
+      "scopable": false,
       "unique": true
-    },
-    {
-      "code": "color",
-      "labels": {
-        "en_US": "Color"
-      },
-      "type": "invalid",
-      "scopable": false,
-      "localizable": false,
-      "unique": false
     },
     {
       "code": "product_title",
@@ -41,16 +31,6 @@
       "validation_rule": null
     },
     {
-      "code": "an_attribute",
-      "labels": {
-        "en_US": "An attribute"
-      },
-      "type": "pim_catalog_simpleselect",
-      "scopable": false,
-      "localizable": false,
-      "unique": false
-    },
-    {
       "code": "an_image",
       "labels": {
         "en_US": "Atmosphere image"
@@ -59,6 +39,17 @@
       "scopable": false,
       "localizable": false,
       "unique": false
+    },
+    {
+      "code": "an_attribute",
+      "labels": {
+        "en_US": "An attribute"
+      },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "validation_rule": "wrong validation rule"
     }
   ]
 }

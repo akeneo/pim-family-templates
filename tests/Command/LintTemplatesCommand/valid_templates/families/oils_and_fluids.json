@@ -38,7 +38,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "short_description",
