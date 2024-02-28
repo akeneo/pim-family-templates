@@ -16,7 +16,6 @@
       "missing_labels_family",
       "extra_fields_family",
       "too_long_en_US_label_family",
-      "too_long_en_US_description_family",
       "missing_attribute_as_label_family",
       "missing_attribute_as_main_media_family"
     ]
