@@ -30,7 +30,7 @@
       "localizable": true,
       "unique": false,
       "group": "other",
-      "validation_rule": ""
+      "validation_rule": null
     },
     {
       "code": "main_image",
