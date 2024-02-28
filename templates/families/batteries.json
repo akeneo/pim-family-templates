@@ -21,7 +21,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "main_image",
@@ -73,7 +74,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "battery_category",
@@ -180,7 +182,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "battery_carbon_footprint",
@@ -210,7 +213,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "web_link_to_public_carbon_footprint_study",
@@ -236,7 +240,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "renewable_content_share",
@@ -280,7 +285,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "role_of_end_users_in_contributing_to_the_separate_collection_of_waste_batteries",
@@ -290,7 +296,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "information_on_separate_collection_take_back_collection_points",
@@ -300,7 +307,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "validation_rule": null
     },
     {
       "code": "certified_usable_battery_energy",
