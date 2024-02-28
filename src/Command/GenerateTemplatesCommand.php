@@ -175,7 +175,7 @@ class GenerateTemplatesCommand extends Command
             }
 
             if ($rawAttribute['type'] === AttributeType::ATTRIBUTE_TYPE_TEXT->value) {
-                $attribute['validation_rule'] = $rawAttribute['validation_rule'];
+                $attribute['validation_rule'] = empty($rawAttribute['validation_rule']) ? null : $rawAttribute['validation_rule'];
             }
 
             return $attribute;

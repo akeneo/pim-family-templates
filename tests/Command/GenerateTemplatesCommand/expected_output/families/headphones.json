@@ -38,7 +38,7 @@
       "scopable": false,
       "localizable": true,
       "unique": false,
-      "validation_rule": ""
+      "validation_rule": null
     },
     {
       "code": "long_description",
