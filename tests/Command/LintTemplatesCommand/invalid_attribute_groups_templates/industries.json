@@ -1,0 +1,12 @@
+{
+  "an_industry": {
+    "code": "an_industry",
+    "labels": {
+      "en_US": "An industry"
+    },
+    "family_templates": [
+      "a_family",
+      "another_family"
+    ]
+  }
+}

@@ -28,7 +28,9 @@
       "missing_attribute_decimals_allowed_family",
       "missing_attribute_negative_allowed_family",
       "wrong_attribute_validation_rule_family",
-      "missing_attribute_validation_rule_family"
+      "missing_attribute_validation_rule_family",
+      "missing_attribute_group_family",
+      "wrong_attribute_group_family"
     ]
   }
 }

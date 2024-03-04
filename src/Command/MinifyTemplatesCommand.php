@@ -28,8 +28,10 @@ class MinifyTemplatesCommand extends Command
         $industries = $this->readIndustries($templatesDirectory);
         $familyTemplates = $this->readFamilyTemplates($templatesDirectory);
         $attributeOptions = $this->readAttributeOptions($templatesDirectory);
+        $attributeGroups = $this->readAttributeGroups($templatesDirectory);
 
         $familyTemplates = $this->addAttributeOptionsToFamilyTemplates($familyTemplates, $attributeOptions);
+        $familyTemplates = $this->addAttributeGroupsToFamilyTemplates($familyTemplates, $attributeGroups);
         $outputFile = $input->getArgument('output_file');
         file_put_contents($outputFile, json_encode([
             'industries' => $industries,
@@ -69,6 +71,13 @@ class MinifyTemplatesCommand extends Command
         return $this->readJsonFile($attributeOptionsFilePath);
     }
 
+    private function readAttributeGroups(string $templatesDirectory): array
+    {
+        $attributeGroupsFilePath = $this->getFilePath($templatesDirectory, 'attribute_groups');
+
+        return $this->readJsonFile($attributeGroupsFilePath);
+    }
+
     private function getFilePath(string $templatesDirectory, string $fileNameWithoutExtension): string
     {
         return sprintf('%s/%s.json', $templatesDirectory, $fileNameWithoutExtension);
@@ -103,5 +112,18 @@ class MinifyTemplatesCommand extends Command
         );
 
         return $familyTemplate;
+    }
+
+    private function addAttributeGroupsToFamilyTemplates(array $familyTemplates, array $attributeGroups): array
+    {
+        return array_map(function (array $familyTemplate) use ($attributeGroups) {
+            $attributeGroupCodesInFamilyTemplate = array_map(static fn ($attribute) => $attribute['group'], $familyTemplate['attributes']);
+            $familyTemplate['attribute_groups'] = array_filter(
+                $attributeGroups,
+                static fn (array $attributeGroup) => in_array($attributeGroup['code'], $attributeGroupCodesInFamilyTemplate),
+            );
+
+            return $familyTemplate;
+        }, $familyTemplates);
     }
 }

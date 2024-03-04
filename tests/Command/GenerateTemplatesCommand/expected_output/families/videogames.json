@@ -11,6 +11,7 @@
   "attributes": [
     {
       "code": "EAN",
+      "group": "other",
       "labels": {
         "en_US": "Main Identifier"
       },
@@ -21,6 +22,7 @@
     },
     {
       "code": "product_title",
+      "group": "other",
       "labels": {
         "en_US": "Product title"
       },
@@ -32,6 +34,7 @@
     },
     {
       "code": "brand",
+      "group": "other",
       "labels": {
         "en_US": "Brand"
       },
@@ -42,6 +45,7 @@
     },
     {
       "code": "main_image",
+      "group": "other",
       "labels": {
         "en_US": "Main image"
       },
@@ -52,6 +56,7 @@
     },
     {
       "code": "memory_card_slot",
+      "group": "other",
       "labels": {
         "en_US": "Memory card slot"
       },
@@ -62,6 +67,7 @@
     },
     {
       "code": "storage_capacity",
+      "group": "other",
       "labels": {
         "en_US": "Storage capacity"
       },
@@ -74,6 +80,7 @@
     },
     {
       "code": "language",
+      "group": "other",
       "labels": {
         "en_US": "Language"
       },
@@ -84,6 +91,7 @@
     },
     {
       "code": "display_type",
+      "group": "other",
       "labels": {
         "en_US": "Display type"
       },
@@ -94,6 +102,7 @@
     },
     {
       "code": "platform",
+      "group": "other",
       "labels": {
         "en_US": "Platform"
       },
@@ -104,6 +113,7 @@
     },
     {
       "code": "video_game_genre",
+      "group": "other",
       "labels": {
         "en_US": "Video game genre"
       },
@@ -114,6 +124,7 @@
     },
     {
       "code": "PEGI_rating",
+      "group": "other",
       "labels": {
         "en_US": "PEGI rating"
       },
@@ -124,6 +135,7 @@
     },
     {
       "code": "price",
+      "group": "other",
       "labels": {
             "en_US": "Price"
       },

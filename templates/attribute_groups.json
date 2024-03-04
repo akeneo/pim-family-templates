@@ -1,0 +1,7 @@
+{
+  "other": { "code": "other", "labels": { "en_US": "Other" } },
+  "dpp": {
+    "code": "dpp",
+    "labels": { "en_US": "DPP (Digital Product Passport)" }
+  }
+}

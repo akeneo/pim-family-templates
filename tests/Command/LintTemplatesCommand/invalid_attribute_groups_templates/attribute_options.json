@@ -1,0 +1,30 @@
+{
+  "brand1": {
+    "code": "brand1",
+    "labels": {
+      "en_US": "Zaro"
+    },
+    "attribute": "brand"
+  },
+  "brand2": {
+    "code": "brand2",
+    "labels": {
+      "en_US": "Zigolf"
+    },
+    "attribute": "brand"
+  },
+  "color1": {
+    "code": "color1",
+    "labels": {
+      "en_US": "Blue"
+    },
+    "attribute": "color"
+  },
+  "color2": {
+    "code": "color2",
+    "labels": {
+      "en_US": "Black"
+    },
+    "attribute": "color"
+  }
+}

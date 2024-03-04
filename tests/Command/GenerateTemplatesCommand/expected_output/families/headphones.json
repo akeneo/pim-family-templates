@@ -11,6 +11,7 @@
   "attributes": [
     {
       "code": "EAN",
+      "group": "other",
       "labels": {
         "en_US": "Main Identifier"
       },
@@ -21,6 +22,7 @@
     },
     {
       "code": "price",
+      "group": "other",
       "labels": {
         "en_US": "Price"
       },
@@ -31,6 +33,7 @@
     },
     {
       "code": "product_title",
+      "group": "other",
       "labels": {
         "en_US": "Product title"
       },
@@ -42,6 +45,7 @@
     },
     {
       "code": "long_description",
+      "group": "other",
       "labels": {
         "en_US": "Long description"
       },
@@ -52,6 +56,7 @@
     },
     {
       "code": "main_image",
+      "group": "other",
       "labels": {
         "en_US": "Main image"
       },
@@ -62,6 +67,7 @@
     },
     {
       "code": "atmosphere_image",
+      "group": "other",
       "labels": {
         "en_US": "Atmosphere image"
       },
@@ -72,6 +78,7 @@
     },
     {
       "code": "height",
+      "group": "other",
       "labels": {
         "en_US": "Height"
       },
@@ -86,6 +93,7 @@
     },
     {
       "code": "width",
+      "group": "other",
       "labels": {
         "en_US": "Width"
       },
@@ -100,6 +108,7 @@
     },
     {
       "code": "bluetooth",
+      "group": "other",
       "labels": {
         "en_US": "Bluetooth"
       },
@@ -110,6 +119,7 @@
     },
     {
       "code": "wireless",
+      "group": "other",
       "labels": {
         "en_US": "Wireless"
       },

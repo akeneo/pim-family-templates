@@ -15,7 +15,8 @@
       "type": "pim_catalog_identifier",
       "scopable": false,
       "localizable": false,
-      "unique": true
+      "unique": true,
+      "group": "other"
     },
     {
       "code": "price",
@@ -25,7 +26,8 @@
       "type": "pim_catalog_price_collection",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "product_title",
@@ -35,7 +37,8 @@
       "type": "pim_catalog_text",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "long_description",
@@ -45,7 +48,8 @@
       "type": "pim_catalog_textarea",
       "scopable": false,
       "localizable": true,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "main_image",
@@ -55,7 +59,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "atmosphere_image",
@@ -65,7 +70,8 @@
       "type": "pim_catalog_image",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "height",
@@ -76,7 +82,8 @@
       "scopable": false,
       "localizable": false,
       "metric_family": "length",
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "width",
@@ -87,7 +94,8 @@
       "scopable": false,
       "localizable": false,
       "metric_family": "length",
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "bluetooth",
@@ -97,7 +105,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     },
     {
       "code": "wireless",
@@ -107,7 +116,8 @@
       "type": "pim_catalog_boolean",
       "scopable": false,
       "localizable": false,
-      "unique": false
+      "unique": false,
+      "group": "other"
     }
   ]
 }

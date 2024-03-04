@@ -1,0 +1,11 @@
+{
+  "other": { "code": "other", "labels": { "en_US": "Other" } },
+  "missing_code_group": { "labels": { "en_US": "Missing code group" } },
+  "missing_labels_group": { "code": "missing_labels_group" },
+  "missing_en_US_label_group": { "code": "missing_en_US_label_group", "labels": { } },
+  "empty_en_US_label_group": { "code": "empty_en_US_label_group", "labels": { "en_US": "" } },
+  "too_long_en_US_label_group": { "code": "too_long_en_US_label_group", "labels": { "en_US": "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt." } },
+  "mismatching_code_attribute_group": { "code": "wrong_code", "labels": { "en_US": "Mismatching code" } },
+  "duplicated_code_group": { "code": "other", "labels": { "en_US": "Other" } },
+  "extra_fields_group": { "code": "extra_fields_group", "labels": { "en_US": "A group" }, "cc": "steven" }
+}

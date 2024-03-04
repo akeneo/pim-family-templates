@@ -14,6 +14,7 @@ class LintTemplatesCommandTest extends TestCase
     private const INVALID_FAMILIES_TEMPLATES_DIRECTORY = __DIR__ . '/invalid_families_templates';
     private const INVALID_ATTRIBUTES_TEMPLATES_DIRECTORY = __DIR__ . '/invalid_attributes_templates';
     private const INVALID_ATTRIBUTES_OPTIONS_TEMPLATES_DIRECTORY = __DIR__ . '/invalid_attribute_options_templates';
+    private const INVALID_ATTRIBUTE_GROUPS_TEMPLATE_DIRECTORY = __DIR__ . '/invalid_attribute_groups_templates';
 
     public static function provideInvalidTemplates(): iterable
     {
@@ -89,6 +90,8 @@ class LintTemplatesCommandTest extends TestCase
                 '[families][missing_attribute_negative_allowed_family][attributes][1][negative_allowed] This field is missing.',
                 '[families][wrong_attribute_validation_rule_family][attributes][3][validation_rule] This value is not a valid validation rule. Please use one of the following : url,email.',
                 '[families][missing_attribute_validation_rule_family][attributes][1][validation_rule] This field is missing.',
+                '[families][missing_attribute_group_family][attributes][1][group] This field is missing.',
+                '[families][wrong_attribute_group_family][attributes][1][group] This attribute group does not exist.'
             ]
         ];
         yield 'Invalid attribute options' => [
@@ -103,6 +106,19 @@ class LintTemplatesCommandTest extends TestCase
                 '[attribute_options][unknown_attribute_option][attribute] This value is not referenced in any family.',
                 '[attribute_options][mismatching_code_option][code] This value should match with key.',
                 '[attribute_options][color2][code] This value should be unique.',
+            ]
+        ];
+        yield 'Invalid attribute groups' => [
+            self::INVALID_ATTRIBUTE_GROUPS_TEMPLATE_DIRECTORY,
+            [
+                '[attribute_groups][missing_code_group][code] This field is missing.',
+                '[attribute_groups][missing_labels_group][labels] This field is missing.',
+                '[attribute_groups][missing_en_US_label_group][labels][en_US] This field is missing.',
+                '[attribute_groups][empty_en_US_label_group][labels][en_US] This value should not be blank.',
+                '[attribute_groups][too_long_en_US_label_group][labels][en_US] This value is too long. It should have 100 characters or less.',
+                '[attribute_groups][mismatching_code_attribute_group][code] This value should match with key.',
+                '[attribute_groups][duplicated_code_group][code] This value should be unique.',
+                '[attribute_groups][extra_fields_group][cc] This field was not expected.',
             ]
         ];
     }
