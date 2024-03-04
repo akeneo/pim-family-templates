@@ -438,6 +438,10 @@ class LintTemplatesCommand extends Command
                 ]),
             ]));
 
+            if (!array_key_exists('code', $attributeGroup) || empty($attributeGroup['code'])) {
+                continue;
+            }
+
             if (in_array($attributeGroup['code'], $lintedAttributeGroupCodes)) {
                 $violations[$key]->add(new ConstraintViolation(
                     'This value should be unique.',
