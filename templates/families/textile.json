@@ -1,0 +1,398 @@
+{
+  "code": "textile",
+  "labels": { "en_US": "Textile" },
+  "description": {
+    "en_US": "Wrap your products in excellence with our 'Textile' DPP template - effortlessly manage your finished product information: the supply chain, usage, and end-of-life. Note that we only cover customer-facing mandatory attributes with this DPP template."
+  },
+  "attribute_as_main_media": "main_image",
+  "attribute_as_label": "product_title",
+  "attributes": [
+    {
+      "code": "reference",
+      "labels": { "en_US": "Reference" },
+      "type": "pim_catalog_identifier",
+      "scopable": false,
+      "localizable": false,
+      "unique": true,
+      "group": "dpp"
+    },
+    {
+      "code": "product_title",
+      "labels": { "en_US": "Product title" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false,
+      "group": "dpp",
+      "validation_rule": null
+    },
+    {
+      "code": "main_image",
+      "labels": { "en_US": "Main image" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "long_description",
+      "labels": { "en_US": "Long description" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "identification_type",
+      "labels": { "en_US": "Identification type" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "environmental_input",
+      "labels": { "en_US": "Environmental input" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "environmental_output",
+      "labels": { "en_US": "Environmental output" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "collecting_type_of_processes",
+      "labels": { "en_US": "Type of processes (Collecting)" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "collecting_company",
+      "labels": { "en_US": "Collecting company" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "collecting_location",
+      "labels": { "en_US": "Collecting location" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false,
+      "group": "dpp",
+      "validation_rule": null
+    },
+    {
+      "code": "collecting_date",
+      "labels": { "en_US": "Collecting date" },
+      "type": "pim_catalog_date",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "recycling_type_of_processes",
+      "labels": { "en_US": "Type of processes (Recycling)" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "recycling_company",
+      "labels": { "en_US": "Recycling company" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "recycling_location",
+      "labels": { "en_US": "Recycling location" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false,
+      "group": "dpp",
+      "validation_rule": null
+    },
+    {
+      "code": "recycling_composition",
+      "labels": { "en_US": "Recycling composition" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "recycling_date",
+      "labels": { "en_US": "Recycling date" },
+      "type": "pim_catalog_date",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "recycling_strategy",
+      "labels": { "en_US": "Recycling strategy" },
+      "type": "pim_catalog_textarea",
+      "scopable": false,
+      "localizable": true,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "usage_type",
+      "labels": { "en_US": "Usage type" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "aftersales_company",
+      "labels": { "en_US": "Aftersales company" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "aftersales_location",
+      "labels": { "en_US": "Aftersales location" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false,
+      "group": "dpp",
+      "validation_rule": null
+    },
+    {
+      "code": "aftersales_services_type",
+      "labels": { "en_US": "Type of services" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": true,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "traceable_dasset",
+      "labels": { "en_US": "Traceable asset" },
+      "type": "pim_catalog_image",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "composition_materials",
+      "labels": { "en_US": "Composition materials" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "production_location",
+      "labels": { "en_US": "Production location" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false,
+      "group": "dpp",
+      "validation_rule": null
+    },
+    {
+      "code": "production_date",
+      "labels": { "en_US": "Production date" },
+      "type": "pim_catalog_date",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "weight_quantity",
+      "labels": { "en_US": "Weight quantity (gm/sq2)" },
+      "type": "pim_catalog_number",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "transport_means",
+      "labels": { "en_US": "Transport means" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "transport_distance",
+      "labels": { "en_US": "Transport distance" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp",
+      "metric_family": "Length",
+      "unit": "KILOMETER",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "composition",
+      "labels": { "en_US": "Composition" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false,
+      "group": "dpp",
+      "validation_rule": null
+    },
+    {
+      "code": "color",
+      "labels": { "en_US": "Color" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "size",
+      "labels": { "en_US": "Size" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "packaging",
+      "labels": { "en_US": "Packaging" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "circularity_strategy",
+      "labels": { "en_US": "Circularity strategy" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "brand",
+      "labels": { "en_US": "Brand" },
+      "type": "pim_catalog_simpleselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "certifications",
+      "labels": { "en_US": "Certifications" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "environmental_impact",
+      "labels": { "en_US": "Environmental impact (kg CO2e)" },
+      "type": "pim_catalog_metric",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp",
+      "metric_family": "Weight",
+      "unit": "KILOGRAM",
+      "decimals_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "health_impact",
+      "labels": { "en_US": "Health impact" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "animal_impact",
+      "labels": { "en_US": "Animal impact" },
+      "type": "pim_catalog_multiselect",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    },
+    {
+      "code": "evaluation_company",
+      "labels": { "en_US": "Evaluation company" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false,
+      "group": "dpp",
+      "validation_rule": null
+    },
+    {
+      "code": "audits",
+      "labels": { "en_US": "Audits" },
+      "type": "pim_catalog_text",
+      "scopable": false,
+      "localizable": true,
+      "unique": false,
+      "group": "dpp",
+      "validation_rule": "url"
+    },
+    {
+      "code": "evaluation_date",
+      "labels": { "en_US": "Evaluation date" },
+      "type": "pim_catalog_date",
+      "scopable": false,
+      "localizable": false,
+      "unique": false,
+      "group": "dpp"
+    }
+  ]
+}

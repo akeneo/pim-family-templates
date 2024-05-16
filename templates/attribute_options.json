@@ -3388,5 +3388,325 @@
     "code": "critical_raw_materials_niobium",
     "labels": { "en_US": "Niobium" },
     "attribute": "critical_raw_materials"
+  },
+  "environmental_input_water": {
+    "code": "environmental_input_water",
+    "labels": { "en_US": "Water" },
+    "attribute": "environmental_input"
+  },
+  "environmental_input_fossil_fuels": {
+    "code": "environmental_input_fossil_fuels",
+    "labels": { "en_US": "Fossil fuels" },
+    "attribute": "environmental_input"
+  },
+  "environmental_output_carbon_dioxide_emissions": {
+    "code": "environmental_output_carbon_dioxide_emissions",
+    "labels": { "en_US": "Carbon dioxide emissions" },
+    "attribute": "environmental_output"
+  },
+  "environmental_output_landfill_waste": {
+    "code": "environmental_output_landfill_waste",
+    "labels": { "en_US": "Landfill waste" },
+    "attribute": "environmental_output"
+  },
+  "collecting_type_of_processes_end_of_life": {
+    "code": "collecting_type_of_processes_end_of_life",
+    "labels": { "en_US": "End-of-life textiles" },
+    "attribute": "collecting_type_of_processes"
+  },
+  "collecting_type_of_processes_reuse": {
+    "code": "collecting_type_of_processes_reuse",
+    "labels": { "en_US": "Reuse" },
+    "attribute": "collecting_type_of_processes"
+  },
+  "collecting_type_of_processes_textile_recycling": {
+    "code": "collecting_type_of_processes_textile_recycling",
+    "labels": { "en_US": "Textile recycling" },
+    "attribute": "collecting_type_of_processes"
+  },
+  "recycling_type_of_processes_end_of_life": {
+    "code": "recycling_type_of_processes_end_of_life",
+    "labels": { "en_US": "End-of-life textiles" },
+    "attribute": "recycling_type_of_processes"
+  },
+  "recycling_type_of_processes_reuse": {
+    "code": "recycling_type_of_processes_reuse",
+    "labels": { "en_US": "Reuse" },
+    "attribute": "recycling_type_of_processes"
+  },
+  "recycling_type_of_processes_textile_recycling": {
+    "code": "recycling_type_of_processes_textile_recycling",
+    "labels": { "en_US": "Textile recycling" },
+    "attribute": "recycling_type_of_processes"
+  },
+  "usage_type_clothing": {
+    "code": "usage_type_clothing",
+    "labels": { "en_US": "Clothing" },
+    "attribute": "usage_type"
+  },
+  "usage_type_bags_and_sneakers": {
+    "code": "usage_type_bags_and_sneakers",
+    "labels": { "en_US": "Bags and sneakers" },
+    "attribute": "usage_type"
+  },
+  "aftersales_services_type_warranty_information": {
+    "code": "aftersales_services_type_warranty_information",
+    "labels": { "en_US": "Warranty information" },
+    "attribute": "aftersales_services_type"
+  },
+  "aftersales_services_type_product_training": {
+    "code": "aftersales_services_type_product_training",
+    "labels": { "en_US": "Product training" },
+    "attribute": "aftersales_services_type"
+  },
+  "aftersales_services_type_service_training": {
+    "code": "aftersales_services_type_service_training",
+    "labels": { "en_US": "Service training" },
+    "attribute": "aftersales_services_type"
+  },
+  "aftersales_services_type_upgrade_offer": {
+    "code": "aftersales_services_type_upgrade_offer",
+    "labels": { "en_US": "Upgrade offer" },
+    "attribute": "aftersales_services_type"
+  },
+  "aftersales_services_type_repair": {
+    "code": "aftersales_services_type_repair",
+    "labels": { "en_US": "Repair" },
+    "attribute": "aftersales_services_type"
+  },
+  "aftersales_services_request_for_review": {
+    "code": "aftersales_services_request_for_review",
+    "labels": { "en_US": "Request for review" },
+    "attribute": "aftersales_services_type"
+  },
+  "aftersales_services_return_exchange_policy": {
+    "code": "aftersales_services_return_exchange_policy",
+    "labels": { "en_US": "Return and exchange policy" },
+    "attribute": "aftersales_services_type"
+  },
+  "composition_materials_cotton": {
+    "code": "composition_materials_cotton",
+    "labels": { "en_US": "Cotton" },
+    "attribute": "composition_materials"
+  },
+  "composition_materials_velvet": {
+    "code": "composition_materials_velvet",
+    "labels": { "en_US": "Velvet" },
+    "attribute": "composition_materials"
+  },
+  "composition_materials_silk": {
+    "code": "composition_materials_silk",
+    "labels": { "en_US": "Silk" },
+    "attribute": "composition_materials"
+  },
+  "composition_materials_leather": {
+    "code": "composition_materials_leather",
+    "labels": { "en_US": "Leather" },
+    "attribute": "composition_materials"
+  },
+  "composition_materials_vegan_leather": {
+    "code": "composition_materials_vegan_leather",
+    "labels": { "en_US": "Vegan leather" },
+    "attribute": "composition_materials"
+  },
+  "composition_materials_denim": {
+    "code": "composition_materials_denim",
+    "labels": { "en_US": "Denim" },
+    "attribute": "composition_materials"
+  },
+  "composition_materials_polyester": {
+    "code": "composition_materials_polyester",
+    "labels": { "en_US": "Polyester" },
+    "attribute": "composition_materials"
+  },
+  "composition_materials_wool": {
+    "code": "composition_materials_wool",
+    "labels": { "en_US": "Wool" },
+    "attribute": "composition_materials"
+  },
+  "transport_means_road_transport": {
+    "code": "transport_means_road_transport",
+    "labels": { "en_US": "Road transport" },
+    "attribute": "transport_means"
+  },
+  "transport_means_rail_transport": {
+    "code": "transport_means_rail_transport",
+    "labels": { "en_US": "Rail transport" },
+    "attribute": "transport_means"
+  },
+  "transport_means_sea_transport": {
+    "code": "transport_means_sea_transport",
+    "labels": { "en_US": "Sea transport" },
+    "attribute": "transport_means"
+  },
+  "transport_means_air_transport": {
+    "code": "transport_means_air_transport",
+    "labels": { "en_US": "Air transport" },
+    "attribute": "transport_means"
+  },
+  "transport_means_pipeline": {
+    "code": "transport_means_pipeline",
+    "labels": { "en_US": "Pipeline" },
+    "attribute": "transport_means"
+  },
+  "packaging_single_piece_packing": {
+    "code": "packaging_single_piece_packing",
+    "labels": { "en_US": "Single piece packing" },
+    "attribute": "packaging"
+  },
+  "packaging_single_blister_packing": {
+    "code": "packaging_single_blister_packing",
+    "labels": { "en_US": "Blister packing" },
+    "attribute": "packaging"
+  },
+  "packaging_single_paper": {
+    "code": "packaging_single_paper",
+    "labels": { "en_US": "Paper" },
+    "attribute": "packaging"
+  },
+  "packaging_single_recycled_paper": {
+    "code": "packaging_single_recycled_paper",
+    "labels": { "en_US": "Recycled paper" },
+    "attribute": "packaging"
+  },
+  "circularity_strategy_design_for_longevity": {
+    "code": "circularity_strategy_design_for_longevity",
+    "labels": { "en_US": "Design for longevity" },
+    "attribute": "circularity_strategy"
+  },
+  "circularity_strategy_use_sustainable_materials": {
+    "code": "circularity_strategy_use_sustainable_materials",
+    "labels": { "en_US": "Use of sustainable materials" },
+    "attribute": "circularity_strategy"
+  },
+  "circularity_strategy_modular_design": {
+    "code": "circularity_strategy_modular_design",
+    "labels": { "en_US": "Modular design" },
+    "attribute": "circularity_strategy"
+  },
+  "circularity_strategy_chemical_management": {
+    "code": "circularity_strategy_chemical_management",
+    "labels": { "en_US": "Chemical management" },
+    "attribute": "circularity_strategy"
+  },
+  "circularity_strategy_water_and_energy_efficiency": {
+    "code": "circularity_strategy_water_and_energy_efficiency",
+    "labels": { "en_US": "Water and energy efficiency" },
+    "attribute": "circularity_strategy"
+  },
+  "circularity_strategy_take_back_program": {
+    "code": "circularity_strategy_take_back_program",
+    "labels": { "en_US": "Take-back and recycling programs" },
+    "attribute": "circularity_strategy"
+  },
+  "certifications_goats": {
+    "code": "certifications_goats",
+    "labels": { "en_US": "GOATS" },
+    "attribute": "certifications"
+  },
+  "certifications_better_cotton_initiative": {
+    "code": "certifications_better_cotton_initiative",
+    "labels": { "en_US": "Better Cotton Initiative" },
+    "attribute": "certifications"
+  },
+  "certifications_cradle_to_cradle": {
+    "code": "certifications_cradle_to_cradle",
+    "labels": { "en_US": "Cradle to Cradle" },
+    "attribute": "certifications"
+  },
+  "certifications_fsc": {
+    "code": "certifications_fsc",
+    "labels": { "en_US": "FSC" },
+    "attribute": "certifications"
+  },
+  "certifications_faire_wear_foundation": {
+    "code": "certifications_faire_wear_foundation",
+    "labels": { "en_US": "Fair Wear Foundation" },
+    "attribute": "certifications"
+  },
+  "certifications_fairtrade": {
+    "code": "certifications_fairtrade",
+    "labels": { "en_US": "Fairtrade" },
+    "attribute": "certifications"
+  },
+  "certifications_global_recycle_standard": {
+    "code": "certifications_global_recycle_standard",
+    "labels": { "en_US": "Global Recycle Standard" },
+    "attribute": "certifications"
+  },
+  "certifications_iso": {
+    "code": "certifications_iso",
+    "labels": { "en_US": "ISO" },
+    "attribute": "certifications"
+  },
+  "health_impact_flame_retardants": {
+    "code": "health_impact_flame_retardants",
+    "labels": { "en_US": "Flame retardants" },
+    "attribute": "health_impact"
+  },
+  "health_impact_pfas_materials": {
+    "code": "health_impact_pfas_materials",
+    "labels": { "en_US": "PFAS materials" },
+    "attribute": "health_impact"
+  },
+  "health_impact_lead_chromium": {
+    "code": "health_impact_lead_chromium",
+    "labels": { "en_US": "Lead & Chromium (VI)" },
+    "attribute": "health_impact"
+  },
+  "health_impact_phthalates": {
+    "code": "health_impact_phthalates",
+    "labels": { "en_US": "Phthalates" },
+    "attribute": "health_impact"
+  },
+  "health_impact_chlorine_bleach": {
+    "code": "health_impact_chlorine_bleach",
+    "labels": { "en_US": "Chlorine bleach" },
+    "attribute": "health_impact"
+  },
+  "health_impact_azo_dyes": {
+    "code": "health_impact_azo_dyes",
+    "labels": { "en_US": "AZO dyes" },
+    "attribute": "health_impact"
+  },
+  "health_impact_vocs": {
+    "code": "health_impact_vocs",
+    "labels": { "en_US": "VOCs" },
+    "attribute": "health_impact"
+  },
+  "animal_impact_hair_fur": {
+    "code": "animal_impact_hair_fur",
+    "labels": { "en_US": "Hair / Fur" },
+    "attribute": "animal_impact"
+  },
+  "animal_impact_feathers": {
+    "code": "animal_impact_feathers",
+    "labels": { "en_US": "Feathers" },
+    "attribute": "animal_impact"
+  },
+  "animal_impact_mohair": {
+    "code": "animal_impact_mohair",
+    "labels": { "en_US": "Mohair" },
+    "attribute": "animal_impact"
+  },
+  "animal_impact_cashmere": {
+    "code": "animal_impact_cashmere",
+    "labels": { "en_US": "Cashmere" },
+    "attribute": "animal_impact"
+  },
+  "animal_impact_alpaca": {
+    "code": "animal_impact_alpaca",
+    "labels": { "en_US": "Alpaca" },
+    "attribute": "animal_impact"
+  },
+  "animal_impact_wool": {
+    "code": "animal_impact_wool",
+    "labels": { "en_US": "Wool" },
+    "attribute": "animal_impact"
+  },
+  "animal_impact_angora": {
+    "code": "animal_impact_angora",
+    "labels": { "en_US": "Angora" },
+    "attribute": "animal_impact"
   }
 }
