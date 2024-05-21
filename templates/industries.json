@@ -6,7 +6,8 @@
       "tops_t_shirts",
       "accessories",
       "sneakers",
-      "high_heels"
+      "high_heels",
+      "textile"
     ]
   },
   "industry_food_and_beverages": {
@@ -98,10 +99,5 @@
     "code": "industry_batteries",
     "labels": { "en_US": "Batteries" },
     "family_templates": ["batteries"]
-  },
-  "industry_textile": {
-    "code": "industry_textile",
-    "labels": { "en_US": "Textile" },
-    "family_templates": ["textile"]
   }
 }
